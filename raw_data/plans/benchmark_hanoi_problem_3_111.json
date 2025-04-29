@@ -1,0 +1,48 @@
+{
+  "goal": "(and (on d1 peg2) (clear d1) (on d2 peg1) (clear d2) (on d3 peg3) (clear d3))",
+  "plan_steps": [
+    "1: move(d1, d3, peg2)"
+  ],
+  "benchmarks": {
+    "Reaching Definitions": {
+      "question": "Default: Is any predicate used in a step's precondition fulfilled by a previous step's effect?",
+      "answer": "No",
+      "explanation": "No clear instance found where a step's precondition is directly added by a previous step with these rules."
+    },
+    "Available Expressions": {
+      "question": "Default: Is a predicate added early still available when needed later?",
+      "answer": "N/A",
+      "explanation": "No clear instance found matching the rule criteria."
+    },
+    "Live Variable Analysis": {
+      "question": "Default: Is a predicate produced by a step needed later?",
+      "answer": "N/A",
+      "explanation": "No clear instance found matching the rule criteria."
+    },
+    "Type-State Analysis": {
+      "question": "Default: Would skipping a step invalidate the next step?",
+      "answer": "N/A",
+      "explanation": "Cannot determine: Plan has less than 2 steps."
+    },
+    "Concurrency Analysis": {
+      "question": "Default: Can two randomly selected steps run concurrently?",
+      "answer": "N/A",
+      "explanation": "Cannot determine: Plan has less than 2 steps."
+    },
+    "Very Busy Expressions": {
+      "question": "Default: Is any action 'very busy' (effect immediately used)?",
+      "answer": "N/A",
+      "explanation": "Cannot determine: Plan has less than 2 steps."
+    },
+    "Interval Analysis": {
+      "question": "Default: What are the basic ordering constraints for a step?",
+      "answer": "N/A",
+      "explanation": "Cannot determine: Plan has less than 2 steps."
+    },
+    "Taint Analysis": {
+      "question": "Default: Does any step interfere with the preconditions of the next step?",
+      "answer": "N/A",
+      "explanation": "Cannot determine: Plan has less than 2 steps."
+    }
+  }
+}

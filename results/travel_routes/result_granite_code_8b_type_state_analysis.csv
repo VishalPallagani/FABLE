@@ -1,0 +1,1601 @@
+prompt,ground_truth,response
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: National Musical String Company (New Brunswick, NJ) to OCEAN MEDICAL CENTER (BRICK, NJ)
+
+  Route steps:
+['Drive south on Georges Road.', 'Turn left onto Milltown Road/CR 606. Continue on CR 606.', 'Bear right onto Hillside Avenue.', 'Turn right onto NJ 18/State Route 18. Continue on NJ 18.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible for Step 3 to be performed without completing Step 2. The travel route provided does not require Step 2 to be completed before Step 3 can be started. However, it is important to note that the steps are meant to be followed in order and that completing a step may change the state of the object (e.g., opening a file changes its state from ""closed"" to ""open""). Therefore, it is not possible to perform Step 3 without having completed Step 2, unless there is an exception or additional context provided that allows for this specific scenario.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Cheney Building (Hartford, CT) to Wood, Harcourt, Memorial Library (Derby, CT)
+
+  Route steps:
+['Drive east on Temple Street.', 'Turn right onto Market Street.', 'Turn right onto American Row.', 'Bear right onto Central Row.', 'Turn left onto Main Street.', 'Turn right onto Gold Street.', 'Turn left onto Trumbull Street.', 'Enter Pulaski Circle and take the 2nd exit onto Hudson Street.', 'Turn right onto Park Street.', 'Turn left onto Washington Street.', 'Turn right onto New Britain Avenue.', 'Turn left onto Broad Street.', 'Turn right onto Maple Avenue.', 'Keep left to take CT 15 South/Wilbur Cross Parkway.', 'Take exit 42B on the right onto CT 34 West toward Derby.', 'Turn right onto CT 34 West/Derby Turnpike. Continue on CT 34 West.', 'Bear left onto CT 34 West/Main Street. Continue on Main Street.', 'Turn right onto Elizabeth Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: PROVO CANYON BEHAVIORAL HOSPITAL (OREM, UT) to Pleasant Grove Tithing Office (Pleasant Grove, UT)
+
+  Route steps:
+['Drive northwest.', 'Turn left onto East 750 North.', 'Turn right onto Palisades Drive.', 'Turn left onto UT 52/Canyon Parkway.', 'Turn right onto 1000 East.', 'Turn left onto 1200 North.', 'Turn right onto 800 East.', 'Bear left onto 1600 North.', 'Turn right onto State Street/US 89. Continue on US 89.', 'Turn right onto 200 North.', 'Bear left onto North 135 West.', 'Turn left onto 200 South.', 'Turn right onto 300 East.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 4 of the travel route without completing Step 3. The text indicates that the steps are not interdependent and can be executed in any order. Therefore, it is valid to turn right onto UT 52/Canyon Parkway and then proceed to Step 4 without having completed Step 3.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: VIBRA HOSPITAL OF SOUTHWESTERN MASSACHUSETTS (NEW BEDFORD, MA) to Olmsted, Frederick Law, House, National Historic Site (Brookline, MA)
+
+  Route steps:
+['Drive south.', 'Turn left onto Acushnet Avenue/MA 18. Continue on MA 18.', 'Keep left to take County Road.', 'Enter the roundabout and take the 2nd exit onto Chace Road.', 'Take the MA 140 North ramp on the right toward Taunton/Boston.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 4 without completing Step 3 in the given travel planning scenario. The route steps provided do not explicitly state that Step 4 must be completed after Step 3. However, based on the description of the steps, it seems plausible that performing Step 4 before completing Step 3 could potentially lead to an incorrect or dangerous outcome. Therefore, it is recommended to complete Step 3 first and then proceed with Step 4 only if it is safe and necessary to do so.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: John Fitzgerald Kennedy National Historic Site (Additional Documentation) (Brookline, MA) to Central Congregational Church (Boston, MA)
+
+  Route steps:
+['Drive northeast on Beals Street.', 'Turn right onto Manchester Road.', 'Turn right onto Babcock Street.', 'Turn left onto Freeman Street Extension.', 'Turn left onto Amory Street.', 'Turn right onto Commonwealth Avenue/US 20.', 'Turn right onto MA 2/Essex Street.', 'Keep left to take MA 2/Mountfort Street.', 'Make a left U-turn to stay on MA 2.', 'Turn right onto University Road.', 'Bear right onto Storrow Drive.', 'Take the exit on the right toward Copley Square.', 'Turn right onto Clarendon Street.', 'Turn left onto Boylston Street.', 'Turn left onto Berkeley Street.', 'Turn left onto Public Alley 436.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 2 without completing Step 1. For example, if the user were to take a U-turn and exit onto Clarendon Street before turning left onto Boylston Street, they would still be able to reach their destination by following the remaining steps of the route. However, it is important to note that not all routes may allow for this type of maneuver, and it is recommended to follow the route as planned to ensure a successful journey.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: STERLING SURGICAL HOSPITAL (SLIDELL, LA) to St. Patrick's Church (New Orleans, LA)
+
+  Route steps:
+['Drive south.', 'Turn left after 32 meters or 5-6 seconds.', 'Turn right after 75 meters or 13-15 seconds.', 'Turn right onto Robert Boulevard/LA 1091.', 'Turn left onto Gause Boulevard/US 190.', 'Turn right to take the I 10 West ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Willis-Moody Mansion (Galveston, TX) to Astrodome, The (Houston, TX)
+
+  Route steps:
+['Drive west on Broadway - Avenue J/TX 87.', 'Keep left to take I 45 North/Gulf Freeway.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: AURORA MED CENTER-WASHINGTON COUNTY (HARTFORD, WI) to Thorstrand (Madison, WI)
+
+  Route steps:
+['Drive west.', 'Turn left after 18 meters or 2-3 seconds.', 'Turn right after 8 meters or 1-2 seconds.', 'Turn left after 16 meters or 3-4 seconds.', 'Turn right onto East Sumner Street/WI 60/CTH K.', 'Turn left onto Grand Avenue.', 'Turn left onto Branch Street/WI 83. Continue on WI 83.', 'Take the exit on the right after 15129 meters or 656-801 seconds.', 'Turn right to stay on County Highway CW/CTH CW.', 'Turn left onto County Highway P/CTH P. Continue on CTH P.', 'Turn right onto Lisbon Road.', 'Turn left onto WI 16/WI 67. Continue on WI 67.', 'Turn left onto WI 67/Summit Avenue. Continue on WI 67.', 'Take the I 94 West ramp on the right.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 15 be performed without completing Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Dallas Tannery (Dallas, OR) to Elsinore Theater (Salem, OR)
+
+  Route steps:
+['Drive north on Southwest Levens Street.', 'Turn right onto West Ellendale Avenue.', 'Stay straight to take the OR 22 East ramp toward Salem.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, Step 3 cannot be performed without completing Step 2. The route steps provided are a sequence of actions that must be taken in order to travel from Dallas Tannery to Elsinore Theater. Step 3 involves taking the OR 22 East ramp toward Salem, which requires being on West Ellendale Avenue as per Step 2. Therefore, completing Step 2 is a prerequisite for performing Step 3.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: McClellan Airfield (SACRAMENTO, CA) to Hotel Stockton (Stockton, CA)
+
+  Route steps:
+['Drive west.', 'Turn right after 582 meters or 76-92 seconds.', 'Turn left onto Patrol Road.', 'Turn left after 732 meters or 71-87 seconds.', 'Turn left onto Patrol Road.', 'Turn right onto Ascot Avenue.', 'Turn left onto Raley Boulevard.', 'Take the I 80 West ramp on the right toward San Francisco.', 'Take exit 86 on the right onto I 5 toward Los Angeles.', 'Keep left to take I 5 South toward Los Angeles.', 'Keep left to take I 5 South/West Side Freeway.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 9 be performed without completing Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, Step 9 cannot be performed without completing Step 8. The route steps provided are a sequence of actions that must be taken in order to travel from McClellan Airfield (SACRAMento, CA) to Hotel Stockton (Stockton, CA). Step 9 is the final step in the route, and it cannot be performed until after completing Step 8. Therefore, the answer is ""No"".
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Community Building (Salisbury, NC) to Arista Cotton Mill Complex (Winston-Salem, NC)
+
+  Route steps:
+['Drive northeast on North Main Street/US 29/US 70/NC 150.', 'Turn right onto East Kerr Street.', 'Turn right onto North Arlington Street.', 'Turn left onto East Innes Street.', 'Turn left to take the ramp toward Salisbury/Downtown.', 'Turn right to take the ramp.', 'Keep right to take I 285 North/US 29 North/US 52 North/US 70 East toward Winston-Salem.', 'Keep left to stay on I 285 North/US 52 North toward Winston-Salem.', 'Take exit 105 on the right toward Clemmonsville Road.', 'Turn left onto East Clemmonsville Road.', 'Turn right onto South Main Street.', 'Turn left onto West Acadia Avenue.', 'Turn right onto South Broad Street.', 'Turn right onto Salem Avenue West.', 'Turn left onto Marshall Street South.', 'Turn right onto Wachovia Street Southwest.', 'Bear right onto Brookstown Avenue Southwest.', 'Turn right onto Factory Rw.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 12 be performed without completing Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Republic Airport (FARMINGDALE, NY) to US Post Office-Metropolitan Station (New York, NY)
+
+  Route steps:
+['Drive south on New Highway.', 'Turn right toward NY 109 West.', 'Take the SO West ramp on the right toward New York.', 'Take exit 28AS on the right onto NY 135 South toward Seaford.', 'Take exit 2W on the right onto NY 27 West toward New York.', 'Take the ramp toward Belt Parkway West/Verrazano Bridge.', 'Keep left to stay on BP/Belt Parkway.', 'Take exit 17W on the right toward North Conduit Avenue.', 'Keep right to stay on North Conduit Avenue.', 'Bear left onto Liberty Avenue.', 'Turn right onto Pennsylvania Avenue.', 'Turn left onto Atlantic Avenue.', 'Keep right to stay on Atlantic Avenue.', 'Turn right onto Alabama Avenue.', 'Bear left toward Broadway/Fulton Street.', 'Turn right onto Cooper Street.', 'Turn left onto Bushwick Avenue.', 'Bear left onto Moore Street.', 'Turn left onto Humboldt Street.', 'Turn right after 193 meters or 21-26 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Provo-Utah Lake International Airport (PROVO, UT) to Condon, David F. and Elizabeth, House (Park City, UT)
+
+  Route steps:
+['Drive west.', 'Turn right after 384 meters or 50-61 seconds.', 'Turn right onto Airport Dike Road.', 'Turn right onto Center Street.', 'Turn left onto Lakeshore Drive.', 'Enter the roundabout and take the 2nd exit onto West 620 North.', 'Turn left onto Geneva Road/UT 114.', 'Turn right onto 820 North.', 'Enter the roundabout and take the 2nd exit onto 820 North.', 'Enter the roundabout and take the 2nd exit onto 1375 West.', 'Turn right onto West 1460 North.', 'Bear left onto West Grandview Lane.', 'Turn left onto North Carterville Road.', 'Keep left to take Amhurst Road.', 'Turn left onto East 400 South.', 'Turn right onto South Palisade Drive.', 'Turn right onto UT 52/Canyon Parkway.', 'Take the US 189 exit toward Heber City/Midway.', 'Turn left onto US 40/US 189/South Main Street. Continue on US 40/US 189.', 'Take exit 4 on the right toward Park City/Kamas.', 'Turn left onto UT 248/Kearns Boulevard.', 'Turn left onto Park Avenue/UT 224. Continue on Park Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 9 be performed without completing Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: CORNERSTONE HOSPITAL LITTLE ROCK (LITTLE ROCK, AR) to Parnell Hall (Little Rock, AR)
+
+  Route steps:
+['Drive southwest.', 'Bear right onto Saint Vincent Circle.', 'Turn left onto South University Avenue.', 'Keep left to take West 10th Street.', 'Make a left U-turn onto South University Avenue.', 'Take the I 630 East ramp on the right.', 'Take exit 3A on the right onto Woodrow Street.', 'Turn left onto South Woodrow Street.', 'Turn right onto West Markham Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Ramsay, Ronald and Dorcas, House (Atchison, KS) to PROMISE HOSPITAL OF OVERLAND PARK (OVERLAND PARK, KS)
+
+  Route steps:
+['Drive northwest on Riverview Drive.', 'Bear left onto Green Street.', 'Turn right onto South 3rd Street.', 'Turn left onto Spring Garden Street.', 'Turn right after 59 meters or 5-7 seconds.', 'Turn right onto South 4th Street.', 'Turn right onto US 59/Amelia Earhart Bridge. Continue on US 59.', 'Turn right toward Weston.', 'Turn left onto 273 Highway/MO 273.', 'Turn left to stay on 273 Highway/MO 273.', 'Turn right to take the I 29 South/US 71 South ramp toward Kansas City.', 'Take exit 17 on the right onto I 435 South toward Topeka.', 'Take exit 79 on the right toward Metcalf Avenue.', 'Turn left onto Metcalf Avenue.', 'Turn right onto West 103rd Street.', 'Turn right after 430 meters or 34-42 seconds.', 'Turn right after 230 meters or 33-40 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 12 be performed without completing Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Boyden High School (Salisbury, NC) to Waldensian Presbyterian Church (Valdese, NC)
+
+  Route steps:
+['Drive east on Taylor Street.', 'Turn right onto Caldwell Road.', 'Turn right onto Lincolnton Road.', 'Turn right onto US 70 West/US 601/Jake Alexander Boulevard West. Continue on US 601/Jake Alexander Boulevard West.', 'Turn left onto US 70 West/Statesville Boulevard.', 'Bear right onto Salisbury Road.', 'Turn left onto Wall Street.', 'Turn right onto US 70/Garner Bagnal Boulevard.', 'Make a left U-turn onto US 64 East/NC 90/West Front Street.', 'Turn right to take the I 40 ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 9 be performed without completing Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 9 without completing Step 8 in the given travel planning scenario. The text provides directions for driving from Boyden High School in Salisbury, NC to Waldensian Presbyterian Church in Valdese, NC. In this case, it appears that the directions are provided in a specific order, and Step 9 is not a prerequisite for completing Step 8. Therefore, it is possible to drive onto US 70 West/Statesville Boulevard without having completed Turn right onto US 70 West/US 601/Jake Alexander Boulevard West in the given scenario.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Strand Theatre (Lakewood, NJ) to HUNTERDON MEDICAL CENTER (FLEMINGTON, NJ)
+
+  Route steps:
+['Drive west on 4th Street.', 'Turn right onto US 9/CR 547/Madison Avenue. Continue on US 9/Madison Avenue.', 'Turn left onto 14th Street/CR 14.', 'Turn right onto Ardenwood Avenue.', 'Turn left onto County Line Road/CR 526. Continue on CR 526.', 'Turn right onto Harmony Road/CR 18.', 'Turn left onto Jackson Mills Road/CR 638.', 'Take the I 195 West ramp on the right.', 'Take exit 2 on the right onto US 206 toward Arena Drive.', 'Keep right to take exit 2 onto Arena Drive/CR 620 toward Arena Drive.', 'Take the I 295 North ramp on the right toward US 1.', 'Take exit 69A on the right onto US 206 North toward Lawrenceville/Princeton.', 'Take the Franklin Corner Road exit on the right.', 'Turn left onto Franklin Corner Road/CR 546.', 'Turn right onto Pennington Road/CR 640. Continue on CR 640.', 'Turn right onto NJ 31.', 'Take the NJ 31 North/US 202 North ramp on the right toward Flemington.', 'Keep left to take NJ 31.', 'Enter the roundabout and take the 2nd exit onto NJ 31.', 'Turn left onto Wescott Drive/CR 600.', 'Bear right to stay on Wescott Drive/CR 600.', 'Turn left after 212 meters or 20-24 seconds.', 'Turn left after 64 meters or 11-13 seconds.', 'Bear right after 72 meters or 25-31 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, step 2 cannot be performed without completing step 1. The instructions provided in the benchmark suggest that each step in the route must be completed in order. Step 2 is a turn onto US 9/Madison Avenue after completing step 1 of driving west on 4th Street. Therefore, it is not possible to perform step 2 without first completing step 1.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: REGENCY HOSPITAL OF CLEVELAND EAST (WARRENSVILLE HTS, OH) to Cuyahoga County Airport (CLEVELAND, OH)
+
+  Route steps:
+['Drive northeast.', 'Turn left after 36 meters or 6-7 seconds.', 'Turn right after 5 meters or 1-2 seconds.', 'Turn left onto Interchange Parkway.', 'Turn right onto Emery Road.', 'Turn left onto Richmond Road/SR 175.', 'Take the I 271 North ramp on the right toward Erie Pa.', 'Take exit 32 on the right toward Brainard Road/Cedar Road.', 'Keep left toward Brainard Road North.', 'Turn left onto Brainard Road/CR 28.', 'Turn left onto Curtiss Wright Parkway.', 'Turn left after 1224 meters or 101-124 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: GREYSTONE PARK PSYCHIATRIC HOSPITAL (MORRIS PLAINS, NJ) to National Musical String Company (New Brunswick, NJ)
+
+  Route steps:
+['Drive southeast on Old Dover Road.', 'Turn right onto Koch Avenue.', 'Turn left onto West Hanover Avenue/CR 650.', 'Keep left to stay on CR 650.', 'Bear right onto East Hanover Avenue/CR 650.', 'Turn right onto Ridgedale Avenue.', 'Turn left to take the I 287 South ramp.', 'Keep left to stay on I 287 South/Middlesex Freeway.', 'Keep right to stay on I 287 South/Middlesex Freeway.', 'Take exit 8 on the right onto NJ 18 toward Centennial Avenue/Highland Park/Middlesex.', 'Turn left onto Centennial Avenue.', 'Turn right onto Old New Brunswick Road.', 'Take the exit on the right toward Paul Robeson Boulevard.', 'Keep right toward Paul Robeson Boulevard.', 'Continue on Paul Robeson Boulevard.', 'Turn left onto Georges Road.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Astro Theater (Omaha, NE) to Fairview (Lincoln, NE)
+
+  Route steps:
+['Drive east.', 'Turn right onto South 20th Street.', ""Turn right onto Saint Mary's Avenue."", 'Turn left onto South 29th Street.', 'Take the I 480 South/US 75 South ramp.', 'Take exit 452C on the right.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: UH GEAUGA MEDICAL CENTER (CHARDON, OH) to Lawnfield-James A. Garfield Estate (Additional Documentation and Boundary Clarification) (Mentor, OH)
+
+  Route steps:
+['Drive east.', 'Turn left after 19 meters or 6-8 seconds.', 'Turn left after 18 meters or 6-7 seconds.', 'Turn left after 67 meters or 23-28 seconds.', 'Turn left after 56 meters or 20-24 seconds.', 'Turn right onto Hospital Drive.', 'Turn right onto Ravenna Road/SR 44.', 'Turn left onto Mayfield Road/US 322.', 'Turn right onto Auburn Road.', 'Bear left onto Mentor Road/CR 5.', 'Turn left onto Little Mountain Road/C-80. Continue on Little Mountain Road.', 'Turn left onto Johnnycake Ridge Road/SR 84.', 'Turn right onto Garfield Road.', 'Turn right onto Mentor Avenue/US 20.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 13 be performed without completing Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Igor I Sikorsky Memorial Airport (BRIDGEPORT, CT) to Ames, Winslow, House (New London, CT)
+
+  Route steps:
+['Drive north on Great Meadow Road.', 'Keep right to stay on Great Meadow Road.', 'Turn right onto Lordship Boulevard/CT 113.', 'Turn right onto Access Road.', 'Turn left onto Main Street/CT 113.', 'Turn right onto Elm Street.', 'Bear right onto Ferry Boulevard/CT 130. Continue on Ferry Boulevard.', 'Take the I 95 North ramp toward New Haven.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 6 be performed without completing Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Polk Theatre and Office Building (Lakeland, FL) to Leesburg International Airport (LEESBURG, FL)
+
+  Route steps:
+['Drive north on South Florida Avenue/FL 37.', 'Turn right onto East Main Street.', 'Turn left onto North Tennessee Avenue.', 'Turn left onto East Bay Street.', 'Turn right onto North Florida Avenue.', 'Take the I 4 East ramp on the right toward Orlando.', 'Take exit 38 on the right onto FL 33 toward Polk City.', 'Turn left onto Lakeland Hills Boulevard/FL 33. Continue on FL 33.', 'Enter the roundabout and take the 2nd exit onto Commonwealth Avenue North/FL 33.', 'Turn left onto FL 50/FL 33/Broad Street.', 'Turn right onto Howey Road/FL 19. Continue on FL 19.', 'Turn right to stay on FL 19.', 'Turn left onto West Alfred Street/FL 500A.', 'Turn left onto US 441.', 'Turn left onto Echo Drive.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 12 be performed without completing Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: TIDELANDS GEORGETOWN MEMORIAL HOSPITAL (GEORGETOWN, SC) to St. Michael's Episcopal Church (Charleston, SC)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 15 meters or 2 seconds.', 'Turn right after 61 meters or 9-11 seconds.', 'Turn left after 143 meters or 23-28 seconds.', 'Turn right onto Black River Road.', 'Turn left onto Heyward Street.', 'Turn left onto North Fraser Street/US 701.', 'Keep left to take US 17.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 3 without completing Step 2. The instructions for Step 3 are to turn right after 61 meters or 9-11 seconds, while the instructions for Step 2 are to turn right after 15 meters or 2 seconds. Therefore, it is possible to start turning right at 61 meters without having completed the first step of turning right at 15 meters. However, it is important to note that the success of completing Step 3 will depend on various factors such as traffic conditions and the speed at which the driver is able to complete the maneuver.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: PARKWAY SURGICAL AND CARDIOVASCULAR HOSPITAL (FORT WORTH, TX) to Baker Hotel (Mineral Wells, TX)
+
+  Route steps:
+['Drive northeast.', 'Turn left onto North Tarrant Parkway.', 'Turn left onto North Freeway.', 'Take the I 35W South ramp.', 'Take exit 57 on the right onto I 820.', 'Keep right to take I 820 West.', 'Take exit 3A on the right onto I 30 West toward Weatherford.', 'Keep left to take I 20 West.', 'Take exit 405 on the right onto Ric Williamson Memorial Highway/Old Brock Road.', 'Turn right onto Southwest Ric Williamson Memorial Highway.', 'Turn left onto Mineral Wells Highway/US 180. Continue on US 180.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Donnell, Robert, House (Athens, AL) to Mason Building (Huntsville, AL)
+
+  Route steps:
+['Drive west.', 'Turn left after 66 meters or 9-11 seconds.', 'Turn right onto Christine Street.', 'Turn left onto Clinton Street South.', 'Bear left onto US 72/US Highway 72 East. Continue on US 72.', 'Take the AL 255 South ramp on the right.', 'Take the 565/72 exit on the right.', 'Keep left to take 565/72.', 'Keep right to take exit 19C toward Jefferson Street/Downtown.', 'Bear right onto Washington Street Northwest.', 'Turn left onto Clinton Avenue East.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, Step 3 cannot be performed without completing Step 2. The directions provided in the scenario are meant to be followed in order, and Step 3 requires completion of Step 2 before it can be executed.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Venango Regional Airport (FRANKLIN, PA) to GROVE CITY MEDICAL CENTER (GROVE CITY, PA)
+
+  Route steps:
+['Drive east.', 'Bear left onto Airport Road.', 'Turn right onto PA 8 South/15th Street. Continue on PA 8 South.', 'Turn right to take the I 80 ramp.', 'Take exit 24 on the right onto PA 173 toward Grove City/Sandy Lake.', 'Turn left onto Sandy Lake Road/PA 173. Continue on PA 173.', 'Turn right after 3753 meters or 185-226 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Hopkins, Gov. Stephen, House (Providence, RI) to Palmer-Northrup House (North Kingstown, RI)
+
+  Route steps:
+['Drive southwest on Hopkins Street.', 'Turn right onto South Main Street/US 44.', 'Turn left onto College Street.', 'Turn right onto Memorial Boulevard.', 'Keep left to take US 6/RI 10 South/6/10 Connector.', 'Take the RI 10 South exit toward I 95.', 'Keep left to stay on RI 10 South/Huntington Expressway.', 'Keep right to take exit 1C-B onto I 95 toward Warwick.', 'Keep right to take exit 1C onto I 95 South toward Warwick.', 'Keep left to take exit 24B onto RI 4 South toward North Kingstown.', 'Take exit 7B-A on the right onto RI 403/RI 402 toward Quonset.', 'Keep right to take exit 7B onto RI 403 East toward Quonset.', 'Keep right to take exit 3 onto US 1 toward Post Road.', 'Keep right to take exit 3A onto US 1 toward Post Road.', 'Turn right onto Post Road/US 1.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: ST VINCENT'S MEDICAL CENTER (BRIDGEPORT, CT) to Unitarian-Universalist Church (Stamford, CT)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 77 meters or 13-15 seconds.', 'Turn left onto Hunting Street.', 'Turn right onto Main Street.', 'Turn left onto Westfield Avenue.', 'Turn right onto Park Avenue.', 'Turn left onto Jackman Avenue.', 'Turn right onto Stratfield Road/CT 59.', 'Turn left onto Fairfield Woods Road.', 'Turn right onto Black Rock Turnpike/CT 58.', 'Turn left to take the CT 15 South ramp toward New York City.', 'Take exit 13 on the right onto CT 106 toward Old Stamford Road.', 'Turn right onto Old Stamford Road/CT 106. Continue on CT 106.', 'Bear right onto Woodway Road.', 'Turn left onto Hope Street.', 'Turn right onto Rock Spring Road.', 'Turn left onto Strawberry Hill Avenue.', 'Bear left onto Grove Street.', 'Turn right onto Forest Street.', 'Turn right after 259 meters or 28-34 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 14 be performed without completing Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, Step 14 cannot be performed without completing Step 13. The directions provided in the travel planning scenario are sequential and dependent on each other, as evidenced by the reference to ""Step 13"" in the instruction for Step 14. Completing Step 13 is a prerequisite for safely and legally arriving at Unitarian-Universalist Church (Stamford, CT) from ST VINCENT'S MEDICAL CENTER (BRIDGEPORT, CT).
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Stehli Silk Mill (Lancaster, PA) to Princeton Club (Philadelphia, PA)
+
+  Route steps:
+['Drive northeast on Martha Avenue.', 'Turn left onto Fountain Avenue.', 'Bear left onto Pleasure Road.', 'Bear right onto Esbenshade Road.', 'Turn left onto Butler Avenue.', 'Turn right to stay on Butler Avenue.', 'Turn right onto US 222/PA 272/Oregon Pike.', 'Take the US 30 ramp on the right.', 'Take the US 222 North exit on the right toward Reading.', 'Take the I 76/PATP exit on the right toward Denver/PA Turnpike.', 'Turn right to take the I 76/PATP ramp.', 'Keep left to take I 76/PATP.', 'Keep right to take I 76 Toll East toward Philadelphia.', 'Take exit 326 on the right onto I 76 East toward US 202/I 476/Valley Forge/Philadelphia.', 'Keep left to stay on I 76 East/Schuylkill Expressway.', 'Keep left to stay on I 76 East/Schuylkill Expressway.', 'Take exit 340B on the right onto US 1 North toward Roosevelt Boulevard/Northeast Philadelphia.', 'Keep right to take I 76 East toward Central Philadelphia.', 'Keep left to take I 676 East/US 30/Vine Street Expressway toward Central Philadelphia.', 'Take the exit on the right toward 23rd Street.', 'Bear right onto North 23rd Street.', 'Turn left onto Market Street/PA 3 East.', 'Turn right onto South 21st Street.', 'Turn left onto Chestnut Street.', 'Turn right onto South 17th Street.', 'Turn left onto Locust Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 13 be performed without completing Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to complete Step 13 without completing Step 12 in the given travel planning scenario. The route steps provided do not indicate a direct connection between Step 12 and Step 13, so it is feasible to complete Step 13 before completing Step 12. However, it is important to note that the actual travel plan may have specific requirements or restrictions that would impact the sequence of steps.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Vallee Family House (Westbrook, ME) to Woodman Building (Portland, ME)
+
+  Route steps:
+['Drive north on Monroe Avenue.', 'Turn right onto Stroudwater Street.', 'Bear left onto Congress Street/ME 9/ME 22. Continue on Congress Street.', 'Turn right onto State Street/ME 77.', 'Turn left onto Spring Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Jonesboro Municipal Airport (JONESBORO, AR) to Woodruff County Courthouse (Augusta, AR)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 120 meters or 16-19 seconds.', 'Turn left onto Airport Road/AR 351.', 'Turn right onto East Nettleton Avenue.', 'Turn left onto South Main Street.', 'Turn left to take the ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 6 be performed without completing Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Groton New London Airport (GROTON, CT) to Quinnipiac Brewery (New Haven, CT)
+
+  Route steps:
+['Drive northeast.', 'Turn left onto Tower Avenue.', 'Bear right onto High Rock Road.', 'Turn left onto Poquonnock Road.', 'Turn right onto Mitchell Street.', 'Stay straight to take the I 95 South ramp.', 'Take exit 51 on the right onto US 1 toward Frontage Road/Lighthouse Point.', 'Turn right onto Townsend Avenue.', 'Bear right onto Farren Avenue.', 'Turn left onto East Ferry Street.', 'Turn left onto River Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, Step 3 can be performed without completing Step 2.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Old Spanish Monastery (North Miami Beach, FL) to MIAMI VA HEALTHCARE SYSTEM (MIAMI, FL)
+
+  Route steps:
+['Drive northwest.', 'Turn left onto West Dixie Highway.', 'Turn left onto Northeast 22nd Avenue.', 'Turn right onto Northeast 159th Street.', 'Turn left onto North Miami Avenue.', 'Turn right onto South Biscayne River Drive.', 'Turn left onto Northwest 151st Street.', 'Turn left to take the I 95 South ramp toward Miami.', 'Take exit 6A on the right toward Northwest 62nd Street/Dr Martin Luther King Jr Boulevard.', 'Turn right onto Northwest 62nd Street.', 'Turn left onto Northwest 10th Avenue.', 'Turn right onto Northwest 20th Street.', 'Turn left onto Northwest 12th Avenue/FL 933.', 'Turn right onto Northwest 16th Street.', 'Turn right after 92 meters or 11-13 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 14 be performed without completing Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Presley, Elvis, House (Memphis, TN) to Millington-Memphis Airport (MILLINGTON, TN)
+
+  Route steps:
+['Drive north on Audubon Drive.', 'Turn right onto Park Avenue.', 'Turn left onto South Perkins Road.', 'Keep left to stay on South Perkins Road.', 'Bear left onto Perkins Extended.', 'Turn right onto Summer Avenue/US 64/US 70/US 79.', 'Turn left onto Stratford Road.', 'Turn left to take the ramp toward Millington.', 'Take the Raleigh-Millington Road exit on the right.', 'Keep right to take Raleigh-Millington Road toward Raleigh-Millington Road North.', 'Turn right after 4039 meters or 208-254 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Giddings-Burnham House (Ipswich, MA) to Tufts, Peter, House (Medford, MA)
+
+  Route steps:
+['Drive northwest on Argilla Road.', 'Turn right onto County Road/MA 1A/MA 133.', 'Bear left onto South Main Street/MA 1A/MA 133.', 'Turn left onto Market Street.', 'Bear left onto Topsfield Road.', 'Turn left onto Boston Street/US 1. Continue on US 1.', 'Take the I 95 South ramp toward Boston.', 'Keep right to take exit 66 onto US 1 toward Boston.', 'Bear right toward Lynn Fells Parkway/Melrose/Stoneham.', 'Turn left onto Lincoln Street.', 'Turn right onto Upham Street.', 'Turn left onto Main Street.', 'Turn right onto Clifton Street.', 'Turn left onto Hawthorne Street.', 'Turn right onto Maple Street.', 'Turn left onto Highland Avenue.', 'Turn right onto Elm Street.', 'Turn left onto Spring Street.', 'Turn left onto Riverside Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Hambley-Wallace House (Salisbury, NC) to DAVIS REGIONAL MEDICAL CENTER (STATESVILLE, NC)
+
+  Route steps:
+['Drive southwest on South Fulton Street.', 'Bear right onto Lincolnton Road.', 'Turn right onto US 70 West/US 601/Jake Alexander Boulevard West. Continue on US 601/Jake Alexander Boulevard West.', 'Turn left onto US 70 West/Statesville Boulevard. Continue on US 70 West.', 'Turn right onto Salisbury Highway.', 'Turn left onto Bell Farm Road.', 'Turn left onto Mocksville Highway/US 64. Continue on Mocksville Highway.', 'Turn right onto Old Mocksville Road.', 'Turn right after 750 meters or 42-52 seconds.', 'Turn left after 281 meters or 43-53 seconds.', 'Turn left after 107 meters or 25-31 seconds.', 'Turn left after 22 meters or 5-6 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 12 be performed without completing Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Reedy Chapel-AME Church (Galveston, TX) to WEST OAKS HOSPITAL. (HOUSTON, TX)
+
+  Route steps:
+['Drive east on Broadway - Avenue J/TX 87.', 'Make a left U-turn to stay on Broadway - Avenue J/TX 87.', 'Keep left to take I 45 North/Gulf Freeway.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Humphreys, Sir John, House (Swampscott, MA) to Read, Cheney, House (Cambridge, MA)
+
+  Route steps:
+['Drive southwest on MA 1A/Paradise Road. Continue on MA 1A.', 'Turn left onto MA 129/Eastern Avenue. Continue on Eastern Avenue.', 'Turn right onto Lynn Shore Drive.', 'Enter Nahant Circle and take the 2nd exit onto Lynnway/Carroll Parkway.', 'Enter Butler Circle and take the 2nd exit onto MA 1A/Veterans of Foreign Wars Parkway.', 'Enter Mahoney Circle/Timothy J. Mahoney Memorial Circle and take the 3rd exit onto MA 1A.', 'Keep right to take MA 16.', 'Take the US 1 South ramp toward Boston.', 'Take the I 93 North exit on the right toward Somerville/Charlestown.', 'Turn left onto New Rutherford Avenue/MA 99.', 'Take the Austin Street exit on the right toward Charlstown.', 'Keep right to take Austin Street toward Charlstown.', 'Turn left onto Austin Street.', ""Turn right onto MA 28/Monsignor O'Brien Highway."", 'Turn left onto Cambridge Street.', 'Turn right to stay on Cambridge Street.', 'Turn left onto Prospect Street.', 'Turn right onto Broadway.', 'Turn left onto Inman Street.', 'Turn left onto Massachusetts Avenue/MA 2A.', 'Turn right onto Pleasant Street.', 'Turn right onto Western Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 10 without having completed Step 9 in the given travel planning scenario. The route steps provided do not necessarily follow a strict sequence, and it is possible for some steps to be performed before others. Therefore, it is not always necessary to complete all the previous steps before performing a certain step.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Queen Anne Cottage and Coach Barn (Arcadia, CA) to FOOTHILL PRESBYTERIAN HOSPITAL-JOHNSTON MEMORIAL (GLENDORA, CA)
+
+  Route steps:
+['Drive southwest on North Baldwin Avenue.', 'Make a left U-turn to stay on North Baldwin Avenue.', 'Turn right to take the Foothill Freeway ramp toward San Bernardino.', 'Take exit 42 on the right toward Grand Avenue.', 'Keep right toward Grand Avenue South.', 'Bear right onto South Grand Avenue.', 'Make a left U-turn to stay on South Grand Avenue.', 'Turn right onto West Ada Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: MCKAY-DEE HOSPITAL CENTER (OGDEN, UT) to LOGAN REGIONAL HOSPITAL (LOGAN, UT)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 137 meters or 39-47 seconds.', 'Turn left onto Eccles Avenue.', 'Turn right onto Jackson Avenue.', 'Turn left onto Bel Mar Drive.', 'Turn left to stay on Bel Mar Drive.', 'Turn right onto Quincy Avenue.', 'Turn left onto 30th Street/UT 79.', 'Keep left to stay on UT 79.', 'Take the I 15 North ramp on the right toward Brigham City.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Dunbar Hospital (Detroit, MI) to Durant-Dort Carriage Company Office (Flint, MI)
+
+  Route steps:
+['Drive southwest on Frederick Street.', 'Turn right onto Chene Street.', 'Turn left onto East Ferry Avenue.', 'Turn right onto Russell Street.', 'Take the I 75 North ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, you can perform Step 4 (Take the I 75 North ramp) without completing Step 3 (Turn left onto East Ferry Avenue). The route steps provided in the scenario suggest that the driver needs to follow a specific sequence of actions to reach their destination, and performing Step 4 without completing Step 3 would disrupt this sequence.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Ford Motor Plant (Louisville, KY) to Jefferson County Courthouse (Louisville, KY)
+
+  Route steps:
+['Drive north on Southwestern Parkway.', 'Turn right onto West Broadway.', 'Turn left onto Louis Coleman Jr Drive.', 'Turn right onto River Park Drive.', 'Turn left onto Roy Wilkins Avenue.', 'Turn right onto West Liberty Street.', 'Turn left onto South 5th Street.', 'Turn left onto West Jefferson Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Old Baptist Parsonage (Scotch Plains, NJ) to Monastery and Church of Saint Michael the Archangel (Union, NJ)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto Park Avenue/CR 655.', 'Turn left onto New Providence Road.', 'Bear right onto New Providence Road/CR 655. Continue on CR 655.', 'Turn right to take the I 78 East ramp toward Newark.', 'Keep left to stay on Phillipsburg-Newark Expressway.', 'Take exit 58A-B on the right onto NJTP/I 95/US 1-9/NJ 21 toward Port Newark.', 'Take exit 58B on the right onto US 1-9 North toward Frontage Road.', 'Keep left to take US 1-9 North.', 'Keep left to take US 1-9 North toward Pulaski Skyway/New York City.', 'Keep right to stay on US 1/US 9 toward NJ 495/Jersey City/Lincoln Tunnel.', 'Continue on US 1/US 9.', 'Turn right onto Manhattan Avenue.', 'Turn left onto John F. Kennedy Boulevard/CR 501.', 'Turn right onto 5th Street/CR 678.', 'Turn left onto Summit Avenue/CR 617.', 'Turn right onto 18th Street.', 'Turn left onto West Street.', 'Turn left after 96 meters or 10-12 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 19 be performed without completing Step 18?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: VA MEDICAL CENTER - PROVIDENCE (PROVIDENCE, RI) to Wanton-Lyman-Hazard House (Newport, RI)
+
+  Route steps:
+['Drive north.', 'Turn left onto Armed Forces Boulevard.', 'Turn right onto Chalkstone Avenue.', 'Turn right onto Raymond Street.', 'Take the ramp on the right toward US 6 West/RI 10 South.', 'Take the RI 10 South exit toward I 95.', 'Keep left to stay on RI 10 South/Huntington Expressway.', 'Keep right to take exit 1C-B onto I 95 toward Warwick.', 'Keep right to take exit 1C onto I 95 South toward Warwick.', 'Keep left to take exit 24B onto RI 4 South toward North Kingstown.', 'Take the RI 138 East ramp on the right toward Jamestown/Newport.', 'Turn left onto JT Connell Connector/RI 138A.', 'Turn left onto JT Connell Highway.', 'Turn left onto Farewell Street.', 'Bear right onto Thames Street.', 'Turn left onto Marlborough Street.', 'Turn right onto Broadway.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 13 be performed without completing Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Eliot Hall at Radcliffe College (Cambridge, MA) to Gedney and Cox Houses (Salem, MA)
+
+  Route steps:
+['Drive southwest on Shepard Street.', 'Turn left onto Garden Street.', 'Turn left onto Peabody Street/MA 2A.', 'Keep right to take Cambridge Street.', 'Keep right to take Broadway.', 'Turn left onto Prospect Street.', 'Turn right onto Cambridge Street.', 'Turn left onto Third Street.', ""Turn right onto MA 28/Monsignor O'Brien Highway."", 'Turn left onto Charlestown Avenue.', 'Take the New Rutherford Avenue exit on the right.', 'Turn right to take the US 1 North ramp toward Tobin Bridge.', 'Take the MA 16 East exit on the right toward MA 1A/Revere Beach/Lynn.', 'Take the exit on the right after 728 meters or 32-39 seconds.', 'Continue.', 'Stay straight to take the MA 16 ramp.', 'Enter Mahoney Circle/Timothy J. Mahoney Memorial Circle and take the 2nd exit onto MA 1A/Veterans of Foreign Wars Parkway.', 'Enter Butler Circle and take the 2nd exit onto MA 1A/North Shore Road.', 'Enter Nahant Circle and take the 2nd exit onto Lynn Shore Drive.', 'Turn left onto Eastern Avenue.', 'Turn right onto MA 1A/New Ocean Street. Continue on MA 1A.', 'Bear right onto MA 1A/Loring Avenue.', 'Turn left onto MA 1A/MA 114/Lafayette Street.', 'Bear left onto MA 114/Washington Street. Continue on Washington Street.', 'Turn right onto MA 114 West/Washington Street.', 'Turn left onto Norman Street/MA 114 West.', 'Make a left U-turn onto Norman Street/MA 114 East.', 'Turn right onto Margin Street.', 'Turn right onto High Street.', 'Turn left after 122 meters or 15-18 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 20 be performed without completing Step 19?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: FLORENCE HOSPITAL AT ANTHEM (FLORENCE, AZ) to ARIZONA STATE FORENSIC HOSPITAL (PHOENIX, AZ)
+
+  Route steps:
+['Drive west.', 'Turn left after 124 meters or 27-33 seconds.', 'Turn left onto North Hunt Highway.', 'Bear right onto West Hunt Highway.', 'Turn right onto North Attaway Road.', 'Turn right onto Florence-Coolidge Highway/AZ 287.', 'Turn left onto AZ 387.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: FRANCISCAN ST JAMES HEALTH (OLYMPIA FIELDS, IL) to Adams, Mary W., House (Highland Park, IL)
+
+  Route steps:
+['Drive north.', 'Turn right after 33 meters or 4-5 seconds.', 'Turn left after 98 meters or 15-18 seconds.', 'Turn right onto Crawford Avenue.', 'Turn left onto Vollmer Road/CH B66.', 'Take the I 57 North ramp on the right toward Chicago.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 6 be performed without completing Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Noyes, J.A., House (Cambridge, MA) to Suffolk County Jail (Boston, MA)
+
+  Route steps:
+['Drive east on Highland Street.', 'Turn right onto Sparks Street.', 'Turn left onto Brattle Street.', 'Turn right onto Hawthorn Street.', 'Stay straight to take the ramp.', 'Turn left onto US 3/MA 2/Memorial Drive. Continue on US 3/Memorial Drive.', 'Bear left onto MA 3/Memorial Drive. Continue on MA 3.', 'Turn left onto MA 3/Charles Street.', 'Turn right after 114 meters or 10-12 seconds.', 'Bear right after 21 meters or 10-12 seconds.', 'Turn left after 16 meters or 3-4 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 7 be performed without completing Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: VIBRA HOSPITAL OF WESTERN MASS CENTRAL CAMPUS (LEICESTER, MA) to Arden (Andover, MA)
+
+  Route steps:
+['Drive west.', 'Turn right onto Huntoon Memorial Highway/MA 56.', 'Turn right after 201 meters or 17-20 seconds.', 'Turn left onto Huntoon Memorial Highway/MA 56.', 'Turn left onto Stafford Street.', 'Bear right onto Main Street.', 'Turn right onto MA 9/Lincoln Square.', 'Turn left onto MA 70/Lincoln Street.', 'Turn right to take the I 290 ramp toward Marlboro.', 'Take exit 32B onto I 495 North toward Lowell.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: New Opera House (Auburn, NE) to Lincoln Airport (LINCOLN, NE)
+
+  Route steps:
+['Drive west on Central Avenue/US 136.', 'Turn right onto US 75/J Street. Continue on US 75.', 'Take the exit.', 'Keep left to take US 77.', 'Keep right to take I 80 East/US 77 North toward Omaha/Lincoln Airport.', 'Take exit 399 on the right onto West Cornhusker Highway toward Lincoln Municipal Airport.', 'Keep left to take West Cornhusker Highway toward Lincoln Municipal Airport.', 'Turn right onto Northwest 12th Street.', 'Turn left onto West Adams Street.', 'Keep right at the fork.', 'Turn left after 139 meters or 45-55 seconds.', 'Turn right onto West Adams Street.', 'Turn right after 186 meters or 20-24 seconds.', 'Turn left after 26 meters or 13-16 seconds.', 'Turn right onto West Adams Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Temple Beth Israel (Portland, OR) to St. James Lutheran Church (Portland, OR)
+
+  Route steps:
+['Drive south.', 'Turn left onto Northwest Flanders Street.', 'Turn right onto Northwest 19th Avenue.', 'Turn left onto Northwest Couch Street.', 'Turn right onto Northwest 17th Avenue.', 'Turn left onto West Burnside Street.', 'Bear right onto Southwest Washington Street.', 'Turn right onto Southwest 15th Avenue.', 'Turn left onto Southwest Yamhill Street.', 'Turn right onto Southwest 13th Avenue.', 'Turn left onto Southwest Salmon Street.', 'Turn right onto Southwest Park Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, you can perform Step 10 without completing Step 9.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: CAVHCS EAST CAMPUS (MONTGOMERY, AL) to GEORGIANA MEDICAL CENTER (GEORGIANA, AL)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 25 meters or 3-4 seconds.', 'Turn right after 29 meters or 5-7 seconds.', 'Turn right onto Ryan Road.', 'Bear left after 741 meters or 97-119 seconds.', 'Turn right onto Chantilly Parkway/AL 110.', 'Turn left to take the I-85 South/US 80 West ramp toward Montgomery.', 'Keep left to take I 85 South toward Mobile.', 'Keep left to take I-65 South toward Mobile.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: HEALTHSOUTH REHABILITATION HOSPITAL OF FORTH WORTH (FORT WORTH, TX) to HEALTHSOUTH REHABILITATION HOSPITAL OF ARLINGTON (ARLINGTON, TX)
+
+  Route steps:
+['Drive south on Collier Street.', 'Turn right onto West Lancaster Avenue.', 'Turn left onto Summit Avenue.', 'Turn left to take the I 30 East ramp.', 'Keep left to take I 30 East.', 'Take exit 15B on the right onto US 287 South toward East Lancaster Avenue.', 'Keep left to stay on US 287 toward East Lancaster Avenue.', 'Keep left to stay on US 287.', 'Keep left to take exit 34A onto I 20 East toward Waxahachie/Dallas.', 'Keep left to stay on I 20 East/Ronald Reagan Memorial Highway toward Dallas.', 'Take exit 450 on the right toward Matlock Road.', 'Turn left onto Matlock Road.', 'Make a left U-turn to stay on Matlock Road.', 'Turn right after 120 meters or 12-15 seconds.', 'Turn right after 226 meters or 42-51 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, you can perform Step 10 without completing Step 9. The instructions for Step 10 indicate that you need to make a left U-turn to stay on Matlock Road, which can be done without having completed Step 9.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Oak Ridge Apartments (Evanston, IL) to Loeb, Ernest, House (Highland Park, IL)
+
+  Route steps:
+['Drive south on Ridge Avenue.', 'Make a left U-turn to stay on Ridge Avenue.', 'Keep left to take Green Bay Road.', 'Turn left onto Central Street.', 'Turn right onto Crawford Avenue.', 'Turn left onto Illinois Road.', 'Turn right to take the I 94 West ramp.', 'Keep left to take US 41/Skokie Highway.', 'Take the exit on the right toward Central Avenue East.', 'Bear right onto Deerfield Road.', 'Bear right to stay on Deerfield Road.', 'Turn right onto St Johns Avenue.', 'Bear left onto Sheridan Road.', 'Turn left onto Waverly Road.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 14 be performed without completing Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Buena Vista House (East Troy, WI) to AURORA ST LUKES MED CTR SOUTH SHORE (CUDAHY, WI)
+
+  Route steps:
+['Drive south on Church Street/CTH G.', 'Turn right onto Union Street.', 'Turn right onto Division Street.', 'Turn right onto North Street/WI 20.', 'Turn left to take the I 43 North ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: NORTHEAST REHABILITATION HOSPITAL (MANCHESTER, NH) to South Parish (Portsmouth, NH)
+
+  Route steps:
+['Drive east.', 'Turn right onto Auburn Street.', 'Turn left onto Tarrytown Road.', 'Turn right onto Lake Avenue.', 'Turn right onto Hanover Street.', 'Turn left to take the NH 101 East ramp toward I 93 North.', 'Take exit 12 on the right onto I 95 toward Portsmouth.', 'Keep left to take I 95 North toward Portsmouth.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: SWEDISHAMERICAN MEDICAL CENTER BELVIDERE (BELVIDERE, IL) to HIGHLAND PARK HOSPITAL (HIGHLAND PARK, IL)
+
+  Route steps:
+['Drive south.', 'Turn right onto South State Street.', 'Turn left onto U.S. Grant Memorial Highway (US 20)/US 20.', 'Bear left after 1238 meters or 58-71 seconds.', 'Turn left onto Belvidere Road/US 20 Business.', 'Turn right after 399 meters or 23-28 seconds.', 'Turn left onto Belvidere Road/US 20 Business.', 'Turn left to take the I 90 ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 7 be performed without completing Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Berdahl-Rolvaag House (Sioux Falls, SD) to Taylor, J.W., House (Canton, SD)
+
+  Route steps:
+['Drive east.', 'Turn left onto South Prairie Avenue.', 'Turn right onto West 33rd Street.', 'Turn right onto South Summit Avenue.', 'Turn left onto West 37th Street.', 'Turn right onto South Minnesota Avenue/I 229 Business/SD 115. Continue on South Minnesota Avenue.', 'Turn left onto 271st Street/CR 106.', 'Turn right onto SD 11/SD Highway 11.', 'Turn left onto US Highway 18/US 18 East/SD 11 South.', 'Turn left onto North Broadway Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 4 without completing Step 3 in the given travel planning scenario. The route steps provided do not necessarily need to be completed in order, and it is possible to continue on South Minnesota Avenue/I 229 Business/SD 115 after turning left onto 271st Street/CR 106, without having to turn right onto SD 11/SD Highway 11 first.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: SAINT MARYS REGIONAL MEDICAL CENTER (LEWISTON, ME) to Augusta State Airport (AUGUSTA, ME)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 93 meters or 12-15 seconds.', 'Turn left onto Sabattus Street/ME 126.', 'Turn right onto East Avenue.', 'Turn left onto ME 196/Lisbon Street.', 'Take the exit on the right after 1585 meters or 68-83 seconds.', 'Bear right onto Alfred A Plourde Parkway.', 'Turn left to take the I 95 North ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to complete the route without completing all of the steps. For example, you could start by driving southwest and turning right after 93 meters, then turn left onto Sabattus Street/ME 126. From there, you could continue on East Avenue and Lisbon Street before taking the exit on the right after 1585 meters or continuing on to complete the remaining steps of the route.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: St. Paul's Episcopal Church (Yuma, AZ) to Pauley Apartments (Yuma, AZ)
+
+  Route steps:
+['Drive north on 2nd Avenue.', 'Turn right onto C Street.', 'Turn left onto 4th Avenue.', 'Turn right onto Juan Sanchez Boulevard.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Hotel Lafayette (Buffalo, NY) to US Post Office-Akron (Akron, NY)
+
+  Route steps:
+['Drive east on Clinton Street.', 'Turn left onto Elm Street.', 'Turn right onto Broadway.', 'Turn left onto Michigan Avenue.', 'Turn right onto Cherry Street.', 'Take the NY 33 East ramp.', 'Take the I 90 East exit on the right toward I 290/Niagara Falls/Albany.', 'Keep left to stay on I 90 East/New York State Thruway/Governor Thomas E. Dewey Thruway.', 'Take exit 49 on the right onto NY 78 toward Depew/Lockport.', 'Turn left onto NY 78/Transit Road.', 'Turn right onto Main Street/NY 5. Continue on NY 5.', 'Turn left onto Buell Street/NY 93. Continue on NY 93.', 'Turn right onto Main Street/NY 93. Continue on Main Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 14 be performed without completing Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, Step 14 cannot be performed without completing Step 13 in the given travel planning scenario. The instructions provided in the steps do not allow for detours or alternative routes, so it is necessary to complete Step 13 before being able to proceed with Step 14.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Chicago Executive Airport (CHICAGO/PROSPECT HEIGHTS/WHEELING, IL) to Jewelers' Building (Chicago, IL)
+
+  Route steps:
+['Drive north.', 'Turn right onto Tower Drive.', 'Turn right onto South Milwaukee Avenue/US 45/IL 21. Continue on US 45/IL 21.', 'Turn left to take the ramp toward Illinois Tollway.', 'Turn right to take the I 294 Toll South ramp toward Indiana.', 'Take exit 40B on the right.', 'Keep left to take I 90 East/Kennedy Expressway toward Chicago.', 'Take the Jane Addams Memorial Tollway exit.', 'Take exit 44A on the right onto IL 19 toward Irving Park Road/Keeler Avenue.', 'Take the I 94 East ramp on the right.', 'Take exit 51D on the right onto Madison Street (0 North/South) toward Madison Street.', 'Turn left onto West Madison Street.', 'Turn right to take the I 94 East ramp.', 'Keep left to take I 90/I 94 East/Dan Ryan Expressway (Express).', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, you cannot perform Step 10 without completing Step 9 first. The directions provided in the travel planning scenario are intended to be followed in order, and Step 10 cannot be performed until after completing Step 9.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Merrick-Simmons House (Fernandina Beach, FL) to O'Reilly House (St. Augustine, FL)
+
+  Route steps:
+['Drive north on South 10th Street.', 'Turn left onto Ash Street.', 'Turn left onto South 8th Street/FL A1A/FL 200. Continue on FL A1A/FL 200.', 'Bear left to stay on FL A1A/FL 200.', 'Take the I 95 South ramp toward Jacksonville.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 5 of the travel route without completing Step 4. The text does not specify that Step 4 needs to be completed before Step 5 can be performed. It only mentions that Step 5 is a continuation of Step 4 on FL A1A/FL 200. Therefore, it is valid for Step 5 to be performed without completing Step 4 in this scenario.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Wheeler, James E., House (Portland, OR) to WEST VALLEY HOSPITAL (DALLAS, OR)
+
+  Route steps:
+['Drive north on Southwest 16th Avenue.', 'Turn left onto Southwest 14th Avenue.', 'Turn right onto Southwest Montgomery Street.', 'Turn right to take the I 405 South ramp toward I 5/I 84 East.', 'Keep left to stay on I 405 South toward Salem.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: MONTGOMERY COUNTY EMERGENCY SERVICE (NORRISTOWN, PA) to Robeson, Paul, House (Philadelphia, PA)
+
+  Route steps:
+['Drive southwest on Beech Drive.', 'Turn left onto Sterigere Street.', 'Bear right onto Harding Boulevard.', 'Turn right onto US 202/Markley Street.', 'Take the exit on the right after 2858 meters or 139-170 seconds.', 'Turn right onto Crooked Lane.', 'Turn left to stay on Crooked Lane.', 'Turn left to stay on Crooked Lane.', 'Bear left onto South Gulph Road.', 'Turn right onto Anderson Avenue.', 'Turn left onto Station Road.', 'Turn right to stay on Station Road.', 'Turn left onto US 30/East Lancaster Avenue. Continue on US 30.', 'Turn right onto North 59th Street.', 'Turn left onto Lansdowne Avenue.', 'Turn right onto North 57th Street.', 'Turn left onto Chestnut Street/PA 3 East.', 'Turn right onto South 50th Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 14 be performed without completing Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, the step can be performed without completing the previous step. The instruction provided in Step 14 indicates that you need to turn left onto Chestnut Street/PA 3 East, which is a separate direction from the previous steps. Therefore, you do not have to complete Step 13 before starting Step 14.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Marshall, Gen. George C., House (Leesburg, VA) to Quantico Marine Corps Airfield / Turner Field (QUANTICO, VA)
+
+  Route steps:
+['Drive west on Edwards Ferry Road/SR 773. Continue on SR 773.', 'Turn left onto US 15 South/Leesburg Bypass.', 'Take the VA 267 Toll East exit on the right toward Dulles Airport/Washington.', 'Keep left to take VA 267/Dulles Toll Road.', 'Take exit 18A on the right onto I 495 South toward Richmond.', 'Keep left to take I 495 South toward E-ZPass Express.', 'Take exit 57A on the right onto I 95 South toward Richmond.', 'Keep left to take I 95 South toward Richmond.', 'Keep left to take I 95 South toward Richmond.', 'Take the exit toward E-ZPass Express.', 'Keep left to take I 95/95 Express Lanes.', 'Take the VA 234 exit on the right toward Dumfries/Manassas.', 'Take exit 148 on the right toward Marine Corps Base Quantico.', 'Turn left onto Russell Road.', 'Keep right to stay on Russell Road.', 'Enter Dunlap Circle and take the 2nd exit onto Dunlap Road.', 'Bear right onto Thomas Street.', 'Bear right onto Bauer Road.', 'Bear left onto Cunningham Road.', 'Turn left after 1068 meters or 88-108 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 11 be performed without completing Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 11 without completing Step 10. However, it would depend on the specific conditions and requirements of the travel route. In some cases, it may be necessary to complete certain steps in a particular order or follow specific instructions to ensure that the traveler arrives at their destination safely and efficiently.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Hall of Waters (Excelsior Springs, MO) to Jones, Lewis, House (Independence, MO)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 53 meters or 7-8 seconds.', 'Turn left after 109 meters or 15-19 seconds.', 'Turn left onto East Broadway Street.', 'Turn left onto North Kansas City Avenue.', 'Turn right onto Saint Louis Avenue/MO 10.', 'Turn left onto MO JJ.', 'Turn right onto MO 210.', 'Turn left to take the MO 291 South ramp toward Independence.', 'Turn right onto North Courtney Road.', 'Turn right onto East Kentucky Road.', 'Turn left onto North Liberty Street.', 'Turn left onto West Elizabeth Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 5 without completing Step 4 in the given travel planning scenario. The route steps provided do not specify any dependencies between the steps, so it is possible to take certain steps in any order as long as all the required conditions are met. Therefore, it is possible to turn left onto East Broadway Street after turning right onto Saint Louis Avenue/MO 10 without having completed Step 4.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Pony Express Stables (St. Joseph, MO) to TRUMAN MEDICAL CENTER - HOSPITAL HILL (KANSAS CITY, MO)
+
+  Route steps:
+['Drive west.', 'Turn left onto South 9th Street/I 29 Business.', 'Turn right to take the US 36 West ramp.', 'Take the I 229 South ramp toward Kansas City.', 'Keep right to take I 29 South/US 71 South toward Kansas City.', 'Keep left to stay on I 29 South/US 71 South toward Kansas City.', 'Take exit 2B on the right onto US 169 South toward Kansas City Downtown.', 'Keep left to stay on US 169 South toward I 35 North.', 'Bear left toward Broadway Boulevard/I 35 North.', 'Turn left onto West 6th Street.', 'Turn right onto South Main Street.', 'Turn left onto Truman Road South Drive.', 'Turn right onto Grand Boulevard.', 'Turn left onto East 18th Street.', 'Turn right onto Oak Street.', 'Turn left onto East 25th Street.', 'Turn left onto Holmes Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 12 be performed without completing Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Sanborn Seminary (Kingston, NH) to St. John's Church (Portsmouth, NH)
+
+  Route steps:
+['Drive south.', 'Turn right onto Main Street.', 'Turn left onto Depot Road.', 'Turn left onto Scotland Road.', 'Turn left to take the I 95 North ramp toward Hampton/Portsmouth.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Alsop, Carroll, House (Oskaloosa, IA) to Lamberson, Jack, House (Oskaloosa, IA)
+
+  Route steps:
+['Drive west on A Avenue East/IA 92.', 'Turn right onto North 11th Street.', 'Turn right onto C Avenue East.', 'Turn left onto North Park Avenue.', 'Keep left to stay on North Park Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 6 be performed without completing Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, Step 6 can be performed without completing Step 5. The directions provided in Step 6 do not rely on the completion of Step 5, as it does not explicitly state that the previous steps need to be completed beforehand. Therefore, it is possible to follow the route and arrive at the destination without having completed all the previous steps.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: CALDWELL MEMORIAL HOSPITAL (LENOIR, NC) to Boyden High School (Salisbury, NC)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 51 meters or 7-8 seconds.', 'Turn right after 19 meters or 7-9 seconds.', 'Turn left onto Mulberry Street Southwest.', 'Turn left onto Morganton Boulevard/US 64/NC 18. Continue on US 64/NC 18.', 'Turn right onto Harper Avenue/US 64/NC 18. Continue on US 64/NC 18.', 'Turn right onto US 64/NC 90/Taylorsville Road Southeast.', 'Enter the roundabout and take the 2nd exit onto US 64.', 'Bear right onto US 70/Garner Bagnal Boulevard.', 'Turn right onto Barringer Road.', 'Enter the roundabout and take the 2nd exit onto Sherrills Ford Road.', 'Turn left onto Mooresville Road/NC 150.', 'Turn left onto Lincolnton Road.', 'Turn left onto Caldwell Road.', 'Turn left onto Taylor Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Portsmouth International at Pease Airport (PORTSMOUTH, NH) to Ashland Town Hall (Ashland, NH)
+
+  Route steps:
+['Drive southeast.', 'Turn left after 1431 meters or 234-286 seconds.', 'Turn left after 312 meters or 41-50 seconds.', 'Turn right onto Grafton Drive.', 'Turn right onto Greenland Road/NH 33.', 'Turn left to take the I 95 ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Tyler, Solomon, House (Branford, CT) to BRISTOL HOSPITAL (BRISTOL, CT)
+
+  Route steps:
+['Drive east on East Main Street/US 1.', 'Turn left to take the I 95 South ramp.', 'Take exit 52 on the right onto CT 100 toward East Haven/North High Street.', 'Turn left onto North High Street/CT 100.', 'Turn right onto Laurel Street.', 'Turn left onto Foxon Boulevard/CT 80.', 'Turn right toward CT 17 North/I 91 North/Hartford.', 'Turn left to take the I 91 North ramp toward Hartford.', 'Take exit 10 on the right onto CT 40 toward Hamden/Cheshire.', 'Take the CT 10 North/Whitney Avenue exit on the right toward Mount Carmel/Cheshire/Quinnipiac University.', 'Bear right onto CT 10/Whitney Avenue. Continue on CT 10.', 'Bear left onto CT 10/Cheshire Road. Continue on CT 10.', 'Turn right onto CT 10/Main Street.', 'Turn left onto CT 10/Main Street. Continue on CT 10.', 'Turn left onto Town Line Road/CT 177.', 'Turn right onto South Washington Street/CT 177.', 'Turn right onto Broad Street/CT 177.', 'Turn left onto Washington Street/CT 177.', 'Turn left onto West Main Street/CT 372. Continue on CT 372.', 'Turn left onto CT 72.', 'Take the exit on the right after 2862 meters or 105-129 seconds.', 'Bear right to stay on CT 72/Riverside Avenue.', 'Turn right onto Blakeslee Street.', 'Turn right onto Queen Street.', 'Bear right onto Brewster Road.', 'Turn left after 28 meters or 3-4 seconds.', 'Turn right after 19 meters or 6-7 seconds.', 'Turn right after 42 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, you can perform Step 8 of the route without completing Step 7. The instructions for Step 8 indicate that it is possible to turn right onto Blakeslee Street after taking the exit on CT 10/Whitney Avenue, even if you have not completed Step 7. However, it is important to note that taking the exit on CT 10/Whitney Avenue may require completing Step 7 first in order to proceed with the route. Therefore, while it is possible to perform Step 8 without completing Step 7, it is recommended to complete Step 7 before attempting Step 8 in order to ensure a smooth and safe journey.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Gillis-Grier House (Salisbury, MD) to ADVENTIST BEHAVIORAL HEALTH EASTERN SHORE (CAMBRIDGE, MD)
+
+  Route steps:
+['Drive southwest on North Division Street.', 'Turn right onto West Salisbury Parkway/US 50 BUS. Continue on US 50 BUS.', 'Keep right to take Ocean Gateway.', 'Turn left onto Main Street.', 'Turn right onto Wallertown Road.', 'Turn left onto US 50/Ocean Gateway.', 'Turn left onto Woods Road.', 'Turn left onto Fieldcrest Road.', 'Turn left after 189 meters or 19-23 seconds.', 'Turn left onto Fieldcrest Road.', 'Turn right after 44 meters or 6-7 seconds.', 'Turn left after 19 meters or 4-5 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, it is not possible to perform Step 10 without completing Step 9 in the given travel planning scenario. The instructions provided in the ""Definition"" section clearly state that Step 9 must be completed before Step 10 can be performed. Therefore, the answer is ""No"".
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: McGrew, James Clark, House (Kingwood, WV) to Kern's Fort (Morgantown, WV)
+
+  Route steps:
+['Drive northwest on East Main Street/WV 7. Continue on WV 7.', 'Turn right onto Morgantown Street/WV 7. Continue on WV 7.', 'Turn right onto North Robert Stone Way/WV 7. Continue on WV 7.', 'Turn right onto Rogers Avenue/WV 7. Continue on WV 7.', 'Turn left onto Overdale Street.', 'Turn right onto Sheets Alley.', 'Turn left onto Lone Alley.', 'Turn right onto Arch Street.', 'Turn left onto Dewey Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: The Research Studio (Maitland Art Center) (Maitland, FL) to Kissimmee Gateway Airport (ORLANDO, FL)
+
+  Route steps:
+['Drive east on Packwood Avenue.', 'Turn left onto Maitland Avenue.', 'Turn left onto Maitland Boulevard/FL 414/US 17 Truck/US 92 Truck. Continue on Maitland Boulevard/FL 414.', 'Take the I 4 West exit toward Orlando/Tampa.', 'Take the I 4 Toll exit.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Edward F Knapp State Airport (BARRE/MONTPELIER, VT) to Old Constitution House (Windsor, VT)
+
+  Route steps:
+['Drive north on Airport Road.', 'Turn left onto Vermont Route 62/VT 62.', 'Keep left to take I 89 South toward White River Junction.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: PRESENCE SAINT ELIZABETH HOSPITAL (CHICAGO, IL) to RIVERSIDE MEDICAL CENTER (KANKAKEE, IL)
+
+  Route steps:
+['Drive west.', 'Turn left after 33 meters or 11-13 seconds.', 'Turn right after 22 meters or 9-11 seconds.', 'Turn right onto North Western Avenue.', 'Turn right onto West North Avenue/IL 64.', 'Turn right toward I 90 East/I 94 East.', 'Take the I 94 East ramp.', 'Take exit 51D on the right onto Madison Street (0 North/South) toward Madison Street.', 'Turn left onto West Madison Street.', 'Turn right to take the I 94 East ramp.', 'Keep left to take I 90/I 94 East/Dan Ryan Expressway (Express).', 'You have arrived at your destination.']
+
+Question:
+  Can Step 11 be performed without completing Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Sawyer House (Boxford, MA) to Brown House (Hamilton, MA)
+
+  Route steps:
+['Drive northeast on Endicott Road.', 'Turn right onto Washington Street.', 'Keep right to take High Street Extension.', 'Keep left to take Valley Road/MA 97.', 'Bear left onto Topsfield Road/MA 97.', 'Turn left onto Cherry Street.', 'Bear left onto Monument Street.', 'Turn left onto Main Street/MA 1A. Continue on MA 1A.', 'Turn right onto Bridge Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 7 be performed without completing Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Camp Hammond (Yarmouth, ME) to Roak Block (Auburn, ME)
+
+  Route steps:
+['Drive northeast on Torrey Court.', 'Turn left onto Main Street.', 'Turn left onto Gray Road/ME 115.', 'Turn left onto Main Street/US 202/ME 4. Continue on US 202/ME 4.', 'Turn left to take the I 95 North ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: McMechen Lockmaster Houses on the Ohio River (McMechen, WV) to North Central West Virginia Airport (BRIDGEPORT, WV)
+
+  Route steps:
+['Drive south on Grant Street.', 'Turn left onto 10th Street.', 'Turn right onto West Baltimore Street.', 'Turn left onto 12th Street.', 'Turn right onto US 250 South/WV 2. Continue on WV 2.', 'Turn left onto US 250/Jefferson Avenue.', 'Turn left onto US 250/1st Street.', 'Turn left onto US 250/Waynesburg Pike Road.', 'Turn right to stay on US 250/Waynesburg Pike Road.', 'Turn right onto US 250/Dragon Highway. Continue on US 250.', 'Turn left onto US 250/Hornet Highway. Continue on US 250.', 'Turn left onto US 250/East Main Street. Continue on US 250.', 'Turn left onto US 19/US 250/Adams Street. Continue on US 19/Adams Street.', 'Turn right onto Jefferson Street.', 'Enter the roundabout and take the 2nd exit onto WV 273/Fairmont Gateway Connector.', 'Enter the roundabout and take the 2nd exit onto WV 273/Fairmont Gateway Connector.', 'Turn right to take the I 79 South ramp.', 'Take exit 125 on the right onto WV 131 toward Saltwell Road/Shinnston.', 'Turn left onto Benedum Drive/WV 131.', 'Turn left onto Crosswind Drive/CR 50/32.', 'Turn right onto Aviation Way/CR 50/32.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, you can perform Step 10 without completing Step 9. The instructions are provided in the travel planning scenario and it is possible to follow the route without having completed all the previous steps. The focus of the analysis should be on ensuring that the required steps are completed in the specified order to reach the destination.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: EAST ORANGE GENERAL HOSPITAL (EAST ORANGE, NJ) to HACKETTSTOWN REGIONAL MEDICAL CENTER (HACKETTSTOWN, NJ)
+
+  Route steps:
+['Drive northwest on Central Avenue/CR 508.', 'Turn right onto South Center Street.', 'Turn left onto Distributor Road.', 'Take the I 280 West ramp.', 'Take exit 6A on the right toward Laurel Avenue South.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: HEALTHSOUTH NEW ENGLAND REHABILIATION AT BEVERLY (BEVERLY, MA) to Frye, Nathan, House (Andover, MA)
+
+  Route steps:
+['Drive north.', 'Turn right after 227 meters or 44-53 seconds.', 'Turn left after 43 meters or 15-19 seconds.', 'Turn right onto Balch Street.', 'Turn left onto MA 1A/Cabot Street. Continue on Cabot Street.', 'Turn left onto Conant Street.', 'Bear right onto Holten Street.', 'Turn left onto Prince Street.', 'Turn left to stay on Prince Street.', 'Turn right onto Garden Street.', 'Turn right onto MA 114/Andover Street.', 'Turn left onto Andover Bypass/MA 125. Continue on Andover Bypass.', 'Turn right onto Hillside Road.', 'Turn right onto Chestnut Street.', 'Turn right onto Main Street/MA 28. Continue on MA 28.', 'Turn left onto Railroad Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 9 be performed without completing Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Saenger Theatre (New Orleans, LA) to Charity Hospital of New Orleans (New Orleans, LA)
+
+  Route steps:
+['Drive southwest on North Rampart Street.', 'Turn right onto Canal Street.', 'Turn left onto Elk Place.', 'Turn right onto Tulane Avenue.', 'Turn right onto South Claiborne Avenue.', 'Turn left onto Palmyra Street.', 'Turn left onto South Claiborne Avenue.', 'Turn left onto Tulane Avenue.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: John Wayne Orange County International Airport (SANTA ANA, CA) to Jack Northrop Field Hawthorne Municipal Airport (HAWTHORNE, CA)
+
+  Route steps:
+['Drive southeast.', 'Turn left after 38 meters or 8-10 seconds.', 'Make a right U-turn after 189 meters or 41-50 seconds.', 'Bear right onto Arrivals.', 'Keep left at the fork.', 'Keep left to take I 405/CA 73 toward MacArthur Boulevard/Los Angeles/San Diego/Beach Cities.', 'Turn left onto MacArthur Boulevard.', 'Turn right to take the I 405 North ramp toward Long Beach/San Diego Freeway.', 'Keep left to stay on I 405 North/San Diego Freeway.', 'Take the I 110 exit on the right toward Los Angeles.', 'Keep right to take I 110 North toward Los Angeles.', 'Keep left to take I-110/Harbor Transitway.', 'Keep right to take I 110 North/Harbor Freeway.', 'Take the I 105 West exit on the right toward Los Angeles International Airport.', 'Keep right to take I 105 West toward Los Angeles International Airport.', 'Take exit 5 on the right toward Crenshaw Boulevard.', 'Turn left onto Crenshaw Boulevard.', 'Turn right onto West 120th Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Chelmsford Glass Works' Long House (Lowell, MA) to Richards, Theodore W., House (Cambridge, MA)
+
+  Route steps:
+['Drive south on Baldwin Street.', 'Turn right onto Westford Street.', 'Turn left onto Stedman Street.', 'Turn left onto Dalton Road.', 'Turn right onto Wildwood Street.', 'Turn left onto Chelmsford Street/MA 110.', 'Turn left to take the ramp.', 'Keep left at the fork.', 'Keep left to take US 3 South.', 'Keep left to take exit 72A to stay on US 3 toward Boston/Peabody.', 'Take exit 72A onto I 95 North/US 3 South toward Boston/Peabody.', 'Keep left to take I 95 North/US 3/MA 128 North/Yankee Division Highway.', 'Take exit 51A on the right onto US 3 South toward Winchester.', 'Turn left onto US 3/MA 2A/Massachusetts Avenue.', 'Turn right onto US 3/MA 16/Alewife Brook Parkway.', 'Enter the roundabout and take the 2nd exit onto US 3/MA 2/MA 16/Concord Avenue.', 'Enter Sozio Rotary and take the 2nd exit onto Concord Avenue.', 'Turn left onto Waterhouse Street.', 'Turn left onto Follen Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, the given travel route can be completed without completing Step 2. It is possible to take a left turn onto Stedman Street and continue on to the next step without turning right onto Westford Street first. However, it is important to note that the route may not be the most efficient or recommended way to travel, as it involves taking multiple turns and exits along the way.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Atlas Theatre (Cheyenne, WY) to VA MEDICAL CENTER - CHEYENNE (CHEYENNE, WY)
+
+  Route steps:
+['Drive east on East 16th Street.', 'Turn left onto Logan Avenue.', 'Turn right onto East 19th Street.', 'Enter the roundabout and take the 2nd exit onto East Pershing Boulevard.', 'Turn left after 359 meters or 21-25 seconds.', 'Turn right after 49 meters or 11-14 seconds.', 'Turn left after 221 meters or 39-48 seconds.', 'Turn right after 82 meters or 17-21 seconds.', 'Turn right after 37 meters or 10-12 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 8 be performed without completing Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Barnard, Henry, House (Hartford, CT) to Ellsworth, Oliver, Homestead (Windsor, CT)
+
+  Route steps:
+['Drive east.', 'Turn left after 35 meters or 11-14 seconds.', 'Turn left onto Wyllys Street.', 'Turn right onto Grove Street.', 'Take the I 91 North ramp on the right toward Springfield.', 'Keep left at the fork.', 'Take the CT 305 exit toward Bloomfield Avenue/Windsor.', 'Turn right onto Bloomfield Avenue/CT 305.', 'Turn right onto Poquonock Avenue/CT 75.', 'Turn left onto Palisado Avenue/CT 159.', 'Turn right after 3400 meters or 171-208 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 9 be performed without completing Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Building at 136-138 Collins Street (Hartford, CT) to Tolland County Courthouse (Tolland, CT)
+
+  Route steps:
+['Drive east on Collins Street.', 'Turn left onto Sigourney Street.', 'Turn right onto US 44/Albany Avenue. Continue on US 44.', 'Turn left onto US 44/South Morgan Street.', 'Take the I 84 East ramp toward Boston.', 'Keep left to stay on I 84 East/US 6.', 'Keep left to take I 84 East/Wilbur Cross Highway toward Boston.', 'Take exit 68 on the right onto CT 195 toward Tolland/Mansfield.', 'Turn left onto Merrow Road/CT 195.', 'Turn left after 1286 meters or 73-89 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 10 be performed without completing Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: ARBOUR FULLER HOSPITAL (ATTLEBORO, MA) to Walcott-Whitney House (Stow, MA)
+
+  Route steps:
+['Drive north.', 'Turn right onto Esker Lane.', 'Turn right onto May Street.', 'Turn left onto Washington Street/US 1.', 'Turn right onto Elm Street.', 'Turn left onto East Washington Street/US 1.', 'Turn left after 1532 meters or 78-96 seconds.', 'Turn right onto Park Street/MA 1A. Continue on MA 1A.', 'Take the I 495 North ramp on the right.', 'Take exit 70 on the right onto MA 117 toward Bolton/Stow.', 'Turn left onto Main Street/MA 117.', 'Keep left to stay on MA 117.', 'Bear left onto Crescent Street.', 'Bear left onto West Acton Road.', 'Turn right onto South Acton Road.', 'Turn left onto Tuttle Lane.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 15 be performed without completing Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Lakefront Airport (NEW ORLEANS, LA) to Louis Armstrong New Orleans International Airport (NEW ORLEANS, LA)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 35 meters or 5-6 seconds.', 'Turn left onto Igor I Sikorsky.', 'Turn right onto Stars and Stripes Boulevard.', 'Turn left onto Downman Road.', 'Stay straight to take the I 10 West ramp.', 'Take exit 238B on the right onto I 610 West toward New Orleans International Airport/Baton Rouge.', 'Continue on I 610.', 'Take exit 221A on the right toward New Orleans International Airport.', 'Turn right toward Terminal/Departures Ticketing/Parking/Cell Phone Lot.', 'Turn right after 514 meters or 29-35 seconds.', 'Bear left after 20 meters or 5-6 seconds.', 'Turn left after 52 meters or 8-10 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: CLINTON HOSPITAL (CLINTON, MA) to Osborne, Prince, House (Danvers, MA)
+
+  Route steps:
+['Drive north.', 'Turn left onto Broadway Street.', 'Turn right after 50 meters or 6-8 seconds.', 'Turn left onto Greeley Street.', 'Turn left onto Sterling Street/MA 62.', 'Bear right onto Wattaquadock Hill Road.', 'Turn right onto Main Street/MA 117.', 'Turn left to take the I 495 North ramp toward Lowell/Lawrence.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 6 be performed without completing Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes, it is possible to perform Step 6 of the route without having completed Step 5. The route directions do not specify that Step 5 must be completed before Step 6 can be performed. Therefore, it is up to the individual to interpret the directions and determine whether it is necessary to complete Step 5 before attempting Step 6.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Brown House (Yuma, AZ) to YUMA REHABILITATION HOSPITAL (YUMA, AZ)
+
+  Route steps:
+['Drive south on South 1st Avenue.', 'Turn right onto West 12th Street.', 'Turn left onto South 4th Avenue/I 8 Bus/US 80 Hist. Continue on South 4th Avenue.', 'Turn right onto West 24th Street.', 'Turn left onto South 8th Avenue.', 'Turn right after 112 meters or 13-16 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 2 be performed without completing Step 1?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Newport Municipal Airport (NEWPORT, OR) to Mahlon Sweet Field (EUGENE, OR)
+
+  Route steps:
+['Drive south.', 'Bear right onto Southeast 84th Street.', 'Turn right onto US 101/Oregon Coast Highway.', 'Bear right onto Southwest 9th Street.', 'Turn left onto Southwest Angle Street.', 'Turn right onto US 101/Oregon Coast Highway.', 'Take the US 20 exit on the right.', 'Bear right onto Applegate Street.', 'Turn right onto South 19th Street.', 'Turn left onto Chapel Drive.', 'Turn right onto Bellfountain Road.', 'Turn left onto Greenberry Road.', 'Turn right onto OR 99W/State Highway 99. Continue on OR 99W.', 'Turn right onto OR 99/Ivy Street. Continue on OR 99.', 'Turn right onto Airport Road.', 'Continue on Northrop Drive.', 'Turn left after 706 meters or 57-70 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Old Governor's Mansion (Frankfort, KY) to Allison-Barrickman House (Boundary Increase) (Louisville, KY)
+
+  Route steps:
+['Drive northeast on High Street/KY 420.', 'Turn left onto West Clinton Street.', 'Turn right onto US 127/US 421/Wilkinson Boulevard.', 'Turn left onto US 127/US 421/West Frankfort Connector. Continue on US 127.', 'Take the I 64 West ramp on the right.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Shenandoah Valley Regional Airport (WEYERS CAVE, VA) to Hill, A. P., Boyhood Home (Culpeper, VA)
+
+  Route steps:
+['Drive northeast on Little Run Road/SR 900.', 'Turn left onto Snowflake Mill Road/SR 769.', 'Turn left onto Weyers Cave Road/VA 256.', 'Turn right onto Keezletown Road/VA 276. Continue on VA 276.', 'Turn right onto US 33/Spotswood Trail.', 'Keep right to stay on US 33.', 'Turn left onto Fredericksburg Road/SR 609.', 'Turn left onto US 29/Seminole Trail. Continue on US 29.', 'Keep right to stay on US 29.', 'Take the VA 299 exit on the right.', 'Turn right onto Madison Road/VA 299.', 'Make a left U-turn to stay on Madison Road.', 'Turn left onto South Blue Ridge Avenue.', 'Turn right onto West Chandler Street.', 'Turn left onto South West Street.', 'Turn right onto West Davis Street.', 'Turn left onto North Main Street/US 522/US 15 BUS/US 29 BUS.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No, it is not possible to perform Step 3 of the travel route without first completing Step 2. The directions provided in the benchmark do not allow for a situation where one step can be performed independently of the others. Each step must be completed in order as specified in the route plan. Therefore, if Step 2 has not been completed, it is not possible to begin Step 3.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: MEMORIAL HOSPITAL INC (MANCHESTER, KY) to Central Kentucky Regional Airport (RICHMOND, KY)
+
+  Route steps:
+['Drive south on Marie Langdon Drive.', 'Turn right onto Memorial Drive/KY 3472.', 'Turn left onto Richmond Road/US 421/KY 11.', 'Turn right to take the ramp.', 'Turn right to take the ramp.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 3 be performed without completing Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"No
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: Buildings at 104-128 S. Side Sq. (Huntsville, AL) to Phelps-Jones House (Huntsville, AL)
+
+  Route steps:
+['Drive northeast on South Side Square.', 'Turn left onto East Side Square.', 'Turn left onto Oakwood Avenue Northwest.', 'Turn right onto Pulaski Pike Northwest.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 5 be performed without completing Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Type State Analysis
+Definition: Ensures an object is used only in valid states (e.g., a file must be opened before reading).
+
+Given the following travel planning scenario:
+
+  Goal: First National Bank (Columbia, SC) to Union Station (Columbia, SC)
+
+  Route steps:
+['Drive west on Washington Street.', 'Turn right onto Assembly Street/SC 48.', 'Turn right onto Calhoun Street.', 'Turn left onto Main Street.', 'You have arrived at your destination.']
+
+Question:
+  Can Step 4 be performed without completing Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,"Yes
+"

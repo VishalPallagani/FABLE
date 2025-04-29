@@ -1,0 +1,52 @@
+{
+  "goal": "(and (at package1 s1) (at package2 s1))",
+  "plan_steps": [
+    "1: board-truck(driver1, truck1, s1)",
+    "2: drive-truck(truck1, s1, s2, driver1)",
+    "3: load-truck(package1, truck1, s2)",
+    "4: drive-truck(truck1, s2, s1, driver1)",
+    "5: unload-truck(package1, truck1, s1)"
+  ],
+  "benchmarks": {
+    "Reaching Definitions": {
+      "question": "In Step 2 (drive-truck), is the predicate '('driving', 'driver1', 'truck1')' potentially from the effect of Step 1 (board-truck) being used?",
+      "answer": "Yes",
+      "explanation": "Step 2 uses predicate '('driving', 'driver1', 'truck1')' which is added by Step 1."
+    },
+    "Available Expressions": {
+      "question": "Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?",
+      "answer": "Yes",
+      "explanation": "Predicate effect '('driving', 'driver1', 'truck1')' added by Step 1 appears available for Step 2 as no intermediate step seems to delete it."
+    },
+    "Live Variable Analysis": {
+      "question": "After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 2)?",
+      "answer": "Yes",
+      "explanation": "Effect effect '('driving', 'driver1', 'truck1')' from Step 1 is needed by Step 2 and not deleted before then."
+    },
+    "Type-State Analysis": {
+      "question": "If Step 1 (board-truck) were skipped, would Step 2 (drive-truck) become invalid?",
+      "answer": "Yes",
+      "explanation": "Skipping Step 1 removes effect '('driving', 'driver1', 'truck1')', which is a precondition for Step 2."
+    },
+    "Concurrency Analysis": {
+      "question": "Based on simple precondition/delete analysis, can Step 3 (load-truck) and Step 1 (board-truck) run concurrently?",
+      "answer": "Yes",
+      "explanation": "No direct precondition/delete conflicts found between these two steps with this basic check."
+    },
+    "Very Busy Expressions": {
+      "question": "Is the action in Step 2 (drive-truck(truck1, s1, s2, driver1)) 'very busy' in the sense that its effect '('at', 'truck1', 's2')' is used by the next step, Step 3 (load-truck(package1, truck1, s2))?",
+      "answer": "Yes",
+      "explanation": "Step 2 produces effect '('at', 'truck1', 's2')', which is immediately required as a precondition by Step 3."
+    },
+    "Interval Analysis": {
+      "question": "Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (unload-truck(package1, truck1, s1)) must occur?",
+      "answer": "After Step 4",
+      "explanation": "It must occur after Step 4 (which provides precondition '('at', 'truck1', 's1')'). No immediate subsequent consumer step found by this simple rule."
+    },
+    "Taint Analysis": {
+      "question": "Does any step in this plan interfere with (taint) the preconditions of the immediately following step?",
+      "answer": "No",
+      "explanation": "No step found that directly deletes a precondition required by the immediately following step according to this rule."
+    }
+  }
+}

@@ -1,0 +1,2267 @@
+prompt,ground_truth,response
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l3) (at c2 l2))
+
+  Plan steps:
+1: board(c2, l1)
+2: sail(l1, l2)
+3: debark(c2, l2)
+4: board(c1, l2)
+5: sail(l2, l3)
+6: debark(c1, l3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (debark(c1, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Based on the interval analysis, I would say that debark(c1, l3) must occur **after** step 5: sail(l2, l3). 
+
+The reason is that debarking from a location requires arriving at that location first, and in this plan, Step 6's operation depends on the successful completion of sailing to location l3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s3) (at package2 s1))
+
+  Plan steps:
+1: board-truck(driver2, truck1, s3)
+2: drive-truck(truck1, s3, s2, driver2)
+3: load-truck(package2, truck1, s2)
+4: drive-truck(truck1, s2, s1, driver2)
+5: unload-truck(package2, truck1, s1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (load-truck(package2, truck1, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 5,"Based on the given planning task and interval analysis, the constraints that determine when Step 3 (load-truck(package2, truck1, s2)) must occur are: 
+
+Before Steps 4 and 5. 
+
+The load-truck action is dependent on the truck being available at location s2, which means it can only happen after the drive-truck from s3 to s2 has completed (Step 2), but before unloading any other packages or driving off to another location."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s3) (at package2 s3))
+
+  Plan steps:
+1: board-truck(driver2, truck2, s2)
+2: load-truck(package2, truck2, s2)
+3: drive-truck(truck2, s2, s3, driver2)
+4: unload-truck(package2, truck2, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (load-truck(package2, truck2, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 4,"Based on the given planning task and interval analysis, I can determine that:
+
+The constraint determining when Step 2 (load-truck(package2, truck2, s2)) must occur is ""between"" Steps 1 and 3.
+
+This is because load-truck requires a loaded truck (Step 1: board-truck) before it occurs, and drive-truck (Step 3) cannot happen until the package has been loaded. Therefore, Step 2 must occur between these two steps."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 d3) (on d3 peg1) (clear peg2) (clear peg3))
+
+  Plan steps:
+1: move(d1, peg3, peg1)
+2: move(d2, d3, peg3)
+3: move(d1, peg1, d2)
+4: move(d3, peg2, peg1)
+5: move(d1, d2, peg2)
+6: move(d2, peg3, d3)
+7: move(d1, peg2, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (move(d2, peg3, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Between Steps 5 and 7. 
+
+Reason: Step 6 depends on the previous step that cleared peg3, and Step 4 clears peg2; however, in this plan, those operations are performed after clearing other blocks. The immediate dependency for Step 6 is moving d1 to peg2 (Step 5), which removes a block from the way of peg3, allowing it to be moved by Step 6. 
+
+In an interval analysis, this would translate to determining the ranges (or bounds) on variables at each point in the program. The immediate dependencies for Step 6 determine when and under what conditions it must occur within the plan."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 peg2) (clear d2) (clear peg3))
+
+  Plan steps:
+1: move(d2, peg1, peg2)
+2: move(d1, peg3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, peg3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 1,"Based on the interval analysis, here are the constraints that determine when Step 2 (move(d1, peg3, peg1)) must occur:
+
+Between Steps 1 and 2.
+
+This is because Step 1 moves disk d2 from peg2 to peg1, which creates a constraint on the position of peg1. Specifically, after Step 1, peg1 must be occupied by disk d2 until Step 2 occurs, at which point disk d1 will occupy peg1. Therefore, Step 2 cannot occur before Step 1 has completed, but it also cannot occur too far after Step 1 since the goal requires clearing both disks and peg3 must be cleared first."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s1) (at package3 s4) (at package4 s2))
+
+  Plan steps:
+1: board-truck(driver2, truck1, s4)
+2: load-truck(package2, truck1, s4)
+3: drive-truck(truck1, s4, s1, driver2)
+4: load-truck(package4, truck1, s1)
+5: unload-truck(package2, truck1, s1)
+6: load-truck(package1, truck1, s1)
+7: drive-truck(truck1, s1, s4, driver2)
+8: unload-truck(package1, truck1, s4)
+9: drive-truck(truck1, s4, s2, driver2)
+10: unload-truck(package4, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (load-truck(package2, truck1, s4)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 5,"Based on the immediate dependencies, Step 2 (load-truck(package2, truck1, s4)) must occur **before** Steps 3 (drive-truck(truck1, s4, s1, driver2)) and 4 (load-truck(package4, truck1, s1))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s1))
+
+  Plan steps:
+1: walk(driver1, s1, s3)
+2: board-truck(driver1, truck1, s3)
+3: drive-truck(truck1, s3, s2, driver1)
+4: load-truck(package1, truck1, s2)
+5: drive-truck(truck1, s2, s1, driver1)
+6: unload-truck(package1, truck1, s1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (unload-truck(package1, truck1, s1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Based on the given plan and interval analysis, I would say:
+
+Step 6 (unload-truck(package1, truck1, s1)) must **occur after** Step 5 (drive-truck(truck1, s2, s1, driver1))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg2) (on d3 peg1) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d1, d2, d3)
+2: move(d2, peg1, peg2)
+3: move(d1, d3, d2)
+4: move(d3, peg3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, peg1, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Step 4.
+
+The Step 2 (move(d2, peg1, peg2)) does not depend on the success of its predecessors for immediate dependencies so it can occur freely between step 3 and 4."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s2) (at package3 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s2)
+2: drive-truck(truck1, s2, s1, driver1)
+3: load-truck(package3, truck1, s1)
+4: load-truck(package2, truck1, s1)
+5: load-truck(package1, truck1, s1)
+6: drive-truck(truck1, s1, s2, driver1)
+7: unload-truck(package3, truck1, s2)
+8: unload-truck(package2, truck1, s2)
+9: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (unload-truck(package3, truck1, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 6,"Based on the given planning task, the constraint that determines when Step 7 (unload-truck(package3, truck1, s2)) must occur is: **after step 6**. 
+
+This is because Step 6 loads the truck with package3 at location s1 and then drives it to s2. Hence, package3 can only be unloaded after it reaches location s2."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg3) (on d3 peg1) (clear d3) (clear peg2))
+
+  Plan steps:
+1: move(d1, d3, d2)
+2: move(d3, peg2, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d3, peg2, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 1,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s2) (at package3 s2) (at package4 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck2, s3)
+2: drive-truck(truck2, s3, s1, driver1)
+3: load-truck(package4, truck2, s1)
+4: load-truck(package1, truck2, s1)
+5: drive-truck(truck2, s1, s3, driver1)
+6: unload-truck(package4, truck2, s3)
+7: drive-truck(truck2, s3, s4, driver1)
+8: load-truck(package3, truck2, s4)
+9: load-truck(package2, truck2, s4)
+10: unload-truck(package1, truck2, s4)
+11: drive-truck(truck2, s4, s2, driver1)
+12: unload-truck(package3, truck2, s2)
+13: unload-truck(package2, truck2, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (drive-truck(truck2, s1, s3, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 6,"Based on the immediate dependencies, Step 5 must occur **after** Step 4: load-truck(package1, truck2, s1)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 d3) (on d3 peg1) (clear peg2) (clear peg3))
+
+  Plan steps:
+1: move(d1, peg2, d3)
+2: move(d2, peg1, peg2)
+3: move(d1, d3, d2)
+4: move(d3, peg3, peg1)
+5: move(d1, d2, peg3)
+6: move(d2, peg2, d3)
+7: move(d1, peg3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (move(d1, peg3, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Based on the given goal and plan steps, the immediate dependency for Step 7 is that Step 5 (move(d1, d2, peg3)) and Step 6 (move(d2, peg2, d3)) must occur before it.
+
+Therefore, Step 7 must occur **after** Steps 5 and 6."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s1) (at package3 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package3, truck1, s1)
+3: load-truck(package1, truck1, s1)
+4: drive-truck(truck1, s1, s2, driver1)
+5: unload-truck(package3, truck1, s2)
+6: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (unload-truck(package1, truck1, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 4,"To determine the constraints for Step 6 (unload-truck(package1, truck1, s2)), we analyze immediate dependencies.
+
+The constraint is: After step 5 (unload-truck(package3, truck1, s2))"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l3) (at c2 l2))
+
+  Plan steps:
+1: sail(l3, l1)
+2: board(c0, l1)
+3: sail(l1, l3)
+4: debark(c0, l3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l1, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Before step 2 (board(c0, l1)) and after step 4 (debark(c0, l3))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s3) (at package2 s2) (at package3 s2) (at package4 s1))
+
+  Plan steps:
+1: walk(driver2, s2, s3)
+2: board-truck(driver2, truck1, s3)
+3: drive-truck(truck1, s3, s1, driver2)
+4: load-truck(package1, truck1, s1)
+5: drive-truck(truck1, s1, s3, driver2)
+6: unload-truck(package1, truck1, s3)
+7: drive-truck(truck1, s3, s4, driver2)
+8: load-truck(package3, truck1, s4)
+9: load-truck(package2, truck1, s4)
+10: drive-truck(truck1, s4, s2, driver2)
+11: unload-truck(package3, truck1, s2)
+12: unload-truck(package2, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 12 (unload-truck(package2, truck1, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 10,"To determine the constraints for Step 12 (unload-truck(package2, truck1, s2)), we need to look at the dependencies of this step.
+
+Step 12 depends on:
+
+- The load-truck step with package2 (Step 9) which is done before driving the truck to location s4.
+  
+So, Step 12 must occur after Step 9."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s3)
+2: drive-truck(truck1, s3, s1, driver1)
+3: load-truck(package2, truck1, s1)
+4: drive-truck(truck1, s1, s3, driver1)
+5: unload-truck(package2, truck1, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (unload-truck(package2, truck1, s3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 4,"Step 4: drive-truck(truck1, s1, s3, driver1)
+
+The unload operation at step 5 depends on the load operation in step 3 and the drive operations in steps 2 and 4 to transport package2 from s1 to s3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d3) (clear d1) (on d2 peg2) (clear d2) (on d3 peg3) (clear peg1))
+
+  Plan steps:
+1: move(d1, peg2, d3)
+2: move(d2, peg3, peg2)
+3: move(d1, d3, d2)
+4: move(d3, peg1, peg3)
+5: move(d1, d2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (move(d1, d2, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,"Step 4: move(d3, peg1, peg3) 
+
+This step must be completed before Step 5 can occur."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l2) (at c2 l0))
+
+  Plan steps:
+1: sail(l2, l3)
+2: board(c2, l3)
+3: sail(l3, l0)
+4: debark(c2, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l3, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"After Step 2: board(c2, l3)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l1) (at c2 l2))
+
+  Plan steps:
+1: sail(l3, l0)
+2: board(c0, l0)
+3: sail(l0, l1)
+4: debark(c0, l1)
+5: sail(l1, l0)
+6: board(c1, l0)
+7: sail(l0, l1)
+8: debark(c1, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (board(c0, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Based on the planning task and interval analysis, I would say:
+
+Step 2 (board(c0, l0)) **must occur** after Step 1: sail(l3, l0) and before Step 4: debark(c0, l1). 
+
+In particular, the constraint is determined by the fact that we first need to reach location l0 (Step 1), which then allows us to board c0 at l0 in Step 2. Subsequently, we must debark c0 at l1 (Step 4), but not before we have reached l1 from l0 (Steps 3 and 6-8)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (on d3 peg2) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d1, d2, peg2)
+2: move(d2, d3, peg1)
+3: move(d1, peg2, d2)
+4: move(d3, peg3, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (move(d3, peg3, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,After step 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l3) (at c2 l2))
+
+  Plan steps:
+1: sail(l1, l0)
+2: board(c1, l0)
+3: sail(l0, l3)
+4: debark(c1, l3)
+5: board(c0, l3)
+6: sail(l3, l2)
+7: debark(c0, l2)
+8: sail(l2, l0)
+9: board(c2, l0)
+10: sail(l0, l2)
+11: debark(c2, l2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (board(c0, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 7,Between Steps 4 and 5.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 peg2) (clear d2) (clear peg1))
+
+  Plan steps:
+1: move(d1, d2, peg1)
+2: move(d2, peg3, peg2)
+3: move(d1, peg1, peg3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, peg1, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 2,"Based on the given plan and interval analysis:
+
+The constraint that determines when Step 3 (move(d1, peg1, peg3)) must occur is: **between** Steps 2 and 3.
+
+This is because Step 2 has moved d2 to peg3, which makes way for d1 to be moved to peg3 in Step 3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 d3) (clear d2) (on d3 peg1) (clear peg2))
+
+  Plan steps:
+1: move(d2, d3, peg2)
+2: move(d1, peg1, d2)
+3: move(d3, peg3, peg1)
+4: move(d1, d2, peg3)
+5: move(d2, peg2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d3, peg3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 4,"Based on the given planning task and the immediate dependencies in the linear plan, the constraint that determines when Step 3 (move(d3, peg3, peg1)) must occur is:
+
+After step 2: move(d1, peg1, d2)
+
+This is because Step 3 moves d3 to peg1, which is where d1 was moved to in Step 2. Therefore, Step 3 can only occur after the outcome of Step 2 has been achieved."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s4) (at package3 s1) (at package4 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck3, s3)
+2: drive-truck(truck3, s3, s4, driver1)
+3: load-truck(package3, truck3, s4)
+4: drive-truck(truck3, s4, s1, driver1)
+5: load-truck(package4, truck3, s1)
+6: unload-truck(package3, truck3, s1)
+7: load-truck(package1, truck3, s1)
+8: drive-truck(truck3, s1, s2, driver1)
+9: unload-truck(package4, truck3, s2)
+10: unload-truck(package1, truck3, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 9 (unload-truck(package4, truck3, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 8,"Between Steps 8 and 10. 
+
+The constraint for step 9 is that the truck (truck3) has to be at state s2, which would happen after Step 8 but before Step 10, as Step 9 cannot occur after both package4 and package1 have been unloaded."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l1) (at c2 l1))
+
+  Plan steps:
+1: sail(l1, l3)
+2: board(c2, l3)
+3: sail(l3, l1)
+4: debark(c2, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l3, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 d3) (clear d2) (on d3 peg2) (clear peg1))
+
+  Plan steps:
+1: move(d1, d2, d3)
+2: move(d2, peg2, peg1)
+3: move(d1, d3, d2)
+4: move(d3, peg3, peg2)
+5: move(d1, d2, peg3)
+6: move(d2, peg1, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (move(d2, peg1, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Based on the interval analysis for planning tasks with dependencies, I would say: **after Step 4**.
+
+The immediate dependency is that d3 must be clear and available to be moved to peg2 (and subsequently to peg1) in step 6. Since d3 is moved to peg3 at step 4, it ensures the availability of d3 for the next steps, making step 6 dependent on its successful execution beforehand."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s3) (at package3 s2) (at package4 s4))
+
+  Plan steps:
+1: board-truck(driver1, truck2, s3)
+2: drive-truck(truck2, s3, s1, driver1)
+3: load-truck(package4, truck2, s1)
+4: drive-truck(truck2, s1, s4, driver1)
+5: unload-truck(package4, truck2, s4)
+6: load-truck(package3, truck2, s4)
+7: load-truck(package2, truck2, s4)
+8: drive-truck(truck2, s4, s2, driver1)
+9: unload-truck(package3, truck2, s2)
+10: drive-truck(truck2, s2, s3, driver1)
+11: unload-truck(package2, truck2, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (load-truck(package2, truck2, s4)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 11,"Between Steps 5 and 6. 
+
+The constraint is that Step 7 can only occur after all packages have been unloaded at step 5 (unload-truck(package4, truck2, s4)) and the package to be loaded in step 7 must not conflict with steps 6's package."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 peg3) (clear d2) (on d3 peg2) (clear d3))
+
+  Plan steps:
+1: move(d1, d2, d3)
+2: move(d2, peg1, peg3)
+3: move(d1, d3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, d3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 2,"Before Step 2: move(d2, peg1, peg3)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l0) (at c2 l0))
+
+  Plan steps:
+1: sail(l3, l1)
+2: board(c0, l1)
+3: sail(l1, l2)
+4: debark(c0, l2)
+5: board(c2, l2)
+6: sail(l2, l0)
+7: debark(c2, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l1, l2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Before step 4
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s2)
+2: drive-truck(truck1, s2, s3, driver1)
+3: load-truck(package1, truck1, s3)
+4: drive-truck(truck1, s3, s1, driver1)
+5: load-truck(package2, truck1, s1)
+6: unload-truck(package1, truck1, s1)
+7: drive-truck(truck1, s1, s2, driver1)
+8: unload-truck(package2, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (drive-truck(truck1, s3, s1, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 5,"Based on the given planning task, the constraints that determine when Step 4 (drive-truck(truck1, s3, s1, driver1)) must occur are:
+
+Before: Steps 2 and 3 
+
+The drive-truck operation in Step 4 requires that truck1 has already arrived at location s3 (Step 3), which is made possible by the previous drive-truck operation (Step 2) from location s2 to s3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 d3) (clear d2) (on d3 peg2) (clear peg1))
+
+  Plan steps:
+1: move(d2, peg2, peg3)
+2: move(d1, d3, d2)
+3: move(d3, peg1, peg2)
+4: move(d1, d2, peg1)
+5: move(d2, peg3, d3)
+6: move(d1, peg1, peg3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d3, peg1, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 4,"Based on the given planning task and interval analysis, I can determine that:
+
+Step 3 (move(d3, peg1, peg2)) must occur **after** Step 2 (move(d1, d3, d2)). 
+
+This is because Step 3 requires the presence of peg1 and peg2, which are not available until after Step 2 has occurred."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 d3) (clear d2) (on d3 peg2) (clear peg3))
+
+  Plan steps:
+1: move(d2, peg2, peg1)
+2: move(d1, d3, d2)
+3: move(d3, peg3, peg2)
+4: move(d1, d2, peg3)
+5: move(d2, peg1, d3)
+6: move(d1, peg3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (move(d2, peg1, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 6,Between Steps 4 and 6.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg2) (clear d1) (on d2 d3) (clear d2) (on d3 peg1) (clear peg3))
+
+  Plan steps:
+1: move(d1, d3, peg3)
+2: move(d2, peg2, d3)
+3: move(d1, peg3, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, peg3, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 2,"Step 2: move(d2, peg2, d3) 
+
+Explanation:
+The goal specifies that both d1 and d2 should be clear at the end of the plan (clear d1 and clear d2). Step 1 makes d1 unavailable for a while because it moves to peg3. However, step 2 temporarily relocates d2 to d3, which makes room for d1's eventual move back to its final destination without interfering with other objects' movements. Therefore, the constraint is that step 3 must occur after Step 2, as the goal can only be achieved when d1 is clear and available again, which happens after step 2 finishes relocating d2 to make space for d1's movement in step 3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s2) (at package3 s1) (at package4 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck3, s2)
+2: drive-truck(truck3, s2, s4, driver1)
+3: load-truck(package3, truck3, s4)
+4: load-truck(package2, truck3, s4)
+5: drive-truck(truck3, s4, s2, driver1)
+6: unload-truck(package2, truck3, s2)
+7: drive-truck(truck3, s2, s1, driver1)
+8: load-truck(package4, truck3, s1)
+9: unload-truck(package3, truck3, s1)
+10: load-truck(package1, truck3, s1)
+11: drive-truck(truck3, s1, s2, driver1)
+12: unload-truck(package1, truck3, s2)
+13: drive-truck(truck3, s2, s3, driver1)
+14: unload-truck(package4, truck3, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (drive-truck(truck3, s4, s2, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 6,"Between Steps 2 and 3. 
+
+Step 2: drive-truck(truck3, s2, s4, driver1) 
+must be completed for the truck to reach location s4.
+
+Step 3: load-truck(package3, truck3, s4)
+requires the truck to have reached location s4 before loading package3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l0) (at c2 l0))
+
+  Plan steps:
+1: board(c2, l1)
+2: sail(l1, l0)
+3: debark(c2, l0)
+4: sail(l0, l3)
+5: board(c0, l3)
+6: sail(l3, l1)
+7: debark(c0, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (sail(l3, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 7,"Before Step 5 (sail(l3, l1)) must occur.
+
+Note: The Interval Analysis for this task would consider the ranges of variables and their dependencies in each step to ensure that sail(l3, l1) can only happen after both c0 and l3 are reachable, which is determined by Step 4 being executed."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 d3) (clear d2) (on d3 peg2) (clear peg3))
+
+  Plan steps:
+1: move(d1, peg1, peg2)
+2: move(d2, d3, peg1)
+3: move(d1, peg2, d2)
+4: move(d3, peg3, peg2)
+5: move(d1, d2, peg3)
+6: move(d2, peg1, d3)
+7: move(d1, peg3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (move(d3, peg3, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 5,"Between steps 3 and 5. 
+
+Step 3 must be completed to ensure d1 is in d2, but step 5 will put d1 back on a peg (peg3), requiring another move (step 4) for d3 to be moved back onto the peg (peg2)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s3) (at package3 s1) (at package4 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s2)
+2: drive-truck(truck1, s2, s1, driver1)
+3: load-truck(package4, truck1, s1)
+4: load-truck(package1, truck1, s1)
+5: drive-truck(truck1, s1, s4, driver1)
+6: load-truck(package3, truck1, s4)
+7: load-truck(package2, truck1, s4)
+8: unload-truck(package1, truck1, s4)
+9: drive-truck(truck1, s4, s1, driver1)
+10: unload-truck(package3, truck1, s1)
+11: drive-truck(truck1, s1, s3, driver1)
+12: unload-truck(package4, truck1, s3)
+13: unload-truck(package2, truck1, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 12 (unload-truck(package4, truck1, s3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 11,"Between Steps 10 and 11. 
+
+(Note: This is a classic application of interval analysis for planning tasks. The goal of the task implies that all packages need to be delivered from package1 to their destinations. Steps 10 and 11 are loading packages 3 and 2 onto truck1 at locations s4 and s3, respectively. For Step 12 (unload-truck(package4, truck1, s3)) to occur, the constraints dictate that package 4 must arrive after Step 10, but before Step 11.)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d3) (clear d1) (on d2 peg2) (clear d2) (on d3 peg1) (clear peg3))
+
+  Plan steps:
+1: move(d1, d2, peg1)
+2: move(d2, d3, peg2)
+3: move(d1, peg1, d2)
+4: move(d3, peg3, peg1)
+5: move(d1, d2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, d3, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"After Step 1: move(d1, d2, peg1) 
+
+This is because the dependency for Step 2 involves moving d2 to d3, but since d2 has been moved to peg1 in Step 1, this must occur before Step 2 can be executed."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l1) (at c2 l3))
+
+  Plan steps:
+1: sail(l0, l2)
+2: board(c1, l2)
+3: sail(l2, l1)
+4: debark(c1, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (debark(c1, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,"Based on the given planning task and interval analysis, here's my answer:
+
+**After Step 3: sail(l2, l1)**
+
+This is because debarking from location l1 requires arriving at that location first, which is achieved by sail(l2, l1). Therefore, step 4 (debark(c1, l1)) must occur after step 3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l1) (at c2 l2))
+
+  Plan steps:
+1: board(c0, l1)
+2: sail(l1, l2)
+3: debark(c0, l2)
+4: sail(l2, l3)
+5: board(c1, l3)
+6: sail(l3, l1)
+7: debark(c1, l1)
+8: board(c2, l1)
+9: sail(l1, l2)
+10: debark(c2, l2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 9 (sail(l1, l2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 6 and Step 10,"Based on the given plan steps and their dependencies, I would say that Step 9 (sail(l1, l2)) must occur **before** Steps 10 (debark(c2, l2)).
+
+The reason is that sail(l1, l2) must be completed before c2 can debark at l2."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d3) (clear d1) (on d2 peg3) (clear d2) (on d3 peg2) (clear peg1))
+
+  Plan steps:
+1: move(d1, d2, peg2)
+2: move(d2, d3, peg3)
+3: move(d1, peg2, d2)
+4: move(d3, peg1, peg2)
+5: move(d1, d2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, peg2, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"After step 2: move(d2, d3, peg3) 
+
+This is because step 2 requires d3 to be available on peg3 after it, and step 3 would require d1 to be moved to peg2 before d2 can be moved from peg2 to d3 in the final step."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l0) (at c2 l0))
+
+  Plan steps:
+1: board(c0, l0)
+2: sail(l0, l1)
+3: debark(c0, l1)
+4: sail(l1, l2)
+5: board(c1, l2)
+6: sail(l2, l0)
+7: debark(c1, l0)
+8: sail(l0, l3)
+9: board(c2, l3)
+10: sail(l3, l0)
+11: debark(c2, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (debark(c1, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 6 and Step 9,"Based on the given planning task and interval analysis, I would say that Step 7 (debark(c1, l0)) must occur **after** Step 6 (sail(l2, l0))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l1) (at c2 l1))
+
+  Plan steps:
+1: sail(l1, l3)
+2: board(c1, l3)
+3: sail(l3, l1)
+4: debark(c1, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l3, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Before step 2
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l0) (at c2 l3))
+
+  Plan steps:
+1: board(c0, l3)
+2: sail(l3, l1)
+3: debark(c0, l1)
+4: board(c1, l1)
+5: sail(l1, l0)
+6: debark(c1, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (debark(c1, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,Between Steps 5 and 6.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s4) (at package3 s2) (at package4 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package4, truck1, s1)
+3: load-truck(package1, truck1, s1)
+4: drive-truck(truck1, s1, s4, driver1)
+5: load-truck(package3, truck1, s4)
+6: drive-truck(truck1, s4, s2, driver1)
+7: unload-truck(package4, truck1, s2)
+8: unload-truck(package3, truck1, s2)
+9: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (unload-truck(package4, truck1, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 6,"Before step 8. 
+
+Explanation: Given that all the packages are delivered at point s2, package4 needs to be unloaded first, followed by package3 and then package1."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (on d3 peg2) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d2, peg2, peg3)
+2: move(d1, d3, d2)
+3: move(d3, peg1, peg2)
+4: move(d1, d2, d3)
+5: move(d2, peg3, peg1)
+6: move(d1, d3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d3, peg1, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 5,"Based on the given planning task and considering the interval analysis for determining possible numeric ranges, I can identify the immediate dependencies that constrain the occurrence of Step 3 (move(d3, peg1, peg2)).
+
+The constraints that determine when Step 3 must occur are:
+
+Before Steps: 
+
+* Before Step 4 (move(d1, d2, d3)), because Step 3 affects the availability of peg1 and peg2 for Step 4.
+* After Step 5 is not a constraint because it doesn't affect the variables in Step 3.
+However, after analyzing dependencies more accurately:
+ 
+Before Steps: 
+
+* Before Step 4 (move(d1, d2, d3))
+ 
+Between steps: 
+
+* Between Step 1 (move(d2, peg2, peg3)) and Step 2 is not a constraint; however, it does affect the positions of d2 and peg2. The constraint is actually about when d3 will be available after moving from d1 to d2 in step 2."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l3) (at c2 l1))
+
+  Plan steps:
+1: sail(l1, l3)
+2: board(c0, l3)
+3: sail(l3, l2)
+4: debark(c0, l2)
+5: board(c2, l2)
+6: sail(l2, l1)
+7: debark(c2, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (sail(l2, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 7,Between Steps 5 and 7.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 d3) (clear d2) (on d3 peg1) (clear peg2))
+
+  Plan steps:
+1: move(d1, peg1, d2)
+2: move(d3, peg3, peg1)
+3: move(d1, d2, peg3)
+4: move(d2, peg2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, d2, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 4,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s3) (at package3 s3) (at package4 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s4)
+2: load-truck(package4, truck1, s4)
+3: drive-truck(truck1, s4, s1, driver1)
+4: unload-truck(package4, truck1, s1)
+5: load-truck(package3, truck1, s1)
+6: drive-truck(truck1, s1, s3, driver1)
+7: unload-truck(package3, truck1, s3)
+8: load-truck(package1, truck1, s3)
+9: drive-truck(truck1, s3, s4, driver1)
+10: unload-truck(package1, truck1, s4)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 10 (unload-truck(package1, truck1, s4)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 9,"Step 6: drive-truck(truck1, s1, s3, driver1) 
+
+The constraint is that step 10 (unload-truck(package1, truck1, s4)) must occur **after** Step 6 (drive-truck(truck1, s1, s3, driver1))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg3) (on d3 peg1) (clear d3) (clear peg2))
+
+  Plan steps:
+1: move(d1, d2, d3)
+2: move(d2, peg1, peg3)
+3: move(d1, d3, d2)
+4: move(d3, peg2, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, peg1, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Step 1:
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s2) (at package3 s4) (at package4 s1))
+
+  Plan steps:
+1: board-truck(driver2, truck1, s4)
+2: load-truck(package2, truck1, s4)
+3: drive-truck(truck1, s4, s1, driver2)
+4: load-truck(package1, truck1, s1)
+5: drive-truck(truck1, s1, s2, driver2)
+6: unload-truck(package2, truck1, s2)
+7: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (drive-truck(truck1, s4, s1, driver2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Between steps 2 and 3. 
+
+The load-truck step 2 puts package2 in truck1 at location s4.
+Then drive-truck step 3 moves the truck1 from s4 to s1.
+
+This means that for Step 3, the following constraints must be satisfied:
+- truck1 has not been moved away from s4 (which happens on Step 5)
+- package1 and package2 have been loaded onto truck1
+
+So, the drive-truck step 3 must occur after loading both packages but before moving the truck."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l1) (at c2 l2))
+
+  Plan steps:
+1: board(c2, l3)
+2: sail(l3, l2)
+3: debark(c2, l2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (sail(l3, l2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 3,Between Steps 1 and 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck2, s2)
+2: drive-truck(truck2, s2, s3, driver1)
+3: load-truck(package2, truck2, s3)
+4: drive-truck(truck2, s3, s1, driver1)
+5: unload-truck(package2, truck2, s1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (unload-truck(package2, truck2, s1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 4,Before step 4.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l0) (at c2 l1))
+
+  Plan steps:
+1: sail(l0, l2)
+2: board(c0, l2)
+3: sail(l2, l3)
+4: debark(c0, l3)
+5: board(c2, l3)
+6: sail(l3, l1)
+7: debark(c2, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (sail(l3, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 7,"Based on the given planning task and interval analysis, I would say: **after step 4**.
+
+The immediate dependencies for Step 6 are related to Step 4 (debark(c0, l3)), as both actions involve location `l3` which must be reached before Step 6 can occur."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 d3) (on d3 peg3) (clear peg1) (clear peg2))
+
+  Plan steps:
+1: move(d2, peg1, d3)
+2: move(d1, peg2, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, peg2, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",No specific interval found based on immediate dependencies.,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s2) (at package3 s4) (at package4 s4))
+
+  Plan steps:
+1: board-truck(driver2, truck1, s2)
+2: drive-truck(truck1, s2, s1, driver2)
+3: load-truck(package4, truck1, s1)
+4: load-truck(package1, truck1, s1)
+5: drive-truck(truck1, s1, s4, driver2)
+6: unload-truck(package4, truck1, s4)
+7: unload-truck(package1, truck1, s4)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (load-truck(package4, truck1, s1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 6,Between Steps 2 and 3
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg2) (on d3 peg1) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d1, peg3, d2)
+2: move(d3, peg2, peg3)
+3: move(d1, d2, d3)
+4: move(d2, peg1, peg2)
+5: move(d1, d3, d2)
+6: move(d3, peg3, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d3, peg2, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Between Steps 1 and 3.
+
+Explanation: For Step 2 to happen, d3 needs to be clear from the first plan step and peg2 needs to be free, which happens after Step 1 but before d3 is used in Step 3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package1, truck1, s1)
+3: drive-truck(truck1, s1, s2, driver1)
+4: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (drive-truck(truck1, s1, s2, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Based on the given plan steps and their dependencies, I would say that Step 3 (drive-truck(truck1, s1, s2, driver1)) must occur **after** Steps 1 and 2 have occurred.
+
+In particular:
+
+* Step 1 loads truck1 with package1 at location s1.
+* Step 2 does not depend on the outcome of any steps before it and can occur simultaneously with or after Step 1.
+* Step 3 requires truck1 to be driven from location s1 to location s2, so it must occur after both truck1 has been loaded (Step 2) and before it is unloaded at its destination (which doesn't have a dependency on this step).
+
+Therefore, the correct answer is **after** Steps 1 and 2."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s1) (at package3 s3) (at package4 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck2, s1)
+2: load-truck(package4, truck2, s1)
+3: load-truck(package1, truck2, s1)
+4: drive-truck(truck2, s1, s4, driver1)
+5: load-truck(package3, truck2, s4)
+6: load-truck(package2, truck2, s4)
+7: unload-truck(package1, truck2, s4)
+8: drive-truck(truck2, s4, s1, driver1)
+9: unload-truck(package2, truck2, s1)
+10: drive-truck(truck2, s1, s3, driver1)
+11: unload-truck(package4, truck2, s3)
+12: unload-truck(package3, truck2, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (unload-truck(package1, truck2, s4)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 4,"Based on the given plan, the constraint that determines when Step 7 (unload-truck(package1, truck2, s4)) must occur is immediately after Step 5 (load-truck(package3, truck2, s4)). 
+
+Therefore, the answer is: **after** step 5."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l3) (at c2 l0))
+
+  Plan steps:
+1: sail(l1, l2)
+2: board(c1, l2)
+3: sail(l2, l3)
+4: debark(c1, l3)
+5: board(c2, l3)
+6: sail(l3, l0)
+7: debark(c2, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (sail(l3, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 7,After step 5 and before step 7.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (on d3 peg2) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d2, d3, peg1)
+2: move(d1, peg3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, peg3, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",No specific interval found based on immediate dependencies.,"After step 1: move(d2, d3, peg1)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg2) (clear d1) (on d2 d3) (clear d2) (on d3 peg1) (clear peg3))
+
+  Plan steps:
+1: move(d1, d2, d3)
+2: move(d2, peg1, peg3)
+3: move(d1, d3, d2)
+4: move(d3, peg2, peg1)
+5: move(d1, d2, peg2)
+6: move(d2, peg3, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, d3, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Between Steps 2 and 4. 
+
+Note: In Interval Analysis for planning tasks, we analyze the dependencies between plan steps to determine constraints on the execution order. The goal is to identify when certain conditions must hold in order for a step to be executed.
+
+For Step 3 (move(d1, d3, d2)) to occur, we need:
+
+- Step 1 must have occurred, which moves objects around to set up the situation where this step can happen.
+- d1 and d3 must not be on pegs at the time of this move because they are being moved together.
+
+Considering dependencies: 
+- The goal (Step 0) requires peg2 to be clear after Step 5. So, we know that peg2 is available before Step 5.
+- Step 2 moves an object onto a peg, leaving another peg free. However, there's no dependency on this step to make room for the move of d1 and d3 in Step 3.
+
+So, between Steps 2 (move(d2, peg1, peg3)) and 4 (move(d3, peg2, peg1)), the necessary conditions are that d1 and d3 must not be on pegs at this point. Therefore, Step 3 can only occur after those dependencies have been resolved in Steps 2 and 4.
+
+Interval analysis helps us determine these kinds of constraints by examining how each step's execution is influenced by previous steps' outcomes, thus allowing for planning tasks to account for potential variations in program flow."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l3) (at c2 l2))
+
+  Plan steps:
+1: board(c1, l2)
+2: sail(l2, l3)
+3: debark(c1, l3)
+4: sail(l3, l1)
+5: board(c2, l1)
+6: sail(l1, l2)
+7: debark(c2, l2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (board(c2, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 7,"Based on the given plan and interval analysis, I would say that Step 5 (board(c2, l1)) must occur **between** Steps 4 (sail(l3, l1)) and 6 (sail(l1, l2)). 
+
+The constraint is determined by the dependency of the board operation on the previous sail operation to ensure a ship is present at location l1 before attempting to board."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s2) (at package3 s4) (at package4 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package3, truck1, s1)
+3: drive-truck(truck1, s1, s3, driver1)
+4: load-truck(package2, truck1, s3)
+5: load-truck(package1, truck1, s3)
+6: drive-truck(truck1, s3, s2, driver1)
+7: unload-truck(package2, truck1, s2)
+8: unload-truck(package1, truck1, s2)
+9: drive-truck(truck1, s2, s4, driver1)
+10: load-truck(package4, truck1, s4)
+11: unload-truck(package3, truck1, s4)
+12: drive-truck(truck1, s4, s1, driver1)
+13: unload-truck(package4, truck1, s1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (drive-truck(truck1, s3, s2, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 7,"Based on the given plan steps and their immediate dependencies, Step 6 (drive-truck(truck1, s3, s2, driver1)) must occur **after** Steps 4 (load-truck(package2, truck1, s3)), 5 (load-truck(package1, truck1, s3)), and **before** Step 7 (unload-truck(package2, truck1, s2))."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s3) (at package3 s2) (at package4 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package3, truck1, s1)
+3: drive-truck(truck1, s1, s3, driver1)
+4: load-truck(package1, truck1, s3)
+5: drive-truck(truck1, s3, s4, driver1)
+6: load-truck(package4, truck1, s4)
+7: drive-truck(truck1, s4, s3, driver1)
+8: drive-truck(truck1, s3, s1, driver1)
+9: unload-truck(package4, truck1, s1)
+10: drive-truck(truck1, s1, s2, driver1)
+11: unload-truck(package3, truck1, s2)
+12: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (drive-truck(truck1, s1, s3, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Between Steps 2 and 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 d3) (clear d2) (on d3 peg3) (clear peg2))
+
+  Plan steps:
+1: move(d1, d3, peg1)
+2: move(d2, peg2, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, peg2, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 1,"Based on the given planning task and interval analysis:
+
+The constraint that determines when Step 2 (move(d2, peg2, d3)) must occur is: **after** Step 1 (move(d1, d3, peg1)). 
+
+This is because move(d2, peg2, d3) depends on d3 being available after it has been placed there by the first step."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d3) (clear d1) (on d2 peg2) (clear d2) (on d3 peg1) (clear peg3))
+
+  Plan steps:
+1: move(d2, peg1, peg3)
+2: move(d1, d3, d2)
+3: move(d3, peg2, peg1)
+4: move(d1, d2, d3)
+5: move(d2, peg3, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, d3, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 3,Between Steps 1 and 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package2, truck1, s1)
+3: drive-truck(truck1, s1, s2, driver1)
+4: load-truck(package1, truck1, s2)
+5: drive-truck(truck1, s2, s1, driver1)
+6: unload-truck(package1, truck1, s1)
+7: drive-truck(truck1, s1, s2, driver1)
+8: drive-truck(truck1, s2, s3, driver1)
+9: unload-truck(package2, truck1, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (drive-truck(truck1, s1, s2, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Step 2: load-truck(package2, truck1, s1)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s2) (at package3 s2) (at package4 s1))
+
+  Plan steps:
+1: board-truck(driver2, truck2, s3)
+2: drive-truck(truck2, s3, s4, driver2)
+3: load-truck(package3, truck2, s4)
+4: load-truck(package2, truck2, s4)
+5: drive-truck(truck2, s4, s2, driver2)
+6: unload-truck(package3, truck2, s2)
+7: unload-truck(package2, truck2, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (drive-truck(truck2, s3, s4, driver2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 3,"Based on the given planning task and interval analysis:
+
+The immediate dependency for Step 2 (drive-truck(truck2, s3, s4, driver2)) is Step 1 (board-truck(driver2, truck2, s3)). 
+
+Therefore, Step 2 must occur **after** Step 1."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l1) (at c2 l0))
+
+  Plan steps:
+1: sail(l3, l1)
+2: board(c2, l1)
+3: sail(l1, l0)
+4: debark(c2, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (debark(c2, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,"Based on the given planning task and interval analysis, I would say:
+
+Step 4: debark(c2, l0) **must occur** **after** Step 3: sail(l1, l0).
+
+This is because debarking from location l0 requires having already arrived at that location, which happens after the previous sail step."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l3) (at c2 l1))
+
+  Plan steps:
+1: board(c2, l3)
+2: sail(l3, l1)
+3: debark(c2, l1)
+4: board(c1, l1)
+5: sail(l1, l3)
+6: debark(c1, l3)
+7: sail(l3, l2)
+8: board(c0, l2)
+9: sail(l2, l0)
+10: debark(c0, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (sail(l3, l2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 5 and Step 8,"Step 6 (debark(c1, l3)). 
+
+The sail action at step 7 depends on the previous debark action to ensure that c1 is no longer at location l3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s3) (at package2 s3))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: load-truck(package2, truck1, s1)
+3: drive-truck(truck1, s1, s3, driver1)
+4: unload-truck(package2, truck1, s3)
+5: drive-truck(truck1, s3, s2, driver1)
+6: load-truck(package1, truck1, s2)
+7: drive-truck(truck1, s2, s3, driver1)
+8: unload-truck(package1, truck1, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (drive-truck(truck1, s2, s3, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 5 and Step 8,"Based on the given planning task and interval analysis:
+
+Step 7: drive-truck(truck1, s2, s3, driver1)
+
+This step must occur **after** Step 6: load-truck(package1, truck1, s2), as the truck is only available to depart from `s2` after loading package1."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l0) (at c2 l0))
+
+  Plan steps:
+1: sail(l0, l1)
+2: board(c1, l1)
+3: sail(l1, l0)
+4: debark(c1, l0)
+5: sail(l0, l3)
+6: board(c0, l3)
+7: sail(l3, l0)
+8: debark(c0, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (sail(l0, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 6,Between steps 4 and 5.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s4) (at package2 s3) (at package3 s3) (at package4 s4))
+
+  Plan steps:
+1: board-truck(driver2, truck3, s1)
+2: load-truck(package4, truck3, s1)
+3: load-truck(package1, truck3, s1)
+4: drive-truck(truck3, s1, s4, driver2)
+5: unload-truck(package4, truck3, s4)
+6: load-truck(package3, truck3, s4)
+7: load-truck(package2, truck3, s4)
+8: unload-truck(package1, truck3, s4)
+9: drive-truck(truck3, s4, s3, driver2)
+10: unload-truck(package3, truck3, s3)
+11: unload-truck(package2, truck3, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (drive-truck(truck3, s1, s4, driver2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 5,"Between Steps 3 and 4. 
+
+The drive-truck step depends on the truck being loaded with package1 at Step 3 and then loading package4 at Step 2 is already completed before Step 3."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l1) (at c2 l1))
+
+  Plan steps:
+1: board(c2, l3)
+2: sail(l3, l1)
+3: debark(c2, l1)
+4: sail(l1, l2)
+5: board(c1, l2)
+6: sail(l2, l1)
+7: debark(c1, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (debark(c1, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 6,Between steps 6 and 7.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l0) (at c2 l0))
+
+  Plan steps:
+1: board(c2, l3)
+2: sail(l3, l0)
+3: debark(c2, l0)
+4: sail(l0, l1)
+5: board(c0, l1)
+6: sail(l1, l0)
+7: debark(c0, l0)
+8: sail(l0, l1)
+9: board(c1, l1)
+10: sail(l1, l0)
+11: debark(c1, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (sail(l0, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 5,"Between Steps 3 and 8. 
+
+Explanation: Step 4's sail operation relies on the locations of c2 and l0 to be updated due to debarkation operations in Steps 3 and then Step 7 for both c2 and c0, making it available for boarding in Steps 5 and 9 respectively."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 d3) (clear d2) (on d3 peg2) (clear peg1))
+
+  Plan steps:
+1: move(d1, d2, peg2)
+2: move(d2, d3, peg1)
+3: move(d1, peg2, d2)
+4: move(d3, peg3, peg2)
+5: move(d1, d2, peg3)
+6: move(d2, peg1, d3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, d3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Between Steps 1 and 3.
+
+The step ""move(d2, d3, peg1)"" depends on the outcome of ""move(d1, d2, peg2)"", but it cannot happen until that is done. It also has a dependency with ""move(d3, peg3, peg2)""."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l3) (at c1 l1) (at c2 l0))
+
+  Plan steps:
+1: board(c2, l2)
+2: sail(l2, l0)
+3: debark(c2, l0)
+4: sail(l0, l1)
+5: board(c0, l1)
+6: sail(l1, l3)
+7: debark(c0, l3)
+8: board(c1, l3)
+9: sail(l3, l1)
+10: debark(c1, l1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (board(c0, l1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 4 and Step 7,Between Steps 4 and 5.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 d3) (on d3 peg1) (clear peg2) (clear peg3))
+
+  Plan steps:
+1: move(d1, d3, peg3)
+2: move(d2, peg2, d3)
+3: move(d1, peg3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, peg2, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 1,"Before step 1: move(d1, d3, peg3)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l1) (at c1 l3) (at c2 l3))
+
+  Plan steps:
+1: board(c0, l0)
+2: sail(l0, l1)
+3: debark(c0, l1)
+4: sail(l1, l2)
+5: board(c1, l2)
+6: sail(l2, l3)
+7: debark(c1, l3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 7 (debark(c1, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 6,"Between Steps 6 and 7.
+
+The constraint is that debark(c1, l3) must occur after sail(l2, l3), so Step 6 must be completed for Step 7 to begin, but there can be an immediate dependency delay between these steps if other operations are being executed."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 d3) (on d3 peg2) (clear peg1) (clear peg3))
+
+  Plan steps:
+1: move(d3, peg3, peg2)
+2: move(d1, d2, peg3)
+3: move(d2, peg1, d3)
+4: move(d1, peg3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (move(d1, peg3, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 2,"Before Step 3: move(d2, peg1, d3)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l3) (at c2 l2))
+
+  Plan steps:
+1: sail(l3, l2)
+2: board(c0, l2)
+3: sail(l2, l0)
+4: debark(c0, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (sail(l2, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (clear peg2) (clear peg3))
+
+  Plan steps:
+1: move(d1, d2, peg3)
+2: move(d2, peg2, peg1)
+3: move(d1, peg3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d2, peg2, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 1,"After Step 1: move(d1, d2, peg3) 
+
+This is because Step 2 requires that d2 be available in order to move it from d2 to peg2. After the move of d1 to d2, d2 becomes available for the next step."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 peg2) (clear d2) (on d3 peg3) (clear d3))
+
+  Plan steps:
+1: move(d2, d3, peg2)
+2: move(d1, peg3, d2)
+3: move(d3, peg1, peg3)
+4: move(d1, d2, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d3, peg1, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 4,"Between Steps 2 and 4. 
+
+Step 3's constraint is determined by its predecessors: Steps 1 and 2.
+
+- Step 1 needs to be completed for the condition of having a clear d3 (and thus being able to move it), which makes step 3 possible.
+  
+- Step 2 also sets up the condition of having d1 on peg3, ready to move onto another peg. However, the more immediate dependency is that d3 has to have been moved to peg3 and be free before it can be moved again (specifically, to peg1)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg1) (clear d1) (on d2 peg3) (clear d2) (on d3 peg2) (clear d3))
+
+  Plan steps:
+1: move(d2, d3, peg3)
+2: move(d1, peg2, d2)
+3: move(d3, peg1, peg2)
+4: move(d1, d2, peg1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (move(d1, d2, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,"Between Steps 3 and 4. 
+
+In particular, the constraint is that Step 4 cannot start until the preconditions of Step 3 are satisfied (i.e., d3 is on peg2), because Step 3 will place d3 on peg1, which is needed for the goal. However, this action also has the side effect of freeing up peg2. The next step should move d1 to peg1, and it must be done before d2 can reach peg1 (from step 4's precondition)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s2) (at package2 s2) (at package3 s1))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s2)
+2: load-truck(package3, truck1, s2)
+3: drive-truck(truck1, s2, s1, driver1)
+4: unload-truck(package3, truck1, s1)
+5: load-truck(package2, truck1, s1)
+6: load-truck(package1, truck1, s1)
+7: drive-truck(truck1, s1, s2, driver1)
+8: unload-truck(package2, truck1, s2)
+9: unload-truck(package1, truck1, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (drive-truck(truck1, s2, s1, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Step 2: load-truck(package3, truck1, s2)
+
+This step's immediate dependency is the previous step (board-truck(driver1, truck1, s2)), which must have occurred for Step 2 to be executed.
+
+Additionally, for Step 3 to occur, its input ""truck1"" and ""driver1"" must be available. This implies that Step 3 can only happen after Step 1: board-truck(driver1, truck1, s2) has completed.
+
+Considering the dependencies, the constraint determining when Step 3 (drive-truck(truck1, s2, s1, driver1)) must occur is **after** Step 2."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d3) (clear d1) (on d2 peg3) (clear d2) (on d3 peg2) (clear peg1))
+
+  Plan steps:
+1: move(d1, peg2, d2)
+2: move(d3, peg3, peg2)
+3: move(d1, d2, d3)
+4: move(d2, peg1, peg3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, d2, d3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,"Based on the plan, I would say: Between steps 2 and 4. 
+
+Explanation:
+For step 3 to occur, both d1 and d3 must be available (not occupied by other disks), and d2 is not yet occupied by another disk at that point because it's just moved from d1 in step 3. Therefore, the constraints for this move are met after step 2 (because d3 is now available) but before step 4 (because d2 is free to be moved again)."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg2) (clear d1) (on d2 d3) (clear d2) (on d3 peg3) (clear peg1))
+
+  Plan steps:
+1: move(d1, d2, peg1)
+2: move(d2, peg2, d3)
+3: move(d1, peg1, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d1, peg1, peg2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 2,Between Steps 1 and 2.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l0) (at c2 l2))
+
+  Plan steps:
+1: board(c0, l3)
+2: sail(l3, l2)
+3: debark(c0, l2)
+4: board(c1, l2)
+5: sail(l2, l0)
+6: debark(c1, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (sail(l2, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 2 and Step 6,Between Steps 3 and 4
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg2) (clear d1) (on d2 d3) (clear d2) (on d3 peg1) (clear peg3))
+
+  Plan steps:
+1: move(d1, peg1, d2)
+2: move(d3, peg3, peg1)
+3: move(d1, d2, peg3)
+4: move(d2, peg2, d3)
+5: move(d1, peg3, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d3, peg3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 3,Between Steps 1 and 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l2) (at c2 l3))
+
+  Plan steps:
+1: board(c2, l0)
+2: sail(l0, l3)
+3: debark(c2, l3)
+4: board(c0, l3)
+5: sail(l3, l0)
+6: debark(c0, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (debark(c0, l0)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Based on the interval analysis for this planning task, I would say:
+
+Between Steps 5 and 6.
+
+Step 5 needs to be completed to ensure that c0 is at location l3, and Step 6 can only occur once c0 has arrived at l3 (as per debark precondition)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s3) (at package2 s3))
+
+  Plan steps:
+1: board-truck(driver2, truck2, s2)
+2: load-truck(package1, truck2, s2)
+3: drive-truck(truck2, s2, s3, driver2)
+4: unload-truck(package1, truck2, s3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (load-truck(package1, truck2, s2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 4,"Before Step 1: board-truck(driver2, truck2, s2)"
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l0) (at c2 l3))
+
+  Plan steps:
+1: board(c1, l2)
+2: sail(l2, l0)
+3: debark(c1, l0)
+4: board(c0, l0)
+5: sail(l0, l2)
+6: debark(c0, l2)
+7: sail(l2, l0)
+8: board(c2, l0)
+9: sail(l0, l3)
+10: debark(c2, l3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 9 (sail(l0, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 7 and Step 10,"Between Steps 6 and 7.
+
+In Interval Analysis, we examine the dependencies of each step to determine the possible intervals for variable values.
+
+For Step 9 (sail(l0, l3)), its immediate dependency is:
+- The result from sail(l2, l0) in Step 5 must be available. This means Steps 5 and 9 are dependent on each other.
+- Furthermore, since sail(l2, l0) was executed before debark(c1, l0) (Step 3), the location l2 became reachable at that point. And by extension, as we have a chain of reachable locations: l2 -> l0 (from Step 5), which allows us to reach l3 only after the debarking from l0 is done. So Step 6 (debark(c0, l2)) has no direct dependency on sail(l2, l0) but it's an indicator that we have completed our journey back and forth between l2 and l0.
+
+However, considering only immediate dependencies as per Interval Analysis:
+- The location l0 is available because of sail(l2, l0) (Step 5).
+- Since there is a dependency from sail(l2, l0), it means the plan step before that is already executed, so Step 6 (debark(c0, l2)) has to be completed for l2 and its relation with l0 is settled.
+
+As such, between Steps 6 and 7 are where we settle our location values based on sail(l2, l0) and then use it as a basis for the subsequent plan step that uses it as input."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (on d3 peg2) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d1, d3, d2)
+2: move(d3, peg1, peg2)
+3: move(d1, d2, d3)
+4: move(d2, peg3, peg1)
+5: move(d1, d3, d2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 4 (move(d2, peg3, peg1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 3,Between Steps 3 and 5.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s1) (at package3 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck1, s1)
+2: drive-truck(truck1, s1, s2, driver1)
+3: load-truck(package2, truck1, s2)
+4: load-truck(package1, truck1, s2)
+5: drive-truck(truck1, s2, s1, driver1)
+6: unload-truck(package2, truck1, s1)
+7: unload-truck(package1, truck1, s1)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (drive-truck(truck1, s1, s2, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 3,Before Step 1.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l2) (at c1 l0) (at c2 l1))
+
+  Plan steps:
+1: sail(l0, l2)
+2: board(c2, l2)
+3: sail(l2, l1)
+4: debark(c2, l1)
+5: sail(l1, l3)
+6: board(c1, l3)
+7: sail(l3, l0)
+8: debark(c1, l0)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (board(c1, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 5 and Step 8,"Before step 5: sail(l1, l3) must have completed for Step 6 to begin."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 d2) (clear d1) (on d2 peg1) (on d3 peg2) (clear d3) (clear peg3))
+
+  Plan steps:
+1: move(d2, d3, peg1)
+2: move(d1, peg2, d2)
+3: move(d3, peg3, peg2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, peg2, d2)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Before Step 3,Step 1 and before Step 3.
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (on d1 peg3) (clear d1) (on d2 peg1) (clear d2) (on d3 peg2) (clear d3))
+
+  Plan steps:
+1: move(d1, peg3, d2)
+2: move(d3, peg1, peg3)
+3: move(d1, d2, d3)
+4: move(d2, peg2, peg1)
+5: move(d1, d3, d2)
+6: move(d3, peg3, peg2)
+7: move(d1, d2, peg3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d3, peg1, peg3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 1 and Step 4,Between Steps 1 and 2
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at package1 s1) (at package2 s2) (at package3 s4) (at package4 s2))
+
+  Plan steps:
+1: board-truck(driver1, truck2, s1)
+2: load-truck(package4, truck2, s1)
+3: drive-truck(truck2, s1, s2, driver1)
+4: unload-truck(package4, truck2, s2)
+5: drive-truck(truck2, s2, s4, driver1)
+6: load-truck(package2, truck2, s4)
+7: drive-truck(truck2, s4, s2, driver1)
+8: unload-truck(package2, truck2, s2)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 5 (drive-truck(truck2, s2, s4, driver1)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",Between Step 3 and Step 6,"Before step 4: unload-truck(package4, truck2, s2)
+
+The drive-truck operation in Step 5 requires that package4 has been unloaded from truck2 at location s2, which is the outcome of Step 4. Therefore, Step 5 must occur after this event."
+"You are an AI analyst being evaluated on data-flow analyses for planning tasks.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following planning task:
+
+  Goal: (and (at c0 l0) (at c1 l2) (at c2 l3))
+
+  Plan steps:
+1: board(c1, l0)
+2: sail(l0, l2)
+3: debark(c1, l2)
+4: board(c2, l2)
+5: sail(l2, l3)
+6: debark(c2, l3)
+
+Question:
+  Based on immediate dependencies in this linear plan, what constraints determine when Step 6 (debark(c2, l3)) must occur?
+
+Please answer before, after, or between which steps without any further explanation.",After Step 5,"Between Steps 5 and 6. 
+
+The goal is to reach location l3. Since sail(l2,l3) has a dependency on debark(c2,l2), the constraints are imposed such that the debarking of c2 at l2 must occur before or at the same time as sailing from l2 to l3 for step 6 to happen after reaching l3. 
+
+Immediate dependencies suggest this order without any further explanation required."

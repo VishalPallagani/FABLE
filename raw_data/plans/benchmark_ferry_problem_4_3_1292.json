@@ -1,0 +1,57 @@
+{
+  "goal": "(and (at c0 l1) (at c1 l0) (at c2 l3))",
+  "plan_steps": [
+    "1: sail(l2, l3)",
+    "2: board(c0, l3)",
+    "3: sail(l3, l1)",
+    "4: debark(c0, l1)",
+    "5: board(c2, l1)",
+    "6: sail(l1, l3)",
+    "7: debark(c2, l3)",
+    "8: board(c1, l3)",
+    "9: sail(l3, l0)",
+    "10: debark(c1, l0)"
+  ],
+  "benchmarks": {
+    "Reaching Definitions": {
+      "question": "In Step 2 (board), is the predicate '('at-ferry', 'l3')' potentially from the effect of Step 1 (sail) being used?",
+      "answer": "Yes",
+      "explanation": "Step 2 uses predicate '('at-ferry', 'l3')' which is added by Step 1."
+    },
+    "Available Expressions": {
+      "question": "Is the effect '('at-ferry', 'l3')' from Step 1 (sail) still available for Step 2 (board)?",
+      "answer": "Yes",
+      "explanation": "Predicate effect '('at-ferry', 'l3')' added by Step 1 appears available for Step 2 as no intermediate step seems to delete it."
+    },
+    "Live Variable Analysis": {
+      "question": "After Step 1 (sail), is the effect '('at-ferry', 'l3')' 'live' (i.e., needed by a future step like Step 2)?",
+      "answer": "Yes",
+      "explanation": "Effect effect '('at-ferry', 'l3')' from Step 1 is needed by Step 2 and not deleted before then."
+    },
+    "Type-State Analysis": {
+      "question": "If Step 1 (sail) were skipped, would Step 2 (board) become invalid?",
+      "answer": "Yes",
+      "explanation": "Skipping Step 1 removes effect '('at-ferry', 'l3')', which is a precondition for Step 2."
+    },
+    "Concurrency Analysis": {
+      "question": "Based on simple precondition/delete analysis, can Step 6 (sail) and Step 1 (sail) run concurrently?",
+      "answer": "Yes",
+      "explanation": "No direct precondition/delete conflicts found between these two steps with this basic check."
+    },
+    "Very Busy Expressions": {
+      "question": "Is the action in Step 1 (sail(l2, l3)) 'very busy' in the sense that its effect '('at-ferry', 'l3')' is used by the next step, Step 2 (board(c0, l3))?",
+      "answer": "Yes",
+      "explanation": "Step 1 produces effect '('at-ferry', 'l3')', which is immediately required as a precondition by Step 2."
+    },
+    "Interval Analysis": {
+      "question": "Based on immediate dependencies in this linear plan, what constraints determine when Step 8 (board(c1, l3)) must occur?",
+      "answer": "Between Step 7 and Step 10",
+      "explanation": "It must occur after Step 7 (which provides precondition '('empty-ferry',)'). It must occur before Step 10 (which consumes effect '('on', 'c1')')."
+    },
+    "Taint Analysis": {
+      "question": "Does any step in this plan interfere with (taint) the preconditions of the immediately following step?",
+      "answer": "No",
+      "explanation": "No step found that directly deletes a precondition required by the immediately following step according to this rule."
+    }
+  }
+}

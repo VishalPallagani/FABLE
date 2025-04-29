@@ -1,0 +1,49 @@
+{
+  "goal": "(and (on d1 d2) (clear d1) (on d2 peg3) (on d3 peg2) (clear d3) (clear peg1))",
+  "plan_steps": [
+    "1: move(d2, d3, peg3)",
+    "2: move(d1, peg1, d2)"
+  ],
+  "benchmarks": {
+    "Reaching Definitions": {
+      "question": "Default: Is any predicate used in a step's precondition fulfilled by a previous step's effect?",
+      "answer": "No",
+      "explanation": "No clear instance found where a step's precondition is directly added by a previous step with these rules."
+    },
+    "Available Expressions": {
+      "question": "Default: Is a predicate added early still available when needed later?",
+      "answer": "N/A",
+      "explanation": "No clear instance found matching the rule criteria."
+    },
+    "Live Variable Analysis": {
+      "question": "Default: Is a predicate produced by a step needed later?",
+      "answer": "N/A",
+      "explanation": "No clear instance found matching the rule criteria."
+    },
+    "Type-State Analysis": {
+      "question": "If Step 1 (move) were skipped, would Step 2 (move) become invalid?",
+      "answer": "No",
+      "explanation": "Based on direct effects, skipping Step 1 doesn't seem to remove any preconditions added solely by it for Step 2."
+    },
+    "Concurrency Analysis": {
+      "question": "Based on simple precondition/delete analysis, can Step 2 (move) and Step 1 (move) run concurrently?",
+      "answer": "No",
+      "explanation": "Step 2 deletes a precondition of Step 1."
+    },
+    "Very Busy Expressions": {
+      "question": "Is any action in this plan 'very busy' in the sense that its effect is immediately used by the next step?",
+      "answer": "No",
+      "explanation": "No step found whose effect is immediately used as a precondition by the next step according to this rule."
+    },
+    "Interval Analysis": {
+      "question": "Based on immediate dependencies in this linear plan, what constraints determine when Step 2 (move(d1, peg1, d2)) must occur?",
+      "answer": "No specific interval found based on immediate dependencies.",
+      "explanation": "No immediate preceding provider step found by this simple rule. No immediate subsequent consumer step found by this simple rule."
+    },
+    "Taint Analysis": {
+      "question": "Does any step in this plan interfere with (taint) the preconditions of the immediately following step?",
+      "answer": "No",
+      "explanation": "No step found that directly deletes a precondition required by the immediately following step according to this rule."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "goal": "(and (on d1 d2) (clear d1) (on d2 peg2) (on d3 peg1) (clear d3) (clear peg3))",
+  "plan_steps": [
+    "1: move(d3, peg2, peg1)",
+    "2: move(d1, d2, d3)",
+    "3: move(d2, peg3, peg2)",
+    "4: move(d1, d3, d2)"
+  ],
+  "benchmarks": {
+    "Reaching Definitions": {
+      "question": "In Step 3 (move), is the predicate '('clear', 'd2')' potentially from the effect of Step 2 (move) being used?",
+      "answer": "Yes",
+      "explanation": "Step 3 uses predicate '('clear', 'd2')' which is added by Step 2."
+    },
+    "Available Expressions": {
+      "question": "Is the effect '('clear', 'd2')' from Step 2 (move) still available for Step 3 (move)?",
+      "answer": "Yes",
+      "explanation": "Predicate effect '('clear', 'd2')' added by Step 2 appears available for Step 3 as no intermediate step seems to delete it."
+    },
+    "Live Variable Analysis": {
+      "question": "After Step 1 (move), is the effect '('clear', 'peg2')' 'live' (i.e., needed by a future step like Step 3)?",
+      "answer": "No",
+      "explanation": "Effect effect '('clear', 'peg2')' from Step 1 is needed by Step 3, but it is deleted first by Step 3."
+    },
+    "Type-State Analysis": {
+      "question": "If Step 2 (move) were skipped, would Step 3 (move) become invalid?",
+      "answer": "Yes",
+      "explanation": "Skipping Step 2 removes effect '('clear', 'd2')', which is a precondition for Step 3."
+    },
+    "Concurrency Analysis": {
+      "question": "Based on simple precondition/delete analysis, can Step 4 (move) and Step 3 (move) run concurrently?",
+      "answer": "No",
+      "explanation": "Step 4 deletes a precondition of Step 3."
+    },
+    "Very Busy Expressions": {
+      "question": "Is the action in Step 2 (move(d1, d2, d3)) 'very busy' in the sense that its effect '('clear', 'd2')' is used by the next step, Step 3 (move(d2, peg3, peg2))?",
+      "answer": "Yes",
+      "explanation": "Step 2 produces effect '('clear', 'd2')', which is immediately required as a precondition by Step 3."
+    },
+    "Interval Analysis": {
+      "question": "Based on immediate dependencies in this linear plan, what constraints determine when Step 3 (move(d2, peg3, peg2)) must occur?",
+      "answer": "After Step 2",
+      "explanation": "It must occur after Step 2 (which provides precondition '('clear', 'd2')'). No immediate subsequent consumer step found by this simple rule."
+    },
+    "Taint Analysis": {
+      "question": "Does any step in this plan interfere with (taint) the preconditions of the immediately following step?",
+      "answer": "No",
+      "explanation": "No step found that directly deletes a precondition required by the immediately following step according to this rule."
+    }
+  }
+}

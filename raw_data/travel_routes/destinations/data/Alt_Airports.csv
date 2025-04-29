@@ -1,0 +1,714 @@
+Name,City,State,Longitude,Latitude
+Los Angeles International Airport,LOS ANGELES,CA,-118.407997,33.942501
+Chicago O'Hare International Airport,CHICAGO,IL,-87.9048,41.9786
+John F Kennedy International Airport,NEW YORK,NY,-73.779317,40.639447
+Hartsfield Jackson Atlanta International Airport,ATLANTA,GA,-84.428101,33.6367
+San Francisco International Airport,SAN FRANCISCO,CA,-122.374821,37.619806
+Newark Liberty International Airport,NEWARK,NJ,-74.168701,40.692501
+Harry Reid International Airport,LAS VEGAS,NV,-115.151817,36.083361
+Orlando International Airport,ORLANDO,FL,-81.30899810791016,28.429399490356445
+Denver International Airport,DENVER,CO,-104.672996521,39.861698150635
+Washington Dulles International Airport,DULLES,VA,-77.455803,38.9445
+LaGuardia Airport,NEW YORK,NY,-73.872597,40.777199
+Miami International Airport,MIAMI,FL,-80.29060363769531,25.79319953918457
+Seattle–Tacoma International Airport,SEATTLE,WA,-122.310276,47.447943
+Phoenix Sky Harbor International Airport,PHOENIX,AZ,-112.005905,33.435302
+Logan International Airport,BOSTON,MA,-71.0079,42.36197
+Philadelphia International Airport,PHILADELPHIA,PA,-75.241096,39.871899
+Charlotte Douglas International Airport,CHARLOTTE,NC,-80.94309997558594,35.2140007019043
+George Bush Intercontinental Houston Airport,HOUSTON,TX,-95.34140014648438,29.984399795532227
+Detroit Metropolitan Wayne County Airport,DETROIT,MI,-83.353786,42.21377
+Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field,MINNEAPOLIS,MN,-93.221741,44.880081
+Salt Lake City International Airport,SALT LAKE CITY,UT,-111.979866,40.78886
+Chicago Midway International Airport,CHICAGO,IL,-87.752403,41.785999
+Baltimore/Washington International Thurgood Marshall Airport,BALTIMORE,MD,-76.668297,39.1754
+San Diego International Airport,SAN DIEGO,CA,-117.190002441,32.7336006165
+St. Louis Lambert International Airport,ST LOUIS,MO,-90.370003,38.748697
+Portland International Airport,PORTLAND,OR,-122.598,45.588699
+Louis Armstrong New Orleans International Airport,NEW ORLEANS,LA,-90.258003,29.993401
+Tampa International Airport,TAMPA,FL,-82.533203,27.9755
+Nashville International Airport,NASHVILLE,TN,-86.6782,36.1245
+Cincinnati Northern Kentucky International Airport,CINCINNATI / COVINGTON,KY,-84.667801,39.048801
+Raleigh Durham International Airport,RALEIGH/DURHAM,NC,-78.787498,35.877602
+Austin Bergstrom International Airport,AUSTIN,TX,-97.662015,30.197535
+Pittsburgh International Airport,PITTSBURGH,PA,-80.232903,40.491501
+San Antonio International Airport,SAN ANTONIO,TX,-98.469803,29.533701
+Norman Y. Mineta San Jose International Airport,SAN JOSE,CA,-121.929188,37.362452
+Kansas City International Airport,KANSAS CITY,MO,-94.713898,39.2976
+San Francisco Bay Oakland International Airport,OAKLAND,CA,-122.221184,37.720085
+John Wayne Orange County International Airport,SANTA ANA,CA,-117.867996,33.675701
+Memphis International Airport,MEMPHIS,TN,-89.9767,35.0424
+Cleveland Hopkins International Airport,CLEVELAND,OH,-81.8498,41.411701
+William P Hobby Airport,HOUSTON,TX,-95.2789,29.645399
+Dallas Love Field,DALLAS,TX,-96.851799,32.847099
+Indianapolis International Airport,INDIANAPOLIS,IN,-86.294403,39.7173
+Albuquerque International Sunport,ALBUQUERQUE,NM,-106.608925,35.039976
+John Glenn Columbus International Airport,COLUMBUS,OH,-82.891899,39.998001
+General Mitchell International Airport,MILWAUKEE,WI,-87.896599,42.947201
+Jacksonville International Airport,JACKSONVILLE,FL,-81.687813,30.492469
+Buffalo Niagara International Airport,BUFFALO,NY,-78.732201,42.940498
+Bradley International Airport,HARTFORD,CT,-72.688066,41.93851
+Will Rogers World Airport,OKLAHOMA CITY,OK,-97.598248,35.393388
+Sacramento International Airport,SACRAMENTO,CA,-121.591003,38.6954
+Eppley Airfield,OMAHA,NE,-95.894096,41.3032
+Hollywood Burbank Airport,BURBANK,CA,-118.356378,34.197703
+Charleston International Airport,CHARLESTON,SC,-80.040497,32.898602
+Palm Beach International Airport,WEST PALM BEACH,FL,-80.095596,26.683201
+Louisville Muhammad Ali International Airport,LOUISVILLE,KY,-85.736,38.1744
+El Paso International Airport,EL PASO,TX,-106.377998,31.807199
+Reno Tahoe International Airport,RENO,NV,-119.767998,39.4991
+Norfolk International Airport,NORFOLK,VA,-76.201,36.895341
+Theodore Francis Green State Airport,WARWICK,RI,-71.425668,41.725038
+Long Beach Airport (Daugherty Field),LONG BEACH,CA,-118.149891,33.816523
+Richmond International Airport,RICHMOND,VA,-77.319702,37.505199
+Savannah Hilton Head International Airport,SAVANNAH,GA,-81.202103,32.127602
+Birmingham-Shuttlesworth International Airport,BIRMINGHAM,AL,-86.753502,33.562901
+Albany International Airport,ALBANY,NY,-73.80169677734375,42.74829864501953
+Ontario International Airport,ONTARIO,CA,-117.600998,34.056
+Westchester County Airport,WHITE PLAINS,NY,-73.70760345458984,41.06700134277344
+Boise Air Terminal/Gowen Field,BOISE,ID,-116.223,43.5644
+Syracuse Hancock International Airport,SYRACUSE,NY,-76.1063003540039,43.11119842529297
+Gerald R. Ford International Airport,GRAND RAPIDS,MI,-85.52279663,42.88079834
+Des Moines International Airport,DES MOINES,IA,-93.663101,41.534
+Wittman Regional Airport,OSHKOSH,WI,-88.55699920654297,43.98440170288086
+Wichita Eisenhower National Airport,WICHITA,KS,-97.433098,37.649899
+Frederick Douglass Greater Rochester International Airport,ROCHESTER,NY,-77.672401,43.1189
+James M Cox Dayton International Airport,DAYTON,OH,-84.219398,39.902401
+Tulsa International Airport,TULSA,OK,-95.88809967041016,36.19839859008789
+Dane County Regional Truax Field,MADISON,WI,-89.337502,43.1399
+Portland International Jetport,PORTLAND,ME,-70.309303,43.646198
+City of Colorado Springs Municipal Airport,COLORADO SPRINGS,CO,-104.700996,38.805801
+Spokane International Airport,SPOKANE,WA,-117.533997,47.6199
+Bill & Hillary Clinton National Airport/Adams Field,LITTLE ROCK,AR,-92.223728,34.729582
+Manchester-Boston Regional Airport,MANCHESTER,NH,-71.435699,42.932598
+Burlington International Airport,SOUTH BURLINGTON,VT,-73.153297,44.471901
+McGhee Tyson Airport,ALCOA,TN,-83.994003,35.811001
+Palm Springs International Airport,PALM SPRINGS,CA,-116.507004,33.8297
+Greenville Spartanburg International Airport,GREER,SC,-82.218903,34.895699
+Key West International Airport,KEY WEST,FL,-81.759598,24.556101
+Santa Barbara Municipal Airport,SANTA BARBARA,CA,-119.839996,34.426201
+Blue Grass Airport,LEXINGTON,KY,-84.605904,38.036499
+Piedmont Triad International Airport,GREENSBORO,NC,-79.937302,36.097801
+Pensacola International Airport,PENSACOLA,FL,-87.1866,30.4734
+Tallahassee Regional Airport,TALLAHASSEE,FL,-84.350304,30.3965
+Sarasota Bradenton International Airport,SARASOTA/BRADENTON,FL,-82.554359,27.394631
+Rapid City Regional Airport,RAPID CITY,SD,-103.05699920654297,44.0452995300293
+Boeing Field King County International Airport,SEATTLE,WA,-122.302002,47.529999
+Teterboro Airport,TETERBORO,NJ,-74.060799,40.850101
+Asheville Regional Airport,ASHEVILLE,NC,-82.541801,35.436199
+Monterey Peninsula Airport,MONTEREY,CA,-121.84300231933594,36.58700180053711
+Daytona Beach International Airport,DAYTONA BEACH,FL,-81.058098,29.179899
+St. Petersburg Clearwater International Airport,PINELLAS PARK,FL,-82.687401,27.9102
+Orlando Sanford International Airport,ORLANDO,FL,-81.23750305175781,28.777599334716797
+Akron Canton Regional Airport,AKRON,OH,-81.44219970703125,40.916099548339844
+Bangor International Airport,BANGOR,ME,-68.828102,44.8074
+Columbia Metropolitan Airport,COLUMBIA,SC,-81.119499,33.938801
+North Las Vegas Metropolitan International Airport,LAS VEGAS,NV,-115.194,36.210701
+Charlottesville Albemarle Airport,CHARLOTTESVILLE,VA,-78.4529037475586,38.13859939575195
+Harrisburg International Airport,HARRISBURG,PA,-76.763397,40.193501
+Huntsville International Carl T Jones Field,HUNTSVILLE,AL,-86.775101,34.637199
+Jackson Hole Airport,JACKSON,WY,-110.73799896240234,43.6072998046875
+Chattanooga Metropolitan Airport (Lovell Field),CHATTANOOGA,TN,-85.203796,35.035301
+Fresno Yosemite International Airport,FRESNO,CA,-119.718002,36.776199
+Lubbock Preston Smith International Airport,LUBBOCK,TX,-101.822998,33.663601
+Myrtle Beach International Airport,MYRTLE BEACH,SC,-78.928299,33.679699
+Austin Straubel International Airport,GREEN BAY,WI,-88.130805,44.483459
+Van Nuys Airport,VAN NUYS,CA,-118.48999786377,34.209800720215
+Santa Fe Municipal Airport,SANTA FE,NM,-106.088997,35.6171
+Centennial Airport,DENVER,CO,-104.848999,39.57009888
+Kissimmee Gateway Airport,ORLANDO,FL,-81.4371032715,28.2898006439
+DeKalb Peachtree Airport,ATLANTA,GA,-84.30213,33.87633
+Springfield Branson National Airport,SPRINGFIELD,MO,-93.388603,37.245701
+Rick Husband Amarillo International Airport,AMARILLO,TX,-101.706001,35.219398
+The Eastern Iowa Airport,CEDAR RAPIDS,IA,-91.7108,41.884701
+San Luis County Regional Airport,SAN LUIS OBISPO,CA,-120.641998291,35.236801147499996
+South Bend Regional Airport,SOUTH BEND,IN,-86.317299,41.708698
+Bellingham International Airport,BELLINGHAM,WA,-122.53800201416016,48.79280090332031
+Santa Monica Municipal Airport,SANTA MONICA,CA,-118.450996,34.0158
+Hector International Airport,FARGO,ND,-96.81580352783203,46.92070007324219
+Gainesville Regional Airport,GAINESVILLE,FL,-82.2717971802,29.6900997162
+New York Stewart International Airport,NEWBURGH,NY,-74.104797,41.504101
+Sioux Falls Regional Airport / Joe Foss Field,SIOUX FALLS,SD,-96.741152,43.585463
+Lakefront Airport,NEW ORLEANS,LA,-90.028297424316,30.042400360107
+Billings Logan International Airport,BILLINGS,MT,-108.542999,45.807701
+Camarillo International Airport,CAMARILLO,CA,-119.094002,34.213699
+Mahlon Sweet Field,EUGENE,OR,-123.21199798583984,44.12459945678711
+Wilmington International Airport,WILMINGTON,NC,-77.90260314941406,34.270599365234375
+McClellan-Palomar Airport,CARLSBAD,CA,-117.279999,33.1283
+Long Island Mac Arthur Airport,ISLIP,NY,-73.10019684,40.79520035
+Roanoke–Blacksburg Regional Airport,ROANOKE,VA,-79.975403,37.3255
+Lakeland Linder International Airport,LAKELAND,FL,-82.018776,27.987656
+Lincoln Airport,LINCOLN,NE,-96.75920104980469,40.85100173950195
+Northwest Arkansas National Airport,FAYETTEVILLE/SPRINGDALE/ROGERS,AR,-94.306801,36.281898
+Bozeman Yellowstone International Airport,BOZEMAN,MT,-111.153,45.7775
+Midland International Air and Space Port,MIDLAND,TX,-102.202003,31.942499
+Charles M. Schulz Sonoma County Airport,SANTA ROSA,CA,-122.8130035,38.50899887
+Naples Municipal Airport,NAPLES,FL,-81.7752990723,26.1525993347
+Lehigh Valley International Airport,ALLENTOWN,PA,-75.442797,40.651773
+Duluth International Airport,DULUTH,MN,-92.193604,46.842098
+Mobile Regional Airport,MOBILE,AL,-88.242798,30.6912
+Seattle Paine Field International Airport,EVERETT,WA,-122.281998,47.9063
+Laurence G Hanscom Field,BEDFORD,MA,-71.289001,42.470001
+Melbourne Orlando International Airport,MELBOURNE,FL,-80.645302,28.1028
+Aspen-Pitkin County Airport (Sardy Field),ASPEN,CO,-106.869003,39.223202
+Miami-Opa Locka Executive Airport,MIAMI,FL,-80.278397,25.907
+Sacramento Executive Airport,SACRAMENTO,CA,-121.492996216,38.5125007629
+Corpus Christi International Airport,CORPUS CHRISTI,TX,-97.501198,27.770399
+Wilkes Barre Scranton International Airport,WILKES-BARRE/SCRANTON,PA,-75.72339630130001,41.338500976599995
+Cincinnati Municipal Airport Lunken Field,CINCINNATI,OH,-84.418945,39.102357
+Northeast Florida Regional Airport,ST AUGUSTINE,FL,-81.339798,29.9592
+Baton Rouge Metropolitan Airport,BATON ROUGE,LA,-91.149597,30.533199
+Jackson-Medgar Wiley Evers International Airport,JACKSON,MS,-90.075897,32.311199
+Capital City Airport,LANSING,MI,-84.58740234375,42.77870178222656
+Rochester International Airport,ROCHESTER,MN,-92.5,43.908298
+Charles B. Wheeler Downtown Airport,KANSAS CITY,MO,-94.592796,39.123199
+Missoula International Airport,MISSOULA,MT,-114.0910034,46.91630173
+Nantucket Memorial Airport,NANTUCKET,MA,-70.06020355,41.25310135
+Buchanan Field,CONCORD,CA,-122.056999,37.9897
+Bismarck Municipal Airport,BISMARCK,ND,-100.74600219726562,46.772701263427734
+Prescott International Airport - Ernest A. Love Field,PRESCOTT,AZ,-112.419998,34.654499
+San Carlos Airport,SAN CARLOS,CA,-122.250838,37.51313
+Palo Alto Airport,PALO ALTO,CA,-122.114998,37.461102
+Yeager Airport,CHARLESTON,WV,-81.593201,38.3731
+Newport News Williamsburg International Airport,NEWPORT NEWS,VA,-76.492996,37.131901
+Grand Junction Regional Airport,GRAND JUNCTION,CO,-108.529387,39.126663
+Hilton Head Airport,HILTON HEAD ISLAND,SC,-80.697502,32.2244
+Portsmouth International at Pease Airport,PORTSMOUTH,NH,-70.8233032227,43.0778999329
+Flagstaff Pulliam International Airport,FLAGSTAFF,AZ,-111.670998,35.1385
+Bishop International Airport,FLINT,MI,-83.74359893798828,42.96540069580078
+Great Falls International Airport,GREAT FALLS,MT,-111.3710022,47.48199844
+Cherry Capital Airport,TRAVERSE CITY,MI,-85.58219909667969,44.74140167236328
+Mesa Gateway Airport,MESA,AZ,-111.654999,33.3078
+Vero Beach Regional Airport,VERO BEACH,FL,-80.417901,27.6556
+Augusta Regional At Bush Field,AUGUSTA,GA,-81.9645,33.3699
+Grand Canyon National Park Airport,GRAND CANYON - TUSAYAN,AZ,-112.147003,35.9524
+Rogue Valley International Medford Airport,MEDFORD,OR,-122.87300109863281,42.37419891357422
+General Wayne A. Downing Peoria International Airport,PEORIA,IL,-89.693298,40.6642
+Eugene F. Kranz Toledo Express Airport,TOLEDO,OH,-83.8078,41.5868
+Yuma International Airport / Marine Corps Air Station Yuma,YUMA,AZ,-114.609375,32.650938
+Pueblo Memorial Airport,PUEBLO,CO,-104.497002,38.289101
+Meadows Field,BAKERSFIELD,CA,-119.056999,35.433601
+Paso Robles Municipal Airport,PASO ROBLES,CA,-120.6269989,35.67290115
+Tri-Cities Regional TN/VA Airport,BLOUNTVILLE,TN,-82.407401,36.475201
+Eagle County Regional Airport,EAGLE,CO,-106.9179993,39.64260101
+Evansville Regional Airport,EVANSVILLE,IN,-87.5324020386,38.0369987488
+Kalamazoo Battle Creek International Airport,KALAMAZOO,MI,-85.5521011352539,42.234901428222656
+St George Regional Airport,ST GEORGE,UT,-113.510306,37.036389
+Atlantic City International Airport,ATLANTIC CITY,NJ,-74.57720184326172,39.45759963989258
+Central Illinois Regional Airport at Bloomington-Normal,BLOOMINGTON/NORMAL,IL,-88.915901,40.4771
+Casper-Natrona County International Airport,CASPER,WY,-106.463997,42.908001
+Trenton Mercer Airport,EWING TOWNSHIP,NJ,-74.813499,40.276699
+Gulfport Biloxi International Airport,GULFPORT,MS,-89.070099,30.407301
+Montgomery Regional (Dannelly Field) Airport,MONTGOMERY,AL,-86.393997,32.300598
+University of Illinois Willard Airport,SAVOY,IL,-88.276249,40.039819
+Destin-Fort Walton Beach Airport,VALPARAISO,FL,-86.525398,30.4832
+Appleton International Airport,APPLETON,WI,-88.519096,44.258099
+Lake Tahoe Airport,SOUTH LAKE TAHOE,CA,-119.99500274658203,38.89390182495117
+Shreveport Regional Airport,SHREVEPORT,LA,-93.8256,32.446602
+Ithaca Tompkins Regional Airport,ITHACA,NY,-76.4583969116211,42.49100112915039
+Burke Lakefront Airport,CLEVELAND,OH,-81.68329620361328,41.51750183105469
+Republic Airport,FARMINGDALE,NY,-73.4133987427,40.7288017273
+Easterwood Field,COLLEGE STATION,TX,-96.3638,30.5886
+McAllen Miller International Airport,MCALLEN,TX,-98.237965,26.176141
+Groton New London Airport,GROTON,CT,-72.045097,41.330101
+The Ohio State University Airport - Don Scott Field,COLUMBUS,OH,-83.072998,40.0798
+Miami Executive Airport,MIAMI,FL,-80.4328,25.6479
+Quad City International Airport,MOLINE,IL,-90.5075,41.448502
+Idaho Falls Regional Airport,IDAHO FALLS,ID,-112.070999,43.514599
+Santa Maria Public Airport Captain G Allan Hancock Field,SANTA MARIA,CA,-120.457001,34.898899
+Page Municipal Airport,PAGE,AZ,-111.447716,36.924234
+Hartford Brainard Airport,HARTFORD,CT,-72.649398803711,41.736698150635
+Elmira Corning Regional Airport,ELMIRA/CORNING,NY,-76.8916015625,42.1599006652832
+Glacier Park International Airport,KALISPELL,MT,-114.25599670410156,48.31050109863281
+La Crosse Regional Airport,LA CROSSE,WI,-91.256699,43.879002
+Tweed New Haven Airport,NEW HAVEN,CT,-72.88680267,41.26369858
+Waco Regional Airport,WACO,TX,-97.23049926757812,31.611299514770508
+Laughlin Bullhead International Airport,BULLHEAD CITY,AZ,-114.559998,35.157398
+The Florida Keys Marathon Airport,MARATHON,FL,-81.051399,24.726101
+Cheyenne Regional Jerry Olson Field,CHEYENNE,WY,-104.811997,41.155701
+Chicago Rockford International Airport,CHICAGO/ROCKFORD,IL,-89.097198,42.1954
+Cape Cod Gateway Airport,HYANNIS,MA,-70.280403,41.6693
+San Angelo Regional Mathis Field,SAN ANGELO,TX,-100.49600219726562,31.35770034790039
+Punta Gorda Airport,PUNTA GORDA,FL,-81.990501,26.9202
+Chicago Executive Airport,CHICAGO/PROSPECT HEIGHTS/WHEELING,IL,-87.901494,42.114222
+Portland Hillsboro Airport,PORTLAND,OR,-122.949997,45.540401
+Rocky Mountain Metropolitan Airport,DENVER,CO,-105.116997,39.908798
+Friday Harbor Airport,FRIDAY HARBOR,WA,-123.024645,48.523654
+State College Regional Airport,STATE COLLEGE,PA,-77.84852,40.849374
+Igor I Sikorsky Memorial Airport,BRIDGEPORT,CT,-73.126198,41.163502
+Modesto City Co-Harry Sham Field,MODESTO,CA,-120.954002,37.625801
+Abilene Regional Airport,ABILENE,TX,-99.68190002440001,32.4113006592
+Lake Havasu City International Airport,LAKE HAVASU CITY,AZ,-114.358002,34.571098
+Truckee Tahoe Airport,TRUCKEE,CA,-120.140562,39.318628
+Dutchess County Airport,POUGHKEEPSIE,NY,-73.88420104980469,41.6265983581543
+Fulton County Airport Brown Field,ATLANTA,GA,-84.5214004517,33.7790985107
+Jacksonville Executive at Craig Airport,JACKSONVILLE,FL,-81.51439666750001,30.3362998962
+Oxnard Airport,OXNARD,CA,-119.20700073242,34.200801849365
+Athens Ben Epps Airport,ATHENS,GA,-83.325634,33.948842
+Lancaster Airport,LANCASTER,PA,-76.29609680175781,40.121700286865234
+Salina Municipal Airport,SALINA,KS,-97.6521987915039,38.79100036621094
+Spirit of St Louis Airport,ST LOUIS,MO,-90.652,38.662102
+Manassas Regional Airport/Harry P. Davis Field,MANASSAS,VA,-77.515404,38.721401
+Cedar City Regional Airport,CEDAR CITY,UT,-113.0989990234375,37.70100021362305
+Erie International Tom Ridge Field,ERIE,PA,-80.173867,42.083127
+Fayetteville Regional Airport - Grannis Field,FAYETTEVILLE,NC,-78.880302,34.991199
+Grand Forks International Airport,GRAND FORKS,ND,-97.176102,47.949299
+Redding Municipal Airport,REDDING,CA,-122.2929993,40.50899887
+Coleman A. Young Municipal Airport,DETROIT,MI,-83.00990295,42.40919876
+Destin Executive Airport,DESTIN,FL,-86.471497,30.400101
+Durango La Plata County Airport,DURANGO,CO,-107.753998,37.151501
+Niagara Falls International Airport,NIAGARA FALLS,NY,-78.946198,43.1073
+Ogden Hinckley Airport,OGDEN,UT,-112.0120010376,41.195899963379
+Morristown Municipal Airport,MORRISTOWN,NJ,-74.414949,40.799062
+Dupage Airport,CHICAGO/WEST CHICAGO,IL,-88.24859619,41.90779877
+Jacqueline Cochran Regional Airport,PALM SPRINGS,CA,-116.16000366211,33.62670135498
+Columbia Regional Airport,COLUMBIA,MO,-92.219597,38.8181
+Abraham Lincoln Capital Airport,SPRINGFIELD,IL,-89.677902,39.844101
+Sacramento Mather Airport,SACRAMENTO,CA,-121.297989,38.554744
+Brownsville South Padre Island International Airport,BROWNSVILLE,TX,-97.4259033203125,25.90679931640625
+Tri Cities Airport,PASCO,WA,-119.119003,46.264702
+Worcester Regional Airport,WORCESTER,MA,-71.875702,42.2673
+Willow Run Airport,DETROIT,MI,-83.53040314,42.23789978
+Stockton Metropolitan Airport,STOCKTON,CA,-121.238079,37.893279
+Scholes International At Galveston Airport,GALVESTON,TX,-94.860397,29.265301
+Brown Field Municipal Airport,SAN DIEGO,CA,-116.980019,32.572639
+St Simons Island Airport,ST SIMONS ISLAND,GA,-81.391296,31.1518
+Tyler Pounds Regional Airport,TYLER,TX,-95.40239715576172,32.35409927368164
+Castle Airport,MERCED,CA,-120.5680008,37.38050079
+Lafayette Regional Airport,LAFAYETTE,LA,-91.987602,30.205299
+Lebanon Municipal Airport,LEBANON,NH,-72.30419921880001,43.626098632799994
+Lynchburg Regional Airport - Preston Glenn Field,LYNCHBURG,VA,-79.200401,37.326698
+Roberts Field,REDMOND,OR,-121.150002,44.254101
+Roswell Air Center Airport,ROSWELL,NM,-104.530998,33.301601
+Northwest Florida Beaches International Airport,PANAMA CITY BEACH,FL,-85.795414,30.357106
+Provo-Utah Lake International Airport,PROVO,UT,-111.723,40.2192
+Kingman Airport,KINGMAN,AZ,-113.938004,35.259499
+Westfield-Barnes Regional Airport,WESTFIELD,MA,-72.715599,42.157799
+Oakland County International Airport,PONTIAC,MI,-83.420097351074,42.665500640869
+Dillant Hopkins Airport,KEENE,NH,-72.270798,42.898399
+Valley International Airport,HARLINGEN,TX,-97.65440368652344,26.228500366210938
+Minot International Airport,MINOT,ND,-101.27999877929688,48.2593994140625
+Monroe Regional Airport,MONROE,LA,-92.037697,32.510899
+Williamsport Regional Airport,WILLIAMSPORT,PA,-76.92245,41.242126
+Wilmington Airport,WILMINGTON,DE,-75.606499,39.678699
+Northeast Philadelphia Airport,PHILADELPHIA,PA,-75.010614,40.082406
+Floyd Bennett Memorial Airport,GLENS FALLS,NY,-73.6102981567,43.3412017822
+Cobb County International Airport-McCollum Field,ATLANTA,GA,-84.59721,34.01316
+Rickenbacker International Airport,COLUMBUS,OH,-82.927803,39.813801
+Helena Regional Airport,HELENA,MT,-111.983002,46.6068
+Laredo International Airport,LAREDO,TX,-99.46160125732422,27.543800354003906
+East Texas Regional Airport,LONGVIEW,TX,-94.71150207519531,32.38399887084961
+Jack Northrop Field Hawthorne Municipal Airport,HAWTHORNE,CA,-118.334999,33.922798
+McClellan Airfield,SACRAMENTO,CA,-121.401001,38.667599
+Space Coast Regional Airport,TITUSVILLE,FL,-80.799201965332,28.514799118042
+Blythe Airport,BLYTHE,CA,-114.717002869,33.6192016602
+Bowman Field,LOUISVILLE,KY,-85.6636962891,38.2280006409
+Tulsa Riverside Airport,TULSA,OK,-95.984596,36.0396
+Greater Binghamton/Edwin A Link field,BINGHAMTON,NY,-75.97979736,42.20869827
+MBS International Airport,FREELAND,MI,-84.082275,43.531913
+Memorial Field Airport,HOT SPRINGS,AR,-93.096262,34.4788
+Riverside Municipal Airport,RIVERSIDE,CA,-117.445,33.9519
+Sugar Land Regional Airport,HOUSTON,TX,-95.65650177002,29.622299194336
+Northern Colorado Regional Airport,LOVELAND,CO,-105.011272,40.44969
+Norwood Memorial Airport,NORWOOD,MA,-71.1728973389,42.1904983521
+Red Bluff Municipal Airport,RED BLUFF,CA,-122.251998901,40.1506996155
+Arnold Palmer Regional Airport,LATROBE,PA,-79.4048,40.275902
+Allegheny County Airport,PITTSBURGH,PA,-79.930199,40.354401
+Montrose Regional Airport,MONTROSE,CO,-107.893997,38.5098
+Bowling Green Warren County Regional Airport,BOWLING GREEN,KY,-86.41970062259999,36.964500427199994
+Salinas Municipal Airport,SALINAS,CA,-121.60600280762,36.662799835205
+Philip Billard Municipal Airport,TOPEKA,KS,-95.622606,39.069899
+California Redwood Coast-Humboldt County Airport,ARCATA/EUREKA,CA,-124.109,40.978101
+Columbus Metropolitan Airport,COLUMBUS,GA,-84.93890380859375,32.516300201416016
+Dubuque Regional Airport,DUBUQUE,IA,-90.709503,42.402
+Chippewa Valley Regional Airport,EAU CLAIRE,WI,-91.48429870605469,44.86579895019531
+Garden City Regional Airport,GARDEN CITY,KS,-100.723999023,37.9275016785
+Manhattan Regional Airport,MANHATTAN,KS,-96.6707992553711,39.14099884033203
+North Platte Regional Airport Lee Bird Field,NORTH PLATTE,NE,-100.6839981,41.12620163
+Salisbury Ocean City Wicomico Regional Airport,SALISBURY,MD,-75.51029968261719,38.34049987792969
+Sioux Gateway Airport / Brigadier General Bud Day Field,SIOUX CITY,IA,-96.382237,42.397605
+Hancock County-Bar Harbor Airport,BAR HARBOR,ME,-68.3615036,44.45000076
+Imperial County Airport,IMPERIAL,CA,-115.574026,32.83539
+Canyonlands Regional Airport,MOAB,UT,-109.754997,38.755001
+Mc Minnville Municipal Airport,MC MINNVILLE,OR,-123.1360016,45.19440079
+General William J Fox Airfield,LANCASTER,CA,-118.219002,34.7411
+Cape May County Airport,WILDWOOD,NJ,-74.9083023071,39.008499145500004
+Cavern City Air Terminal,CARLSBAD,NM,-104.26300048828125,32.337501525878906
+Saint Paul Downtown Holman Field,SAINT PAUL,MN,-93.060036,44.93479
+Shenandoah Valley Regional Airport,WEYERS CAVE,VA,-78.8964,38.263802
+Ukiah Municipal Airport,UKIAH,CA,-123.200996,39.125999
+Coeur D'Alene Airport - Pappy Boyington Field,COEUR D'ALENE,ID,-116.82,47.7743
+Elko Regional Airport,ELKO,NV,-115.79199981689453,40.82490158081055
+Boulder City Municipal Airport,BOULDER CITY,NV,-114.858799,35.947161
+San Bernardino International Airport,SAN BERNARDINO,CA,-117.235001,34.095402
+Tuscaloosa National Airport,TUSCALOOSA,AL,-87.611397,33.2206
+Boca Raton Airport,BOCA RATON,FL,-80.107697,26.3785
+Stinson Municipal Airport,SAN ANTONIO,TX,-98.471099853516,29.336999893188
+Visalia Municipal Airport,VISALIA,CA,-119.392998,36.318699
+Alexandria International Airport,ALEXANDRIA,LA,-92.549797,31.3274
+Barkley Regional Airport,PADUCAH,KY,-88.7738037109375,37.06079864501953
+Rutland - Southern Vermont Regional Airport,RUTLAND,VT,-72.9496,43.5294
+Youngstown Warren Regional Airport,YOUNGSTOWN/WARREN,OH,-80.67910004,41.26070023
+Brainerd Lakes Regional Airport,BRAINERD,MN,-94.129727,46.402861
+Concord-Padgett Regional Airport,CONCORD,NC,-80.709099,35.387798
+Rosecrans Memorial Airport,ST JOSEPH,MO,-94.909698486328,39.771900177002
+Bremerton National Airport,BREMERTON,WA,-122.76499938965,47.490200042725
+Lawrence Municipal Airport,LAWRENCE,MA,-71.1233978271,42.717201232899995
+Concord Municipal Airport,CONCORD,NH,-71.50229645,43.20270157
+Greenville Downtown Airport,GREENVILLE,SC,-82.350217,34.847903
+Grand Strand Airport,NORTH MYRTLE BEACH,SC,-78.72389984130001,33.8116989136
+Key Field / Meridian Regional Airport,MERIDIAN,MS,-88.7519,32.3326
+Pocatello Regional Airport,POCATELLO,ID,-112.59600067138672,42.9098014831543
+Danbury Municipal Airport,DANBURY,CT,-73.482227,41.371656
+Marquette/Sawyer International Airport,GWINN,MI,-87.395401,46.3536
+Olympia Regional Airport,OLYMPIA,WA,-122.903,46.969399
+Tacoma Narrows Airport,TACOMA,WA,-122.577295,47.267407
+Conroe-North Houston Regional Airport,HOUSTON,TX,-95.414497,30.351801
+Hutchinson Municipal Airport,HUTCHINSON,KS,-97.86060333250002,38.0654983521
+Beverly Regional Airport,BEVERLY / DANVERS,MA,-70.916496,42.584202
+Barstow Daggett Airport,DAGGETT,CA,-116.7870026,34.85369873
+Findlay Airport,FINDLAY,OH,-83.66870117190001,41.013500213600004
+Winslow Lindbergh Regional Airport,WINSLOW,AZ,-110.722999573,35.021900177
+Reading Regional Airport (Carl A Spaatz Field),READING,PA,-75.965202,40.378502
+Arlington Municipal Airport,ARLINGTON,WA,-122.158442,48.161448
+Yampa Valley Airport,HAYDEN,CO,-107.218002,40.481201
+Merced Regional Macready Field,MERCED,CA,-120.514,37.284698
+Yellowstone Airport,WEST YELLOWSTONE,MT,-111.117996,44.6884
+Gary Chicago International Airport,GARY,IN,-87.41280364990234,41.61629867553711
+Topeka Regional Airport,TOPEKA,KS,-95.663597,38.950901
+Smith Reynolds Airport,WINSTON SALEM,NC,-80.22200012207031,36.13370132446289
+Delaware County Johnson Field,MUNCIE,IN,-85.395897,40.242298
+Aurora State Airport,AURORA,OR,-122.7699966430664,45.247100830078125
+Leesburg International Airport,LEESBURG,FL,-81.80870056,28.82309914
+San Marcos Regional Airport,SAN MARCOS,TX,-97.862999,29.8927
+Wendover Airport,WENDOVER,UT,-114.03099823,40.7187004089
+Central Nebraska Regional Airport,GRAND ISLAND,NE,-98.30960083007812,40.967498779296875
+Crater Lake-Klamath Regional Airport,KLAMATH FALLS,OR,-121.733002,42.156101
+Southwest Oregon Regional Airport,NORTH BEND,OR,-124.24600219726562,43.41709899902344
+Waterloo Regional Airport,WATERLOO,IA,-92.40029907226562,42.557098388671875
+Orcas Island Airport,EASTSOUND,WA,-122.910004,48.708199
+Mansfield Lahm Regional Airport,MANSFIELD,OH,-82.5166015625,40.82139968869999
+Bakersfield International Airport,BAKERSFIELD,CA,-118.996002,35.324799
+Tri-State Airport / Milton J. Ferguson Field,HUNTINGTON,WV,-82.557999,38.366699
+New Bedford Regional Airport,NEW BEDFORD,MA,-70.95690155029297,41.67610168457031
+Pierre Regional Airport,PIERRE,SD,-100.2860031,44.38270187
+Joslin Field Magic Valley Regional Airport,TWIN FALLS,ID,-114.487999,42.4818
+Stillwater Regional Airport,STILLWATER,OK,-97.085581,36.162132
+Telluride Regional Airport,TELLURIDE,CO,-107.907997,37.9538
+Purdue University Airport,WEST LAFAYETTE,IN,-86.939363,40.412875
+Astoria Regional Airport,ASTORIA,OR,-123.878997803,46.158000946
+Ellington Airport,HOUSTON,TX,-95.1587982178,29.607299804700002
+New Braunfels Municipal Airport,NEW BRAUNFELS,TX,-98.042198,29.7045
+Jack Brooks Regional Airport,BEAUMONT/PORT ARTHUR,TX,-94.020699,29.9508
+Brunswick Golden Isles Airport,BRUNSWICK,GA,-81.466499,31.258801
+Cape Girardeau Regional Airport,CAPE GIRARDEAU,MO,-89.570801,37.2253
+Dothan Regional Airport,DOTHAN,AL,-85.44960021972656,31.321300506591797
+Joplin Regional Airport,JOPLIN,MO,-94.498299,37.151798
+Owensboro Daviess County Airport,OWENSBORO,KY,-87.16680145,37.74010086
+Pellston Regional Airport of Emmet County Airport,PELLSTON,MI,-84.79669952,45.57089996
+Watertown International Airport,WATERTOWN,NY,-76.021698,43.991901
+Hays Regional Airport,HAYS,KS,-99.273148,38.844521
+Greenbrier Valley Airport,LEWISBURG,WV,-80.400438,37.857914
+Central Wisconsin Airport,MOSINEE,WI,-89.670238,44.777448
+Pullman-Moscow Regional Airport,PULLMAN,WA,-117.11163,46.741601
+Portland Troutdale Airport,PORTLAND,OR,-122.40100097656,45.54940032959
+Aberdeen Regional Airport,ABERDEEN,SD,-98.42179870605469,45.449100494384766
+Florence Regional Airport,FLORENCE,SC,-79.7238998413086,34.18539810180664
+Morgantown Municipal Airport Walter L. (Bill) Hart Field,MORGANTOWN,WV,-79.917598,39.643305
+Southwest Wyoming Regional Airport,ROCK SPRINGS,WY,-109.065001,41.5942
+Saint Cloud Regional Airport,SAINT CLOUD,MN,-94.059898,45.5466
+Texarkana Regional Airport (Webb Field),TEXARKANA,AR,-93.990997,33.453701
+Hagerstown Regional Richard A Henson Field,HAGERSTOWN,MD,-77.728014,39.708771
+Carl R Keller Field,PORT CLINTON,OH,-82.868328,41.515647
+Springfield-Beckley Municipal Airport,SPRINGFIELD,OH,-83.840202331543,39.840301513672
+Lake Charles Regional Airport,LAKE CHARLES,LA,-93.22329711914062,30.126100540161133
+Laramie Regional Airport,LARAMIE,WY,-105.67500305175781,41.31209945678711
+Northwest Alabama Regional Airport,MUSCLE SHOALS,AL,-87.612981,34.745123
+William R Fairchild International Airport,PORT ANGELES,WA,-123.5,48.120201
+Martin State Airport,BALTIMORE,MD,-76.413803,39.325699
+Friedman Memorial Airport,HAILEY,ID,-114.2959976,43.50439835
+Lewiston Nez Perce County Airport,LEWISTON,ID,-117.01499938964844,46.3745002746582
+Mason City Municipal Airport,MASON CITY,IA,-93.329716,43.159801
+Monroe County Airport,BLOOMINGTON,IN,-86.61669921875,39.145999908447266
+Smyrna Airport,SMYRNA,TN,-86.5201034546,36.0089988708
+Bryce Canyon Airport,BRYCE CANYON,UT,-112.144996643,37.706401825
+Four Corners Regional Airport,FARMINGTON,NM,-108.230003,36.741199
+Kenosha Regional Airport,KENOSHA,WI,-87.92780304,42.59569931
+Needles Airport,NEEDLES,CA,-114.623001099,34.7663002014
+Nogales International Airport,NOGALES,AZ,-110.848,31.4177
+Ponca City Regional Airport,PONCA CITY,OK,-97.09980011,36.73199844
+Southwest Georgia Regional Airport,ALBANY,GA,-84.196215,31.532946
+Coastal Carolina Regional Airport,NEW BERN,NC,-77.04290008539999,35.0730018616
+Salem-Willamette Valley Airport/McNary Field,SALEM,OR,-123.002998,44.9095
+Westerly State Airport,WESTERLY,RI,-71.803398,41.349602
+Hickory Regional Airport,HICKORY,NC,-81.38950348,35.74110031
+"Terre Haute Regional Airport, Hulman Field",TERRE HAUTE,IN,-87.307602,39.4515
+Felts Field,SPOKANE,WA,-117.321925,47.682899
+Anderson Regional Airport,ANDERSON,SC,-82.70939636230001,34.4945983887
+Greater Kankakee Airport,KANKAKEE,IL,-87.8462982178,41.07139968869999
+Kinston Regional Jetport At Stallings Field,KINSTON,NC,-77.60880279540001,35.331401825
+Griffiss International Airport,ROME,NY,-75.40699768,43.23379898
+South Valley Regional Airport,SALT LAKE CITY,UT,-111.992996,40.619499
+Middle Georgia Regional Airport,MACON,GA,-83.64920043945312,32.69279861450195
+Western Neb. Rgnl/William B. Heilig Airport,SCOTTSBLUFF,NE,-103.5960007,41.87400055
+Yakima Air Terminal McAllister Field,YAKIMA,WA,-120.5439987,46.56819916
+Eastern Sierra Regional Airport,BISHOP,CA,-118.363998,37.3731
+Northeast Wyoming Regional Airport,GILLETTE,WY,-105.539001,44.3489
+Muskegon County Airport,MUSKEGON,MI,-86.238197,43.169498
+Corvallis Municipal Airport,CORVALLIS,OR,-123.2900009,44.49720001
+Yuba County Airport,MARYSVILLE,CA,-121.5699997,39.09780121
+Mobile Downtown Airport,MOBILE,AL,-88.06809997559999,30.626800537100003
+Akron Fulton International Airport,AKRON,OH,-81.46784,41.037355
+Del Rio International Airport,DEL RIO,TX,-100.927001953,29.3742008209
+Goodland Municipal Airport,GOODLAND,KS,-101.699753,39.370701
+Richard B Russell Airport,ROME,GA,-85.15799713130001,34.3506011963
+Tonopah Airport,TONOPAH,NV,-117.086998,38.06019974
+Southeast Iowa Regional Airport,BURLINGTON,IA,-91.12550354003906,40.783199310302734
+DuBois Regional Airport,DUBOIS,PA,-78.8986969,41.17829895
+Kirksville Regional Airport,KIRKSVILLE,MO,-92.5448989868164,40.09349822998047
+Mid Ohio Valley Regional Airport,PARKERSBURG (WILLIAMSTOWN),WV,-81.439201,39.3451
+Plattsburgh International Airport,PLATTSBURGH,NY,-73.46810150146484,44.650901794433594
+Tupelo Regional Airport,TUPELO,MS,-88.7698974609375,34.26810073852539
+Valdosta Regional Airport,VALDOSTA,GA,-83.27670288085938,30.782499313354492
+San Luis Valley Regional Airport/Bergman Field,ALAMOSA,CO,-105.866997,37.434898
+Lea County Regional Airport,HOBBS,NM,-103.217003,32.6875
+Albert J Ellis Airport,RICHLANDS,NC,-77.612099,34.829201
+Battle Creek Executive Airport at Kellogg Field,BATTLE CREEK,MI,-85.251503,42.307301
+Jackson County Airport/Reynolds Field,JACKSON,MI,-84.463019,42.260509
+Columbus Municipal Airport,COLUMBUS,IN,-85.895576,39.262386
+Schenectady County Airport,SCHENECTADY,NY,-73.928901672363,42.852500915527
+Porter County Municipal Airport,VALPARAISO,IN,-87.00710297,41.45399857
+Logan-Cache Airport,LOGAN,UT,-111.851997375,41.7911987305
+Angelina County Airport,LUFKIN,TX,-94.75,31.2339992523
+Newport Municipal Airport,NEWPORT,OR,-124.057999,44.580399
+Cox Field,PARIS,TX,-95.450798034668,33.636600494385
+Bert Mooney Airport,BUTTE,MT,-112.49700164794922,45.95479965209961
+Golden Triangle Regional Airport,COLUMBUS/W POINT/STARKVILLE,MS,-88.5914,33.450298
+Decatur Airport,DECATUR,IL,-88.8656997680664,39.834598541259766
+Liberal Mid-America Regional Airport,LIBERAL,KS,-100.9599991,37.0442009
+Quincy Regional Airport Baldwin Field,QUINCY,IL,-91.194603,39.942699
+Victoria Regional Airport,VICTORIA,TX,-96.91850280761719,28.85260009765625
+Pitt-Greenville Airport,GREENVILLE,NC,-77.384262,35.635535
+Las Cruces International Airport,LAS CRUCES,NM,-106.921997,32.289398
+Lawton Fort Sill Regional Airport,LAWTON,OK,-98.416603,34.567699
+Vernal Regional Airport,VERNAL,UT,-109.511661,40.436214
+Bowerman Airport,HOQUIAM,WA,-123.93699646,46.971199035599994
+Draughon Miller Central Texas Regional Airport,TEMPLE,TX,-97.407799,31.1525
+St Louis Regional Airport,ALTON/ST LOUIS,IL,-90.0459976196,38.89030075069999
+Bob Sikes Airport,CRESTVIEW,FL,-86.522102356,30.778799057
+Huntsville Regional Airport,HUNTSVILLE,TX,-95.5871963501,30.7469005585
+Jack Mc Namara Field Airport,CRESCENT CITY,CA,-124.236403,41.778929
+McKellar-Sipes Regional Airport,JACKSON,TN,-88.915604,35.599899
+Sheridan County Airport,SHERIDAN,WY,-106.9800033569336,44.76919937133789
+Yellowstone Regional Airport,CODY,WY,-109.024002,44.520199
+Gallup Municipal Airport,GALLUP,NM,-108.788166,35.511653
+Gunnison Crested Butte Regional Airport,GUNNISON,CO,-106.934566,38.534672
+Veterans Airport of Southern Illinois,MARION,IL,-89.016568,37.751208
+Show Low Regional Airport,SHOW LOW,AZ,-110.007091,34.264062
+Pangborn Memorial Airport,WENATCHEE,WA,-120.207001,47.398899
+London-Corbin Airport/Magee Field,LONDON,KY,-84.08489990230001,37.0821990967
+Quonset State Airport,NORTH KINGSTOWN,RI,-71.412101745605,41.597099304199
+Ada Regional Airport,ADA,OK,-96.671988,34.805214
+Columbia Gorge Regional Airport,DALLESPORT / THE DALLES,OR,-121.170777,45.620979
+Deming Municipal Airport,DEMING,NM,-107.721000671,32.262298584
+Cecil Airport,JACKSONVILLE,FL,-81.876701,30.2187
+Jonesboro Municipal Airport,JONESBORO,AR,-90.64640045166016,35.83169937133789
+Massena International Airport Richards Field,MASSENA,NY,-74.844304,44.936157
+Adirondack Regional Airport,SARANAC LAKE,NY,-74.204629,44.38691
+Kearney Regional Airport,KEARNEY,NE,-99.006798,40.727001
+McCall Municipal Airport,MCCALL,ID,-116.101112,44.888837
+Miramar Marine Corps Air Station - Mitscher Field,SAN DIEGO,CA,-117.1429977,32.86840057
+Zanesville Municipal Airport,ZANESVILLE,OH,-81.89209747310001,39.9444007874
+Drake Field,FAYETTEVILLE,AR,-94.17009735107422,36.00510025024414
+Cuyahoga County Airport,CLEVELAND,OH,-81.4863967896,41.5651016235
+Southeast Colorado Regional Airport,LAMAR,CO,-102.691373,38.066407
+Mesquite International Airport,MESQUITE,NV,-114.055928,36.833105
+Wheeling Ohio County Airport,WHEELING,WV,-80.6463012695,40.1749992371
+Scott AFB/Midamerica Airport,BELLEVILLE,IL,-89.835197,38.5452
+North Central West Virginia Airport,BRIDGEPORT,WV,-80.228104,39.2966
+Boone County Airport,HARRISON,AR,-93.15470123291016,36.26150131225586
+McCook Ben Nelson Regional Airport,MCCOOK,NE,-100.592794,40.207787
+Anniston Regional Airport,ANNISTON,AL,-85.8581,33.5882
+Eastern WV Regional Airport/Shepherd Field,MARTINSBURG,WV,-77.98459625,39.40190125
+Millville Municipal Airport,MILLVILLE,NJ,-75.072197,39.367802
+Millington-Memphis Airport,MILLINGTON,TN,-89.8703,35.356701
+Western Carolina Regional Airport,ANDREWS,NC,-83.862999,35.195202
+Bemidji Regional Airport,BEMIDJI,MN,-94.93370056,47.50939941
+Murray Field,EUREKA,CA,-124.112999,40.803398
+Southwest Washington Regional Airport,KELSO,WA,-122.898002625,46.11800003049999
+Mid-Way Regional Airport,MIDLOTHIAN/WAXAHACHIE,TX,-96.912399,32.4587
+Dodge City Regional Airport,DODGE CITY,KS,-99.9655990600586,37.76340103149414
+Houghton County Memorial Airport,HANCOCK,MI,-88.48909759521484,47.168399810791016
+Range Regional Airport,HIBBING,MN,-92.836905,47.384831
+Falls International Airport,INTERNATIONAL FALLS,MN,-93.4030990600586,48.566200256347656
+Jamestown Regional Airport,JAMESTOWN,ND,-98.67819977,46.92969894
+Miles City Airport - Frank Wiley Field,MILES CITY,MT,-105.885372,46.427268
+Presque Isle International Airport,PRESQUE ISLE,ME,-68.0448,46.688999
+Walla Walla Regional Airport,WALLA WALLA,WA,-118.288002,46.09489822
+Dickinson Theodore Roosevelt Regional Airport,DICKINSON,ND,-102.801905,46.797533
+Delta County Airport,ESCANABA,MI,-87.088623,45.723199
+Danville Regional Airport,DANVILLE,VA,-79.336098,36.572899
+Southern Illinois Airport,MURPHYSBORO,IL,-89.251999,37.778099
+Mc Alester Regional Airport,MC ALESTER,OK,-95.783501,34.882401
+Brunswick Executive Airport,BRUNSWICK,ME,-69.93859863,43.89220047
+Elizabeth City Regional Airport & Coast Guard Air Station,ELIZABETH CITY,NC,-76.174599,36.260601
+Evanston-Uinta County Airport-Burns Field,EVANSTON,WY,-111.0350037,41.27479935
+Grant County International Airport,MOSES LAKE,WA,-119.3199997,47.20769882
+North Island Naval Air Station-Halsey Field,SAN DIEGO,CA,-117.2149963,32.69919968
+Winnemucca Municipal Airport,WINNEMUCCA,NV,-117.805999756,40.8965988159
+Alpena County Regional Airport,ALPENA,MI,-83.56030273,45.0780983
+South Arkansas Regional Airport at Goodwin Field,EL DORADO,AR,-92.813301,33.221001
+Mid Delta Regional Airport,GREENVILLE,MS,-90.985603,33.482899
+Chippewa County International Airport,KINCHELOE,MI,-84.471379,46.247707
+Knox County Regional Airport,ROCKLAND,ME,-69.099197,44.060101
+Moffett Federal Airfield,MOUNTAIN VIEW,CA,-122.049004,37.4161
+Texas Gulf Coast Regional Airport,ANGLETON,TX,-95.462097,29.108601
+Daniel Field,AUGUSTA,GA,-82.0393981934,33.4664993286
+North Texas Regional Airport Perrin Field,DENISON,TX,-96.673698,33.7141
+Durant Regional Airport - Eaker Field,DURANT,OK,-96.395072,33.939675
+Venango Regional Airport,FRANKLIN,PA,-79.8603973389,41.3778991699
+Kimble County Airport,JUNCTION,TX,-99.7634963989,30.5112991333
+Garfield County Regional Airport,RIFLE,CO,-107.726997,39.526299
+Augusta State Airport,AUGUSTA,ME,-69.7973022461,44.320598602299995
+Branson Airport,BRANSON,MO,-93.200544,36.532082
+Central Wyoming Regional Airport,RIVERTON,WY,-108.459999,43.064201
+Chandler Field,ALEXANDRIA,MN,-95.394699,45.866299
+Edward F Knapp State Airport,BARRE/MONTPELIER,VT,-72.56230164,44.20349884
+Beaver County Airport,BEAVER FALLS,PA,-80.391403,40.772499
+Burley Municipal Airport,BURLEY,ID,-113.772003174,42.542598724399994
+Las Vegas Municipal Airport,LAS VEGAS,NM,-105.141998,35.654202
+Ozark Regional Airport,MOUNTAIN HOME,AR,-92.47049713130001,36.3689002991
+Space Florida Launch and Landing Facility,TITUSVILLE,FL,-80.694504,28.615
+Altoona Blair County Airport,ALTOONA,PA,-78.32,40.296398
+Hattiesburg Laurel Regional Airport,MOSELLE,MS,-89.337097,31.4671
+Thief River Falls Regional Airport,THIEF RIVER FALLS,MN,-96.184998,48.065701
+Ottumwa Regional Airport,OTTUMWA,IA,-92.449837,41.106368
+Rocky Mount Wilson Regional Airport,ROCKY MOUNT,NC,-77.891899,35.8563
+Naval Air Station Pensacola Forrest Sherman Field,PENSACOLA,FL,-87.318604,30.352699
+Northeast Ohio Regional Airport,ASHTABULA,OH,-80.695503,41.778
+Dalhart Municipal Airport,DALHART,TX,-102.54699707,36.0225982666
+Ely Airport Yelland Field,ELY,NV,-114.8420029,39.29970169
+Hattiesburg Bobby L Chain Municipal Airport,HATTIESBURG,MS,-89.25279999,31.26479912
+Jacksonville Naval Air Station (Towers Field),JACKSONVILLE,FL,-81.680603,30.2358
+Karl Stefan Memorial Airport,NORFOLK,NE,-97.435096740723,41.985500335693
+University Oxford Airport,OXFORD,MS,-89.536796569824,34.384300231934
+Sidney Municipal Airport Lloyd W Carr Field,SIDNEY,NE,-102.985001,41.101299
+Johnston Regional Airport,SMITHFIELD,NC,-78.390297,35.540901
+Bradford Regional Airport,BRADFORD,PA,-78.64009857177734,41.8031005859375
+Glasgow Valley County Airport Wokal Field,GLASGOW,MT,-106.614998,48.212502
+John Murtha Johnstown Cambria County Airport,JOHNSTOWN,PA,-78.83390045166016,40.31610107421875
+Rhinelander Oneida County Airport,RHINELANDER,WI,-89.46749877929688,45.63119888305664
+Clovis Municipal Airport,CLOVIS,NM,-103.078794,34.426594
+Cortez Municipal Airport,CORTEZ,CO,-108.627998,37.303001
+Homestead ARB Airport,HOMESTEAD,FL,-80.38359833,25.48859978
+Mission Field,LIVINGSTON,MT,-110.447998047,45.6994018555
+Lumberton Regional Airport,LUMBERTON,NC,-79.05943,34.610773
+Hurlburt Field,MARY ESTHER,FL,-86.689301,30.427799
+Winkler County Airport,WINK,TX,-103.200996399,31.779600143399996
+Raleigh County Memorial Airport,BEAVER,WV,-81.124199,37.7873
+Huron Regional Airport,HURON,SD,-98.2285,44.385201
+Lewistown Municipal Airport,LEWISTOWN,MT,-109.466143,47.048429
+Naval Air Station Corpus Christi Truax Field,CORPUS CHRISTI,TX,-97.2911,27.6926
+Burns Municipal Airport,BURNS,OR,-118.955154,43.590463
+Sawyer County Airport,HAYWARD,WI,-91.44429779050002,46.025199890100005
+Chautauqua County-Jamestown Airport,JAMESTOWN,NY,-79.254008,42.15425
+Derby Field,LOVELOCK,NV,-118.565002441,40.0663986206
+New Richmond Regional Airport,NEW RICHMOND,WI,-92.538101,45.1483
+"Pine Bluff Regional Airport, Grider Field",PINE BLUFF,AR,-91.935643,34.174121
+Rawlins Municipal Airport/Harvey Field,RAWLINS,WY,-107.1999969,41.80559921
+Lake Cumberland Regional Airport,SOMERSET,KY,-84.6158981323,37.053398132299996
+Palmdale Regional Airport / USAF Plant 42 Airport,PALMDALE,CA,-118.084999,34.629398
+Ogdensburg International Airport,OGDENSBURG,NY,-75.4655,44.6819
+Greenwood–Leflore Airport,GREENWOOD,MS,-90.088204,33.495025
+Shelby County Airport,ALABASTER,AL,-86.78279877,33.17699814
+Chanute Martin Johnson Airport,CHANUTE,KS,-95.486727,37.668173
+Cut Bank International Airport,CUT BANK,MT,-112.378183,48.608657
+Bisbee Douglas International Airport,DOUGLAS BISBEE,AZ,-109.603996277,31.4689998627
+El Centro NAF Airport (Vraciu Field),EL CENTRO,CA,-115.671996,32.829201
+Redwood Falls Municipal Airport,REDWOOD FALLS,MN,-95.082298,44.547199
+Miller Field,VALENTINE,NE,-100.549192,42.856211
+Watertown Regional Airport,WATERTOWN,SD,-97.15470123,44.91400146
+Worland Municipal Airport,WORLAND,WY,-107.950996,43.965698
+Chadron Municipal Airport,CHADRON,NE,-103.095001,42.837601
+Devils Lake Regional Airport,DEVILS LAKE,ND,-98.908796,48.115454
+Eastern Oregon Regional Airport at Pendleton,PENDLETON,OR,-118.841003,45.695099
+Grant County Airport,SILVER CITY,NM,-108.154736,32.636701
+Cherry Point MCAS / Cunningham Field/,CHERRY POINT,NC,-76.880699,34.900902
+Crossville Memorial Airport Whitson Field,CROSSVILLE,TN,-85.08499,35.95131
+Alice International Airport,ALICE,TX,-98.026901,27.7409
+Elkins-Randolph County Regional Airport,ELKINS,WV,-79.857651,38.889759
+Chan Gurney Municipal Airport,YANKTON,SD,-97.385902404785,42.916698455811
+Sierra Blanca Regional Airport,ALTO,NM,-105.535004,33.462799
+Jim Hamilton L.B. Owens Airport,COLUMBIA,SC,-80.9952011108,33.970500946
+Naval Air Station Key West/Boca Chica Field,KEY WEST,FL,-81.68890381,24.57579994
+Acadiana Regional Airport,NEW IBERIA,LA,-91.883904,30.0378
+Norfolk Naval Station (Chambers Field),NORFOLK,VA,-76.289299,36.937599
+Whidbey Island Naval Air Station (Ault Field),OAK HARBOR,WA,-122.655998,48.351799
+Ontario Municipal Airport,OREGON,OR,-117.013289,44.0198
+Ralph Wenz Field,PINEDALE,WY,-109.8069992,42.79550171
+Russell Municipal Airport,RUSSELL,KS,-98.811798095703,38.872100830078
+Tucumcari Municipal Airport,TUCUMCARI,NM,-103.602996826,35.182800293
+Alamogordo White Sands Regional Airport,ALAMOGORDO,NM,-105.993149,32.837818
+Mercer County Airport,BLUEFIELD,WV,-81.207703,37.295799
+Alliance Municipal Airport,ALLIANCE,NE,-102.803965,42.052543
+Dawson Community Airport,GLENDIVE,MT,-104.80691,47.137658
+Baker City Municipal Airport,BAKER CITY,OR,-117.808998108,44.837299346900004
+Curtis Field,BRADY,TX,-99.324732,31.178931
+Childress Municipal Airport,CHILDRESS,TX,-100.288002014,34.4337997437
+Sonora Municipal Airport,SONORA,TX,-100.6490020752,30.585699081421
+Wausau Downtown Airport,WAUSAU,WI,-89.6266021729,44.9262008667
+Havre City County Airport,HAVRE,MT,-109.762859,48.541387
+Ford Airport,KINGSFORD,MI,-88.114557,45.81911
+Sidney - Richland Regional Airport,SIDNEY,MT,-104.194422,47.705141
+Baudette International Airport,BAUDETTE,MN,-94.612197876,48.7284011841
+Miley Memorial Field,BIG PINEY,WY,-110.1110001,42.58509827
+Guymon Municipal Airport,GUYMON,OK,-101.508003235,36.6851005554
+Houlton International Airport,HOULTON,ME,-67.792098999,46.1231002808
+Orangeburg Municipal Airport,ORANGEBURG,SC,-80.859497070312,33.456798553467
+Taos Regional Airport,TAOS,NM,-105.67749,36.452494
+New Orleans NAS JRB/Alvin Callender Field,NEW ORLEANS,LA,-90.03500366,29.82530022
+Saline County Regional Airport,BRYANT,AR,-92.479401,34.590599
+Lake Country Regional Airport,CLARKSVILLE,VA,-78.560097,36.595798
+Hobart Regional Airport,HOBART,OK,-99.051313,34.991317
+Whiting Field Naval Air Station South Airport,MILTON,FL,-87.023003,30.704399
+Truth or Consequences Municipal Airport,TRUTH OR CONSEQUENCES,NM,-107.272003,33.2369
+Oceana Naval Air Station,VIRGINIA BEACH,VA,-76.033501,36.820702
+Wilmington Airpark,WILMINGTON,OH,-83.792098999,39.427898407
+Lemhi County Airport,SALMON,ID,-113.88196,45.122233
+Williston Basin International Airport,WILLISTON,ND,-103.748797,48.258387
+Kingsville Naval Air Station,KINGSVILLE,TX,-97.8097000122,27.5072002411
+South Alabama Regional At Bill Benton Field Airport,ANDALUSIA/OPP,AL,-86.393799,31.3088
+Lemoore Naval Air Station (Reeves Field) Airport,LEMOORE,CA,-119.9520035,36.33300018
+Mobridge Municipal Airport,MOBRIDGE,SD,-100.4079971,45.54650116
+Camp Pendleton MCAS (Munn Field) Airport,OCEANSIDE,CA,-117.3550034,33.30130005
+Troy Municipal Airport at N Kenneth Campbell Field,TROY,AL,-86.012101,31.860399
+West Woodward Airport,WOODWARD,OK,-99.5226667,36.438
+Arkansas International Airport,BLYTHEVILLE,AR,-89.94400024410001,35.9642982483
+Caribou Municipal Airport,CARIBOU,ME,-68.017899,46.871498
+China Lake Naws (Armitage Field) Airport,CHINA LAKE,CA,-117.6920013,35.6853981
+Duke Field,CRESTVIEW,FL,-86.52290344,30.65040016
+Beauregard Regional Airport,DERIDDER,LA,-93.339897,30.831699
+Fallon Naval Air Station,FALLON,NV,-118.7009964,39.41659927
+Naval Station Mayport / Admiral David L McDonald Field,JACKSONVILLE,FL,-81.424698,30.3911
+Hunt Field,LANDER,WY,-108.730003,42.815201
+Patuxent River Naval Air Station (Trapnell Field),PATUXENT RIVER,MD,-76.411797,38.285999
+Central Kentucky Regional Airport,RICHMOND,KY,-84.332298,37.630798
+MCAS New River / McCutcheon Field,JACKSONVILLE,NC,-77.439697,34.708401
+Volk Field,CAMP DOUGLAS,WI,-90.253402709961,43.938999176025
+Columbus Municipal Airport,COLUMBUS,NE,-97.340174,41.448145
+Ely Municipal Airport,ELY,MN,-91.83070374,47.82450104
+Whiting Field Naval Air Station - North,MILTON,FL,-87.02189636,30.7241993
+L M Clayton Airport,WOLF POINT,MT,-105.574997,48.094501
+McComb-Pike County Airport / John E Lewis Field,MCCOMB,MS,-90.471901,31.178499
+Northeast Iowa Regional Airport,CHARLES CITY,IA,-92.6108016968,43.0726013184
+Julian Carroll Airport,JACKSON,KY,-83.31729888916016,37.59389877319336
+Monticello Municipal Ellis Field,MONTICELLO,AR,-91.750999,33.638599
+Quantico Marine Corps Airfield / Turner Field,QUANTICO,VA,-77.305298,38.501701
+Homey (Area 51) Airport,GROOM LAKE,NV,-115.81099700927734,37.23500061035156
+Naval Air Station Meridian / McCain Field,LAUDERDALE,MS,-88.55406,32.5531
+Beaufort MCAS - Merritt Field,BEAUFORT,SC,-80.723197937,32.4774017334
+Cape Canaveral SFS Skid Strip,COCOA BEACH,FL,-80.566597,28.4676
+Lakehurst Maxfield Field Airport,LAKEHURST,NJ,-74.353302,40.03329849
+Desert Rock Airport,MERCURY,NV,-116.032997,36.6194
+Twentynine Palms Strategic Expeditionary Landing Field,TWENTYNINE PALMS,CA,-116.162003,34.2962
+Van Zandt County Regional Airport,WILLS POINT,TX,-95.9841,32.681499
