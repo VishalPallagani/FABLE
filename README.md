@@ -3,5 +3,5 @@
 </p>
 
 <p align="center">
-  <b><u>FABLE: A Novel Data-Flow Analysis Benchmark on Procedural Text for Large Language Model Evaluation</u></b>
+  <h1>FABLE: A Novel Data-Flow Analysis Benchmark on Procedural Text for Large Language Model Evaluation</h1>
 </p>
