@@ -2,8 +2,8 @@ import os
 import glob
 import pandas as pd
 
-CSV_DIR     = "../../benchmarks/travel_routes"   # folder with your travel_<benchmark>.csv files
-PROMPT_DIR  = "../../prompts/travel_routes"      # where enriched CSVs will go
+CSV_DIR     = "../../benchmarks/new_travel"   # folder with your travel_<benchmark>.csv files
+PROMPT_DIR  = "../../prompts/new_travel_routes"      # where enriched CSVs will go
 N_SAMPLES   = 100
 RANDOM_SEED = 42
 

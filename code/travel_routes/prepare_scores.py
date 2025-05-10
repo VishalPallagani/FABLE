@@ -3,8 +3,8 @@ import glob
 import re
 import pandas as pd
 
-RESULT_DIR  = "../../results/travel_routes"    # folder with your result_<model>_<bench>.csv
-SCORES_DIR  = "../../scores/travel_routes"     # where to write overall_performance.csv
+RESULT_DIR  = "../../results/new_travel_routes"    # folder with your result_<model>_<bench>.csv
+SCORES_DIR  = "../../scores/new_travel_routes"     # where to write overall_performance.csv
 SCORES_FILE = os.path.join(SCORES_DIR, "overall_performance.csv")
 
 # lowercase “safe” keys matching the suffix of filenames
@@ -35,7 +35,8 @@ os.makedirs(SCORES_DIR, exist_ok=True)
 
 scores = {}
 
-for path in glob.glob(os.path.join(RESULT_DIR, "result_*_*.csv")):
+for path in glob.glob(os.path.join(RESULT_DIR, "result_*_*.csv")): 
+    
     fname = os.path.basename(path)
     # strip “result_” prefix and “.csv” suffix
     base  = fname[len("result_"):-len(".csv")]

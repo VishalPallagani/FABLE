@@ -4,8 +4,8 @@ import time
 import pandas as pd
 import ollama
 
-NEW_CSV_DIR = "../../prompts/travel_routes/"   # where your travel_*.csv prompts live
-RESULT_DIR  = "../../results/travel_routes/"   # where result_*.csv and timing.log will go
+NEW_CSV_DIR = "../../prompts/new_travel_routes/"   # where your travel_*.csv prompts live
+RESULT_DIR  = "../../results/new_travel_routes/"   # where result_*.csv and timing.log will go
 
 MODELS = {
     "deepseek_r1_8b":  "deepseek-r1:8b",
@@ -21,6 +21,7 @@ with open(log_path, "w") as f:
     f.write("model,benchmark,seconds\n")
 
 for csv_path in glob.glob(os.path.join(NEW_CSV_DIR, "travel_*.csv")):
+    # if csv_path.count("available_expressions")>0:
     fname   = os.path.basename(csv_path)                 # e.g. "travel_available_expressions.csv"
     safe_bm = fname[len("travel_"):-len(".csv")]         # "available_expressions"
 

@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Path to timing CSV (model,benchmark,seconds)
-CSV_PATH     = "../../results/travel_routes/timing.log"
+CSV_PATH     = "../../results/new_travel_routes/timing.log"
 # Path where to save the combined visualization
-OUTPUT_IMAGE = "../../scores/travel_routes/travel_route_model_timing_comparison.png"
+OUTPUT_IMAGE = "../../scores/new_travel_routes/travel_route_model_timing_comparison.png"
 
 # mapping file‐internal model names → display names
 alias_map = {
