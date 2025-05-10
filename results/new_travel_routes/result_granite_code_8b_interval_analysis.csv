@@ -1,0 +1,1601 @@
+prompt,ground_truth,response
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: HENRY FORD WEST BLOOMFIELD HOSPITAL (W BLOOMFIELD, MI) to Willow Run Airport (DETROIT, MI)
+
+  Route steps:
+['Drive east.', 'Turn right after 221 meters or 29-35 seconds.', 'Turn left after 24 meters or 8-10 seconds.', 'Turn left onto West Maple Road.', 'Turn left onto Haggerty Road.', 'Turn left onto 8 Mile Road.', 'Take the I 275 South ramp on the right toward Detroit/Toledo.', 'Take exit 20 on the right onto Ecorse Road toward Romulus/Willow Run Airport.', 'Turn right onto Ecorse Road.', 'Turn left after 7078 meters or 283-346 seconds.', 'Turn left after 78 meters or 39-48 seconds.', 'Turn right after 3165 meters or 412-504 seconds.', 'Continue for 806 meters or 109-134 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[880, 1077]","[283, 346]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SONORA REGIONAL MEDICAL CENTER - GREENLEY (SONORA, CA) to JOHN MUIR BEHAVIORAL HEALTH CENTER (CONCORD, CA)
+
+  Route steps:
+['Drive west.', 'Turn left after 29 meters or 4-5 seconds.', 'Turn right onto Greenley Road.', 'Turn left onto Mono Way.', 'Turn right to take the ramp.', 'Enter the roundabout and take the 2nd exit onto CA 49/CA 108.', 'Turn right onto North Yosemite Avenue/CA 120/J9/J14. Continue on CA 120.', 'Turn right to take the CA 99 ramp.', 'Keep right to take CA 4.', 'Keep right to take exit 65A/65B to stay on CA 4 toward Sacramento.', 'Keep left to take I 5 South.', 'Take exit 471 on the right onto CA 4 West/Charter Way.', 'Keep right to take CA 4.', 'Turn left onto CA 4/Marsh Creek Road.', 'Turn right to stay on CA 4.', 'Keep right to take CA 242 toward Oakland/Concord.', 'Take the exit on the right toward Solano Way/Grant Street.', 'Turn left onto Grant Street.', 'Turn left after 494 meters or 31-38 seconds.', 'Turn left after 86 meters or 17-21 seconds.', 'Turn left after 15 meters or 4-5 seconds.', 'Turn right after 102 meters or 18-22 seconds.', 'Continue for 77 meters or 15-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 18 and Step 23?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[89, 109]","The time interval between performing Step 18 and Step 23 is [102, 182].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Taylor Square Firehouse (Cambridge, MA) to WESTWOOD/PEMBROKE HEALTH SYSTEM PEMBROKE (PEMBROKE, MA)
+
+  Route steps:
+['Drive southeast on Sherman Street.', 'Turn right onto Huron Avenue.', 'Turn left onto Concord Avenue.', 'Bear right onto Massachusetts Avenue/MA 2A.', 'Turn right onto John F. Kennedy Street.', 'Turn left onto Soldiers Field Road.', 'Take the I 90 exit on the right toward Massachusetts Turnpike.', 'Take the I 90 ramp on the right toward Massachusetts Turnpike.', 'Keep left to take I 90 East toward Boston.', 'Keep left to take exit 134C-B-A onto I 93 toward Quincy.', 'Keep left to take exit 134C-B onto I 93 South toward Quincy.', 'Keep left to take exit 134C onto I 93 South toward Quincy.', 'Continue on MA 3.', 'Take exit 27 on the right onto MA 139 toward Hanover.', 'Turn left onto Church Street/MA 139.', 'Turn left onto Oak Street.', 'Turn left onto Winter Street.', 'Turn right after 105 meters or 9-11 seconds.', 'Turn left after 143 meters or 20-24 seconds.', 'Turn right after 45 meters or 6-8 seconds.', 'Turn left after 85 meters or 16-19 seconds.', 'Continue for 39 meters or 10-12 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[61, 74]","[85, 16]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: BAYLOR EMERGENCY MEDICAL CENTER (BURLESON, TX) to KINDRED HOSPITAL - FORT WORTH (FORT WORTH, TX)
+
+  Route steps:
+['Drive south.', 'Turn right after 43 meters or 7-9 seconds.', 'Turn left after 56 meters or 14-17 seconds.', 'Turn right after 39 meters or 9-11 seconds.', 'Turn right after 208 meters or 40-49 seconds.', 'Turn right onto West Rendon Crowley Road/FM 1187. Continue on FM 1187.', 'Turn left onto South Freeway.', 'Take the I 35W North ramp.', 'Take exit 46B on the right toward Seminary Drive.', 'Turn left onto East Berry Street.', 'Turn right onto South Grove Street.', 'Turn left onto East Berry Street.', 'Turn right onto Stuart Drive.', 'Turn left onto East Morningside Drive.', 'Bear right onto West Morningside Drive.', 'Enter the roundabout and take the 2nd exit onto South Main Street.', 'Turn left onto Page Avenue.', 'Turn right onto Hemphill Street.', 'Turn left onto West Jessamine Street.', 'Turn right onto Alston Avenue.', 'Turn left onto Lilac Street.', 'Turn right onto College Avenue.', 'Turn left onto West Jefferson Avenue.', 'Turn right onto Washington Avenue.', 'Turn left onto West Allen Avenue.', 'Turn right onto 8th Avenue.', 'Turn right after 1038 meters or 77-94 seconds.', 'Continue for 15 meters or 8-10 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[70, 86]","[7, 9]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Everest, D. C., House (Wausau, WI) to Central Wisconsin Airport (MOSINEE, WI)
+
+  Route steps:
+['Drive west.', 'Turn right onto Highland Park Boulevard.', 'Turn left to stay on Highland Park Boulevard.', 'Turn right onto McIndoe Street.', 'Turn left onto North 5th Street/WI 52.', 'Turn right onto Scott Street/WI 52/US 51 Business. Continue on WI 52.', 'Turn left to take the US 51 ramp.', 'Keep left to stay on US 51 toward Stevens Point/Madison.', 'Take exit 175 on the right onto WI 34 toward Knowlton/Wisconsin Rapids.', 'Turn left onto State Highway 34/WI 34.', 'Turn left after 5185 meters or 250-306 seconds.', 'Turn left after 93 meters or 25-31 seconds.', 'Turn right after 403 meters or 136-167 seconds.', 'Continue for 571 meters or 159-194 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 10 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[570, 698]","The time interval between performing Step 10 and Step 14 is [25-31 seconds, 5185 meters or 159-194 seconds].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: MERIT HEALTH RANKIN (BRANDON, MS) to Naval Air Station Meridian / McCain Field (LAUDERDALE, MS)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 56 meters or 13-16 seconds.', 'Turn right after 45 meters or 12-14 seconds.', 'Turn left after 7 meters or 6-8 seconds.', 'Turn right after 54 meters or 14-17 seconds.', 'Turn left onto Crossgates Boulevard.', 'Take the I 20 East ramp.', 'Take the I 20 East ramp.', 'Take exit 154B on the right onto MS 39 North toward DeKalb.', 'Turn right onto Dale Drive/MS 39/ MS 884. Continue on Dale Drive.', 'Bear left onto MS 39 N/MS 39. Continue on MS 39.', 'Turn right onto John C. Stennis Drive/MS 854.', 'Turn right onto Fuller Road.', 'Continue for 5454 meters or 309-378 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[45, 55]","[12, 14]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Teterboro Airport (TETERBORO, NJ) to Haring, Teunis, House (Old Tappan, NJ)
+
+  Route steps:
+['Drive east.', 'Turn left onto Fred Wehran Drive.', 'Turn left onto US 46.', 'Take the NJ 17 North exit on the right toward Paramus.', 'Take the NJ 17 North ramp toward Paramus.', 'Take the GSP Toll North ramp on the right.', 'Take exit 168 on the right onto CR 502 toward Washington/Westwood.', 'Bear right onto Washington Avenue/CR 502.', 'Turn left onto Pascack Road/CR 63.', 'Turn right onto Hillsdale Avenue/CR 112.', 'Turn left onto Broadway/CR 104.', 'Turn right onto Piermont Avenue/CR 114.', 'Turn left onto Rivervale Road/CR 53.', 'Turn right onto Old Tappan Road/CR 116. Continue on Old Tappan Road.', 'Turn left after 2685 meters or 155-189 seconds.', 'Turn right after 40 meters or 9-11 seconds.', 'Continue for 90 meters or 14-17 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 14 and Step 17?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[178, 217]","[90, 14-17 seconds]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: ALTRU HOSPITAL (GRAND FORKS, ND) to Devils Lake Regional Airport (DEVILS LAKE, ND)
+
+  Route steps:
+['Drive east.', 'Turn left after 99 meters or 16-20 seconds.', 'Turn right onto South 30th Street.', 'Turn left onto DeMers Avenue.', 'Turn left to take the I 29 North ramp.', 'Take exit 141 on the right onto US 2 toward Grand Forks Air Force Base.', 'Turn left onto US 2 West/Gateway Drive. Continue on US 2 West.', 'Turn left onto State Highway 19/ND 19.', 'Turn right after 2404 meters or 83-102 seconds.', 'Turn left after 58 meters or 8-9 seconds.', 'Continue for 684 meters or 57-70 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 11?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[164, 201]","[2404, 58]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: UC SAN DIEGO HEALTH HILLCREST - HILLCREST MEDICAL CENTER (SAN DIEGO, CA) to US Post Office-Long Beach Main (Long Beach, CA)
+
+  Route steps:
+['Drive east on Dickinson Street.', 'Turn right onto Front Street.', 'Turn right onto West Washington Street.', 'Bear right onto Washington Place.', 'Turn right onto Randolph Street.', 'Turn left onto Fort Stockton Drive.', 'Turn left onto Sunset Boulevard.', 'Turn right onto Juan Street.', 'Turn right after 1008 meters or 85-103 seconds.', 'Turn left after 30 meters or 10-12 seconds.', 'Turn left after 41 meters or 7-9 seconds.', 'Turn right after 7 meters or 3 seconds.', 'Turn right onto Taylor Street.', 'Turn left onto Morena Boulevard.', 'Keep left to stay on Morena Boulevard.', 'Turn left onto Tecolote Road.', 'Turn right to take the I 5 North ramp.', 'Take exit 26A on the right toward La Jolla Parkway West.', 'Take the exit on the right after 1712 meters or 64-79 seconds.', 'Bear right onto La Jolla Scenic Drive North.', 'Turn left onto La Jolla Village Drive.', 'Turn left onto North Torrey Pines Road/S21/US 101 Historic. Continue on S21.', 'Enter North Coast Highway 101 and take the 2nd exit onto North Coast Highway 101/S21.', 'Enter Carlsbad Boulevard and take the 2nd exit onto Carlsbad Boulevard/S21.', 'Turn right onto CA 76.', 'Turn right to take the I 5 North ramp.', 'Keep right to stay on I 5 North/San Diego Freeway.', 'Take exit 74 on the right toward El Camino Real.', 'Turn left onto South El Camino Real.', 'Turn right to take the CA 1 North ramp toward Doheny State Beach/Dana Point Harbor.', 'Turn left onto North Studebaker Road.', 'Turn right onto East Marina Drive.', 'Turn left onto East 2nd Street.', 'Turn left onto Alamitos Avenue.', 'Turn right onto East 1st Street.', 'Turn right onto Long Beach Boulevard/US 6. Continue on Long Beach Boulevard.', 'Continue for 253 meters or 29-35 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 12?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[105, 127]","[85, 103]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: MEMORIAL HOSPITAL WEST (PEMBROKE PINES, FL) to SELECT SPECIALTY HOSPITAL-MIAMI (MIAMI, FL)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 19 meters or 6-8 seconds.', 'Turn right after 30 meters or 14-17 seconds.', 'Turn left after 16 meters or 9-11 seconds.', 'Turn right after 136 meters or 46-56 seconds.', 'Turn right after 129 meters or 45-55 seconds.', 'Turn left onto FL 823/North Flamingo Road. Continue on FL 823.', 'Keep left to stay on FL 823.', 'Bear left onto US 27/Okeechobee Road.', 'Turn right after 6477 meters or 355-433 seconds.', 'Turn left after 23 meters or 9-10 seconds.', 'Turn right onto Northwest 26th Avenue.', 'Turn left onto Northwest North River Drive.', 'Turn right to stay on Northwest North River Drive.', 'Bear right to stay on Northwest North River Drive.', 'Turn right onto Northwest 12th Avenue/FL 933.', 'Turn left onto Northwest 5th Street.', 'Turn right onto Northwest 11th Avenue.', 'Turn left onto Northwest 3rd Street.', 'Turn left after 240 meters or 28-34 seconds.', 'Continue for 42 meters or 11-14 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 6?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[120, 147]","[30, 82]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: St. George's Parish Vestry House (Perryman, MD) to MEDSTAR SOUTHERN MARYLAND HOSPITAL CENTER (CLINTON, MD)
+
+  Route steps:
+['Drive northwest.', 'Turn right onto Perryman Road/MD 159.', 'Bear right to stay on Perryman Road/MD 159.', 'Turn left to stay on Perryman Road/MD 159.', 'Turn left onto Spesutia Road.', 'Turn left onto Mitchell Lane.', 'Turn left onto US 40/South Philadelphia Boulevard. Continue on US 40.', 'Take the Erdman Avenue exit on the right.', 'Take the US 40 East/I 895 South ramp on the right toward Pulaski Highway/Baltimore Harbor Tunnel Thruway.', 'Keep left to take I 895 Toll South/Baltimore Harbor Tunnel Thruway.', 'Keep right to take exit 6 onto Harbor Tunnel Throughway toward Annapolis.', 'Keep right to take I 895A toward Annapolis.', 'Keep right to take MD 3 toward Bowie/Crofton.', 'Bear right toward MD 725 West.', 'Bear right onto Marlboro Pike/MD 725. Continue on MD 725.', 'Bear left onto Old Crain Highway.', 'Bear left onto Old Marlboro Pike.', 'Turn right onto Old Crain Highway.', 'Turn right onto William Beanes Road.', 'Turn right onto Marlboro Pike.', 'Turn left onto Woodyard Road/MD 223.', 'Turn right to stay on Woodyard Road/MD 223.', 'Turn left onto Dangerfield Road.', 'Bear right to stay on Dangerfield Road.', 'Turn right onto Surratts Road.', 'Turn left after 222 meters or 15-19 seconds.', 'Turn right onto Hospital Drive.', 'Turn left after 115 meters or 15-18 seconds.', 'Turn right after 64 meters or 11-13 seconds.', 'Turn left after 63 meters or 13-16 seconds.', 'Continue for 42 meters or 8-10 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 27 and Step 31?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[62, 76]","[64, 115]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: First Presbyterian Church of West Chester (West Chester, PA) to JENNERSVILLE REGIONAL HOSPITAL (WEST GROVE, PA)
+
+  Route steps:
+['Drive southwest on Hemlock Alley.', 'Turn right onto South Brandywine Street.', 'Turn left onto West Miner Street/PA 842. Continue on PA 842.', 'Turn right onto South Bridge Road/PA 842. Continue on PA 842.', 'Turn right onto West Doe Run Road/PA 82/PA 842.', 'Turn left onto Clonmell Upland Road/PA 842.', 'Turn left onto Newark Road.', 'Turn right onto East Street Road/PA 926. Continue on PA 926.', 'Turn left onto White Horse Road.', 'Turn right onto Hilton Road.', 'Turn left onto North Jennersville Road/PA 796.', 'Turn right onto West Baltimore Pike.', 'Turn left after 1554 meters or 77-95 seconds.', 'Turn right after 20 meters or 5-6 seconds.', 'Turn left after 39 meters or 6-7 seconds.', 'Bear left after 8 meters or 2-3 seconds.', 'Continue for 18 meters or 3 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 17?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[93, 114]","[15, 18]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Seattle Paine Field International Airport (EVERETT, WA) to PROVIDENCE ST. PETER HOSPITAL (OLYMPIA, WA)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 179 meters or 39-47 seconds.', 'Keep left at the fork.', 'Turn right onto 100th Street Southwest.', 'Turn left to stay on 100th Street Southwest.', 'Turn right after 576 meters or 38-46 seconds.', 'Turn left after 31 meters or 7-9 seconds.', 'Bear right after 63 meters or 6-8 seconds.', 'Turn right onto East Minuteman Drive.', 'Turn left onto 112th Street Southwest.', 'Turn right onto Bomarc Road.', 'Turn left after 203 meters or 28-34 seconds.', 'Turn right after 10 meters or 5-6 seconds.', 'Turn right onto Beverly Park Road.', 'Turn left onto Mukilteo Speedway/WA 525. Continue on WA 525.', 'Take the WA 99 South exit on the right toward Lynnwood.', 'Keep right to stay on WA 99.', 'Keep left to take East Marginal Way South.', 'Bear left onto South Kent Des Moines Road/SR 516.', 'Turn right to take the I 5 South ramp toward Portland.', 'Keep right to stay on I 5 South.', 'Take exit 130 on the right toward South 56th Street.', 'Keep left toward South 56th Street East.', 'Keep left to take I 5 South.', 'Take exit 122B-A on the right toward Berkeley Street/Madigan.', 'Keep right to take exit 122A onto I 5 South toward Berkeley Street/Madigan.', 'Take exit 120B-A on the right toward Joint Base Lewis–McChord/Lewis-Main.', 'Keep left toward Joint Base Lewis–McChord/Lewis-Main.', 'Keep left to take I 5 South toward Olympia/Portland.', 'Take exit 119 on the right toward Steilacoom/DuPont Road.', 'Keep left to take I 5 South toward Joint Base Lewis–McChord/DuPont Gate.', 'Take exit 109 on the right toward Martin Way/College Street/Sleater-Kinney Road North.', 'Turn right onto Martin Way East.', 'Turn right after 1766 meters or 112-137 seconds.', 'Turn left after 79 meters or 18-22 seconds.', 'Turn right after 28 meters or 7-8 seconds.', 'Turn left after 85 meters or 18-23 seconds.', 'Turn right onto Lilly Road Northeast.', 'Turn left after 194 meters or 18-22 seconds.', 'Turn right after 67 meters or 13-16 seconds.', 'Turn left onto Ensign Road Northeast.', 'Turn right after 110 meters or 11-13 seconds.', 'Turn right after 40 meters or 11-14 seconds.', 'Bear right after 153 meters or 33-41 seconds.', 'Make a sharp left after 48 meters or 11-13 seconds.', 'Continue for 14 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 41 and Step 46?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[384, 470]","[1803, 2059]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: DeKalb Peachtree Airport (ATLANTA, GA) to Emerson-Holmes Building (Macon, GA)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 66 meters or 14-18 seconds.', 'Turn left after 22 meters or 9-11 seconds.', 'Turn right after 5 meters or 3-4 seconds.', 'Turn left after 31 meters or 12-15 seconds.', 'Turn right onto Aviation Way.', 'Bear left onto Airport Road.', 'Turn left onto Clairmont Road.', 'Turn right onto Briarcliff Road Northeast.', 'Turn right to take the I 675 South ramp.', 'Take the I 75 South exit toward Express Lanes.', 'Take the GA 20/GA 81/GA 155 exit on the right toward McDonough/Hampton.', 'Keep left to stay on I 75 South toward Macon/Savannah.', 'Take exit 167 on the right onto US 23 toward GA 247/Riverside Drive.', 'Turn left onto Riverside Drive/US 23/GA 87. Continue on Riverside Drive/US 23.', 'Turn right onto College Street.', 'Turn left onto Walnut Street.', 'Turn right onto Orange Street.', 'Turn left onto Bond Street.', 'Turn left onto Georgia Avenue/US 41 Business/GA 19.', 'Make a left U-turn onto Mulberry Street.', 'Continue for 43 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[38, 48]","The time interval between performing Step 1 and Step 5 is [9, 11].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: DAY KIMBALL HOSPITAL (PUTNAM, CT) to Whitfield, Henry, House (Guilford, CT)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 155 meters or 51-62 seconds.', 'Turn left after 63 meters or 22-27 seconds.', 'Turn left after 89 meters or 31-38 seconds.', 'Turn left after 54 meters or 19-24 seconds.', 'Turn right onto Pomfret Street/US 44. Continue on US 44.', 'Turn left to take the I 395 South ramp.', 'Take exit 58 on the right onto CT 77 toward Guilford/North Guilford.', 'Turn left onto Church Street/CT 77.', 'Turn right onto Broad Street/CT 77.', 'Turn left onto Whitfield Street/CT 77. Continue on Whitfield Street.', 'Turn left onto Old Whitfield Street.', 'Turn left onto Stone House Lane.', 'Turn left after 87 meters or 10-12 seconds.', 'Continue for 45 meters or 16-20 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[123, 151]","[155, 63]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Grand Lodge and Library of the Ancient Free and Accepted Masons (Sioux Falls, SD) to SANFORD UNIVERSITY OF SOUTH DAKOTA MEDICAL CENTER (SIOUX FALLS, SD)
+
+  Route steps:
+['Drive west.', 'Turn right onto West 13th Street.', 'Turn left onto South Dakota Avenue.', 'Turn right onto West 18th Street.', 'Turn left onto South Grange Avenue.', 'Turn right after 202 meters or 17-21 seconds.', 'Turn right after 39 meters or 17-21 seconds.', 'Turn left after 20 meters or 8-10 seconds.', 'Continue for 26 meters or 6-7 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 5 and Step 9?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[48, 59]","[17, 21]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: HEBREW REHABILITATION CENTER AT DEDHAM (DEDHAM, MA) to Water Shops Armory (Springfield, MA)
+
+  Route steps:
+['Drive south.', 'Turn right onto Great Meadow Road.', 'Turn left onto Newbridge Way.', 'Turn right onto West Street.', 'Turn right to take the I 95 North/MA 128 North ramp toward Peabody/Portsmouth New Hampshire.', 'Take exit 39B-A on the right onto MA 30 toward Boston.', 'Keep left to take MA 30 toward Boston.', 'Take exit 39 A-B onto I 90/MA 30 toward Boston.', 'Keep right to take exit 39B onto I 90 toward Albany New York/Boston.', 'Keep left to take I 90 West toward Albany New York.', 'Keep left to stay on I 90 West/Massachusetts Turnpike.', 'Take exit 45 on the right onto US 5 toward Springfield/Holyoke.', 'Keep right to take US 5 toward West Springfield.', 'Keep right to take US 5 South toward West Springfield.', 'Keep right to take MA 83 South toward Longmeadow/Hartford Connecticut.', 'Keep right to take MA 83 South.', 'Continue on MA 83.', 'Turn right onto Sumner Avenue/MA 83. Continue on Sumner Avenue.', 'Turn left onto Allen Street.', 'Turn right after 2718 meters or 167-204 seconds.', 'Turn right after 10 meters or 6-7 seconds.', 'Bear left after 52 meters or 11-13 seconds.', 'Continue for 100 meters or 16-20 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 19 and Step 23?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[200, 244]","[10, 16]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Zanesville Municipal Airport (ZANESVILLE, OH) to The Ohio State University Airport - Don Scott Field (COLUMBUS, OH)
+
+  Route steps:
+['Drive northeast on Ritchey Parkway.', 'Turn left onto Air Park Drive.', 'Turn right onto Airport Road.', 'Turn left to take the I 70 ramp.', 'Take exit 142 on the right onto US 40 toward Gratiot.', 'Turn right onto Mount Perry Road.', 'Turn left onto West Pike/US 40. Continue on US 40.', 'Turn right onto North 5th Street.', 'Turn left onto Refugee Road Southwest.', 'Turn right onto Etna Parkway Southwest.', 'Turn left onto SR 16/Broad Street Southwest.', 'Turn right onto Mink Street Southwest/C-41.', 'Turn left onto Morse Road.', 'Enter the roundabout and take the 2nd exit onto Morse Road.', 'Enter the roundabout and take the 2nd exit onto Morse Road.', 'Enter the roundabout and take the 2nd exit onto Morse Road.', 'Enter the roundabout and take the 2nd exit onto Morse Road.', 'Turn left onto North High Street.', 'Turn right onto West Henderson Road.', 'Turn right onto Olentangy River Road.', 'Turn left onto Jasonway Avenue.', 'Turn left onto Bethel Road.', 'Turn right onto Bracken House Boulevard.', 'Turn left after 14 meters or 6-7 seconds.', 'Turn right after 64 meters or 12-15 seconds.', 'Turn left after 10 meters or 6-8 seconds.', 'Turn right after 39 meters or 8-10 seconds.', 'Turn left after 28 meters or 7-8 seconds.', 'Turn right after 42 meters or 7-9 seconds.', 'Turn left after 15 meters or 7-9 seconds.', 'Turn right onto Godown Road.', 'Turn left onto Slade Avenue.', 'Turn left onto Ramblewood Avenue.', 'Turn right onto Ramblewood Court.', 'Turn left onto Fraley Drive.', 'Turn right onto Moorgate Drive.', 'Turn left onto West Case Road.', 'Turn right after 937 meters or 44-54 seconds.', 'Turn right after 1063 meters or 349-427 seconds.', 'Continue for 701 meters or 232-284 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 23 and Step 30?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[53, 66]","[15, 79]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Bennett, Henry, House (Ann Arbor, MI) to Ford, Henry, Square House (Garden City, MI)
+
+  Route steps:
+['Drive west.', 'Turn right onto East Liberty Street.', 'Turn left onto South Division Street.', 'Bear right onto Broadway Street.', 'Turn right to stay on Broadway Street.', 'Enter the roundabout and take the 2nd exit onto Broadway Street.', 'Turn right onto Plymouth Road.', 'Turn right onto Ford Road.', 'Turn left after 24692 meters or 1056-1291 seconds.', 'Turn right after 46 meters or 9-11 seconds.', 'Turn left after 216 meters or 40-49 seconds.', 'Turn right after 12 meters or 3-4 seconds.', 'Turn left after 40 meters or 10-12 seconds.', 'Turn right onto Krauter Street.', 'Turn left onto Shotka Road.', 'Turn right onto Beechwood Avenue.', 'Turn right after 729 meters or 84-103 seconds.', 'Continue for 10 meters or 5-6 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[1118, 1367]","The time interval between performing Step 8 and Step 13 is [1056, 1291]. This means that the time it takes to perform these steps can range from 1056 seconds to 1291 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Laurence G Hanscom Field (BEDFORD, MA) to CLINTON HOSPITAL (CLINTON, MA)
+
+  Route steps:
+['Drive east.', 'Turn right after 106 meters or 172-210 seconds.', 'Turn right after 49 meters or 80-98 seconds.', 'Turn left after 131 meters or 213-260 seconds.', 'Turn right after 1089 meters or 183-223 seconds.', 'Turn right after 195 meters or 68-83 seconds.', 'Turn left after 70 meters or 27-34 seconds.', 'Turn right after 168 meters or 56-69 seconds.', 'Turn left onto Hartwell Road.', 'Turn left onto Concord Road/MA 62.', 'Turn left onto Monument Street.', 'Turn left onto Monument Square/MA 62 West.', 'Turn right onto Main Street/MA 62 West.', 'Turn right onto Waltham Street/MA 27/MA 62.', 'Turn right onto Great Road/MA 62/MA 117. Continue on MA 117.', 'Turn left onto Wattaquadock Hill Road.', 'Bear left onto Acre Road.', 'Turn right onto Greeley Street.', 'Turn right onto Highland Street.', 'Turn left after 243 meters or 28-35 seconds.', 'Continue for 74 meters or 10-12 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 8?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[799, 977]","The time interval between performing Step 1 and Step 8 is [213, 260].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: HUDSON REGIONAL HOSPITAL (SECAUCUS, NJ) to Morristown Municipal Airport (MORRISTOWN, NJ)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 213 meters or 34-41 seconds.', 'Turn right onto Meadowlands Parkway.', 'Turn left onto American Way.', 'Turn right onto Hartz Way.', 'Turn left after 341 meters or 44-53 seconds.', 'Turn left onto Secaucus Road.', 'Turn right after 177 meters or 14-17 seconds.', 'Turn right onto Enterprise Avenue South.', 'Turn left after 402 meters or 47-58 seconds.', 'Turn left onto Metro Way.', 'Turn right onto County Avenue.', 'Turn left after 5 meters or 5-6 seconds.', 'Turn left after 9 meters or 4 seconds.', 'Turn right after 19 meters or 5-6 seconds.', 'Turn right after 39 meters or 9-11 seconds.', 'Turn left after 187 meters or 33-40 seconds.', 'Turn left after 36 meters or 8-9 seconds.', 'Turn right after 67 meters or 12-15 seconds.', 'Turn right to take the ramp toward Alexander Hamilton Service Area.', 'Take exit 15W on the right onto I 280 West toward Newark/Kearny.', 'Take exit 17B on the right onto CR 508 West toward Kearny.', 'Turn left onto McCarter Highway/NJ 21/CR 508.', 'Keep right to take Lombardy Street.', 'Turn right onto Lombardy Street.', 'Turn left onto Broad Street / Kenneth A. Gibson Boulevard.', 'Turn right after 15 meters or 3-4 seconds.', 'Bear right onto Washington Place.', 'Turn left onto Halsey Street.', 'Turn right onto Central Avenue/CR 508.', 'Turn left onto University Avenue.', 'Turn right onto Market Street/CR 510. Continue on Market Street.', 'Bear left onto Springfield Avenue/CR 510/CR 603.', 'Bear right onto South Orange Avenue/CR 510.', 'Turn right after 21819 meters or 1194-1460 seconds.', 'Keep left at the fork.', 'Continue for 592 meters or 77-94 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 19?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[215, 260]","[187, 36]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Art's Auto (Pawtucket, RI) to RHODE ISLAND HOSPITAL (PROVIDENCE, RI)
+
+  Route steps:
+['Drive north on Lonsdale Avenue/RI 122.', 'Turn left to take the I 95 South ramp toward Providence/Warwick.', 'Take exit 36A on the right onto I 195 East toward East Providence/Cape Cod.', 'Keep left to take I 195 East/US 1A/US 6 toward Pawtucket Avenue.', 'Take exit 2C on the right onto US 6 toward Pawtucket Avenue.', 'Bear right onto US 1A/Warren Avenue.', 'Turn right onto US 1A/RI 114/Pawtucket Avenue.', 'Turn left to take the I 195 West/RI 1A South ramp toward I 95.', 'Take exit 1C on the right onto US 44 West toward South Main Street.', 'Turn left onto Wickenden Street/US 1A. Continue on US 1A.', 'Bear left onto Eddy Street/US 1A.', 'Keep right to stay on Eddy Street.', 'Turn right after 375 meters or 28-34 seconds.', 'Turn right after 121 meters or 25-31 seconds.', 'Turn left after 29 meters or 10-12 seconds.', 'Continue for 33 meters or 7-9 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 16?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[70, 86]","[29, 375]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: FREEMAN NEOSHO HOSPITAL (NEOSHO, MO) to CITIZENS MEMORIAL HOSPITAL (BOLIVAR, MO)
+
+  Route steps:
+['Drive north on South Jefferson Street.', 'Turn left onto West Spring Street.', 'Turn right onto North College Street.', 'Turn left to take the ramp.', 'Take the I 44 East ramp on the right toward Springfield.', 'Take exit 77 on the right onto Kansas Expressway toward Bolivar.', 'Keep left to take exit 77 onto Kansas Expressway toward Bolivar.', 'Take the MO 83/MO 13 Business exit on the right toward Bolivar.', 'Turn right onto South Springfield Avenue/MO 83/MO 13 Business.', 'Turn left onto East Broadway Street/MO 32/MO 83/MO 13 Business.', 'Turn right onto North Main Avenue/MO 83. Continue on MO 83.', 'Turn right after 1902 meters or 108-132 seconds.', 'Turn left after 34 meters or 9-11 seconds.', 'Continue for 31 meters or 6-7 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 11 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[123, 150]","[9, 11]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Dickinson, Gen. Philemon, House (Trenton, NJ) to Atlantic City International Airport (ATLANTIC CITY, NJ)
+
+  Route steps:
+['Drive southwest on Colonial Avenue.', 'Turn right onto Riverside Avenue.', 'Bear left onto NJ 29 North/John Fitch Way.', 'Turn right toward Parkside Avenue/Cadwalader Park.', 'Make a left U-turn to stay on Parkside Avenue.', 'Turn left toward NJ 29 South.', 'Take exit 1A-B on the right onto I 295 toward Camden.', 'Keep right to take exit 1A onto I 295 South toward Camden.', 'Take exit 57B-A on the right onto US 130 toward Bordentown.', 'Keep left to take exit 57A onto US 130 North toward Bordentown.', 'Keep right to take exit 57A onto US 130 North toward Bordentown.', 'Keep left to take US 130/Burlington Pike.', 'Turn right onto Farnsworth Avenue/CR 545.', 'Bear right onto US 206.', 'Keep left to stay on US 206.', 'Enter the roundabout and take the 2nd exit onto US 206.', 'Bear right to stay on US 206.', 'Turn left onto US 30/White Horse Pike. Continue on White Horse Pike.', 'Turn right onto Tilton Road/CR 563.', 'Turn left after 4963 meters or 205-251 seconds.', 'Turn left after 69 meters or 38-46 seconds.', 'Turn right after 4091 meters or 533-652 seconds.', 'Bear right after 1149 meters or 149-183 seconds.', 'Continue for 299 meters or 39-48 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 19 and Step 24?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[964, 1180]","The time interval between performing Step 19 and Step 24 is [1149, 149]. This means that the time it takes to complete Step 19 is between 1149 meters or 149 seconds and 149 meters or 183 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Ohio Asylum for the Blind (Columbus, OH) to HOCKING VALLEY COMMUNITY HOSPITAL (LOGAN, OH)
+
+  Route steps:
+['Drive north.', 'Turn left after 61 meters or 10-12 seconds.', 'Turn right after 58 meters or 11-14 seconds.', 'Turn right onto Allen Avenue.', 'Turn left onto East Main Street.', 'Turn right onto Alum Creek Drive.', 'Turn left to take the I 70 East ramp.', 'Take exit 105A on the right onto US 33 East toward Lancaster.', 'Keep right to stay on US 33 East.', 'Keep left to take US 33 East/Lancaster Bypass.', 'Take exit 170 on the right onto SR 664 toward Logan/Bremen.', 'Keep left at the fork.', 'Enter the roundabout and take the 2nd exit onto SR 664.', 'Enter the roundabout and take the 2nd exit onto SR 664.', 'Turn left after 1799 meters or 105-128 seconds.', 'Turn left after 46 meters or 9-11 seconds.', 'Turn right after 28 meters or 5-7 seconds.', 'Continue for 22 meters or 4 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 14 and Step 18?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[144, 176]","[105, 128]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Lebanon Municipal Airport (LEBANON, NH) to CONCORD HOSPITAL (CONCORD, NH)
+
+  Route steps:
+['Drive northwest.', 'Turn right onto CAP Road.', 'Turn left onto Poverty Lane.', 'Turn right onto Mechanic Street/US 4/NH 10. Continue on US 4.', 'Turn left onto East Park Street/US 4.', 'Bear right onto Bank Street/US 4. Continue on US 4.', 'Turn right onto NH 4A.', 'Turn right onto George Hill Road.', 'Bear left onto Main Street/NH 114. Continue on NH 114.', 'Turn left onto Main Street.', 'Bear right onto State Route 114/NH 114. Continue on NH 114.', 'Turn left onto Roby Road.', 'Turn left onto State Route 103/NH 103.', 'Enter the roundabout and take the 2nd exit onto State Route 103/NH 103.', 'Turn left to stay on NH 103.', 'Turn left onto Main Street/US 202/NH 9.', 'Bear left onto Main Street/US 202/NH 9. Continue on US 202/NH 9.', 'Turn left onto Langley Parkway.', 'Turn right after 162 meters or 19-23 seconds.', 'Turn right after 75 meters or 14-17 seconds.', 'Continue for 76 meters or 17-21 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 18 and Step 21?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[50, 61]","The time interval between performing Step 18 and Step 21 is [162, 192]. This means that the time it takes to travel from Step 18 to Step 21 can range from 162 meters or 19 seconds to 192 meters or 23 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Prescott International Airport - Ernest A. Love Field (PRESCOTT, AZ) to Flagstaff Pulliam International Airport (FLAGSTAFF, AZ)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 225 meters or 29-36 seconds.', 'Turn right after 94 meters or 22-27 seconds.', 'Turn left onto Ruger Road.', 'Turn left onto Crystal Lane.', 'Turn right onto Janine Drive.', 'Turn right onto MacCurdy Drive.', 'Turn left onto AZ 89.', 'Enter the roundabout and take the 2nd exit onto AZ 89.', 'Turn left to take the ramp.', 'Keep left to stay on AZ 89A.', 'Keep left to stay on AZ 89A.', 'Take the exit.', 'Bear left onto AZ 89A.', 'Turn right onto Main Street/AZ 89A. Continue on AZ 89A.', 'Turn left to stay on AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 1st exit.', 'Bear right onto AZ 89A.', 'Turn left onto West Mingus Avenue.', 'Enter the roundabout and take the 2nd exit onto East Mingus Avenue.', 'Turn left onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto AZ 89A.', 'Enter the roundabout and take the 2nd exit onto North State Route 89A.', 'Enter the roundabout and take the 2nd exit onto North State Route 89A.', 'Bear right onto AZ 89A.', 'Turn right onto South Old Munds Highway/CR 237A.', 'Turn left after 1698 meters or 280-343 seconds.', 'Bear right after 100 meters or 168-205 seconds.', 'Turn left after 309 meters or 501-612 seconds.', 'Turn left after 1861 meters or 1099-1343 seconds.', 'Turn right after 202 meters or 332-406 seconds.', 'Continue for 182 meters or 123-150 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 31 and Step 37?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[2554, 3122]","[1698, 182]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: CHESTER REGIONAL MEDICAL CENTER (CHESTER, SC) to Jim Hamilton L.B. Owens Airport (COLUMBIA, SC)
+
+  Route steps:
+['Drive west.', 'Turn left onto Medical Park Drive.', 'Turn left onto Great Falls Highway/SC 97.', 'Turn right onto Purity Road.', 'Turn left onto Columbia Road/US 321. Continue on US 321.', 'Turn right onto North Main Street/US 21/US 321.', 'Turn left onto Muller Avenue.', 'Turn right onto Colonial Drive.', 'Turn left onto Harden Street.', 'Turn left onto Rosewood Drive/SC 16.', 'Turn right onto South Woodrow Street.', 'Turn left onto Holt Drive.', 'Turn right onto Airport Boulevard.', 'Turn left onto Jim Hamilton Boulevard.', 'Turn right after 955 meters or 105-128 seconds.', 'Turn right after 27 meters or 33-41 seconds.', 'Turn left after 18 meters or 6-7 seconds.', 'Continue for 26 meters or 4-5 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 14 and Step 18?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[148, 181]","[6, 7]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: CRESTWOOD MEDICAL CENTER (HUNTSVILLE, AL) to CHEROKEE MEDICAL CENTER (CENTRE, AL)
+
+  Route steps:
+['Drive north.', 'Turn right after 77 meters or 13-15 seconds.', 'Turn right after 54 meters or 13-16 seconds.', 'Turn right after 60 meters or 14-17 seconds.', 'Turn right onto Whitesport Circle Southwest.', 'Turn right onto Whitesburg Drive South.', 'Keep left to stay on Whitesburg Drive South.', 'Turn left to take the ramp.', 'Keep right to take Memorial Parkway Southwest.', 'Keep left to take US 231.', 'Turn left onto Union Grove Road/CR 240.', 'Turn left onto AL 69.', 'Turn right onto US 431/AL 79/Gunter Avenue. Continue on US 431.', 'Turn left onto North Broad Street/AL 75. Continue on AL 75.', 'Turn right onto County Road 24.', 'Turn left onto AL 68.', 'Turn right onto AL 227.', 'Turn left onto County Road 12.', 'Turn right onto AL 68.', 'Turn right onto North Valley Avenue/US 11/AL 68. Continue on US 11/AL 68.', 'Turn left to stay on AL 68.', 'Turn left onto US 411/AL 68/Weiss Lake Boulevard. Continue on US 411/AL 68.', 'Turn left onto US 411/AL 68/Clarence E Chestnut Jr Bypass.', 'Turn left onto AL 68/Cedar Bluff Road.', 'Bear right onto Northwood Drive.', 'Turn right after 1250 meters or 102-124 seconds.', 'Turn left after 78 meters or 15-18 seconds.', 'Turn right after 112 meters or 15-18 seconds.', 'Turn right after 58 meters or 13-15 seconds.', 'Continue for 43 meters or 10-13 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 25 and Step 30?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[195, 236]","[15, 18]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Indianapolis International Airport (INDIANAPOLIS, IN) to Delaware County Johnson Field (MUNCIE, IN)
+
+  Route steps:
+['Drive south on South Service Road.', 'Turn right to stay on South Service Road.', 'Turn right to take the Colonel H. Weir Cook Memorial Drive South ramp.', 'Turn left after 507 meters or 25-31 seconds.', 'Turn left onto Colonel H. Weir Cook Memorial Drive.', 'Continue.', 'Take the exit on the right after 1168 meters or 36-44 seconds.', 'Keep right to take I 465/I 74.', 'Keep right to take I 465 South/I 74 East toward Cincinnati.', 'Keep right to take exit 37 onto I 69 North toward Fort Wayne.', 'Keep left to stay on I 69 North.', 'Take exit 241 on the right onto SR 332 toward Frankton/Muncie.', 'Turn right onto West McGalliard Road/SR 332 East.', 'Turn left onto North Walnut Street.', 'Enter the roundabout and take the 2nd exit onto North Walnut Street.', 'Turn left after 1022 meters or 55-68 seconds.', 'Turn left after 300 meters or 99-121 seconds.', 'Continue for 124 meters or 27-33 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 15 and Step 18?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[242, 297]","The time interval between performing Step 15 and Step 18 is [55-68, 27-33]. This means that the time it takes to complete these steps can vary anywhere from 55 seconds to 68 seconds, and the distance traveled during this time can range from 27 meters to 33 meters.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: OUR CHILDRENS HOUSE (DALLAS, TX) to PLANO SPECIALTY HOSPITAL (PLANO, TX)
+
+  Route steps:
+['Drive north.', 'Turn right after 157 meters or 52-64 seconds.', 'Turn left onto Empire Central Drive.', 'Turn right onto North Stemmons Freeway.', 'Turn right after 418 meters or 22-26 seconds.', 'Turn left after 64 meters or 16-19 seconds.', 'Turn right onto Viceroy Drive.', 'Turn right onto Regal Row.', 'Bear left after 153 meters or 13-16 seconds.', 'Turn left after 49 meters or 2-3 seconds.', 'Bear left after 65 meters or 12-14 seconds.', 'Turn right after 107 meters or 18-21 seconds.', 'Turn left onto Harry Hines Boulevard.', 'Turn right onto Shorecrest Drive.', 'Turn left onto Webb Chapel Road.', 'Turn right after 122 meters or 10-12 seconds.', 'Turn left after 111 meters or 23-28 seconds.', 'Turn right onto West Northwest Highway/Loop 12.', 'Turn left onto Inwood Road.', 'Bear left onto Dallas Parkway.', 'Turn right onto Harvest Hill Road.', 'Turn left onto Montfort Drive.', 'Bear right onto Montfort Place.', 'Turn right onto Alpha Road.', 'Turn left onto Preston Road/TX 289.', 'Turn right onto Alliance Boulevard.', 'Keep left to take Allied Drive.', 'Turn right onto West Plano Parkway.', 'Turn left onto West 15th Street.', 'Turn left after 570 meters or 39-48 seconds.', 'Turn right after 141 meters or 23-28 seconds.', 'Turn left after 17 meters or 5-6 seconds.', 'Turn right after 89 meters or 15-19 seconds.', 'Turn left after 111 meters or 22-27 seconds.', 'Continue for 81 meters or 15-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 29 and Step 35?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[287, 349]","[157, 64]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Burrowes, Maj. John, Mansion (Matawan, NJ) to Great Egg Coast Guard Station (Longport, NJ)
+
+  Route steps:
+['Drive south on Main Street/CR 516.', 'Turn left onto South Street/NJ 79.', 'Turn left onto US 9/US Highway 9.', 'Take the GSP ramp on the right toward Atlantic City/Garden State Parkway.', 'Keep right to stay on GSP/Garden State Parkway.', 'Take exit 48 on the right onto US 9 South toward Port Republic/Smithville.', 'Turn left onto East Mill Road/CR 563. Continue on CR 563.', 'Turn right onto Fulton Avenue.', 'Turn left onto North Kenyon Avenue.', 'Turn right onto Fremont Avenue.', 'Turn left onto North Lancaster Avenue.', 'Turn right onto Amherst Avenue.', 'Turn right onto Sunset Avenue.', 'Turn left onto North 32nd Avenue.', 'Turn right onto Monmouth Avenue.', 'Bear left onto 27th Avenue.', 'Turn right onto Oberon Avenue.', 'Turn right onto North 24th Avenue.', 'Turn left after 5 meters or 5-6 seconds.', 'Turn left after 58 meters or 14-18 seconds.', 'Turn right after 35 meters or 9-12 seconds.', 'Continue for 24 meters or 14-18 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 18 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[42, 54]","[35, 9]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: McClurg Building (Chicago, IL) to Chicago Midway International Airport (CHICAGO, IL)
+
+  Route steps:
+['Drive north.', 'Turn left onto East Adams Street/Hist US 66. Continue on Hist US 66.', 'Turn left onto South Wells Street.', 'Turn right onto I 290/IL 110/Eisenhower Expressway.', 'Take the I 94 East/Dan Ryan Expressway exit on the right toward Indiana.', 'Keep left to take I 94 East/Dan Ryan Expressway toward Indiana.', 'Take exit 53 on the right onto Stevenson Expressway toward Saint Louis/DuSable Lake Shore Drive.', 'Keep right to take I 55 South/Stevenson Expressway toward St. Louis.', 'Take exit 286 on the right onto IL 50 toward Cicero Avenue.', 'Turn left onto South Cicero Avenue/IL 50.', 'Turn right after 3743 meters or 229-280 seconds.', 'Turn left after 94 meters or 49-60 seconds.', 'Turn right after 156 meters or 27-33 seconds.', 'Continue for 411 meters or 71-87 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 10 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[376, 460]","The time interval between performing Step 10 and Step 14 is [27, 33].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Cape May County Airport (WILDWOOD, NJ) to LOURDES MEDICAL CENTER OF BURLINGTON COUNTY (WILLINGBORO, NJ)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto Essex Road.', 'Turn left onto Langley Road.', 'Turn left onto Breakwater Road/CR 613.', 'Turn left onto Seashore Road/CR 626. Continue on CR 626.', 'Turn left onto NJ 47/South Delsea Drive.', 'Keep left to take NJ 55.', 'Take exit 1B on the right onto I 295 North toward Trenton.', 'Take exit 47B on the right onto CR 541 North toward Burlington.', 'Bear right after 1164 meters or 44-54 seconds.', 'Turn left onto CR 541 Truck.', 'Bear right onto Sunset Road/CR 634.', 'Turn left onto Hospital Drive.', 'Turn right to stay on Hospital Drive.', 'Turn left after 19 meters or 5-6 seconds.', 'Turn left after 70 meters or 13-16 seconds.', 'Continue for 38 meters or 7-8 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 14 and Step 17?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[69, 84]","The time interval between performing Step 14 and Step 17 is [5, 8]. This means that the time it takes to travel from Step 14 to Step 17 can range from 5 seconds to 8 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Merrick-Simmons House (Fernandina Beach, FL) to Northeast Florida Regional Airport (ST AUGUSTINE, FL)
+
+  Route steps:
+['Drive south on South 10th Street.', 'Turn right onto Olive Street.', 'Turn left onto South 8th Street/FL A1A/FL 200.', 'Turn left onto Sadler Road/CR 108.', 'Turn right after 140 meters or 11-13 seconds.', 'Turn left after 24 meters or 7-9 seconds.', 'Turn right after 38 meters or 6-8 seconds.', 'Turn left after 63 meters or 13-16 seconds.', 'Turn right onto South 14th Street.', 'Enter the roundabout and take the 2nd exit onto Amelia Island Parkway.', 'Turn right onto Buccaneer Trail/CR 105A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Turn left to stay on FL A1A.', 'Take the Saint Johns River Ferry/FL A1A Ferry.', 'Drive southeast.', 'Bear right onto FL A1A.', 'Turn right onto Mayport Road/FL A1A.', 'Keep right to stay on Mayport Road/FL A1A.', 'Turn left onto Plaza Street.', 'Turn right onto Sherry Drive.', 'Turn left onto Atlantic Boulevard/FL A1A/FL 10.', 'Turn right onto 3rd Street/FL A1A. Continue on FL A1A.', 'Turn right onto Palm Valley Road/CR 210.', 'Enter the roundabout and take the 2nd exit onto Palm Valley Road/CR 210.', 'Take the exit on the right toward Nocatee Town Center/Crosswater Parkway.', 'Keep left toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Keep right toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Bear left onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Turn right onto Pine Island Road.', 'Turn left onto US 1.', 'Turn left after 12385 meters or 423-517 seconds.', 'Turn right after 126 meters or 18-21 seconds.', 'Continue for 513 meters or 93-114 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 4 and Step 8?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[37, 46]","[12385, 126]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Middle Georgia Regional Airport (MACON, GA) to MIDTOWN MEDICAL CENTER (COLUMBUS, GA)
+
+  Route steps:
+['Drive northwest.', 'Turn left onto Delta Drive.', 'Turn right onto FAA Boulevard.', 'Turn left onto Airport Drive.', 'Turn left onto Industrial Park Drive.', 'Turn left onto Industrial Highway/US 41/GA 11/GA 49. Continue on GA 49.', 'Take the GA 540 exit on the right.', 'Turn right onto Old SR 96.', 'Turn left onto Junction City Street.', 'Turn right onto GA 90/GA 96/GA 540. Continue on GA 540.', 'Turn left onto Flat Rock Road.', 'Turn right onto Milgen Road.', 'Turn left onto 12th Avenue.', 'Turn right onto 23rd Street.', 'Bear left onto Southern Street.', 'Turn right onto 11th Avenue.', 'Turn left onto Center Street.', 'Turn left after 159 meters or 18-23 seconds.', 'Turn left onto 10th Avenue.', 'Turn right onto Mora Street.', 'Turn left after 103 meters or 14-18 seconds.', 'Turn right after 12 meters or 3-4 seconds.', 'Continue for 52 meters or 10-12 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 20 and Step 23?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[45, 57]","[159, 182]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Muskegon County Airport (MUSKEGON, MI) to Holland Reformed Protestant Dutch Church (Holland, MI)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Sinclair Drive.', 'Turn right onto Hakes Drive.', 'Turn right onto Airport Service Road.', 'Turn left onto Hakes Boulevard.', 'Turn left onto East Ellis Road.', 'Turn right after 341 meters or 20-25 seconds.', 'Turn left after 20 meters or 7-9 seconds.', 'Turn left after 86 meters or 11-14 seconds.', 'Turn right onto Robert Hunter Drive.', 'Turn left after 524 meters or 34-41 seconds.', 'Turn right after 91 meters or 14-17 seconds.', 'Turn right after 159 meters or 25-31 seconds.', 'Turn right after 148 meters or 24-30 seconds.', 'Turn left onto East Sternberg Road.', 'Turn right onto Grand Haven Road.', 'Turn right onto Pine Street/M 104. Continue on Pine Street.', 'Take the US 31 South ramp toward Grand Haven.', 'Turn right onto 136th Avenue.', 'Turn left to stay on 136th Avenue.', 'Bear left onto North River Avenue.', 'Turn left onto West 3rd Street.', 'Turn right onto Central Avenue.', 'Turn left onto East 10th Street.', 'Turn left after 125 meters or 12-15 seconds.', 'Continue for 10 meters or 4-5 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 10 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[135, 167]","[263, 270]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: BLUFFTON HOSPITAL (BLUFFTON, OH) to MARION GENERAL HOSPITAL (MARION, OH)
+
+  Route steps:
+['Drive southwest on Harmon Road.', 'Turn right onto South Bentley Road/SR 103.', 'Turn right onto South Main Street/SR 103. Continue on SR 103.', 'Turn right onto East Jefferson Street/SR 103. Continue on SR 103.', 'Turn right onto South Main Street/US 68/SR 103.', 'Turn left onto East Main Cross Street/SR 103. Continue on SR 103.', 'Turn left onto South Main Street/SR 37/SR 103. Continue on SR 37/SR 103.', 'Turn right to stay on SR 103.', 'Turn left to stay on SR 103.', 'Turn right to stay on SR 103.', 'Turn left to take the ramp.', 'Take exit 140 on the right.', 'Turn right onto Marion-Bucyrus Road/SR 4. Continue on SR 4.', 'Turn left onto North Main Street/SR 4/SR 423.', 'Turn right onto Klerx Avenue/SR 4/SR 423.', 'Turn left onto North Prospect Street/SR 4/SR 423. Continue on SR 4/SR 423.', 'Bear right onto South Prospect Street/SR 4.', 'Turn left after 1017 meters or 62-76 seconds.', 'Turn left after 224 meters or 31-38 seconds.', 'Turn left after 46 meters or 6-8 seconds.', 'Turn right after 449 meters or 65-79 seconds.', 'Continue for 60 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[173, 212]","The time interval between performing Step 17 and Step 22 is [46, 79].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Beaufort MCAS - Merritt Field (BEAUFORT, SC) to Rose, Thomas, House (Charleston, SC)
+
+  Route steps:
+['Drive north on Funa Futi Road East.', 'Turn left after 546 meters or 51-62 seconds.', 'Turn left after 420 meters or 39-48 seconds.', 'Turn right after 484 meters or 47-57 seconds.', 'Turn right after 7 meters or 1 seconds.', 'Turn left onto Rc West Road North.', 'Turn right to stay on Rc West Road North.', 'Turn right onto Shelter Church Road.', 'Turn right onto US 21/Trask Parkway.', 'Take the US 17 exit on the right.', 'Bear left onto US 17 North/Savannah Highway. Continue on Savannah Highway.', 'Take the exit on the right after 7550 meters or 400-488 seconds.', 'Keep right to take Lockwood Drive.', 'Turn right onto Church Street.', 'Continue for 35 meters or 9-11 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[138, 168]","[39, 48]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Security Bank Building (Sioux Falls, SD) to Shafer Round Barn (Sioux Falls, SD)
+
+  Route steps:
+['Drive north.', 'Turn right onto West 9th Street.', 'Turn left onto South 3rd Avenue.', 'Turn left onto East 13th Street.', 'Turn right onto South 4th Avenue.', 'Turn left after 80 meters or 9-11 seconds.', 'Turn left onto East 14th Street.', 'Turn right onto South Southeastern Avenue.', 'Turn left onto East River Ridge Place.', 'Bear left after 94 meters or 11-14 seconds.', 'Turn left after 113 meters or 18-22 seconds.', 'Turn left after 35 meters or 6-7 seconds.', 'Turn left after 23 meters or 5-6 seconds.', 'Turn right after 154 meters or 25-31 seconds.', 'Turn left onto East 26th Street.', 'Turn left onto SD 11 North/Veterans Parkway.', 'Turn right onto East 23rd Street.', 'Turn right onto South Powder House Road.', 'Continue for 102 meters or 14-17 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[74, 91]","[80, 94]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Dodge, Edward, House (Port Washington, WI) to COMMUNITY MEMORIAL HSPTL (MENOMONEE FALLS, WI)
+
+  Route steps:
+['Drive west on East Grand Avenue/WI 32. Continue on WI 32.', 'Turn left onto South Maple Street.', 'Turn left onto South Madison Avenue.', 'Bear right onto West Lincoln Avenue.', 'Turn left onto South Spring Street/WI 32.', 'Continue on CTH V.', 'Bear right onto Washington Street/WI 60. Continue on Washington Street.', 'Turn left onto 12th Avenue.', 'Turn left onto Beech Street.', 'Turn right onto 12th Avenue.', 'Turn left onto Green Bay Road.', 'Turn left to stay on Green Bay Road.', 'Turn right onto Highland Road.', 'Turn left onto Wauwatosa Road/WI 181.', 'Turn right onto West Freistadt Road.', 'Turn left onto North Granville Road.', 'Turn right onto West County Line Road.', 'Turn left after 3756 meters or 223-272 seconds.', 'Turn left onto Held Drive.', 'Turn right onto Anthony Avenue.', 'Bear left after 125 meters or 18-23 seconds.', 'Turn left after 36 meters or 6-7 seconds.', 'Turn right after 55 meters or 11-13 seconds.', 'Turn left after 19 meters or 8-10 seconds.', 'Enter the roundabout and take the 2nd exit onto Megal Drive.', 'Turn left onto Pilgrim Road.', 'Turn right onto Main Street.', 'Turn left onto Town Hall Road.', 'Turn right onto Community Memorial Hospital.', 'Bear right after 208 meters or 32-39 seconds.', 'Turn left after 72 meters or 10-12 seconds.', 'Continue for 44 meters or 8-9 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 20 and Step 24?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[266, 325]","[11, 39] seconds
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Franklin Institute (Philadelphia, PA) to Northeast Philadelphia Airport (PHILADELPHIA, PA)
+
+  Route steps:
+['Drive west.', 'Turn right onto South 7th Street.', 'Bear right onto North Franklin Street.', 'Turn right onto Willow Street.', 'Turn left onto North 3rd Street.', 'Turn right onto Spring Garden Street.', 'Turn left onto North Front Street.', 'Turn right onto East Oxford Street.', 'Turn left onto Frankford Avenue.', 'Enter Traffic Circle and take the 2nd exit onto Frankford Avenue.', 'Turn left onto Bustleton Avenue.', 'Turn right onto US 1 North/Roosevelt Boulevard.', 'Take the Harbison Avenue/Tyson Avenue exit.', 'Take the exit on the right toward Northeast Philadelphia Airport/Grant Avenue.', 'Turn right after 2545 meters or 115-141 seconds.', 'Turn right after 41 meters or 10-12 seconds.', 'Turn right onto Red Lion Road.', 'Turn right after 423 meters or 41-50 seconds.', 'Turn left after 113 meters or 21-26 seconds.', 'Turn left after 215 meters or 70-86 seconds.', 'Continue for 610 meters or 100-122 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 21?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[357, 437]","The time interval between performing Step 17 and Step 21 is [113, 215]. This means that the time it takes to travel from Step 17 to Step 21 is between 113 seconds and 215 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: HOSPITAL FOR SPECIAL CARE (NEW BRITAIN, CT) to Shelton, William, House (Windsor, CT)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 27 meters or 3-4 seconds.', 'Bear right after 204 meters or 28-34 seconds.', 'Turn left after 47 meters or 6-8 seconds.', 'Turn left after 89 meters or 13-15 seconds.', 'Turn right after 175 meters or 24-30 seconds.', 'Turn left onto Corbin Avenue.', 'Turn right onto Heather Lane.', 'Turn left onto McKinley Drive.', 'Turn right onto Farmington Avenue.', 'Turn left onto Blake Road.', 'Turn left onto Stanley Street/CT 71.', 'Bear right onto Hartford Road/CT 71.', 'Bear right onto Hartford Road/CT 71 North.', 'Turn left onto Quaker Lane South.', 'Turn right onto Talcott Road.', 'Bear left onto New Park Avenue.', 'Turn right onto Flatbush Avenue.', 'Turn left to take the I 84 East ramp toward Boston.', 'Take exit 49 on the right toward Ann Uccello Street.', 'Keep left toward Ann Uccello Street.', 'Continue on Chapel Street South.', 'Turn left onto Ann Uccello Street.', 'Turn left onto US 44/Main Street.', 'Bear right to stay on Main Street.', 'Turn left onto Poquonock Avenue/CT 75.', 'Turn right onto East Street.', 'Turn left onto Pleasant Street.', 'Continue for 20 meters or 4-5 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 6?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[74, 91]","[27, 34]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Barthel Pigeonnier (Baton Rouge, LA) to New Orleans NAS JRB/Alvin Callender Field (NEW ORLEANS, LA)
+
+  Route steps:
+['Drive northeast on Iowa Street.', 'Turn right onto West McKinley Street.', 'Turn left onto Nicholson Drive/LA 30. Continue on LA 30.', 'Take the I 10 East ramp on the right toward New Orleans.', 'Take exit 226 on the right toward Huey Long Bridge.', 'Keep right to take LA 3152/Clearview Parkway toward Huey Long Bridge.', 'Turn left onto US 61/Airline Drive.', 'Take the I 10 East ramp on the right toward US 90 Business/Westbank.', 'Keep left to take I 10 East toward Downtown/Slidell.', 'Keep left to take US 90 BUS.', 'Take exit 9A on the right toward Terry Parkway.', 'Keep left toward Terry Parkway.', 'Continue on Terry Parkway.', 'Keep right to stay on Terry Parkway.', 'Turn left onto LA 23/Belle Chasse Highway. Continue on LA 23.', 'Turn right onto Buccaneer Road.', 'Turn right after 3080 meters or 291-356 seconds.', 'Turn right after 167 meters or 273-333 seconds.', 'Turn left after 857 meters or 1390-1699 seconds.', 'Continue for 308 meters or 42-52 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 16 and Step 20?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[1996, 2440]","The time interval between performing Step 16 and Step 20 is [1390, 1699]. This means that the time it takes to perform Step 16 is between 1390 seconds (23 minutes and 10 seconds) and 1699 seconds (28 minutes and 19 seconds).
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Duncan, Robert P., House (Bexley, OH) to LICKING MEMORIAL HOSPITAL (NEWARK, OH)
+
+  Route steps:
+['Drive north on North Parkview Avenue.', 'Turn right onto Maryland Avenue.', 'Turn right onto North Waverly Street.', 'Turn left after 225 meters or 23-28 seconds.', 'Turn right onto North Napoleon Avenue.', 'Turn left onto East Broad Street/SR 16. Continue on SR 16.', 'Take the SR 16 East ramp on the right toward Newark.', 'Turn right onto River Road.', 'Turn left to stay on River Road.', 'Enter the roundabout and take the 2nd exit onto Reddington Road.', 'Turn right onto Cherry Valley Road Northeast.', 'Turn left onto West Main Street.', 'Turn left after 1437 meters or 89-108 seconds.', 'Turn left after 239 meters or 40-49 seconds.', 'Turn left after 24 meters or 6-7 seconds.', 'Continue for 65 meters or 12-15 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 16?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[170, 207]","[1437, 1502]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Whiting Field Naval Air Station - North (MILTON, FL) to Naval Air Station Pensacola Forrest Sherman Field (PENSACOLA, FL)
+
+  Route steps:
+['Drive northeast on Whiting Field NAS North.', 'Turn right to stay on Whiting Field NAS North.', 'Turn right onto Langley Street.', 'Turn left onto FL 87.', 'Stay straight to take the Caroline Street ramp.', 'Make a sharp left onto Caroline Street/US 90/FL 87. Continue on US 90.', 'Turn left onto Scenic Highway/US 90. Continue on US 90.', 'Turn left onto North Pace Boulevard/US 98/FL 292. Continue on FL 292.', 'Turn right onto Barrancas Avenue/FL 292. Continue on FL 292.', 'Turn left onto South Blue Angel Parkway/FL 173.', 'Turn left onto San Carlos Road.', 'Turn left onto Skyhawk Drive.', 'Turn right after 244 meters or 20-25 seconds.', 'Turn left after 68 meters or 11-13 seconds.', 'Turn right after 41 meters or 8-9 seconds.', 'Turn left after 10 meters or 7-9 seconds.', 'Continue for 59 meters or 14-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 17?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[60, 74]","[7, 9]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: TRINITY HOSPITALS (MINOT, ND) to Minot International Airport (MINOT, ND)
+
+  Route steps:
+['Drive north on 1st Street Southwest.', 'Turn left onto Burdick Expressway West/US 2 Business/US 52 Business.', 'Turn right onto South Broadway/US 83.', 'Turn right onto 19th Avenue.', 'Turn right onto Airport Road.', 'Turn left after 432 meters or 31-38 seconds.', 'Turn right after 54 meters or 5-7 seconds.', 'Turn right after 465 meters or 48-58 seconds.', 'Turn left after 72 meters or 40-49 seconds.', 'Turn right after 99 meters or 14-17 seconds.', 'Continue for 238 meters or 37-45 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 5 and Step 11?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[175, 214]","[31, 38]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Quincy Regional Airport Baldwin Field (QUINCY, IL) to Camp Lincoln Commissary Building (Springfield, IL)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 186 meters or 24-29 seconds.', 'Turn right after 83 meters or 13-15 seconds.', 'Turn right onto Broadway Street.', 'Take the I 172 South ramp.', 'Keep left to take I 72 East/US 36.', 'Take exit 91 on the right onto Wabash Avenue toward Springfield/Loami.', 'Turn left onto Old Route 54.', 'Bear right onto Wabash Avenue.', 'Turn left onto IL 4/Veterans Parkway. Continue on IL 4.', 'Turn right onto North Bruns Lane.', 'Turn left onto North Grand Avenue West.', 'Turn left onto North MacArthur Boulevard.', 'Turn left after 79 meters or 7-9 seconds.', 'Turn left after 131 meters or 44-54 seconds.', 'Turn right after 350 meters or 49-60 seconds.', 'Turn left after 535 meters or 75-92 seconds.', 'Continue for 149 meters or 22-27 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 13 and Step 18?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[234, 286]","[44, 54]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Fowler Methodist Episcopal Church (Minneapolis, MN) to Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field (MINNEAPOLIS, MN)
+
+  Route steps:
+['Drive north on Dupont Avenue South.', 'Turn right onto West 32nd Street.', 'Turn right after 50 meters or 10-12 seconds.', 'Turn left onto West 38th Street.', 'Turn right onto Bryant Avenue South.', 'Turn left onto West 44th Street.', 'Turn right onto Aldrich Avenue South.', 'Turn left onto West 45th Street.', 'Turn right onto Lyndale Avenue South/CR 22.', 'Turn left onto West 46th Street/CR 46.', 'Turn right onto Grand Avenue South.', 'Turn left onto West 47th Street.', 'Turn right onto Pleasant Avenue.', 'Turn left onto West 49th Street.', 'Turn right after 456 meters or 48-59 seconds.', 'Turn left onto East 50th Street.', 'Bear left onto East Minnehaha Parkway.', 'Turn right onto Portland Avenue South/CR 35.', 'Turn left onto East Minnehaha Parkway.', 'Bear left onto East 51st Street.', 'Turn right onto Columbus Avenue South.', 'Turn left onto East 52nd Street.', 'Turn right onto 11th Avenue South.', 'Turn left onto East 53rd Street.', 'Turn right after 251 meters or 27-34 seconds.', 'Turn left onto East 54th Street.', 'Turn right onto Edgewater Boulevard.', 'Turn right onto Cedar Avenue South/CR 152. Continue on Cedar Avenue South.', 'Take the CR 53 exit on the right toward 66th Street.', 'Turn left onto East 66th Street/CR 53.', 'Make a left U-turn onto Longfellow Avenue South.', 'Make a sharp right after 314 meters or 30-36 seconds.', 'Turn right after 93 meters or 49-60 seconds.', 'Turn left onto Longfellow Avenue South.', 'Stay straight to take the ramp.', 'Turn right after 27 meters or 28-34 seconds.', 'Turn left after 173 meters or 60-73 seconds.', 'Turn right after 2654 meters or 388-474 seconds.', 'Turn right after 18 meters or 7-9 seconds.', 'Continue for 136 meters or 18-22 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 35 and Step 40?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[665, 813]","[48, 59]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Widehall (Chestertown, MD) to Baltimore/Washington International Thurgood Marshall Airport (BALTIMORE, MD)
+
+  Route steps:
+['Drive northwest on High Street.', 'Turn right onto North Water Street.', 'Turn right onto Maple Avenue/MD 213. Continue on MD 213.', 'Bear right onto 4-H Park Road/MD 18.', 'Keep right to take Main Street/MD 18.', 'Turn right onto US 301/Blue Star Memorial Highway.', 'Take the exit on the right toward Services.', 'Keep left toward Services.', 'Keep left to take US 50/US 301 toward Services.', 'Take the US 50 exit on the right.', ""Take exit 29 on the right onto MD 179/MD 908/MD 931/Busch's Front Road."", 'Bear right onto Cape Saint Claire Road/MD 179.', 'Turn left onto College Parkway.', 'Turn right onto MD 2/Governor Ritchie Highway. Continue on MD 2.', 'Bear left onto Baltimore Annapolis Boulevard/MD 648.', 'Turn left onto Ferndale Road.', 'Turn right onto Aaronson Drive.', 'Turn left after 324 meters or 63-77 seconds.', 'Turn right after 19 meters or 5-6 seconds.', 'Turn left after 137 meters or 23-28 seconds.', 'Turn right after 30 meters or 6-7 seconds.', 'Turn right after 75 meters or 42-52 seconds.', 'Turn left onto Aviation Boulevard/MD 162 North. Continue on Aviation Boulevard.', 'Turn left onto Terminal Road.', 'Stay straight to take the ramp toward Terminal.', 'Keep right to take Arrival Roadway (Authorized Vehicles).', 'Continue for 531 meters or 43-53 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[139, 170]","The time interval between performing Step 17 and Step 22 is [75, 82].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Fairbanks House (Fernandina Beach, FL) to Northeast Florida Regional Airport (ST AUGUSTINE, FL)
+
+  Route steps:
+['Drive east on Cedar Street.', 'Turn right onto South 7th Street.', 'Turn left after 1074 meters or 104-128 seconds.', 'Turn right after 39 meters or 7-8 seconds.', 'Turn left onto Kelp Street.', 'Turn right onto South 8th Street/FL A1A/FL 200.', 'Turn left onto Sadler Road/CR 108.', 'Turn right after 140 meters or 11-13 seconds.', 'Turn left after 24 meters or 7-9 seconds.', 'Turn right after 38 meters or 6-8 seconds.', 'Turn left after 63 meters or 13-16 seconds.', 'Turn right onto South 14th Street.', 'Enter the roundabout and take the 2nd exit onto Amelia Island Parkway.', 'Turn right onto Buccaneer Trail/CR 105A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Turn left to stay on FL A1A.', 'Take the Saint Johns River Ferry/FL A1A Ferry.', 'Drive southeast.', 'Bear right onto FL A1A.', 'Turn right onto Mayport Road/FL A1A.', 'Keep right to stay on Mayport Road/FL A1A.', 'Turn left onto Plaza Street.', 'Turn right onto Sherry Drive.', 'Turn left onto Atlantic Boulevard/FL A1A/FL 10.', 'Turn right onto 3rd Street/FL A1A. Continue on FL A1A.', 'Turn right onto Palm Valley Road/CR 210.', 'Enter the roundabout and take the 2nd exit onto Palm Valley Road/CR 210.', 'Take the exit on the right toward Nocatee Town Center/Crosswater Parkway.', 'Keep left toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Keep right toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Bear left onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Turn right onto Pine Island Road.', 'Turn left onto US 1.', 'Turn left after 12385 meters or 423-517 seconds.', 'Turn right after 126 meters or 18-21 seconds.', 'Continue for 513 meters or 93-114 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 7 and Step 11?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[148, 182]","The time interval between performing Step 7 and Step 11 is [39, 63].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Independence Junior High School (Independence, KS) to SUSAN B ALLEN MEMORIAL HOSPITAL (EL DORADO, KS)
+
+  Route steps:
+['Drive north on North 9th Street.', 'Turn right onto West Sycamore Street.', 'Turn left onto North 8th Street.', 'Turn right onto West Hickory Street.', 'Turn left onto US 75/North Pennsylvania Avenue. Continue on US 75.', 'Turn left to take the US 400 West ramp.', 'Enter the roundabout and take the 2nd exit onto US 400 West/Clayton J. Connell Memorial Highway.', 'Turn right onto Southeast Bluestem Road.', 'Turn left onto US 54 West.', 'Turn right after 6117 meters or 267-326 seconds.', 'Turn left after 54 meters or 15-19 seconds.', 'Turn right after 54 meters or 14-17 seconds.', 'Turn left after 13 meters or 8-9 seconds.', 'Continue for 33 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[313, 382]","[13, 14]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Tulsa International Airport (TULSA, OK) to Stillwater Regional Airport (STILLWATER, OK)
+
+  Route steps:
+['Drive north on North Memorial Drive.', 'Turn left to stay on North Memorial Drive.', 'Turn left onto East 33rd Street North.', 'Turn right onto North 74th East Avenue.', 'Turn left onto East Port Road.', 'Turn left onto North Yale Avenue East.', 'Turn right to take the OK 11 West ramp.', 'Keep left to take US 75 South toward Downtown/Tulsa/Okmulgee.', 'Take the I 244 West exit toward Oklahoma City.', 'Keep left to take exit 5B onto US 412/Sand Springs Expressway toward Sand Springs.', 'Continue on US 412.', 'Keep right to take exit 27 onto Cimarron Turnpike Spur toward Stillwater.', 'Take exit 20A onto US 177 South.', 'Turn right onto West Airport Road.', 'Turn right after 1254 meters or 79-97 seconds.', 'Turn right after 29 meters or 7-8 seconds.', 'Continue for 38 meters or 4-5 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 14 and Step 17?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[90, 110]","The time interval between performing Step 14 and Step 17 is [29, 38].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SILVER SPRINGS RURAL HEALTH CENTERS (SILVER SPRINGS, NV) to Reno Tahoe International Airport (RENO, NV)
+
+  Route steps:
+['Drive north.', 'Turn right onto US 50/California Emigrant Trail. Continue on US 50.', 'Enter the roundabout and take the 2nd exit onto NV 439.', 'Stay straight to take the I 80 West ramp toward Reno.', 'Take exit 20 on the right onto Sparks Boulevard.', 'Turn left onto Sparks Boulevard.', 'Turn right onto Pembroke Drive.', 'Turn left after 2987 meters or 160-195 seconds.', 'Turn right after 63 meters or 12-14 seconds.', 'Turn left after 21 meters or 5-6 seconds.', 'Turn left after 101 meters or 23-28 seconds.', 'Turn right after 332 meters or 81-99 seconds.', 'Continue for 45 meters or 10-12 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 7 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[291, 354]","[63, 99]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: St. Paulus Lutheran Church (San Francisco, CA) to Buchanan Field (CONCORD, CA)
+
+  Route steps:
+['Drive east on Eddy Street.', 'Turn right onto Cyril Magnin Street.', 'Turn left onto Folsom Street.', 'Bear right toward Freeway.', 'Stay straight to take the I 80 East ramp toward Bay Bridge/Oakland.', 'Keep right to take exit 8B onto I 580 East toward CA 24/Downtown Oakland/Hayward-Stockton.', 'Take exit 19A toward San Pablo Avenue/Emery Street.', 'Keep right toward San Pablo Avenue/Emery Street.', 'Continue on West MacArthur Boulevard/CA 123.', 'Bear left onto Peralta Street.', 'Turn right onto 40th Street.', 'Turn left onto Adeline Street.', 'Turn right onto 55th Street.', 'Turn left onto Telegraph Avenue.', 'Turn right to take the CA 24 East ramp toward Walnut Creek.', 'Keep left to stay on CA 24.', 'Take exit 10 on the right toward Saint Stephens Drive/Hidden Valley Road.', 'Take exit 12 on the right toward Oak Hill Road/Central Lafayette.', 'Turn left onto Oak Hill Road.', 'Turn right onto Deer Hill Road.', 'Turn left onto Pleasant Hill Road.', 'Keep left to take Taylor Boulevard.', 'Turn left onto Morello Avenue.', 'Turn right onto Viking Drive.', 'Turn left onto Stubbs Road.', 'Turn left to stay on Stubbs Road.', 'Turn right onto Golf Club Road.', 'Turn left onto Old Quarry Road.', 'Enter the roundabout and take the 2nd exit onto Old Quarry Road.', 'Turn right onto Chilpancingo Parkway.', 'Turn left after 174 meters or 18-22 seconds.', 'Turn right after 246 meters or 37-45 seconds.', 'Turn left onto Contra Costa Boulevard.', 'Turn right onto Center Avenue.', 'Turn left onto Marsh Drive.', 'Turn right onto Sally Ride Drive.', 'Turn right after 280 meters or 30-37 seconds.', 'Turn left after 18 meters or 8-9 seconds.', 'Turn right after 100 meters or 18-22 seconds.', 'Turn right after 106 meters or 18-22 seconds.', 'Continue for 9 meters or 7-8 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 36 and Step 41?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[136, 165]","The time interval between performing Step 36 and Step 41 is [280, 30].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: BETH ISRAEL DEACONESS MEDICAL CENTER - EAST CAMPUS (BOSTON, MA) to MERCY MEDICAL CENTER - SPRINGFIELD CAMPUS (SPRINGFIELD, MA)
+
+  Route steps:
+['Drive north.', 'Turn left onto Brookline Avenue.', 'Take the MA 9 exit on the right toward Newton.', 'Keep left to take MA 9/Boylston Street.', 'Keep left to stay on MA 9/Boylston Street.', 'Keep left to stay on MA 9/Boylston Street.', 'Keep right to stay on Boylston Street toward Newton Upper Falls/Waban.', 'Stay straight to take the ramp.', 'Keep left to take I 90 West toward Worcester/Springfield/Massachusetts Turnpike West.', 'Keep left to stay on I 90 West/Massachusetts Turnpike.', 'Take exit 51 on the right onto I 291 toward Springfield/Hartford Connecticut.', 'Keep right at the fork.', 'Keep left at the fork.', 'Bear left onto I 291 West/Springfield Expressway.', 'Take exit 5 on the right onto MA 20A West/US 20 east toward East Springfield/Indian Orchard.', 'Turn right onto Page Boulevard/MA 20A. Continue on MA 20A.', 'Bear left onto Liberty Street.', 'Keep left to take Stafford Street.', 'Turn right after 803 meters or 53-65 seconds.', 'Turn left after 42 meters or 12-15 seconds.', 'Turn left after 34 meters or 6-7 seconds.', 'Turn right after 131 meters or 22-27 seconds.', 'Turn right after 47 meters or 12-15 seconds.', 'Continue for 85 meters or 19-23 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 18 and Step 24?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[124, 152]","[131, 227]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Trinity Episcopal Church (Atchison, KS) to MINIMALLY INVASIVE SURGERY HOSPITAL (LENEXA, KS)
+
+  Route steps:
+['Drive north.', 'Turn left onto US 59/Utah Avenue. Continue on US 59.', 'Turn right onto South 22nd Street/US 73.', 'Make a sharp left to stay on South 22nd Street/US 73.', 'Turn left onto US 59/US 73/US 59 Highway. Continue on US 59/US 73.', 'Turn right onto US 73/KS 7/South 10th Street. Continue on KS 7.', 'Turn right onto US 73/KS 7/KS 92/North 4th Street.', 'Take the exit on the right toward College Boulevard.', 'Turn left onto College Boulevard.', 'Turn right after 7925 meters or 376-460 seconds.', 'Turn left after 305 meters or 54-66 seconds.', 'Turn right after 314 meters or 52-63 seconds.', 'Turn left after 86 meters or 19-23 seconds.', 'Turn left after 374 meters or 63-77 seconds.', 'Continue for 67 meters or 12-15 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 15?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[576, 704]","[374, 637]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Dowler, Charles, House (Providence, RI) to Quonset State Airport (NORTH KINGSTOWN, RI)
+
+  Route steps:
+['Drive east on Smith Street/US 44.', 'Turn left onto Chalkstone Avenue.', 'Turn left to take the I 95 South ramp.', 'Keep left to take exit 24B onto RI 4 South toward North Kingstown.', 'Take exit 7B-A on the right onto RI 403/RI 402 toward Quonset.', 'Keep right to take exit 7B onto RI 403 East toward Quonset.', 'Keep left to stay on RI 403 East.', 'Bear right onto Roger Williams Way.', 'Turn left onto Eccleston Avenue.', 'Bear left onto Airport Street.', 'Turn right after 186 meters or 15-18 seconds.', 'Turn right after 47 meters or 11-14 seconds.', 'Turn left after 29 meters or 5-7 seconds.', 'Continue for 91 meters or 22-27 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 10 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[53, 66]","[15, 27]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: ACCESS HOSPITAL DAYTON, LLC (DAYTON, OH) to Sidney Waterworks And Electric Light Building (Sidney, OH)
+
+  Route steps:
+['Drive east.', 'Bear right after 336 meters or 55-67 seconds.', 'Bear right onto Wayne Avenue.', 'Turn left onto South Smithville Road.', 'Turn right onto East 3rd Street.', 'Turn left onto Wright Brothers Parkway.', 'Bear right onto Woodman Drive.', 'Turn right onto Old Troy Pike/SR 202. Continue on SR 202.', 'Turn left onto SR 41.', 'Bear right after 2730 meters or 124-152 seconds.', 'Bear right after 46 meters or 5-6 seconds.', 'Turn left after 29 meters or 2 seconds.', 'Bear right after 42 meters or 11-13 seconds.', 'Bear right onto West Main Street/I 75 Business/SR 41.', 'Turn right onto North Elm Street/I 75 Business.', 'Keep left to take C-25A.', 'Bear right onto North County Road 25A/C-25A. Continue on North County Road 25A.', 'Bear right onto East Miami-Shelby Road.', 'Keep left to take Sidney Piqua Road/CR 25A.', 'Turn right onto Gearhart Road.', 'Turn left onto Childrens Home Road/C-41.', 'Turn left to stay on Childrens Home Road/C-41.', 'Continue for 1272 meters or 118-145 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[197, 240]","[2730, 46]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SLIDELL -AMG SPECIALTY HOSPTIAL (SLIDELL, LA) to Louis Armstrong New Orleans International Airport (NEW ORLEANS, LA)
+
+  Route steps:
+['Drive north.', 'Turn right after 80 meters or 13-16 seconds.', 'Bear left onto Lindberg Drive.', 'Turn right onto Gause Boulevard/US 190.', 'Take the I 10 ramp on the right.', 'Take exit 238B on the right onto I 610 West toward New Orleans International Airport/Baton Rouge.', 'Continue on I 610.', 'Take exit 221A on the right toward New Orleans International Airport.', 'Turn right toward Terminal/Departures Ticketing/Parking/Cell Phone Lot.', 'Turn right after 514 meters or 29-35 seconds.', 'Bear left after 20 meters or 5-6 seconds.', 'Turn left after 52 meters or 8-10 seconds.', 'Continue for 286 meters or 52-63 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[107, 130]","[20, 52]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Appleton International Airport (APPLETON, WI) to Volk Field (CAMP DOUGLAS, WI)
+
+  Route steps:
+['Drive north.', 'Turn right onto Discovery Drive.', 'Turn right after 393 meters or 82-100 seconds.', 'Enter the roundabout and take the 2nd exit onto Challenger Drive.', 'Turn right onto County Road CB/CTH CB.', 'Turn left onto West Prospect Avenue/CTH BB. Continue on West Prospect Avenue.', 'Turn right to take the I 41 South ramp toward Milwaukee.', 'Take exit 119 on the right onto WI 21/Omro Road/Oshkosh Avenue.', 'Keep left at the fork.', 'Enter the roundabout and take the 2nd exit onto WI 21/Omro Road.', 'Enter the roundabout and take the 2nd exit onto WI 21/State Highway 21.', 'Turn right onto WI 21/WI 116/CTH F/Spruce State Route.', 'Turn left onto WI 21/State Highway 21.', 'Turn left onto Dakota Road/CTH C. Continue on CTH C.', 'Turn left onto County Road T/CTH T.', 'Turn right onto WI 21/CTH Y/State Highway 21. Continue on WI 21.', 'Turn left onto County Road H/CTH H.', 'Turn left after 12204 meters or 447-546 seconds.', 'Turn right after 32 meters or 6-7 seconds.', 'Turn left after 186 meters or 29-35 seconds.', 'Turn left after 259 meters or 36-44 seconds.', 'Turn left after 73 meters or 10-12 seconds.', 'Turn right after 414 meters or 40-49 seconds.', 'Turn left after 71 meters or 10-12 seconds.', 'Continue for 2850 meters or 578-706 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 25?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[1238, 1511]","[393, 82]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Igor I Sikorsky Memorial Airport (BRIDGEPORT, CT) to Bradley International Airport (HARTFORD, CT)
+
+  Route steps:
+['Drive north on Great Meadow Road.', 'Keep right to stay on Great Meadow Road.', 'Turn right onto Lordship Boulevard/CT 113.', 'Turn right onto Access Road.', 'Turn left onto Dodge Avenue.', 'Turn right after 112 meters or 12-15 seconds.', 'Turn left onto Sperry Avenue.', 'Turn right onto Woodend Road.', 'Turn left onto Main Street/CT 113. Continue on Main Street.', 'Keep right to take CT 110.', 'Turn left to take the ramp.', 'Take exit 61 on the right onto US 5 toward Wallingford/Meriden.', 'Turn right onto North Colony Road/US 5.', 'Turn right onto Central Row.', 'Bear right onto American Row.', 'Turn left onto Market Street.', 'Turn right onto Weston Street.', 'Turn left to take the ramp.', 'Keep left to take CT 75 toward Poquonock.', 'Turn left onto Poquonock Avenue/CT 75. Continue on CT 75.', 'Turn left onto Schoephoester Road.', 'Turn right onto Robert F. Juliano Highway.', 'Keep right to stay on Robert F. Juliano Highway toward Departures A.', 'Turn right after 796 meters or 65-79 seconds.', 'Bear right after 20 meters or 7-9 seconds.', 'Turn left after 46 meters or 42-52 seconds.', 'Turn right after 121 meters or 28-34 seconds.', 'Continue for 51 meters or 16-20 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 23 and Step 28?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[170, 209]","[796, 1050]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Salisbury Ocean City Wicomico Regional Airport (SALISBURY, MD) to Baltimore/Washington International Thurgood Marshall Airport (BALTIMORE, MD)
+
+  Route steps:
+['Drive west on Lear Jet Way.', 'Turn right onto Citation Drive.', 'Turn right onto Fooks Road.', 'Turn right onto Airport Road.', 'Turn left onto Mount Hermon Road/MD 350.', 'Turn right onto Tilghman Road.', 'Turn left onto Merritt Mill Road.', 'Turn left onto Old Ocean City Road/MD 346.', 'Turn right onto Beaglin Park Drive.', 'Turn right onto Zion Road.', 'Turn left onto East Naylor Mill Road.', 'Turn right onto US 13/North Salisbury Boulevard.', 'Keep straight to stay on US 13.', 'Take the exit.', 'Turn left onto South Main Street/US 13 Business/DE 404 Business.', 'Turn left onto Market Street/DE 404 Business.', 'Turn right onto Seashore Highway/DE 404 Business.', 'Turn left onto Gay Street/MD 404 Business. Continue on MD 404 Business.', 'Turn left onto MD 404/Shore Highway.', 'Turn right to take the US 50 ramp.', 'Take the exit on the right toward Services.', 'Keep left toward Services.', 'Keep left to take US 50/US 301 toward Services.', 'Take exit 27B on the right onto MD 2 North toward Ritchie Highway/Severna Park.', 'Bear left onto Baltimore Annapolis Boulevard/MD 648.', 'Turn left onto Ferndale Road.', 'Turn right onto Aaronson Drive.', 'Turn left after 324 meters or 63-77 seconds.', 'Turn right after 19 meters or 5-6 seconds.', 'Turn left after 137 meters or 23-28 seconds.', 'Turn right after 30 meters or 6-7 seconds.', 'Turn right after 75 meters or 42-52 seconds.', 'Turn left onto Aviation Boulevard/MD 162 North. Continue on Aviation Boulevard.', 'Turn left onto Terminal Road.', 'Stay straight to take the ramp toward Terminal.', 'Keep right to take Arrival Roadway (Authorized Vehicles).', 'Continue for 531 meters or 43-53 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 27 and Step 32?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[139, 170]","[1063, 1394]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Seiberling Mansion (Kokomo, IN) to Purdue University Airport (WEST LAFAYETTE, IN)
+
+  Route steps:
+['Drive west on West Sycamore Street/SR 22.', 'Turn left onto Michigan Street/SR 29. Continue on SR 29.', 'Turn right onto State Road 26/SR 26.', 'Turn right onto Main Street.', 'Bear left onto Columbia Street.', 'Enter the roundabout and take the 2nd exit onto East State Street.', 'Enter the roundabout and take the 2nd exit onto Newman Road.', 'Turn left onto Allison Road.', 'Turn left after 777 meters or 51-62 seconds.', 'Turn left after 260 meters or 34-41 seconds.', 'Bear right after 240 meters or 32-40 seconds.', 'Turn right after 19 meters or 3 seconds.', 'Continue for 380 meters or 136-167 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 13?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[256, 313]","[19, 32]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: PRESENCE ST JOSEPH MEDICAL CENTER (JOLIET, IL) to MACNEAL  HOSPITAL (BERWYN, IL)
+
+  Route steps:
+['Drive south.', 'Turn left onto Madison Street.', 'Turn right onto Black Road/CH 56.', 'Turn left onto Ann Street.', 'Turn right onto Sudbury Drive.', 'Turn left onto Edgerton Drive.', 'Turn right onto Ingalls Avenue.', 'Turn left after 351 meters or 33-41 seconds.', 'Turn right after 15 meters or 4-5 seconds.', 'Turn left after 25 meters or 5-6 seconds.', 'Turn right after 61 meters or 10-12 seconds.', 'Turn right after 120 meters or 25-30 seconds.', 'Turn left onto North Larkin Avenue/IL 7.', 'Turn right onto Caton Farm Road.', 'Turn left onto Broadway Street/IL 7/IL 53.', 'Turn right onto West 9th Street/IL 7.', 'Turn left onto South State Street/IL 171. Continue on IL 171.', 'Turn right onto South Archer Avenue/IL 171.', 'Turn right onto 63rd Street.', 'Turn left onto South Harlem Avenue/IL 43.', 'Turn right onto West Ogden Avenue/HR 66.', 'Turn left onto Oak Park Avenue.', 'Turn right after 477 meters or 43-52 seconds.', 'Bear left after 41 meters or 14-17 seconds.', 'Continue for 13 meters or 3-4 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 7 and Step 12?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[77, 94]","[61, 120]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Drum, Henry, House (Tacoma, WA) to Tacoma Narrows Airport (TACOMA, WA)
+
+  Route steps:
+['Drive northwest on Saint Helens Avenue.', 'Turn left onto Division Avenue.', 'Turn right onto North Ainsworth Avenue.', 'Turn left onto North Steele Street.', 'Turn right onto North 11th Street.', 'Turn left onto North Pearl Street/WA 163.', 'Take the WA 16 ramp on the right.', 'Take exit 8 on the right toward 24th Street Northwest/Tacoma Narrows Airport.', 'Turn left onto 24th Street Northwest.', 'Turn left onto Jahn Avenue Northwest.', 'Turn right toward Stone Drive Northwest.', 'Turn left onto 26th Avenue Northwest.', 'Turn right after 1042 meters or 98-120 seconds.', 'Turn left after 19 meters or 7-9 seconds.', 'Turn right after 83 meters or 12-15 seconds.', 'Continue for 104 meters or 19-23 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 16?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[136, 167]","[1042, 1042 + 98] = [1042, 1140]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SALT LAKE BEHAVIORAL HEALTH (SALT LAKE CITY, UT) to Salt Lake City International Airport (SALT LAKE CITY, UT)
+
+  Route steps:
+['Drive east.', 'Turn left after 27 meters or 5-6 seconds.', 'Turn right after 13 meters or 4-5 seconds.', 'Turn right onto 700 East/UT 71.', 'Take the I 215 West ramp on the right toward Belt Route.', 'Keep left to stay on Belt Route.', 'Take exit 25 on the right toward 2100 North.', 'Turn left onto 2100 North.', 'Turn left onto West 1200 North.', 'Make a left U-turn to stay on West 1200 North.', 'Turn left after 99 meters or 14-17 seconds.', 'Turn right after 32 meters or 6-7 seconds.', 'Turn left after 62 meters or 13-16 seconds.', 'Turn right after 363 meters or 102-125 seconds.', 'Continue for 40 meters or 6-7 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 10 and Step 15?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[150, 183]","[13, 17]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Clifton (Ednor, MD) to UNIVERSITY OF M D UPPER CHESAPEAKE MEDICAL CENTER (BEL AIR, MD)
+
+  Route steps:
+['Drive south on New Hampshire Avenue/MD 650.', 'Turn left onto Ednor Road.', 'Turn left onto Donora Road.', 'Turn left onto Astoria Lane.', 'Turn right onto Tucker Lane.', 'Turn right onto Ashton Road/MD 108. Continue on MD 108.', 'Take the US 29 North ramp on the right toward Baltimore.', 'Take exit 24A on the right onto US 40 East toward Ellicott City.', 'Keep right to take US 40 East toward Ellicott City.', 'Bear right onto West Mulberry Street.', 'Turn left onto Ensor Street.', 'Enter the roundabout and take the 2nd exit onto Harford Road/MD 147.', 'Turn right after 11207 meters or 554-677 seconds.', 'Turn left after 25 meters or 8-10 seconds.', 'Turn right after 13 meters or 4 seconds.', 'Turn right after 61 meters or 13-16 seconds.', 'Turn left onto Azalea Drive.', 'Turn right onto Silver Spring Drive.', 'Turn left onto Terrace Drive.', 'Turn right onto South Tollgate Road.', 'Enter the roundabout and take the 2nd exit onto South Tollgate Road.', 'Enter the roundabout and take the 2nd exit onto West MacPhail Road.', 'Turn right after 411 meters or 33-40 seconds.', 'Turn left after 21 meters or 6-8 seconds.', 'Turn right after 17 meters or 4 seconds.', 'Turn right onto Upper Chesapeake Drive.', 'Turn right after 62 meters or 12-15 seconds.', 'Turn right after 118 meters or 20-24 seconds.', 'Continue for 42 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 16?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[579, 707]","[13, 42]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Foster, Phineas, House (Boxford, MA) to CLINTON HOSPITAL (CLINTON, MA)
+
+  Route steps:
+['Drive northwest on Old Topsfield Road.', 'Turn left onto Topsfield Road.', 'Bear left onto Topsfield Road Extension.', 'Bear left onto Main Street.', 'Bear left onto Lawrence Road.', 'Bear left onto Salem Street.', 'Bear right onto Johnson Street.', 'Enter the roundabout and take the 2nd exit onto Andover Street.', 'Keep left to take MA 133.', 'Turn right to take the I 495 South ramp toward Lowell.', 'Take exit 79 on the right onto MA 2A/MA 110 toward Littleton/Ayer.', 'Turn left onto King Street/MA 2A/MA 110.', 'Turn left to stay on King Street.', 'Turn right onto Harvard Road.', 'Turn left onto Fairbanks Street.', 'Turn right onto Old Littleton Road.', 'Turn right onto Center Bridge Road.', 'Turn left onto Bolton Road.', 'Keep left to stay on Bolton Road.', 'Turn left onto South Main Street/MA 70.', 'Bear right onto Sterling Road.', 'Turn left onto Parker Road.', 'Turn left after 1819 meters or 119-145 seconds.', 'Bear left after 123 meters or 18-22 seconds.', 'Turn left after 27 meters or 4 seconds.', 'Turn right after 34 meters or 5-6 seconds.', 'Continue for 126 meters or 22-26 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 22 and Step 27?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[168, 203]","[1819, 1845]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Dubuque Regional Airport (DUBUQUE, IA) to Waterloo Regional Airport (WATERLOO, IA)
+
+  Route steps:
+['Drive north.', 'Bear right after 1129 meters or 1005-1229 seconds.', 'Turn left onto Jecklin Lane.', 'Turn left onto Swiss Valley Road.', 'Turn left to take the US 20 West ramp.', 'Take exit 304 on the right toward Epworth.', 'Take exit 300 on the right onto CR Y13 toward Farley.', 'Take exit 266 on the right.', 'Turn right onto Washburn Avenue/IA 187.', 'Turn left onto 220th Street/CR D22.', 'Turn right onto Wagner Road.', 'Turn left onto West Big Rock Road.', 'Turn right after 816 meters or 104-127 seconds.', 'Bear left after 387 meters or 109-133 seconds.', 'Make a left U-turn after 840 meters or 109-133 seconds.', 'Continue for 281 meters or 61-75 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 12 and Step 16?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[1388, 1697]","[109, 133]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: MEDSTAR HARBOR HOSPITAL (BALTIMORE, MD) to Bethesda Naval Hospital Tower (Bethesda, MD)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 30 meters or 4-5 seconds.', 'Turn left after 9 meters or 4 seconds.', 'Turn right after 86 meters or 13-16 seconds.', 'Turn left after 21 meters or 4-5 seconds.', 'Turn right onto South Hanover Street/MD 2.', 'Turn left onto Waterview Avenue.', 'Turn left onto Waterview Avenue/MD 648. Continue on Waterview Avenue.', 'Bear right to stay on Waterview Avenue.', 'Turn left onto Hollins Ferry Road.', 'Turn right onto Marbourne Avenue.', 'Turn left onto Elizabeth Avenue.', 'Turn right after 80 meters or 38-47 seconds.', 'Turn left onto Janice Avenue.', 'Turn right onto West Patapsco Avenue.', 'Turn left onto Lorena Avenue.', 'Turn right onto Smith Avenue.', 'Turn right onto Lansdowne Road.', 'Turn left onto Washington Boulevard/US 1 Alternate.', 'Turn right onto Ritz Way/MD 212. Continue on MD 212.', 'Bear right onto Powder Mill Road.', 'Turn left onto New Hampshire Avenue/MD 650.', 'Take the I 495 West ramp on the right toward Northern Virginia/Silver Spring.', 'Take exit 33 on the right onto MD 185/Connecticut Avenue toward Chevy Chase.', 'Turn left onto Connecticut Avenue/MD 185.', 'Turn right onto Jones Bridge Road.', 'Turn right onto University Road.', 'Bear left onto South Palmer Road.', 'Turn right after 465 meters or 51-62 seconds.', 'Continue for 55 meters or 12-15 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[25, 30]","[30, 45]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Hall, Hazel, House (Portland, OR) to Portland Troutdale Airport (PORTLAND, OR)
+
+  Route steps:
+['Drive north on Northwest 22nd Place.', 'Turn left onto Northwest York Street.', 'Turn left onto Northwest 23rd Avenue.', 'Turn left to take the ramp toward I 405.', 'Keep left to stay on US 30 toward The Dalles/Seattle.', 'Take the I 5 South exit toward The Dalles.', 'Take exit 301 on the right onto I 84/US 30 East toward The Dalles.', 'Keep right to take exit 17 onto Northwest Frontage Road/US 30 Historic toward Marine Drive/257th Avenue.', 'Keep left to stay on Northwest Frontage Road.', 'Turn left toward I 84 West/US 30 West/Portland.', 'Turn right onto South Entrance Road.', 'Turn left after 173 meters or 16-20 seconds.', 'Turn right after 146 meters or 48-59 seconds.', 'Turn right after 130 meters or 201-245 seconds.', 'Continue for 285 meters or 467-571 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 11 and Step 15?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[732, 895]","[130, 245]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SELECT SPECIALTY HOSPITAL MADISON (MADISON, WI) to MENDOTA MENTAL HLTH INSTITUTE (MADISON, WI)
+
+  Route steps:
+['Drive north.', 'Turn right onto Braxton Place.', 'Make a left U-turn to stay on Braxton Place.', 'Turn left onto South Park Street.', 'Make a left U-turn onto South Park Street/US 151.', 'Turn right onto West Washington Avenue/US 151.', 'Turn right onto Proudfit Street/US 151. Continue on US 151.', 'Turn left to stay on US 151.', 'Bear right onto South Blair Street/US 151.', 'Turn right onto East Washington Avenue/US 151.', 'Turn left onto North 1st Street/WI 113.', 'Turn right onto East Johnson Street/WI 113. Continue on WI 113.', 'Keep left to stay on WI 113.', 'Turn left onto Troy Drive.', 'Turn left onto Main Drive.', 'Turn right after 386 meters or 51-62 seconds.', 'Turn left after 244 meters or 37-45 seconds.', 'Turn right after 84 meters or 12-15 seconds.', 'Continue for 35 meters or 10-13 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 15 and Step 19?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[110, 135]","[84, 121]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Lay-Bozka House (Hallettsville, TX) to Stinson Municipal Airport (SAN ANTONIO, TX)
+
+  Route steps:
+['Drive southwest on US 77/US 90 Alt/Fairwinds Street. Continue on US 90 Alt.', 'Keep right to stay on US 90 Alt.', 'Turn left onto West Kingsbury Street/US 90.', 'Stay straight to take the I 10 ramp.', 'Keep left to stay on I 10/US 90/TX 130 South.', 'Take exit 584 on the right toward Woodlake Parkway.', 'Take the I 10 West/US 90 West/TX 130 South ramp.', 'Take exit 578 on the right toward Pecan Valley Drive/Martin Luther King Drive.', 'Turn left onto Martin Luther King Drive.', 'Turn right onto Pecan Valley Drive.', 'Turn left onto South New Braunfels Avenue.', 'Turn right after 191 meters or 11-14 seconds.', 'Turn left after 176 meters or 33-41 seconds.', 'Enter the roundabout and take the 2nd exit.', 'Turn left after 45 meters or 8-9 seconds.', 'Turn right after 133 meters or 23-28 seconds.', 'Turn right onto Southeast Military Drive/Loop 13.', 'Turn left after 1709 meters or 84-103 seconds.', 'Turn right after 296 meters or 42-51 seconds.', 'Turn left after 27 meters or 8-10 seconds.', 'Turn right after 136 meters or 20-24 seconds.', 'Turn right after 85 meters or 12-14 seconds.', 'Turn left onto Mission Road.', 'Turn right onto Cadmus Street.', 'Turn left after 469 meters or 41-50 seconds.', 'Continue for 247 meters or 61-75 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[241, 294]","[191, 296]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Headquarters House (Boston, MA) to BAYSTATE MARY LANE HOSPITAL (WARE, MA)
+
+  Route steps:
+['Drive west on Beacon Street.', 'Bear left toward Arlington Street.', 'Keep left to stay on Arlington Street.', 'Turn right to take the I 90 West ramp.', 'Keep left to stay on I 90 West/Massachusetts Turnpike.', 'Take exit 63 on the right onto MA 32 toward Palmer/Ware.', 'Turn left onto Thorndike Street/MA 32. Continue on MA 32.', 'Turn right onto MA 9/MA 32/Main Street.', 'Turn right onto South Street.', 'Turn right after 681 meters or 44-54 seconds.', 'Turn right after 176 meters or 28-35 seconds.', 'Bear right after 105 meters or 18-22 seconds.', 'Turn left after 115 meters or 15-19 seconds.', 'Continue for 93 meters or 14-17 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[119, 147]","[105, 115]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: DAY KIMBALL HOSPITAL (PUTNAM, CT) to Whiting Homestead (West Hartford, CT)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 155 meters or 51-62 seconds.', 'Turn left after 63 meters or 22-27 seconds.', 'Turn left after 89 meters or 31-38 seconds.', 'Turn left after 54 meters or 19-24 seconds.', 'Turn left onto Pomfret Street/US 44. Continue on US 44.', 'Turn left onto Pomfret Street/US 44/CT 169.', 'Turn right onto Averill Road/US 44.', 'Turn right onto Mashamoquet Road/US 44. Continue on US 44.', 'Take the US 6 exit on the right toward Bolton.', 'Keep left to stay on US 6/US 44.', 'Turn left onto Middle Turnpike West/US 6/US 44.', 'Take the I 84 West ramp on the right toward Hartford.', 'Keep right to take I 84 West/US 6/Officer Brian A. Aselton Memorial Highway.', 'Keep right to stay on I 84 West/US 6.', 'Take exit 50 on the right onto US 44 West toward I 91 South/Main Street/New Haven.', 'Turn right onto US 44/Main Street. Continue on US 44.', 'Turn left onto North Main Street.', 'Continue for 461 meters or 34-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[123, 151]","[155, 63]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Steam Engine Company No. 3 (Louisville, KY) to Old Governor's Mansion (Frankfort, KY)
+
+  Route steps:
+['Drive west on East Main Street/US 31E/US 60.', 'Turn left after 38 meters or 2-3 seconds.', 'Turn left after 32 meters or 7-9 seconds.', 'Turn left after 87 meters or 16-20 seconds.', 'Turn right onto South Preston Street/KY 61.', 'Turn left onto East Market Street/US 31E/US 60. Continue on East Market Street.', 'Turn left after 1323 meters or 105-128 seconds.', 'Turn right onto East Main Street/US 42/US 60. Continue on US 42/US 60.', 'Turn right onto Frankfort Avenue/US 60.', 'Turn left onto Shelbyville Road/US 60.', 'Turn right onto Holmes Avenue/KY 1819.', 'Turn left onto Main Street.', 'Turn right onto Shelbyville Road/US 60.', 'Bear right onto Shelbyville Road/US 60. Continue on US 60.', 'Bear left onto Lafayette Drive.', 'Turn left onto Shelby Street.', 'Bear right after 718 meters or 47-58 seconds.', 'Turn left onto Ford Street.', 'Turn right onto West 2nd Street/US 60.', 'Turn left onto Capital Avenue/US 60/KY 420. Continue on US 60/KY 420.', 'Turn left onto East Main Street/KY 420.', 'Turn right onto High Street/KY 420.', 'Continue for 192 meters or 19-23 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 4?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[25, 32]","The time interval between performing Step 1 and Step 4 can be determined based on the distance traveled and the speed of travel. However, this information is not provided in the given scenario. Therefore, it is impossible to determine the exact time interval between these two steps without additional information.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Shearer-Cristy House (Waupaca, WI) to Rhinelander Oneida County Airport (RHINELANDER, WI)
+
+  Route steps:
+['Drive west on Lake Street.', 'Turn right onto Oak Street.', 'Turn right onto North Shore Drive/WI 49/CTH B. Continue on WI 49.', 'Turn left onto Division Street.', 'Turn right onto South Jackson Street.', 'Turn left onto East State Street/WI 49/WI 161/CTH J.', 'Turn right onto North Main Street/WI 49/WI 161/CTH G/CTH J. Continue on WI 49.', 'Bear right onto County Road P/CTH P.', 'Turn left onto West Reed Street/CTH M.', 'Turn left onto South Webb Street/CTH M.', 'Turn right onto West Grand Avenue/CTH Q.', 'Turn left onto North Genesee Street/WI 29 Business.', 'Continue on US 45.', 'Turn left onto State Highway 52/WI 52.', 'Turn right onto County Road HH/CTH HH. Continue on CTH HH.', 'Turn left onto County Highway HH/CTH HH.', 'Turn left onto County Highway H/CTH H.', 'Turn left onto County Highway I/CTH I.', 'Turn left onto County Highway J/CTH H/CTH J.', 'Turn right onto County Highway H/CTH H.', 'Turn left to stay on County Highway H/CTH H.', 'Turn left onto County Highway Q/CTH Q.', 'Turn right onto State Highway 17/WI 17.', 'Keep left to take State Highway 17/WI 17 South.', 'Turn left onto US 8 West/WI 47 North/US Highway 8. Continue on US Highway 8.', 'Enter the roundabout and take the 2nd exit onto State Highway 47/WI 47 North.', 'Turn left onto Birch Lane.', 'Turn right after 157 meters or 15-19 seconds.', 'Turn left onto County Highway K/CTH K.', 'Turn left onto Nursery Road.', 'Turn left after 517 meters or 68-84 seconds.', 'Turn left after 515 meters or 69-84 seconds.', 'Turn right after 150 meters or 20-24 seconds.', 'Continue for 284 meters or 38-46 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 30 and Step 34?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[210, 257]","[157, 284]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: MILFORD HOSPITAL (MILFORD, CT) to Groton New London Airport (GROTON, CT)
+
+  Route steps:
+['Drive southeast.', 'Turn right after 36 meters or 8-10 seconds.', 'Turn right after 50 meters or 13-16 seconds.', 'Turn left after 237 meters or 36-44 seconds.', 'Turn left after 104 meters or 14-17 seconds.', 'Turn left onto Bridgeport Avenue/CT 162. Continue on Bridgeport Avenue.', 'Turn right to take the I 95 ramp toward New Haven.', 'Keep right to take I 95 North toward New Haven.', 'Take exit 85 on the right onto US 1 North toward Thames Street/Downtown Groton.', 'Keep left to stay on US 1.', 'Turn right onto South Road.', 'Turn left after 930 meters or 56-68 seconds.', 'Turn right after 38 meters or 40-49 seconds.', 'Continue for 1033 meters or 341-417 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[71, 87]","[8, 16]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: SOUTH COUNTY HEALTH (WAKEFIELD, RI) to Malbone, Francis, House (Newport, RI)
+
+  Route steps:
+['Drive west.', 'Turn left after 58 meters or 19-23 seconds.', 'Turn right after 5 meters or 3 seconds.', 'Turn left after 38 meters or 10-12 seconds.', 'Turn left onto Kenyon Avenue.', 'Turn right onto Christopher Street.', 'Turn left onto Woodruff Avenue.', 'Turn right onto Robinson Street.', 'Turn right after 560 meters or 41-51 seconds.', 'Turn right after 59 meters or 10-12 seconds.', 'Turn left after 27 meters or 6-7 seconds.', 'Turn left after 107 meters or 15-19 seconds.', 'Turn right onto Main Street/RI 1A.', 'Turn left to take the US 1 ramp.', 'Turn right after 3086 meters or 137-168 seconds.', 'Turn right onto Torry Road.', 'Turn left onto Middlebridge Road.', 'Turn right onto Bridgetown Road.', 'Turn left onto Boston Neck Road/RI 1A. Continue on Boston Neck Road.', 'Turn left to take the RI 138 East ramp toward Jamestown/Newport.', 'Turn left onto JT Connell Connector/RI 138A.', 'Turn left onto JT Connell Highway.', 'Turn left onto Farewell Street.', 'Bear right onto Thames Street.', 'Keep right to stay on Thames Street.', ""Turn left onto America's Cup Avenue/RI 138A."", 'Turn right onto Thames Street.', 'Continue for 194 meters or 21-26 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 12?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[104, 127]","The time interval between performing Step 8 and Step 12 is [3086, 59].
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: McDonald, J. D., House (Fremont, NE) to NORFOLK REGIONAL CENTER (NORFOLK, NE)
+
+  Route steps:
+['Drive west on East Military Avenue.', 'Turn right onto North Main Street.', 'Bear right after 1826 meters or 161-197 seconds.', 'Turn right after 154 meters or 25-31 seconds.', 'Turn left after 286 meters or 47-57 seconds.', 'Turn right onto North Broad Street/US 275 Business.', 'Keep left to take Highway 275.', 'Turn right onto Channel Road/NE 35/US 275 Business. Continue on NE 35/US 275 Business.', 'Enter the roundabout and take the 2nd exit onto North Victory Road.', 'Turn right after 1946 meters or 99-121 seconds.', 'Turn right after 207 meters or 29-35 seconds.', 'Turn left after 180 meters or 28-34 seconds.', 'Turn right after 18 meters or 5-7 seconds.', 'Turn left after 54 meters or 10-13 seconds.', 'Continue for 32 meters or 6-7 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 9 and Step 15?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[410, 502]","[28, 34]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Show Low Regional Airport (SHOW LOW, AZ) to Globe Mine Rescue Station (Globe, AZ)
+
+  Route steps:
+['Drive south on East Airport Loop.', 'Turn left onto David A Foil Jr Drive.', 'Turn right onto East Deuce of Clubs/US 60. Continue on US 60.', 'Turn right onto US 60/East Ash Street. Continue on US 60.', 'Bear left onto US 60/West Ash Street. Continue on US 60.', 'Turn left after 996 meters or 55-67 seconds.', 'Turn right after 16 meters or 7-8 seconds.', 'Continue for 35 meters or 14-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 5 and Step 8?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[76, 93]","[35, 40]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Chapin, Henry A., House (Niles, MI) to Muskegon County Airport (MUSKEGON, MI)
+
+  Route steps:
+['Drive west on East Main Street/M 51.', 'Turn right onto North 5th Street/M 51.', 'Turn left onto Sycamore Street.', 'Turn right onto North 4th Street.', 'Turn left onto Cass Street.', 'Turn right onto North 3rd Street.', 'Turn left onto Howard Street.', 'Turn right onto Front Street/M 139. Continue on M 139.', 'Bear right onto Berrien Center Road/M 140.', 'Turn left onto Pokagon Road/M 140.', 'Turn right onto Berrien Center Road/M 140. Continue on M 140.', 'Keep right to take Berrien Center Road/M 140.', 'Turn right onto East Main Street/M 140.', 'Turn left onto Watervliet Road/M 140. Continue on M 140.', 'Turn left onto North Watervliet Road.', 'Turn left onto M-140/M 140.', 'Turn right to take the I 196 ramp.', 'Keep left to take exit 44 onto US 31/BL I 196 toward Holland/Muskegon.', 'Continue toward US 31/I 196 Business/Holland/Muskegon.', 'Take exit 47B toward Downtown Holland.', 'Bear left onto South River Avenue.', 'Bear right onto 136th Avenue.', 'Turn right onto Port Sheldon Street.', 'Turn right onto US 31.', 'Take the exit.', 'Make a sharp left onto US 31.', 'Take exit 104B on the right toward Ferrysburg.', 'Turn left onto 3rd Street.', 'Turn left onto East Sternberg Road.', 'Turn right after 554 meters or 29-35 seconds.', 'Turn left after 37 meters or 10-12 seconds.', 'Turn left after 148 meters or 21-26 seconds.', 'Turn left after 159 meters or 23-28 seconds.', 'Turn right onto Robert Hunter Drive.', 'Turn left after 523 meters or 33-40 seconds.', 'Turn right after 40 meters or 8-9 seconds.', 'Turn right after 86 meters or 16-19 seconds.', 'Turn left onto East Ellis Road.', 'Turn right onto Hakes Boulevard.', 'Turn right onto Sinclair Drive.', 'Turn left after 145 meters or 24-29 seconds.', 'Continue for 62 meters or 15-19 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 29 and Step 33?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[83, 101]","[104, 117]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Temora (Ellicott City, MD) to Martin State Airport (BALTIMORE, MD)
+
+  Route steps:
+['Drive northeast on Columbia Road.', 'Turn right to stay on Columbia Road.', 'Turn right onto Saint Johns Lane.', 'Turn left onto Old Columbia Pike.', 'Turn right onto Main Street.', 'Turn right onto South President Street.', 'Turn left onto Eastern Avenue.', 'Keep left to take MD 150.', 'Bear right after 11111 meters or 691-844 seconds.', 'Turn left after 50 meters or 7-8 seconds.', 'Turn right after 29 meters or 6-7 seconds.', 'Turn right onto Chesapeake Park Drive.', 'Turn left to stay on Chesapeake Park Drive.', 'Turn right after 375 meters or 50-61 seconds.', 'Turn right onto Wilson Point Road/MD 587 South.', 'Bear left onto Strawberry Point Road.', 'Turn left after 397 meters or 64-78 seconds.', 'Continue for 60 meters or 9-11 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 8 and Step 11?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[704, 859]","[375, 500]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: CLARITY CHILD GUIDANCE CENTER (SAN ANTONIO, TX) to ROUND ROCK MEDICAL CENTER (ROUND ROCK, TX)
+
+  Route steps:
+['Drive west.', 'Turn left onto Sid Katz Drive.', 'Turn right onto Wurzbach Road.', 'Turn left onto Bandera Road/TX 16.', 'Turn right onto Northwest Loop 410/TX 16.', 'Take the I 410 South/TX 16 South ramp.', 'Take exit 33 on the right onto I 10/US 90/TX 130 toward Houston.', 'Keep right to stay on TX 130 North toward Houston.', 'Keep left to take I 10 East/US 90 East.', 'Keep right to take exit 614 onto TX 130 Toll North toward Austin/Waco.', 'Keep left to stay on TX 130 Toll/Pickle Parkway.', 'Keep left to take TX 45 Toll/TX 130 Toll/Pickle Parkway.', 'Take exit 428B on the right onto Toll 45 West toward Round Rock.', 'Take the RM 620 exit on the right.', 'Make a sharp right onto RM 620.', 'Turn left after 5197 meters or 226-276 seconds.', 'Turn left after 141 meters or 9-11 seconds.', 'Turn left after 16 meters or 3-4 seconds.', 'Turn left after 285 meters or 47-57 seconds.', 'Turn left after 375 meters or 56-68 seconds.', 'Turn right after 187 meters or 26-32 seconds.', 'Continue for 359 meters or 51-62 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 15 and Step 22?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[418, 510]","[375, 689]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Sparks, Gov. Chauncy, House (Eufaula, AL) to REGIONAL REHABILITATION HOSPITAL (PHENIX CITY, AL)
+
+  Route steps:
+['Drive east on East Broad Street.', 'Turn right onto South Orange Avenue.', 'Turn right onto East Barbour Street/US 82.', 'Turn right onto US 82/US 431/North Eufaula Avenue. Continue on US 431.', 'Take the US 280 ramp on the right.', 'Keep left to stay on US 280/US 431.', 'Turn left after 1894 meters or 80-98 seconds.', 'Turn right after 78 meters or 11-13 seconds.', 'Turn left after 73 meters or 14-17 seconds.', 'Continue for 27 meters or 4-5 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 6 and Step 10?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[109, 133]","The time interval between performing Step 6 and Step 10 is [11, 13]. This means that the time it takes to perform Step 6 is between 11 seconds and 13 seconds, inclusive.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: HEMET VALLEY HEALTH CARE CENTER (HEMET, CA) to Barstow Daggett Airport (DAGGETT, CA)
+
+  Route steps:
+['Drive south.', 'Turn left onto North Weston Place.', 'Turn right onto East Oakland Avenue.', 'Turn left onto North San Jacinto Street/CA 79. Continue on CA 79.', 'Bear right onto North State Street/CA 79.', 'Turn left onto Ramona Expressway/CA 79.', 'Turn right onto CA 79/Sanderson Avenue. Continue on CA 79.', 'Turn left to take the I 10 West ramp toward Los Angeles.', 'Keep right to stay on I 10.', 'Take exit 77C on the right onto CA 210 West toward CA 330/Pasadena/Running Springs.', 'Keep left to stay on CA 210/Foothill Freeway/Congressman George Edward Brown, Junior Memorial Highway.', 'Keep left to stay on CA 210/Foothill Freeway/Congressman George Edward Brown, Junior Memorial Highway.', 'Take exit 74 on the right onto I 215 North toward Barstow.', 'Keep left to take I 15 North.', 'Keep right to take I 40/Needles Freeway.', 'Take exit 12 on the right toward Barstow-Dagget Airport.', 'Turn left onto Hidden Springs Road.', 'Turn right after 1687 meters or 113-138 seconds.', 'Turn right after 1124 meters or 105-129 seconds.', 'Continue for 109 meters or 15-18 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 17 and Step 20?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[233, 285]","The time interval between performing Step 17 and Step 20 is [105, 129]. This means that the time it takes to complete these steps ranges from 105 seconds to 129 seconds.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Tuscaloosa National Airport (TUSCALOOSA, AL) to DCH REGIONAL MEDICAL CENTER (TUSCALOOSA, AL)
+
+  Route steps:
+['Drive northeast.', 'Turn left after 136 meters or 13-15 seconds.', 'Turn left onto Robert Cardinal Road.', 'Turn right onto Airport Road.', 'Turn right onto US 82/McFarland Boulevard. Continue on US 82.', 'Take the exit on the right after 11150 meters or 477-583 seconds.', 'Turn right after 81 meters or 3-4 seconds.', 'Turn left after 76 meters or 19-23 seconds.', 'Turn left after 212 meters or 35-42 seconds.', 'Continue for 62 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 5 and Step 10?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[559, 682]","[477, 583]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: MIDDLESEX HOSPITAL (MIDDLETOWN, CT) to First Church of Christ (Farmington, CT)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 23 meters or 8-9 seconds.', 'Turn right after 55 meters or 24-29 seconds.', 'Turn right after 79 meters or 26-32 seconds.', 'Bear right after 60 meters or 24-30 seconds.', 'Turn left onto South Main Street.', 'Turn left onto CT 17 North.', 'Keep left to take CT 9 North toward Portland/New Britain.', 'Keep left to stay on CT 9 North.', 'Keep right to stay on CT 9 North.', 'Keep left to take exit 40A onto I 84 West toward CT 4/Waterbury.', 'Take exit 39 on the right onto CT 4 toward Farmington.', 'Keep left to take CT 4 West.', 'Continue for 8079 meters or 383-468 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[82, 100]","[23, 9]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: NORTHBROOK BEHAVIORAL HEALTH HOSPITAL (BLACKWOOD, NJ) to K HOVNANIAN CHILDRENS HOSPITAL (NEPTUNE, NJ)
+
+  Route steps:
+['Drive southeast.', 'Turn right after 49 meters or 6-8 seconds.', 'Turn left onto Woodbury-Turnersville Road/CR 707.', 'Turn left onto Lakeland Road/CR 747.', 'Turn left onto Chews Landing-Little Gloucester Road/CR 759.', 'Turn right onto Broadacres Drive.', 'Turn left onto Cherrywood Drive.', 'Turn right onto Blackwood-Clementon Road/CR 534.', 'Turn left after 702 meters or 43-52 seconds.', 'Turn left onto Laurel Road/CR 673. Continue on CR 673.', 'Turn right onto East Evesham Road/CR 544. Continue on CR 544.', 'Turn left onto Evans Road.', 'Turn right onto East Main Street/CR 620.', 'Turn left onto North Elmwood Road.', 'Turn right onto NJ 70/John Davison Rockefeller Memorial Highway.', 'Enter the roundabout and take the 2nd exit onto NJ 70/John Davison Rockefeller Memorial Highway.', 'Enter Four Mile Circle and take the 2nd exit onto NJ 70 East/John Davison Rockefeller Memorial Highway.', 'Bear right onto NJ 70/John Davison Rockefeller Memorial Highway.', 'Enter the roundabout and take the 2nd exit toward NJ 70 East/Joint Base MDL Lakehurst/Toms River.', 'Keep left to stay on NJ 70/John Davison Rockefeller Memorial Highway.', 'Take the Route 9 North exit on the right toward Lakewood/Freehold.', 'Turn right onto US 9/Lakewood Road.', 'Turn right onto Hurley Avenue/CR 528.', 'Turn left onto South Clifton Avenue.', 'Turn right onto 9th Street/CR 547. Continue on CR 547.', 'Take the I 195 East ramp on the right toward GSP/Shore Points.', 'Take the exit on the right after 5498 meters or 181-221 seconds.', 'Bear right onto Allenwood Road.', 'Turn right to stay on Allenwood Road.', 'Turn left onto Gully Road.', 'Turn right onto Remsen Mill Road.', 'Turn right onto Old Corlies Avenue/(17).', 'Bear right onto NJ 33.', 'Bear left to stay on NJ 33.', 'Bear right onto Stanley Avenue.', 'Turn left to stay on Stanley Avenue.', 'Make a sharp left onto NJ 33/Corlies Avenue.', 'Turn right after 150 meters or 15-18 seconds.', 'Turn right after 26 meters or 6-7 seconds.', 'Turn left after 63 meters or 12-15 seconds.', 'Turn left after 60 meters or 7-9 seconds.', 'Continue for 16 meters or 5-7 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 37 and Step 42?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[275, 337]","[150, 63]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: House at 220 Walnut Street (Nogales, AZ) to BENSON HOSPITAL (BENSON, AZ)
+
+  Route steps:
+['Drive east on West Oak Street.', 'Turn left onto North Grand Avenue/I 19 Bus.', 'Turn right after 973 meters or 44-54 seconds.', 'Turn left onto North Morley Avenue.', 'Turn right to take the ramp.', 'Turn left onto AZ 82.', 'Turn left onto AZ 90/State Route 90. Continue on AZ 90.', 'Turn right onto Cooperative Way.', 'Turn right onto West Jennella Drive.', 'Bear right onto West Via Javelina.', 'Turn left onto South Ocotillo Avenue.', 'Turn left after 1481 meters or 98-120 seconds.', 'Turn right after 41 meters or 6-7 seconds.', 'Continue for 5 meters or 5-6 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 11 and Step 14?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[153, 187]","[41, 46]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: ORCHARD HOSPITAL (GRIDLEY, CA) to PETALUMA VALLEY HOSPITAL (PETALUMA, CA)
+
+  Route steps:
+['Drive south on Parking Lot Road.', 'Turn left onto Spruce Street.', 'Turn right onto CA 99.', 'Take the CA 113 South exit on the right toward Woodland/Tudor Road.', 'Turn right onto Tudor Road/CA 113. Continue on CA 113.', 'Keep right to stay on CA 113.', 'Turn right to stay on CA 113.', 'Turn left to take the ramp toward Sacramento.', 'Keep right to take CA 113/Vic Fazio Highway toward Davis.', 'Keep left to stay on CA 113/Vic Fazio Highway toward San Francisco.', 'Bear right onto I 80 West.', 'Keep left to take I 80 West/CA 12.', 'Keep right to stay on CA 12.', 'Take the exit on the right after 10733 meters or 382-467 seconds.', 'Keep left to stay on CA 12/CA 29.', 'Turn left onto Carneros Highway/CA 12/CA 121.', 'Turn right onto Arnold Drive.', 'Bear right onto Arnold Drive/CA 116. Continue on CA 116.', 'Turn left onto Stage Gulch Road/CA 116.', 'Turn right onto Lakeville Highway/CA 116.', 'Turn right to take the US 101 North ramp.', 'Take exit 474 on the right toward East Washington Street.', 'Turn right onto East Washington Street.', 'Turn left onto North McDowell Boulevard.', 'Turn right after 755 meters or 62-76 seconds.', 'Turn right after 118 meters or 27-34 seconds.', 'Turn left after 335 meters or 57-69 seconds.', 'Continue for 41 meters or 8-10 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 24 and Step 28?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[536, 656]","[335, 376]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: TEXAS REHABILITATION HOSPITAL OF ARLINGTON (ARLINGTON, TX) to Waco Regional Airport (WACO, TX)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 117 meters or 19-23 seconds.', 'Turn right after 9 meters or 3-4 seconds.', 'Turn right after 223 meters or 40-49 seconds.', 'Turn left after 24 meters or 9-11 seconds.', 'Turn right onto West Interstate 20.', 'Take the I 20 West/TX 157 South/Cooper Street ramp toward Fort Worth.', 'Keep right to take FM 157 South toward Cooper Street.', 'Keep left to take I 20 West toward Fort Worth.', 'Take exit 437 on the right onto I 35W South toward Waco.', 'Keep left to take I 35W South toward Waco.', 'Keep left to stay on I 35W South.', 'Take exit 339 on the right onto Loop 340 toward Lake Waco/Lake Shore Drive.', 'Turn right onto North Loop 340/Loop 340.', 'Turn right onto North 19th Street/FM 1637.', 'Turn left to stay on North 19th Street.', 'Turn left onto Steinbeck Bend Drive/FM 3051. Continue on Steinbeck Bend Drive.', 'Turn right onto Access Road.', 'Turn left onto Skeet Eason Road.', 'Continue for 1720 meters or 141-172 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[71, 87]","[9, 49]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: BAPTIST HEALTH MEDICAL CENTER - LITTLE ROCK (LITTLE ROCK, AR) to Johnson House (Little Rock, AR)
+
+  Route steps:
+['Drive west.', 'Turn left after 7 meters or 1 seconds.', 'Turn left after 68 meters or 11-13 seconds.', 'Turn left after 74 meters or 11-14 seconds.', 'Turn right after 82 meters or 15-18 seconds.', 'Turn right onto Mabelvale West Road.', 'Take the exit on the right after 225 meters or 17-20 seconds.', 'Bear right onto I-30 Frontage Road.', 'Take the I 430 North ramp.', 'Take exit 6B on the right toward Markham Street/Chenal Parkway.', 'Keep right to take Financial Parkway/Markham Street/Chenal Parkway toward Markham Street/Chenal Parkway.', 'Keep right to take I 430 South.', 'Keep right to take I 630 East toward Bapt Health Drive.', 'Keep right to take I 630 East toward Bapt Health Drive.', 'Keep left to stay on I 630 East.', 'Keep left to take I 630 East/Wilbur D. Mills Freeway.', 'Keep left to take exit 139C onto I 30 East toward North Little Rock.', 'Keep right to take 9th Street/6th Street.', 'Turn left onto East 9th Street.', 'Turn right onto Commerce Street.', 'Turn right onto East 8th Street.', 'Turn left after 32 meters or 8-10 seconds.', 'Continue for 7 meters or 4-5 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[38, 46]","[7, 11]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Scripps, George H., Memorial Marine Biological Laboratory (La Jolla, CA) to ARROWHEAD REGIONAL MEDICAL CENTER (COLTON, CA)
+
+  Route steps:
+['Drive east.', 'Turn left onto La Jolla Shores Drive.', 'Turn left onto North Torrey Pines Road.', 'Turn left onto North Torrey Pines Road/S21/US 101 Historic. Continue on S21.', 'Keep right to take Jimmy Durante Boulevard.', 'Enter the roundabout and take the 2nd exit onto Jimmy Durante Boulevard.', 'Make a sharp right onto Via de la Valle/S6.', 'Turn right to take the I 5 North ramp.', 'Take exit 39 on the right toward Manchester Avenue.', 'Turn left onto Manchester Avenue.', 'Turn right to stay on Manchester Avenue.', 'Turn right onto Rancho Santa Fe Road/S10. Continue on S10.', 'Turn right onto West San Marcos Boulevard/S12.', 'Turn left onto North Twin Oaks Valley Road/S12. Continue on S12.', 'Turn left to take the I 15 North ramp toward Riverside.', 'Keep right to take I 215/Escondido Freeway.', 'Keep left to stay on I 215.', 'Take exit 30B on the right toward Central Avenue/Watkins Drive.', 'Turn right onto Watkins Drive.', 'Turn left onto Spruce Street.', 'Turn right onto Iowa Avenue.', 'Turn left to stay on Iowa Avenue.', 'Turn left onto Rancho Avenue.', 'Turn left onto Valley Boulevard.', 'Turn right onto Meridian Street.', 'Turn left onto Plum Place.', 'Turn right after 261 meters or 25-30 seconds.', 'Turn right after 87 meters or 19-23 seconds.', 'Turn right after 31 meters or 9-11 seconds.', 'Continue for 93 meters or 17-21 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 26 and Step 30?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[70, 85]","[25, 30]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Chamberlin House (Concord, NH) to Manchester-Boston Regional Airport (MANCHESTER, NH)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Pleasant Street/US 202/NH 9.', 'Turn right onto South Main Street/US 3. Continue on US 3.', 'Take exit 13 on the right onto I 93 South toward I 89/Manchester/Lebanon.', 'Keep left to stay on I 93 South/Everett Turnpike.', 'Keep left to take I 293 South/Everett Turnpike toward Nashua.', 'Keep left to take Everett Turnpike/Frederick Elwin Everett Turnpike toward Nashua.', 'Take exit 13 on the right onto Raymond Wieczorek Drive toward Airport.', 'Keep left to take Raymond Wieczorek Drive toward Airport.', 'Enter the roundabout and take the 2nd exit onto Raymond Wieczorek Drive.', 'Enter the roundabout and take the 2nd exit onto Airport Road.', 'Turn right after 540 meters or 41-50 seconds.', 'Turn left after 25 meters or 35-42 seconds.', 'Turn left after 167 meters or 24-29 seconds.', 'Continue for 1061 meters or 140-171 seconds.', 'Your destination is on the right.']
+
+Question:
+  What is the time interval between performing Step 11 and Step 15?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[240, 292]","[1061, 140]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: NORTHKEY COMMUNITY CARE-INTENSIVE SERVICES (COVINGTON, KY) to SAINTS MARY & ELIZABETH HOSPITAL (LOUISVILLE, KY)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 36 meters or 5-6 seconds.', 'Turn left after 36 meters or 6-7 seconds.', 'Bear right onto Farrell Drive.', 'Make a sharp left onto Kyles Lane/KY 3187.', 'Turn right onto Madison Pike/KY 17.', 'Take the I 275 West ramp on the right toward I 71/I 75/Airport.', 'Take exit 82 on the right onto KY 1303 toward Turkeyfoot Road.', 'Turn left onto Turkeyfoot Road/KY 1303.', 'Turn right onto Richardson Road/KY 842.', 'Turn left onto Dixie Highway/US 25.', 'Take the exit on the right after 5532 meters or 256-312 seconds.', 'Keep right to take Richwood Road/KY 338.', 'Take the I 71 South ramp.', 'Take exit 173 on the right onto I 71 South toward Louisville.', 'Keep left to stay on I 71 South.', 'Keep right to take exit 1B onto I 65 South toward Nashville.', 'Keep left to take I 65 South toward Nashville.', 'Take exit 135 on the right toward Saint Catherine Street West.', 'Keep right at the fork.', 'Continue on West Saint Catherine Street.', 'Turn left onto South 3rd Street/KY 1020.', 'Turn right onto West Oak Street.', 'Turn left onto South 4th Street.', 'Turn right onto Creel Avenue.', 'Turn left after 71 meters or 13-16 seconds.', 'Turn left onto South 5th Street.', 'Turn right onto Montana Avenue.', 'Turn left onto South 6th Street.', 'Turn right onto Winkler Avenue/US 60 Alternate.', 'Bear left onto Taylor Boulevard/US 60 Alternate. Continue on Taylor Boulevard.', 'Turn right onto Carrico Avenue.', 'Turn left onto Woodruff Avenue.', 'Turn right onto Bicknell Avenue.', 'Turn left onto Hazelwood Avenue.', 'Turn right after 47 meters or 6-7 seconds.', 'Turn left onto Wheeler Avenue.', 'Turn right onto Alma Avenue.', 'Turn left onto La Salle Avenue.', 'Turn right onto Bluegrass Avenue.', 'Turn left after 149 meters or 13-16 seconds.', 'Turn right after 26 meters or 7-8 seconds.', 'Turn left after 56 meters or 15-18 seconds.', 'Continue for 35 meters or 7-8 seconds.', 'Your destination is on the left.']
+
+Question:
+  What is the time interval between performing Step 40 and Step 44?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[328, 398]","[149, 173]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Jersey City High School (Jersey City, NJ) to EAST MOUNTAIN HOSPITAL (BELLE MEAD, NJ)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 111 meters or 18-22 seconds.', 'Turn left after 13 meters or 4-5 seconds.', 'Turn right onto Palisade Avenue.', 'Turn left onto Hoboken Avenue/NJ 139U. Continue on NJ 139U.', 'Turn left onto John F. Kennedy Boulevard/CR 501.', 'Turn right to take the NJ 7/US 1-9 North ramp.', 'Take the Pulaski Skyway ramp on the right toward Newark.', 'Take the US 1-9 Local South exit on the right toward I 95/NTPJ/I 78/US 22.', 'Keep left to stay on US 1/US 9/US 1-9 Local.', 'Keep right to take US 22 West toward Union/Hillside.', 'Take the exit on the right after 37029 meters or 1566-1913 seconds.', 'Turn left onto Chimney Rock Road/CR 675.', 'Turn right onto Union Avenue/NJ 28.', 'Turn left onto Finderne Avenue/CR 633.', 'Turn right onto Brooks Boulevard.', 'Turn left onto US 206.', 'Take the US 206 South exit on the right.', 'Bear right onto US 206.', 'Turn right onto Trent Avenue/CR 601. Continue on CR 601.', 'Turn right after 1605 meters or 69-85 seconds.', 'Turn left after 94 meters or 17-21 seconds.', 'Turn left after 52 meters or 7-9 seconds.', 'Turn right after 56 meters or 8-10 seconds.', 'Turn right onto East Mountain Road.', 'Turn right after 91 meters or 9-11 seconds.', 'Continue for 117 meters or 19-23 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 20 and Step 24?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[1689, 2065]","The time interval between performing Step 20 and Step 24 is [1605, 1913]. The units for this interval are meters or seconds, depending on the specific measurement being used. To determine the exact interval, you would need more information about the specific route taken and the speed of travel at each step.
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Danbury Municipal Airport (DANBURY, CT) to Apartment at 49-51 Spring Street (Hartford, CT)
+
+  Route steps:
+['Drive northwest on Kenosia Avenue.', 'Turn right after 179 meters or 17-20 seconds.', 'Turn right after 107 meters or 19-24 seconds.', 'Turn left after 91 meters or 17-20 seconds.', 'Turn right onto Backus Avenue.', 'Turn right onto West Wooster Street.', 'Turn left to stay on West Wooster Street.', 'Keep left to stay on West Wooster Street.', 'Turn left onto Main Street/CT 53.', 'Turn right onto State Street.', 'Turn right onto Town Hill Avenue.', 'Turn left onto Cottage Street.', 'Turn right onto Sheridan Street.', 'Turn left onto Casper Street.', 'Turn right onto Taylor Street.', 'Turn left onto Triangle Street.', 'Bear right onto Newtown Road.', 'Take the I 84 East ramp toward Waterbury.', 'Take exit 15 on the right onto US 6 East/CT 67 toward Southbury.', 'Keep left to take exit 15 onto US 6 East/CT 67 toward Southbury.', 'Take exit 18 on the right toward Chase Parkway.', 'Turn right onto Chase Parkway.', 'Turn right to stay on Chase Parkway.', 'Turn right onto West Main Street.', 'Bear left to stay on West Main Street.', 'Turn left onto North Main Street.', 'Turn left to stay on North Main Street.', 'Turn right onto East Farm Street.', 'Turn left onto Walnut Street.', 'Bear left onto Long Hill Road.', 'Turn left onto Wolcott Street.', 'Turn right onto US 6/CT 69/North Street. Continue on US 6.', 'Turn right onto Scott Swamp Road.', 'Turn left onto CT 10/Main Street.', 'Turn right onto Farmington Avenue/CT 4/Colonel Everett H. Kandarian Memorial Highway.', 'Bear right to stay on CT 4.', 'Turn left onto Sigourney Street.', 'Turn right onto Collins Street.', 'Turn left onto Garden Street.', 'Turn right onto Capen Street.', 'Turn left onto Main Street.', 'Turn left onto Olin Street.', 'Turn right onto Preston Street.', 'Turn right onto Elm Street.', 'Turn left onto Spring Street.', 'Continue for 216 meters or 21-26 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 4?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[53, 64]","[179, 20]
+"
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Interval Analysis
+Definition: Determines the possible numeric ranges (e.g., bounds on variables) at each point in a program.
+
+Given the following travel planning scenario:
+
+  Goal: Smith, William McNeil, House (Logan, UT) to Sandy Tithing Office (Sandy, UT)
+
+  Route steps:
+['Drive south on 100 East.', 'Turn right after 830 meters or 52-64 seconds.', 'Turn left after 93 meters or 17-21 seconds.', 'Turn left after 86 meters or 12-15 seconds.', 'Turn right after 52 meters or 7-9 seconds.', 'Turn left onto US 89/US 91/Main Street.', 'Keep right to stay on US 91.', 'Turn left onto Highway 89/I 15 Bus/I 84 Bus/UT 13.', 'Keep left to take 750 West/US 89.', 'Turn left to stay on US 89.', 'Turn left onto Washington Boulevard/US 89. Continue on US 89.', 'Take exit 405 on the right onto UT 60/South Weber Drive.', 'Keep right to stay on US 89.', 'Take exit 317 onto US 89 South toward 500 West.', 'Take the I 15 South ramp.', 'Take exit 305C-A on the right onto UT 201 West toward 1300 South.', 'Keep right to take exit 305C toward 1300 South.', 'Keep left to take I 15 South toward Las Vegas.', 'Keep right to take I 15 South toward Las Vegas.', 'Take exit 295 on the right onto UT 209 toward 9000 South.', 'Keep left to take UT 209 toward 9000 South.', 'Turn left onto 280 East.', 'Continue for 20 meters or 7-9 seconds.', 'You have arrived at your destination.']
+
+Question:
+  What is the time interval between performing Step 1 and Step 5?
+
+Please provide the numeric interval in the format [x, y] without any further explanation.","[88, 109]","[830, 933]
+"

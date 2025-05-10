@@ -1,0 +1,1501 @@
+prompt,ground_truth,response
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Hartford Club (Hartford, CT) to Igor I Sikorsky Memorial Airport (BRIDGEPORT, CT)
+
+  Route steps:
+['Drive east on Prospect Street.', 'Turn right onto US 5/Main Street.', 'Turn right onto US 5/East River Drive.', 'Turn left to take the US 5 ramp.', 'Take exit 86 on the right onto I 91 South toward New Haven/New York City.', 'Take exit 17 on the right onto CT 15 South/Wilbur Cross Parkway.', 'Keep left to take CT 15 South/Wilbur Cross Parkway.', 'Take exit 37 on the right toward I 95/US 1/Milford.', 'Take exit 2B on the right onto I 95 South toward Bridgeport.', 'Take exit 30 on the right onto CT 113 toward Surf Avenue.', 'Turn left onto Surf Avenue.', 'Turn left onto Lordship Boulevard/CT 113.', 'Turn right to stay on Lordship Boulevard/CT 113.', 'Turn left onto Great Meadow Road.', 'Continue for 622 meters or 59-73 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 2, the driver getting on US 5, live at any point after Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Our Lady of Mercy High School (Cincinnati, OH) to St. Francis Hospital (Cincinnati, OH)
+
+  Route steps:
+['Drive south on Western Avenue/I 75 Alt.', 'Turn left onto Ezzard Charles Drive.', 'Turn left onto Central Parkway/US 27/US 52/US 127/I 75 Alt. Continue on Central Parkway/US 27/US 52/US 127.', 'Turn right onto West Martin Luther King Junior Drive/US 27/US 52.', 'Turn left onto Hopple Street/US 27/US 52.', 'Turn right to take the I 74 West/US 27 North/US 52 West ramp.', 'Keep left to take I 74 West/US 52 West/US 27 North.', 'Take the Beekman Street exit on the right.', 'Make a sharp left toward Beekman Street.', 'Turn left to stay on Beekman Street.', 'Turn right to stay on Beekman Street.', 'Turn right onto Queen City Avenue.', 'Turn right after 1215 meters or 92-113 seconds.', 'Turn left after 19 meters or 5-6 seconds.', 'Continue for 27 meters or 7-8 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 8, the driver getting on Beekman Street, live at any point after Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: JESSE BROWN VA MEDICAL CENTER - VA CHICAGO HEALTHCARE SYSTEM (CHICAGO, IL) to Shiloh House (Zion, IL)
+
+  Route steps:
+['Drive south on Ambulance Entrance.', 'Bear right after 25 meters or 4-5 seconds.', 'Turn right onto South Damen Avenue.', 'Make a left U-turn to stay on South Damen Avenue.', 'Turn right onto West Congress Parkway.', 'Take the I 290 East ramp.', 'Take the I 90 West exit toward Wisconsin/Kennedy Expressway.', 'Keep right to take I 90 West toward Wisconsin/Kennedy Expressway.', 'Keep left to take I 90 West toward Wisconsin/Kennedy Expressway.', 'Keep left to stay on I 90/I 94/Kennedy Expressway/John F. Kennedy Expressway toward Randolph Street/Lake Street.', 'Keep left to take I 90 West toward Kennedy Expressway.', 'Keep right to take I 94 West/Edens Expressway toward Milwaukee.', 'Keep left to take US 41.', 'Turn right to take the ramp.', 'Turn left onto Bobby E. Thompson Expressway.', 'Turn left toward IL 137 North/Greenwood Avenue.', 'Bear right onto Greenwood Avenue.', 'Turn right onto North Sheridan Road/IL 137. Continue on IL 137.', 'Turn left onto Shiloh Boulevard.', 'Continue for 125 meters or 15-19 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 3, the driver getting on South Damen Avenue, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Dickinson, Gen. Philemon, House (Trenton, NJ) to Atlantic City International Airport (ATLANTIC CITY, NJ)
+
+  Route steps:
+['Drive southwest on Colonial Avenue.', 'Turn right onto Riverside Avenue.', 'Bear left onto NJ 29 North/John Fitch Way.', 'Turn right toward Parkside Avenue/Cadwalader Park.', 'Make a left U-turn to stay on Parkside Avenue.', 'Turn left toward NJ 29 South.', 'Take exit 1A-B on the right onto I 295 toward Camden.', 'Keep right to take exit 1A onto I 295 South toward Camden.', 'Take exit 57B-A on the right onto US 130 toward Bordentown.', 'Keep left to take exit 57A onto US 130 North toward Bordentown.', 'Keep right to take exit 57A onto US 130 North toward Bordentown.', 'Keep left to take US 130/Burlington Pike.', 'Turn right onto Farnsworth Avenue/CR 545.', 'Bear right onto US 206.', 'Keep left to stay on US 206.', 'Enter the roundabout and take the 2nd exit onto US 206.', 'Bear right to stay on US 206.', 'Turn left onto US 30/White Horse Pike. Continue on White Horse Pike.', 'Turn right onto Tilton Road/CR 563.', 'Turn left after 4963 meters or 205-251 seconds.', 'Turn left after 69 meters or 38-46 seconds.', 'Turn right after 4091 meters or 533-652 seconds.', 'Bear right after 1149 meters or 149-183 seconds.', 'Continue for 299 meters or 39-48 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 4, the driver getting on Parkside Avenue, live at any point after Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Lehigh Valley International Airport (ALLENTOWN, PA) to Muhlenberg, Henry Melchoir, House (Trappe, PA)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 799 meters or 129-158 seconds.', 'Turn right onto Postal Road.', 'Turn left onto North Irving Street.', 'Turn right onto East Fairmont Street.', 'Turn left onto North Godfrey Street.', 'Turn right onto East Tilghman Street.', 'Turn left onto North Graham Street.', 'Turn right onto East Dent Street.', 'Turn left after 39 meters or 9-11 seconds.', 'Turn right onto Hanover Avenue.', 'Keep left to take Union Street.', 'Turn left onto South 3rd Street.', 'Turn right onto Lanark Road.', 'Bear left to stay on Lanark Road.', 'Turn right onto Limeport Pike.', 'Turn left onto Kings Highway.', 'Turn left onto Geryville Pike.', 'Turn right onto Upper Ridge Road.', 'Turn right to stay on Upper Ridge Road.', 'Turn left onto Gravel Pike/PA 29.', 'Enter the roundabout and take the 2nd exit onto Gravel Pike/PA 29/PA 73.', 'Turn right onto Ellis Road.', 'Turn left onto Oak Street.', 'Turn right onto Bridge Road/PA 113. Continue on PA 113.', 'Turn right onto West Main Street.', 'Turn left after 21 meters or 7-8 seconds.', 'Continue for 8 meters or 3-4 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 14, the driver getting on Lanark Road, live at any point after Step 17?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Franklin Institute (Philadelphia, PA) to Northeast Philadelphia Airport (PHILADELPHIA, PA)
+
+  Route steps:
+['Drive west.', 'Turn right onto South 7th Street.', 'Bear right onto North Franklin Street.', 'Turn right onto Willow Street.', 'Turn left onto North 3rd Street.', 'Turn right onto Spring Garden Street.', 'Turn left onto North Front Street.', 'Turn right onto East Oxford Street.', 'Turn left onto Frankford Avenue.', 'Enter Traffic Circle and take the 2nd exit onto Frankford Avenue.', 'Turn left onto Bustleton Avenue.', 'Turn right onto US 1 North/Roosevelt Boulevard.', 'Take the Harbison Avenue/Tyson Avenue exit.', 'Take the exit on the right toward Northeast Philadelphia Airport/Grant Avenue.', 'Turn right after 2545 meters or 115-141 seconds.', 'Turn right after 41 meters or 10-12 seconds.', 'Turn right onto Red Lion Road.', 'Turn right after 423 meters or 41-50 seconds.', 'Turn left after 113 meters or 21-26 seconds.', 'Turn left after 215 meters or 70-86 seconds.', 'Continue for 610 meters or 100-122 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 9, the driver getting on Frankford Avenue, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: National Transit Building (Oil City, PA) to Beaver County Airport (BEAVER FALLS, PA)
+
+  Route steps:
+['Drive south on Seneca Street/PA 8 Business.', 'Turn right onto Center Street/PA 8 Business.', 'Turn left onto Main Street/PA 8 South. Continue on PA 8 South.', 'Turn right onto US 62/US 322/PA 8 South/Liberty Street. Continue on US 62/PA 8 South/Liberty Street.', 'Turn left onto US 62/PA 8 South/15th Street. Continue on PA 8 South.', 'Turn right onto Old Route 8.', 'Keep right to stay on Old Route 8.', 'Turn right onto PA 8 South/Pittsburgh Road.', 'Turn right onto Franklin Road/PA 108. Continue on PA 108.', 'Turn left onto West Park Road.', 'Turn right to stay on West Park Road.', 'Bear left onto Perry Highway/US 19 South.', 'Turn right onto West Portersville Road/PA 488. Continue on PA 488.', 'Bear left onto Mercer Road.', 'Turn left onto PA 65.', 'Turn right onto Bennetts Run Road/PA 588. Continue on PA 588.', 'Turn right onto Eastvale Bridge/PA 588 West.', 'Turn left onto 7th Avenue/PA 18 South/PA 588 West.', 'Turn right onto 24th Street/PA 588.', 'Turn left onto Steffens Hill Road/PA 588.', 'Turn right onto 13th Avenue.', 'Bear left onto 14th Avenue.', 'Turn left onto Blackhawk Road/PA 251.', 'Turn right onto Naugle Road.', 'Continue for 416 meters or 45-55 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 10, the driver getting on West Park Road, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Derby Shop-Goodnow Pail Factory-Holman & Merriman Machine Shop-L. A. Carpenter Machine Shop-Streeter Shop (Hinsdale, NH) to LAKES REGION GENERAL HOSPITAL (LACONIA, NH)
+
+  Route steps:
+['Drive east on Canal Street/NH 119. Continue on NH 119.', 'Turn left onto Main Street/NH 10/NH 119. Continue on NH 10.', 'Enter the roundabout and take the 2nd exit toward NH 10 North/NH 12 North/Vermont.', 'Turn right onto NH 9/NH 10/NH 12/Route 9.', 'Keep right to stay on NH 9 toward Hillsborough/Henniker.', 'Keep left toward Concord/Seacoast.', 'Stay straight to take the I 89 ramp.', 'Keep left to stay on I 89 toward NH 3A/Bow Junction.', 'Turn left onto Route 3-A/NH 3A. Continue on NH 3A.', 'Take the I 93 North ramp on the right.', 'Take exit 20 on the right onto US 3/NH 11/NH 132/NH 140 toward Laconia/Tilton.', 'Turn left onto US 3/NH 11/NH 132/Laconia Road.', 'Turn right onto Elliott Street.', 'Continue for 227 meters or 28-34 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 2, the driver getting on NH 10, live at any point after Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: NORTHCOAST BEHAVIORAL HEALTHCARE NORTHFIELD CAMPUS (NORTHFIELD, OH) to Lorain County Courthouse (Elyria, OH)
+
+  Route steps:
+['Drive north.', 'Turn right onto Sagamore Road/TR 1. Continue on Sagamore Road.', 'Turn left onto Northfield Road/SR 8.', 'Turn left to take the I 480 West ramp toward Cleveland/Toledo.', 'Keep right to stay on I 480 West.', 'Keep left to take SR 10 West/State Route 10 toward Norwalk/Oberlin.', 'Take the SR 57/US 20 East/SR 301 North exit on the right toward Medina/Elyria.', 'Keep left to take US 20 West.', 'Take the SR 511 exit on the right toward Oberlin.', 'Turn right onto Oberlin Elyria Road.', 'Turn left onto West 2nd Street.', 'Continue for 11 meters or 3 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 4, the driver getting on I 480, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Aborn, John, House (Cambridge, MA) to Smith House (Ipswich, MA)
+
+  Route steps:
+['Drive southeast on Orchard Street.', 'Turn right onto Beech Street.', 'Turn right onto Massachusetts Avenue/MA 2A.', 'Turn right onto Alewife Brook Parkway/MA 16.', 'Enter the roundabout and take the 2nd exit onto Mystic Valley Parkway/MA 16.', 'Bear left to stay on Mystic Valley Parkway/MA 16.', 'Take the I 93 North ramp toward Concord New Hampshire.', 'Keep left to take I 93 North toward Concord New Hampshire.', 'Take exit 28A on the right onto I 95 North toward Peabody.', 'Keep right to stay on I 95 North toward Portsmouth New Hampshire.', 'Take exit 70 on the right onto US 1 toward Topsfield.', 'Keep right to stay on US 1.', 'Turn right onto Ipswich Road.', 'Bear right onto Topsfield Road.', 'Bear right onto Market Street.', 'Keep right to stay on Market Street.', 'Turn right onto South Main Street/MA 1A/MA 133.', 'Keep right to stay on MA 1A/MA 133.', 'Turn left onto Argilla Road.', 'Turn left after 3571 meters or 233-285 seconds.', 'Continue for 113 meters or 16-19 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 15, the driver getting on Market Street, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: House at 36 Forest Street (Hartford, CT) to Elton Hotel (Waterbury, CT)
+
+  Route steps:
+['Drive west.', 'Turn left onto Forest Street.', 'Turn left onto Capitol Avenue.', 'Turn left to take the I 84 West ramp toward Waterbury.', 'Keep left to stay on I 84 West/Yankee Expressway.', 'Take exit 18 on the right toward West Main Street.', 'Keep left toward West Main Street.', 'Turn right onto West Main Street.', 'Continue for 783 meters or 51-63 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 8, the driver getting on West Main Street, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Temora (Ellicott City, MD) to Martin State Airport (BALTIMORE, MD)
+
+  Route steps:
+['Drive northeast on Columbia Road.', 'Turn right to stay on Columbia Road.', 'Turn right onto Saint Johns Lane.', 'Turn right onto Long Gate Parkway.', 'Turn left to take the ramp toward MD 100 East.', 'Take exit 5B on the right onto I 95 North toward Baltimore.', 'Keep left to take I 95 North (left tunnel).', 'Take exit 61 on the right onto US 40 East toward Pulaski Highway.', 'Turn right toward MD 700 South/Martin Boulevard.', 'Bear right to stay on Martin Boulevard/MD 700 South.', 'Bear right toward MD 150 East/Chase.', 'Bear right onto Eastern Boulevard/MD 150.', 'Turn right onto Wilson Point Road/MD 587 South.', 'Bear left onto Strawberry Point Road.', 'Turn left after 397 meters or 64-78 seconds.', 'Continue for 60 meters or 9-11 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 1, the driver getting on Columbia Road, live at any point after Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Rolvaag, O. E., House (Northfield, MN) to MADELIA COMMUNITY HOSPITAL (MADELIA, MN)
+
+  Route steps:
+['Drive south on Manitou Street North.', 'Turn left onto Saint Olaf Avenue West.', 'Turn right onto MN 3/Water Street North. Continue on MN 3.', 'Enter the roundabout and take the 2nd exit onto MN 3/2nd Avenue Northwest.', 'Turn right onto MN 3/20th Street Northwest.', 'Turn left onto I 35 BUS/MN 21/I 35 ALT/Lyndale Avenue North.', 'Turn right onto Highway 60 West/MN 60/I 35 ALT. Continue on MN 60.', 'Bear right to stay on MN 60.', 'Take the MN 60 exit on the right toward North Mankato/Mankato.', 'Turn right onto 290th Street/CR 58.', 'Turn right onto 290th Street/CR 58. Continue on CR 58.', 'Continue for 3122 meters or 208-254 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 3, the driver getting on MN 3, live at any point after Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Cooper-Frost-Austin House (Cambridge, MA) to Bailey House (Ipswich, MA)
+
+  Route steps:
+['Drive south.', 'Turn left onto Linnaean Street.', 'Turn left onto Massachusetts Avenue/MA 2A.', 'Turn right onto Somerville Avenue.', 'Turn left onto Union Square.', 'Bear right onto MA 28/McGrath Highway. Continue on MA 28.', 'Turn left onto Charlestown Avenue.', 'Take the New Rutherford Avenue exit on the right.', 'Take the US 1 North ramp on the right toward Tobin Bridge.', 'Keep right to take I 95 North toward Portsmouth New Hampshire.', 'Take exit 70 on the right onto US 1 toward Topsfield.', 'Keep right to stay on US 1.', 'Turn right onto Ipswich Road.', 'Bear right onto Topsfield Road.', 'Bear right onto Market Street.', 'Continue for 157 meters or 13-16 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 15, the driver getting on Market Street, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: MONROE COUNTY HOSPITAL (FORSYTH, GA) to Rankin House (Columbus, GA)
+
+  Route steps:
+['Drive north.', 'Turn left after 69 meters or 15-18 seconds.', 'Turn right onto Martin Luther King Jr Drive/GA 83.', 'Turn left onto West Main Street/US 41/ GA 18. Continue on US 41.', 'Turn left onto Martin Luther King Junior Parkway/US 41/GA 18. Continue on Martin Luther King Junior Parkway/US 41.', 'Turn right onto US 41/GA 7/GA 18.', 'Turn left onto Burnette Road/GA 18. Continue on GA 18.', 'Turn right onto South Main Street/GA 18/GA 74/GA 109.', 'Enter South Court Square and take the 2nd exit onto South Talbotton Street/US 27 Alternate/GA 18/GA 41.', 'Enter the roundabout and take the 2nd exit onto Roosevelt Highway/US 27 Alternate/GA 41.', 'Turn right toward Waverly Hall.', 'Turn left onto 2nd Avenue/GA 85.', 'Continue for 3777 meters or 256-313 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 7, the driver getting on GA 18, live at any point after Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: WHITTIER PAVILION (HAVERHILL, MA) to New Bedford Regional Airport (NEW BEDFORD, MA)
+
+  Route steps:
+['Drive north.', 'Turn left after 44 meters or 7-9 seconds.', 'Turn right onto Webster Street.', 'Make a sharp left onto Kenoza Avenue/MA 110.', 'Turn left onto Main Street/MA 110/MA 125.', 'Turn left onto MA 114 East/MA 125 South/Turnpike Street.', 'Keep right to take Andover Bypass/MA 125 South.', 'Take the exit on the right after 41 meters or 2-3 seconds.', 'Bear right onto Andover Bypass/MA 125. Continue on MA 125.', 'Take the I 93 South ramp on the right toward Boston.', 'Keep left to take I 93 South/Interstate 93 HOV lane.', 'Keep left to stay on I 93 South/Interstate 93 HOV lane.', 'Keep right to take I 93 South/US 1 toward I 95/Providence Rhode Island.', 'Take exit 2A on the right onto MA 138 South toward Stoughton.', 'Keep left to stay on MA 138.', 'Turn left onto Washington Street/MA 138.', 'Keep right to stay on Washington Street.', 'Enter Taunton Green and take the 2nd exit onto US 44/MA 140/Taunton Green.', 'Bear right onto Summer Street/MA 140. Continue on MA 140.', 'Take exit 4 on the right toward Mount Pleasant Street/Airport Road.', 'Turn left onto Mount Pleasant Street.', 'Turn right onto Downey Street.', 'Turn right after 1330 meters or 95-116 seconds.', 'Continue for 59 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 7, the driver getting on Andover Bypass, live at any point after Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Muskegon County Airport (MUSKEGON, MI) to Holland Reformed Protestant Dutch Church (Holland, MI)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Sinclair Drive.', 'Turn right onto Hakes Drive.', 'Turn right onto Airport Service Road.', 'Turn left onto Hakes Boulevard.', 'Turn left onto East Ellis Road.', 'Turn right after 341 meters or 20-25 seconds.', 'Turn left after 20 meters or 7-9 seconds.', 'Turn left after 86 meters or 11-14 seconds.', 'Turn right onto Robert Hunter Drive.', 'Turn left after 524 meters or 34-41 seconds.', 'Turn right after 91 meters or 14-17 seconds.', 'Turn right after 159 meters or 25-31 seconds.', 'Turn right after 148 meters or 24-30 seconds.', 'Turn left onto East Sternberg Road.', 'Turn right onto Grand Haven Road.', 'Turn right onto Pine Street/M 104. Continue on Pine Street.', 'Take the US 31 South ramp toward Grand Haven.', 'Turn right onto 136th Avenue.', 'Turn left to stay on 136th Avenue.', 'Bear left onto North River Avenue.', 'Turn left onto West 3rd Street.', 'Turn right onto Central Avenue.', 'Turn left onto East 10th Street.', 'Turn left after 125 meters or 12-15 seconds.', 'Continue for 10 meters or 4-5 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 19, the driver getting on 136th Avenue, live at any point after Step 21?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: PASSAVANT AREA HOSPITAL (JACKSONVILLE, IL) to Scott AFB/Midamerica Airport (BELLEVILLE, IL)
+
+  Route steps:
+['Drive south.', 'Turn right after 4 meters or 1 seconds.', 'Turn left onto North Westgate Avenue.', 'Turn left onto Galena Drive.', 'Turn right onto North Grand Avenue.', 'Turn right onto West Lafayette Avenue.', 'Turn left onto North Grand Avenue.', 'Turn left onto West State Street.', 'Turn right onto South Webster Avenue.', 'Turn left onto West College Avenue.', 'Turn right onto Lockwood Place.', 'Turn left onto Mound Road.', 'Turn right onto Lincoln Avenue.', 'Turn left onto West Greenwood Avenue.', 'Turn right onto South Diamond Street.', 'Turn left onto West Vandalia Road.', 'Turn right onto South Main Street/IL 267. Continue on IL 267.', 'Bear left onto North Main Street.', 'Turn left onto South Main Street.', 'Turn left onto Brown Street.', 'Turn right onto Fosterburg Road.', 'Turn left onto Stutz Lane.', 'Turn left onto West Macarthur Drive/IL 111/IL 140. Continue on IL 111/IL 140.', 'Turn right to take the IL 255 South ramp toward I 270.', 'Take exit 6 on the right onto IL 143 toward Edwardsville.', 'Keep left to take IL 143 toward Edwardsville.', 'Turn left onto East Vandalia Street/IL 143/IL 157.', 'Turn right onto South Buchanan Street.', 'Turn left onto Goshen Road.', 'Turn right onto Old Troy Road.', 'Turn left to stay on Old Troy Road.', 'Turn left onto State Route 162/IL 162. Continue on IL 162.', 'Turn right onto South Main Street.', 'Turn left onto Oak Hill Scool Road.', 'Turn right onto Rieder Road.', 'Turn left onto Wherry Road.', 'Bear right onto Pryor Road.', 'Turn left onto East Drive.', 'Turn left onto McCullough Road.', 'Continue for 447 meters or 46-57 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 30, the driver getting on Old Troy Road, live at any point after Step 34?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Eugene F. Kranz Toledo Express Airport (TOLEDO, OH) to Mansfield Lahm Regional Airport (MANSFIELD, OH)
+
+  Route steps:
+['Drive west.', 'Turn right after 2790 meters or 362-442 seconds.', 'Turn left after 256 meters or 37-45 seconds.', 'Turn right onto Wilkins Road/US 20A/SR 295.', 'Turn right onto Airport Highway/SR 2/SR 295. Continue on Airport Highway/SR 2.', 'Turn left to take the ramp.', 'Keep right to take I 80/I 90/Ohio Turnpike.', 'Take exit 118 on the right onto US 250 toward Norwalk.', 'Keep left to take US 250 toward Norwalk.', 'Turn right onto US 250/ SR 13/East League Street.', 'Turn left onto US 250/SR 13/Whittlesey Avenue. Continue on US 250/SR 13.', 'Turn right to stay on SR 13.', 'Turn right onto SR 96.', 'Turn left onto Bowman Street Road/CR 215.', 'Turn left onto Amoy East Road.', 'Bear right onto Airport North Road.', 'Turn left after 1241 meters or 115-140 seconds.', 'Continue for 540 meters or 126-154 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 9, the driver getting on US 250, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Norwood Memorial Airport (NORWOOD, MA) to Barnes, James B., House (Cambridge, MA)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto Access Road.', 'Bear right onto Boston-Providence Turnpike/US 1. Continue on US 1.', 'Take the I 95 South ramp on the right toward Canton/Providence Rhode Island.', 'Keep left to take exit 26 onto I 93 North/US 1 toward Boston.', 'Keep left to stay on US 1 toward Boston.', 'Keep right to take I 93 North toward Concord NH.', 'Take exit 24 on the right onto MA 28 toward Fellsway West/Winchester.', 'Enter Roosevelt Circle and take the 2nd exit toward MA 28 South/Fellsway West/Malden.', 'Keep left to stay on MA 28.', 'Turn right onto Third Street.', 'Continue for 29 meters or 6-8 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 11, the driver getting on Third Street, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: US Post Office-Port Townsend Main (Port Townsend, WA) to Bremerton National Airport (BREMERTON, WA)
+
+  Route steps:
+['Drive south on Lilly Lane.', 'Turn right onto Prospect Avenue.', 'Turn left onto Airport Cutoff Road/WA 19. Continue on WA 19.', 'Turn left onto Oak Bay Road.', 'Turn right onto Paradise Bay Road.', 'Turn left onto WA 104/State Route 104. Continue on WA 104.', 'Turn left onto State Highway 104/WA 104. Continue on WA 104.', 'Bear right onto Port Gamble Road Northeast.', 'Continue.', 'Bear right onto Bond Road Northeast/WA 307. Continue on Bond Road Northeast.', 'Turn right onto Northwest Lindvig Way.', 'Turn left onto Viking Avenue Northwest.', 'Turn right onto Silverdale Way Northwest.', 'Enter the roundabout and take the 2nd exit onto Chico Way Northwest.', 'Turn right onto Harlow Drive.', 'Turn right onto Auto Center Boulevard.', 'Turn right onto 3rd Avenue West.', 'Turn right onto Kent Avenue West.', 'Bear right onto West Sherman Heights Road.', 'Bear right onto West Belfair Valley Road.', 'Turn left onto Sam Christopherson Avenue West.', 'Turn right onto State Highway 3 West/WA 3. Continue on WA 3.', 'Enter the roundabout and take the 2nd exit onto State Highway 3 Southwest/WA 3.', 'Turn left onto Bremerton National Airport.', 'Turn right after 54 meters or 8-10 seconds.', 'Turn left after 296 meters or 43-52 seconds.', 'Continue for 56 meters or 36-44 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on WA 104, live at any point after Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Central Library (Milwaukee, WI) to Freethinkers` Hall (Sauk City, WI)
+
+  Route steps:
+['Drive east on West Wells Street.', 'Turn right onto North Broadway/US 18/WI 32.', 'Turn left onto East Michigan Street/US 18.', 'Turn left onto North Milwaukee Street/US 18/WI 32. Continue on North Milwaukee Street/US 18.', 'Turn left onto East State Street/US 18/WI 32. Continue on US 18.', 'Turn right onto North 6th Street/US 18/WI 145. Continue on North 6th Street/WI 145.', 'Turn left onto West Fond du Lac Avenue/WI 145.', 'Bear left to stay on West Fond du Lac Avenue/WI 145.', 'Turn left to take the I 43 South ramp toward I 94/I 794/Fond du Lac Avenue.', 'Take exit 72D on the right onto I 94 West toward Madison.', 'Keep left to stay on I 94 West.', 'Keep right to take exit 240 to stay on I 94 West toward Wisconsin Dells/Eau Claire.', 'Take exit 119 on the right.', 'Enter the roundabout and take the 2nd exit onto State Highway 60/WI 60.', 'Enter the roundabout and take the 2nd exit onto State Highway 60/WI 60.', 'Turn left onto Water Street/WI 60. Continue on WI 60.', 'Turn left onto Water Street/WI 60/WI 78/US 12 Business.', 'Turn right onto Polk Street.', 'Continue for 152 meters or 19-23 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 18, the driver getting on Polk Street, live at any point after Step 18?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: HEMET VALLEY HEALTH CARE CENTER (HEMET, CA) to Barstow Daggett Airport (DAGGETT, CA)
+
+  Route steps:
+['Drive south.', 'Turn left onto North Weston Place.', 'Turn right onto East Oakland Avenue.', 'Turn left onto North San Jacinto Street/CA 79. Continue on CA 79.', 'Bear right onto North State Street/CA 79.', 'Turn left onto Ramona Expressway/CA 79.', 'Turn right onto CA 79/Sanderson Avenue. Continue on CA 79.', 'Turn left to take the I 10 West ramp toward Los Angeles.', 'Keep right to stay on I 10.', 'Take exit 77C on the right onto CA 210 West toward CA 330/Pasadena/Running Springs.', 'Keep left to stay on CA 210/Foothill Freeway/Congressman George Edward Brown, Junior Memorial Highway.', 'Keep left to stay on CA 210/Foothill Freeway/Congressman George Edward Brown, Junior Memorial Highway.', 'Take exit 74 on the right onto I 215 North toward Barstow.', 'Keep left to take I 15 North.', 'Keep right to take I 40/Needles Freeway.', 'Take exit 12 on the right toward Barstow-Dagget Airport.', 'Turn left onto Hidden Springs Road.', 'Turn right after 1687 meters or 113-138 seconds.', 'Turn right after 1124 meters or 105-129 seconds.', 'Continue for 109 meters or 15-18 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 10, the driver getting on CA 210, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: MERIT HEALTH RANKIN (BRANDON, MS) to Naval Air Station Meridian / McCain Field (LAUDERDALE, MS)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 56 meters or 13-16 seconds.', 'Turn left after 16 meters or 5-6 seconds.', 'Turn right onto Crossgates Boulevard.', 'Make a left U-turn to stay on Crossgates Boulevard.', 'Take the I 20 East ramp.', 'Take the I 20 East ramp.', 'Take exit 154B on the right onto MS 39 North toward DeKalb.', 'Turn right onto Dale Drive/MS 39/ MS 884. Continue on Dale Drive.', 'Bear left onto MS 39 N/MS 39. Continue on MS 39.', 'Turn right onto John C. Stennis Drive/MS 854.', 'Turn right onto Fuller Road.', 'Continue for 5454 meters or 309-378 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 4, the driver getting on Crossgates Boulevard, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Chamberlin House (Concord, NH) to Manchester-Boston Regional Airport (MANCHESTER, NH)
+
+  Route steps:
+['Drive southeast.', 'Turn right onto Pleasant Street/US 202/NH 9.', 'Turn left onto South Street/NH 13.', 'Turn left onto Broadway.', 'Turn right onto South Main Street/NH 3A.', 'Take the I 93 South ramp on the right.', 'Keep left to stay on I 93 South/Everett Turnpike.', 'Keep right to stay on I 93 South toward Salem/Boston.', 'Take exit 9S on the right onto US 3 South/NH 28 South toward Manchester.', 'Turn left onto Beech Street/NH 28.', 'Bear left onto Brown Avenue/NH 3A.', 'Enter Airport Road and take the 2nd exit onto Galaxy Way.', 'Turn left after 396 meters or 126-154 seconds.', 'Turn right after 92 meters or 12-15 seconds.', 'Continue for 1241 meters or 164-201 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 6, the driver getting on I 93, live at any point after Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Range Regional Airport (HIBBING, MN) to ESSENTIA HEALTH NORTHERN PINES (AURORA, MN)
+
+  Route steps:
+['Drive east.', 'Turn left onto South Hughes Road.', 'Turn right onto State Highway 37/MN 37.', 'Enter the roundabout and take the 2nd exit onto State Highway 37/MN 37.', 'Turn left to take the US 53 ramp.', 'Take the MN 37 East exit on the right toward Gilbert/Biwabik.', 'Turn right onto State Highway 37/MN 37. Continue on MN 37.', 'Turn right onto State Highway 135/MN 135.', 'Turn right onto Main Street North/CR 100/FH 11. Continue on CR 100/FH 11.', 'Turn left onto Highway 110/CH 110/FH 11.', 'Turn left after 658 meters or 37-46 seconds.', 'Continue for 107 meters or 16-19 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 3, the driver getting on State Highway 37, live at any point after Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: McClurg Building (Chicago, IL) to Schweikher, Paul, House and Studio (Schaumburg, IL)
+
+  Route steps:
+['Drive north.', 'Turn left onto East Adams Street/Hist US 66. Continue on Hist US 66.', 'Turn left onto South Clark Street.', 'Turn right onto West Ida B. Wells Drive.', 'Take the I 90 West/I 94 West exit on the right toward Wisconsin.', ""Keep left to take exit 43B to stay on I 90 West toward O'Hare International Airport/Rockford."", 'Keep left to take I 90 West/Jane Addams Memorial Tollway.', 'Take exit 67 on the right toward Meacham Road.', 'Turn right onto North Meacham Road.', 'Continue for 1129 meters or 67-82 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 9, the driver getting on North Meacham Road, live at any point after Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: NORTHERN DUTCHESS HOSPITAL (RHINEBECK, NY) to John F Kennedy International Airport (NEW YORK, NY)
+
+  Route steps:
+['Drive north.', 'Turn left after 53 meters or 11-14 seconds.', 'Turn left after 96 meters or 34-41 seconds.', 'Turn right after 130 meters or 30-37 seconds.', 'Turn left onto Montgomery Street.', 'Turn right onto US 9/Montgomery Street.', 'Bear right onto US 9 South/North Road. Continue on US 9 South.', 'Take the exit on the right toward Academy Street/South Avenue.', 'Keep left toward South Avenue/Academy Street.', 'Continue.', 'Stay straight to take the US 9 South ramp.', 'Enter Annsville Circle and take the 2nd exit toward Peekskill.', 'Take the US 9 South ramp on the right.', 'Take the US 9 exit on the right toward Tarrytown.', 'Bear right onto North Highland Avenue/US 9. Continue on US 9.', 'Turn right onto Broadway/US 9.', 'Turn right onto Warburton Avenue.', 'Turn left onto Hudson Street.', 'Turn right onto South Broadway/US 9/NY 9A. Continue on US 9.', 'Bear left after 5273 meters or 364-445 seconds.', 'Turn left onto Van Cortlandt Park South.', 'Turn right onto Mosholu Parkway/MP.', 'Turn left onto Southern Boulevard.', 'Turn right onto White Plains Road.', 'Turn right onto Boston Road/US 1.', 'Turn left onto White Plains Road.', 'Turn left onto Unionport Road.', 'Bear right to stay on Unionport Road.', 'Enter Metropolitan Oval and take the 2nd exit onto Unionport Road.', 'Turn left onto Westchester Avenue.', 'Turn right onto Castle Hill Avenue.', 'Turn left onto Cross Bronx Expressway Service Road.', 'Bear right onto Havemeyer Avenue.', 'Take the I 678/I 95 North exit toward Bruckner Boulevard East/Whitestone Bridge/Cross Bronx Expressway/Throgs Neck Bridge.', 'Keep right to stay on Bruckner Boulevard.', 'Keep right to take Hutchinson River Parkway Service Road.', 'Bear left toward I 678 South/Whitestone Bridge/Queens.', 'Take exit 17 on the right toward 14th Avenue.', 'Bear left onto Whitestone Expressway Service Road.', 'Turn left onto 14th Avenue.', 'Turn right onto Parsons Boulevard.', 'Bear right onto Willets Point Boulevard.', 'Turn right onto Roosevelt Avenue.', 'Turn left onto Main Street.', 'Take the I 678 South ramp toward Van Wyck Expressway.', 'Keep left to take I 678 South toward Van Wyck Expressway.', 'Take exit 2 on the right toward Rockaway Boulevard.', 'Bear left onto Van Wyck Expressway.', 'Take the I 678 South ramp toward Van Wyck Expressway/Kennedy Airport.', 'Keep left to take I 678 South toward Van Wyck Expressway/Kennedy Airport.', 'Keep right to take Van Wyck Expressway.', 'Keep left toward Terminal 8/Terminal 5/Terminal 7.', 'Bear right toward Termial 4 Arrivals.', 'Bear right after 144 meters or 4 seconds.', 'Turn left after 296 meters or 33-40 seconds.', 'Continue for 28 meters or 6-7 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 13, the driver getting on US 9, live at any point after Step 17?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: HIGGINS GENERAL HOSPITAL (BREMEN, GA) to Cobb County International Airport-McCollum Field (ATLANTA, GA)
+
+  Route steps:
+['Drive northeast.', 'Turn left onto Allen Memorial Drive.', 'Turn left onto Alabama Avenue/US 27 Business/1 Business.', 'Turn right onto Pacific Avenue/US 78/GA 8. Continue on US 78.', 'Turn right to take the ramp toward Marietta/GA 5.', 'Turn left onto South Cobb Drive/GA 5/GA 280.', 'Turn left onto Pearl Street/GA 5.', 'Turn left onto West Atlanta Street Southeast/GA 5.', 'Turn right onto East Dixie Avenue Southeast/GA 5.', 'Turn left onto Atlanta Street Southeast/GA 5.', 'Turn left onto GA 5/GA 120/South Marietta Parkway.', 'Turn right onto GA 5/GA 120/South Marietta Parkway. Continue on GA 5.', 'Turn left onto Cobb Parkway North/US 41/GA 3/GA 5. Continue on US 41/GA 3.', 'Bear right onto Roberts Boulevard Northwest.', 'Turn left onto Barrett Park Drive.', 'Continue for 1063 meters or 105-129 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 11, the driver getting on GA 5, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Foster, Phineas, House (Boxford, MA) to CLINTON HOSPITAL (CLINTON, MA)
+
+  Route steps:
+['Drive northwest on Old Topsfield Road.', 'Turn left onto Topsfield Road.', 'Bear left onto Topsfield Road Extension.', 'Bear left onto Main Street.', 'Bear left onto Lawrence Road.', 'Bear left onto Salem Street.', 'Bear right onto Johnson Street.', 'Enter the roundabout and take the 2nd exit onto Andover Street.', 'Keep left to take MA 133.', 'Turn right to take the I 495 South ramp toward Lowell.', 'Take exit 79 on the right onto MA 2A/MA 110 toward Littleton/Ayer.', 'Turn left onto King Street/MA 2A/MA 110.', 'Turn left to stay on King Street.', 'Turn right onto Harvard Road.', 'Turn left onto Fairbanks Street.', 'Turn right onto Old Littleton Road.', 'Turn right onto Center Bridge Road.', 'Turn left onto Bolton Road.', 'Keep left to stay on Bolton Road.', 'Turn left onto South Main Street/MA 70.', 'Bear right onto Sterling Road.', 'Turn left onto Parker Road.', 'Turn left after 1819 meters or 119-145 seconds.', 'Bear left after 123 meters or 18-22 seconds.', 'Turn left after 27 meters or 4 seconds.', 'Turn right after 34 meters or 5-6 seconds.', 'Continue for 126 meters or 22-26 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 12, the driver getting on King Street, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Cleveland Hopkins International Airport (CLEVELAND, OH) to Cleveland Arcade (Cleveland, OH)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto West Hangar Road.', 'Turn right onto Brookpark Road/SR 17.', 'Turn left onto Rocky River Drive/SR 237. Continue on SR 237.', 'Turn right onto West Clifton Boulevard/SR 237. Continue on West Clifton Boulevard.', 'Turn right onto Clifton Boulevard/US 6/US 20/SR 2. Continue on US 6.', 'Take the US 6 East/US 20 East exit toward West 25th Street.', 'Turn right onto West 25th Street/US 6/US 20.', 'Turn left onto Detroit Avenue/US 6/US 20/US 42/SR 3. Continue on US 6/US 20.', 'Turn left onto East Roadway/US 6/US 20.', 'Turn right onto Superior Avenue/US 6/US 322. Continue on US 6/US 322.', 'Turn right onto East 6th Street.', 'Turn right after 87 meters or 14-17 seconds.', 'Continue for 57 meters or 14-17 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on US 6, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: ST. VINCENT'S EAST (BIRMINGHAM, AL) to Hundley House (Huntsville, AL)
+
+  Route steps:
+['Drive south.', 'Turn left after 13 meters or 2 seconds.', 'Turn left after 109 meters or 15-18 seconds.', 'Turn right onto Medical Plaza Drive.', 'Turn left onto Medical Park Drive East.', 'Turn left onto Edwards Lake Road.', 'Turn right onto Pine Tree Drive.', 'Turn left onto Medina Drive.', 'Turn left to stay on Medina Drive.', 'Turn right to stay on Medina Drive.', 'Turn left onto Brewster Road.', 'Turn right onto Old Springville Road.', 'Turn left onto Polly Reed Road Northeast.', 'Turn right to stay on Polly Reed Road Northeast.', 'Turn right onto 1st Street Northeast.', 'Turn left onto 19th Court Northeast.', 'Turn right onto Center Point Parkway/AL 75. Continue on AL 75.', 'Turn left onto AL 151.', 'Turn right onto New Bradford Road/AL 79. Continue on AL 79.', 'Enter the roundabout and take the 2nd exit onto AL 79.', 'Take the exit on the right after 80564 meters or 2963-3621 seconds.', 'Keep right to stay on Memorial Parkway Southwest.', 'Keep left to stay on Memorial Parkway Southwest.', 'Keep right to take Memorial Parkway Southwest.', 'Keep right to take Whitesburg Drive South.', 'Keep left to stay on Whitesburg Drive South.', 'Continue for 2206 meters or 165-201 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 19, the driver getting on AL 79, live at any point after Step 21?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Vaught House (Huntsville, AL) to Anniston Regional Airport (ANNISTON, AL)
+
+  Route steps:
+['Drive west on Ward Avenue Northeast.', 'Turn left onto Andrew Jackson Way Northeast.', 'Bear left onto Andrew Jackson Way.', 'Turn left onto US 431/Governors Drive Southeast. Continue on US 431.', 'Turn right onto US 278/US 431/5th Avenue Northwest. Continue on US 431.', 'Turn right onto Bynum Leatherwood Road/CR 109.', 'Enter the roundabout and take the 2nd exit onto Bynum Leatherwood Road/CR 109.', 'Turn right onto Albert P Brewer Highway/AL 202. Continue on AL 202.', 'Turn left onto US 78.', 'Turn right onto Caffey Drive.', 'Turn left onto Airport Road.', 'Continue for 896 meters or 53-64 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 11, the driver getting on Airport Road, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: MIDDLESEX HOSPITAL (MIDDLETOWN, CT) to First Church of Christ (Farmington, CT)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 23 meters or 8-9 seconds.', 'Turn right onto Crescent Street.', 'Turn right onto Main Street Extension.', 'Turn left onto CT 17 North.', 'Keep left to take CT 9 North toward Portland/New Britain.', 'Keep left to stay on CT 9 North.', 'Keep right to stay on CT 9 North.', 'Keep left to take exit 40A onto I 84 West toward CT 4/Waterbury.', 'Take exit 39 on the right onto CT 4 toward Farmington.', 'Keep left to take CT 4 West.', 'Continue for 8079 meters or 383-468 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 6, the driver getting on CT 9, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: ST ELIZABETH YOUNGSTOWN HOSPITAL (YOUNGSTOWN, OH) to EAST OHIO REGIONAL HOSPITAL (MARTINS FERRY, OH)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Park Avenue.', 'Turn right onto Belmont Avenue.', 'Bear left onto West Front Street.', 'Turn right onto Market Street.', 'Turn left to take the US 30 East ramp.', 'Take the exit on the right after 9694 meters or 312-382 seconds.', 'Turn left onto Jackson Street.', 'Turn left onto West 5th Street.', 'Turn left onto Golding Street.', 'Turn right onto Washington Street/WV 2.', 'Turn left onto 6th Avenue-Newell/CR 1.', 'Turn left onto Veterans Parkway/WV 8.', 'Turn right onto Rolling Acres Road/CR 20.', 'Turn right onto Sedgewick Street/CR 7. Continue on CR 7.', 'Turn left onto Ridge Avenue/WV 2. Continue on WV 2.', 'Keep left to take US 22 West.', 'Take exit 244 on the right.', 'Bear right toward Third Street.', 'Bear right onto SR 7 South/Dean Martin Boulevard. Continue on SR 7 South.', 'Turn right onto North Zane Highway.', 'Bear left onto North 5th Street.', 'Turn left onto Center Street.', 'Turn right onto North 5th Street.', 'Turn left onto Ellet Street.', 'Turn right onto North 4th Street.', 'Continue for 123 meters or 16-20 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 26, the driver getting on North 4th Street, live at any point after Step 26?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Massena International Airport Richards Field (MASSENA, NY) to Plattsburgh International Airport (PLATTSBURGH, NY)
+
+  Route steps:
+['Drive southeast on Administration Building Road.', 'Turn left onto North Raquette River Road.', 'Turn left to stay on North Raquette River Road.', 'Turn right onto NY 37/NY-37.', 'Turn left onto County Highway 22/NY 122. Continue on County Highway 22.', 'Turn left onto US 11/State Route 11. Continue on US 11.', 'Turn right onto Military Turnpike.', 'Turn left onto NY 374.', 'Bear right onto South Peru Street/NY 22. Continue on South Peru Street.', 'Turn left onto Arizona Avenue.', 'Turn right onto Arkansas Street.', 'Continue for 308 meters or 57-69 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 2, the driver getting on North Raquette River Road, live at any point after Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: St. Augustine Hall (Kansas City, KS) to Atchison Post Office (Atchison, KS)
+
+  Route steps:
+['Drive west on Parallel Avenue.', 'Turn right after 13 meters or 1-2 seconds.', 'Turn left onto Quindaro Boulevard.', 'Turn right toward US 69 North/North 7th Street Trafficway.', 'Keep left to take I 635 North/Harry Darby Memorial Highway.', 'Take exit 11B onto MO 9 North toward Parkville.', 'Turn left onto Main Street.', 'Turn right onto West Mill Street/MO FF.', 'Enter the roundabout and take the 2nd exit onto Northwest Union Chapel Road.', 'Enter the roundabout and take the 2nd exit onto Tom Watson Parkway/MO 45 North.', 'Enter the roundabout and take the 2nd exit onto Tom Watson Parkway/MO 45 North.', 'Turn left toward Atchison.', 'Turn right onto South 4th Street.', 'Turn left onto Main Street.', 'Bear left onto 286th Road.', 'Turn right onto South Broadway Street.', 'Turn left onto South 4th Street.', 'Turn right onto Kansas Street.', 'Continue for 230 meters or 26-32 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 18, the driver getting on Kansas Street, live at any point after Step 18?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Greeley House (Chappaqua, NY) to Firehouse, Engine Company 33 (New York, NY)
+
+  Route steps:
+['Drive southwest on King Street/NY 120.', 'Turn left onto South Greeley Avenue/NY 120. Continue on South Greeley Avenue.', 'Turn right onto Washington Avenue.', 'Turn right onto Manville Road/NY 117. Continue on NY 117.', 'Turn left onto Bedford Road/NY 448.', 'Keep right to take Sleepy Hollow Road.', 'Bear left to stay on Sleepy Hollow Road.', 'Bear right onto Webber Avenue.', 'Turn right onto Bedford Road/NY 448.', 'Bear left onto North Broadway/US 9. Continue on US 9.', 'Turn right onto Broadway/US 9. Continue on US 9.', 'Turn left onto Warburton Avenue/US 9/NY 9A. Continue on US 9/NY 9A.', 'Turn left onto Prospect Street/US 9/NY 9A.', 'Turn right onto South Broadway/US 9/NY 9A. Continue on US 9.', 'Bear right onto Broadway/US 9.', 'Turn left onto West 215th Street.', 'Turn right onto 10th Avenue.', 'Bear right onto Nagle Avenue.', 'Turn left onto West 204th Street.', 'Turn right onto 10th Avenue.', 'Take exit 20 on the right toward Park Avenue/East 132nd Street.', 'Turn left onto East 116th Street.', 'Turn right onto Lexington Avenue.', 'Turn left onto East 24th Street.', 'Turn right onto 3rd Avenue.', 'Turn right onto Great Jones Street.', 'Continue for 117 meters or 15-19 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 10, the driver getting on US 9, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: SYOSSET HOSPITAL (SYOSSET, NY) to Shadowcliff (Upper Nyack, NY)
+
+  Route steps:
+['Drive west.', 'Turn left after 67 meters or 15-18 seconds.', 'Turn right onto Jericho Turnpike/NY 25. Continue on NY 25.', 'Keep right to take Store Hill Road.', 'Stay straight to take the I 495 West ramp toward New York.', 'Take exit 31N-S on the right toward Whitestone Bridge.', 'Keep right to take exit 31N onto CI/Cross Island Parkway/100th Infantry Division Parkway toward Whitestone Bridge.', 'Keep right to take exit 33 onto I 295 North toward Throgs Neck Bridge/Bronx/New England.', 'Keep left to take Cross Bronx Expressway.', 'Keep left toward Upper Level.', 'Take exit 74 on the right toward Palisades Parkway.', 'Take exit 4 on the right onto US 9W.', 'Turn left onto Palisades Boulevard/US 9W. Continue on US 9W.', 'Turn left to stay on US 9W.', 'Turn right onto Hillside Avenue/US 9W. Continue on US 9W.', 'Turn right onto Christian Herald Road.', 'Bear right onto Old Mountain Road North.', 'Turn left onto Old Mountain Road.', 'Turn left onto North Broadway.', 'Turn right after 312 meters or 30-36 seconds.', 'Continue for 63 meters or 25-31 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 17, the driver getting on Old Mountain Road, live at any point after Step 19?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Range Regional Airport (HIBBING, MN) to ESSENTIA HEALTH NORTHERN PINES (AURORA, MN)
+
+  Route steps:
+['Drive east.', 'Turn left onto South Hughes Road.', 'Turn right onto State Highway 37/MN 37.', 'Enter the roundabout and take the 2nd exit onto State Highway 37/MN 37.', 'Turn right to take the US 53 ramp.', 'Turn left onto Miller Trunk Road/CH 132.', 'Turn left after 1348 meters or 75-92 seconds.', 'Turn right to take the US 53 ramp.', 'Take the MN 37 East exit on the right toward Gilbert/Biwabik.', 'Turn right onto State Highway 37/MN 37. Continue on MN 37.', 'Turn right onto State Highway 135/MN 135.', 'Turn right onto Main Street North/CR 100/FH 11. Continue on CR 100/FH 11.', 'Turn left onto Highway 110/CH 110/FH 11.', 'Turn left after 658 meters or 37-46 seconds.', 'Continue for 107 meters or 16-19 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 3, the driver getting on State Highway 37, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Nell, William C., House (Boston, MA) to HIGH POINT TREATMENT CENTER (MIDDLEBOROUGH, MA)
+
+  Route steps:
+['Drive east on Smith Court.', 'Turn left onto Joy Street.', 'Turn right onto Cambridge Street.', 'Bear right onto Tremont Street.', 'Turn right to stay on Tremont Street.', 'Turn left to stay on Tremont Street.', 'Turn right onto Melnea Cass Boulevard/MA 28.', 'Make a sharp left to stay on Melnea Cass Boulevard/MA 28.', 'Turn right onto Tremont Street/MA 28. Continue on MA 28.', 'Keep right to stay on MA 28.', 'Bear left onto Blue Hills Parkway/MA 28.', 'Turn left onto Brook Road/MA 28.', 'Bear right onto Reedsdale Road/MA 28.', 'Turn right onto Randolph Avenue/MA 28. Continue on MA 28.', 'Turn right onto South Main Street/MA 28. Continue on MA 28.', 'Turn right onto Plain Street/MA 28.', 'Turn left onto Main Street/MA 28. Continue on MA 28.', 'Turn left onto East Center Street/MA 28/MA 106.', 'Turn right onto South Main Street/MA 28. Continue on MA 28.', 'Turn right onto Central Square/MA 18/MA 28/MA 104 West.', 'Turn left onto Bedford Street/MA 18/MA 28.', 'Turn left onto Old Center Street.', 'Turn left onto Center Street.', 'Turn left after 1723 meters or 94-114 seconds.', 'Turn left after 79 meters or 12-14 seconds.', 'Continue for 254 meters or 33-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 4, the driver getting on Tremont Street, live at any point after Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Coateswood (Newberry, SC) to James, William Apollos, House (Bishopville, SC)
+
+  Route steps:
+['Drive southwest on Boundary Street.', 'Turn right onto Calhoun Street.', 'Turn right onto Johnstone Street.', 'Turn left onto Amelia Street.', 'Turn right onto Main Street/SC 34 Business.', 'Bear right onto US 176.', 'Turn left onto Parr Road/SC 213.', 'Bear right onto Jenkinsville Road.', 'Turn left to stay on Jenkinsville Road.', 'Make a sharp right onto State Highway 215S/SC 215. Continue on SC 215.', 'Turn left onto Cedar Creek Road/S-40-1682.', 'Turn right onto Winnsboro Road/US 321.', 'Turn left onto Blythewood Road.', 'Turn left onto Main Street/US 21.', 'Turn right onto Langford Road.', 'Turn right onto Hard Scrabble Road.', 'Turn left onto Kelly Mill Road.', 'Turn left onto Robin Hood Road.', 'Turn left onto Wildwood Lane/S-28-349.', 'Turn right onto Ridgeway Road/SC 34.', 'Turn left onto Main Street/US 1 North/US 601/SC 34. Continue on US 601/SC 34.', 'Bear right onto Chestnut Ferry Road/US 521 Truck.', 'Turn left onto York Street.', 'Turn right onto East York Street.', 'Bear right onto Bishopville Highway/SC 34. Continue on SC 34.', 'Turn left onto North Dennis Avenue.', 'Continue for 156 meters or 16-20 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 26, the driver getting on North Dennis Avenue, live at any point after Step 26?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Burg Wagon Works Building (Farmington, IA) to Scholte, Dominie Henry P., House (Pella, IA)
+
+  Route steps:
+['Drive north on South 2nd Street.', 'Turn left onto Olive Street/IA 2. Continue on IA 2.', 'Bear left onto State Highway 2/IA 2. Continue on IA 2.', 'Turn right onto US 63/Smith Street. Continue on US 63.', 'Take the US 63 exit on the right.', 'Turn right to take the IA 163 ramp.', 'Take exit 40 on the right onto CR G28 toward Pella/Lake Red Rock.', 'Turn left onto Washington Street/IA 163 Bus.', 'Continue for 2570 meters or 145-178 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 4, the driver getting on US 63, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: NORTHEAST HOSPITAL CORPORATION - BEVERLY CAMPUS (BEVERLY, MA) to New Bedford Regional Airport (NEW BEDFORD, MA)
+
+  Route steps:
+['Drive west.', 'Turn left onto Herrick Street.', 'Turn right onto MA 1A/Cabot Street.', 'Bear right onto MA 1A/Dodge Street.', 'Take the MA 128 South ramp on the right toward Peabody/Boston.', 'Keep left to take exit 26 onto I 93 North/US 1 toward Boston.', 'Take exit 2A on the right onto MA 138 South toward Stoughton.', 'Keep left to stay on MA 138.', 'Turn left onto Washington Street/MA 138.', 'Keep right to stay on Washington Street.', 'Enter Taunton Green and take the 2nd exit onto US 44/MA 140/Taunton Green.', 'Bear right onto Summer Street/MA 140. Continue on MA 140.', 'Take exit 4 on the right toward Mount Pleasant Street/Airport Road.', 'Turn left onto Mount Pleasant Street.', 'Turn right onto Downey Street.', 'Turn right after 1330 meters or 95-116 seconds.', 'Continue for 59 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 3, the driver getting on MA 1A, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: HARRISON MEMORIAL HOSPITAL (CYNTHIANA, KY) to BOURBON COMMUNITY HOSPITAL (PARIS, KY)
+
+  Route steps:
+['Drive north.', 'Turn left after 58 meters or 8-9 seconds.', 'Turn right after 19 meters or 4-5 seconds.', 'Turn left onto Millersburg Pike/KY 32/KY 36. Continue on KY 32/KY 36.', 'Turn right onto North Main Street/KY 36/US 27 Business. Continue on US 27 Business.', 'Turn left onto US 27/US 62.', 'Enter the roundabout and take the 2nd exit toward US 27 South/Paris.', 'Bear right onto US 27/US 68/Paris By-Pass Road.', 'Make a left U-turn to stay on US 68.', 'Turn right onto Linville Drive.', 'Turn left after 181 meters or 20-25 seconds.', 'Continue for 32 meters or 6-8 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on US 27, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Manchester-Boston Regional Airport (MANCHESTER, NH) to St. John's Church (Portsmouth, NH)
+
+  Route steps:
+['Drive south.', 'Turn left after 1311 meters or 170-208 seconds.', 'Turn right onto Airport Road.', 'Keep right to stay on Airport Road.', 'Turn right to stay on Airport Road.', 'Turn right to take the I 293 South ramp.', 'Keep left to stay on NH 101 toward Concord/Portsmouth.', 'Keep right to take exit 7 to stay on NH 101 toward Portsmouth.', 'Take exit 12 on the right onto I 95 toward Portsmouth.', 'Keep left to take I 95 North toward Portsmouth.', 'Keep right to stay on I 95 toward Portsmouth, New Hampshire/ Maine Points.', 'Take exit 7 on the right.', 'Turn right onto Market Street.', 'Turn left onto Bow Street.', 'Turn right onto Chapel Street.', 'Continue for 112 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 7, the driver getting on NH 101, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: EVANSTON HOSPITAL (EVANSTON, IL) to Clarke, Henry B., House (Chicago, IL)
+
+  Route steps:
+['Drive east.', 'Turn right onto Ridge Avenue.', 'Turn left onto Central Street.', 'Turn right onto Sheridan Road.', 'Turn left to stay on Sheridan Road.', 'Bear right onto Forest Place.', 'Bear left onto Forest Avenue.', 'Turn left onto Hamilton Street.', 'Turn right onto Sheridan Road.', 'Turn left to stay on Sheridan Road.', 'Turn left to stay on Sheridan Road.', 'Bear right onto North Sheridan Road.', 'Bear left onto West Sheridan Road.', 'Turn left onto North Jean Baptiste Point DuSable Lake Shore Drive.', 'Take the exit on the right toward Grand Avenue/Illinois Street/Navy Pier/Wacker Drive.', 'Turn right onto East Grand Avenue.', 'Turn left onto North Lower Michigan Avenue.', 'Turn left onto East Lower Wacker Drive.', 'Take the exit on the right toward Lake Shore Drive South/US 41 South.', 'Turn right onto East Roosevelt Road.', 'Turn left onto South Indiana Avenue.', 'Continue for 1124 meters or 113-138 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 21, the driver getting on South Indiana Avenue, live at any point after Step 21?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: CAMBRIDGE HEALTH ALLIANCE - SOMERVILLE CAMPUS (SOMERVILLE, MA) to HEALTH ALLIANCE HOSPITAL - LEOMINSTER CAMPUS (LEOMINSTER, MA)
+
+  Route steps:
+['Drive northeast on Tower Street.', 'Turn left onto Highland Avenue.', 'Bear left to stay on Highland Avenue.', 'Turn right onto Massachusetts Avenue/MA 2A. Continue on Massachusetts Avenue.', 'Make a sharp left to stay on Massachusetts Avenue.', 'Turn right onto US 3/MA 16/Alewife Brook Parkway.', 'Enter the roundabout and take the 2nd exit onto US 3/MA 2/MA 16/Concord Avenue.', 'Enter Sozio Rotary and take the 2nd exit onto US 3/MA 2/MA 16/Concord Avenue.', 'Enter the roundabout and take the 2nd exit onto US 3/MA 2/MA 16/Alewife Brook Parkway.', 'Keep left to stay on MA 2.', 'Keep left to stay on MA 2.', 'Enter Concord Rotary and take the 2nd exit onto MA 2/MA 111 North/Union Turnpike.', 'Keep left to take MA 2/Concord Turnpike.', 'Take exit 99A on the right onto MA 12 South toward Leominster.', 'Turn right onto Hospital Road.', 'Turn left after 243 meters or 44-54 seconds.', 'Continue for 52 meters or 14-17 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 10, the driver getting on MA 2, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: YORK HOSPITAL (YORK, PA) to Reading Regional Airport (Carl A Spaatz Field) (READING, PA)
+
+  Route steps:
+['Drive southeast.', 'Bear left onto Irving Road.', 'Turn left onto Rathton Road.', 'Turn left onto South George Street/I 83 BUS. Continue on I 83 BUS.', 'Keep left to take I 83 North toward Harrisburg.', 'Take exit 19 on the right onto PA 462/Market Street.', 'Keep left to take PA 462/Market Street.', 'Continue on North Hills Road.', 'Turn right onto US 30.', 'Take the US 222 North exit on the right toward Reading.', 'Take the US 222 North exit on the right toward Allentown.', 'Take the PA 183 exit on the right toward Bernville Road/Strausstown.', 'Keep right to take PA 183 South toward Reading Airport/Reading.', 'Turn left onto Van Reed Road.', 'Turn right onto Arnold Road.', 'Turn right onto General Spaatz Drive.', 'Turn left onto Air Museum Drive.', 'Continue for 116 meters or 44-54 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 17, the driver getting on Air Museum Drive, live at any point after Step 17?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: UC SAN DIEGO HEALTH HILLCREST - HILLCREST MEDICAL CENTER (SAN DIEGO, CA) to US Post Office-Long Beach Main (Long Beach, CA)
+
+  Route steps:
+['Drive east on Dickinson Street.', 'Turn right onto Front Street.', 'Turn right onto West Washington Street.', 'Bear right onto Washington Place.', 'Turn right onto Randolph Street.', 'Turn left onto Fort Stockton Drive.', 'Turn left onto Sunset Boulevard.', 'Turn right onto Juan Street.', 'Turn right after 1008 meters or 85-103 seconds.', 'Turn left after 30 meters or 10-12 seconds.', 'Turn left after 41 meters or 7-9 seconds.', 'Turn right after 7 meters or 3 seconds.', 'Turn right onto Taylor Street.', 'Turn left onto Morena Boulevard.', 'Keep left to stay on Morena Boulevard.', 'Turn left onto Tecolote Road.', 'Turn right to take the I 5 North ramp.', 'Take exit 26A on the right toward La Jolla Parkway West.', 'Take the exit on the right after 1712 meters or 64-79 seconds.', 'Bear right onto La Jolla Scenic Drive North.', 'Turn left onto La Jolla Village Drive.', 'Turn left onto North Torrey Pines Road/S21/US 101 Historic. Continue on S21.', 'Enter North Coast Highway 101 and take the 2nd exit onto North Coast Highway 101/S21.', 'Enter Carlsbad Boulevard and take the 2nd exit onto Carlsbad Boulevard/S21.', 'Turn right onto CA 76.', 'Turn right to take the I 5 North ramp.', 'Keep right to stay on I 5 North/San Diego Freeway.', 'Take exit 74 on the right toward El Camino Real.', 'Turn left onto South El Camino Real.', 'Turn right to take the CA 1 North ramp toward Doheny State Beach/Dana Point Harbor.', 'Turn left onto North Studebaker Road.', 'Turn right onto East Marina Drive.', 'Turn left onto East 2nd Street.', 'Turn left onto Alamitos Avenue.', 'Turn right onto East 1st Street.', 'Turn right onto Long Beach Boulevard/US 6. Continue on Long Beach Boulevard.', 'Continue for 253 meters or 29-35 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 36, the driver getting on Long Beach Boulevard, live at any point after Step 36?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Parkman, Francis, House (Boston, MA) to Lawrence Municipal Airport (LAWRENCE, MA)
+
+  Route steps:
+['Drive west on Chestnut Street.', 'Turn right onto David G. Mugar Way/MA 28.', ""Keep left to stay on MA 28 toward O'Brien Highway."", 'Enter Roosevelt Circle and take the 2nd exit onto Fellsway West/MA 28.', 'Keep right to take South Union Street.', 'Turn right onto Winthrop Avenue/MA 114.', 'Turn left onto Peters Street/MA 133 East. Continue on Peters Street.', 'Bear left onto Chickering Road/MA 125/MA 133. Continue on MA 125.', 'Turn left onto Holt Road.', 'Turn left onto Clark Street.', 'Turn left after 435 meters or 73-90 seconds.', 'Continue for 61 meters or 20-24 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 2, the driver getting on MA 28, live at any point after Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: WHITTIER PAVILION (HAVERHILL, MA) to New Bedford Regional Airport (NEW BEDFORD, MA)
+
+  Route steps:
+['Drive north.', 'Turn left after 44 meters or 7-9 seconds.', 'Turn left onto Webster Street.', 'Turn right onto Summer Street.', 'Turn left onto Main Street/MA 97/MA 125.', 'Turn right onto Route 125 Connector.', 'Take the I 495 South ramp on the right toward Lawrence.', 'Take exit 97A on the right onto I 93 South toward Boston.', 'Keep left to take I 93 South/Interstate 93 HOV lane.', 'Keep left to stay on I 93 South/Interstate 93 HOV lane.', 'Keep right to take I 93 South/US 1 toward I 95/Providence Rhode Island.', 'Take exit 4 onto MA 24 South toward Fall River.', 'Take exit 17A on the right onto MA 140 South toward New Bedford.', 'Take exit 4 on the right toward Mount Pleasant Street/Airport Road.', 'Turn left onto Mount Pleasant Street.', 'Turn right onto Downey Street.', 'Turn right after 1330 meters or 95-116 seconds.', 'Continue for 59 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 8, the driver getting on I 93, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: House at 36 Forest Street (Hartford, CT) to Elton Hotel (Waterbury, CT)
+
+  Route steps:
+['Drive west.', 'Turn left onto Forest Street.', 'Bear right after 295 meters or 31-37 seconds.', 'Bear right onto Capitol Avenue.', 'Turn right onto Sisson Avenue.', 'Turn right to take the I 84 ramp.', 'Keep right to take I 84 West toward Waterbury.', 'Keep left to stay on I 84 West/Yankee Expressway.', 'Take exit 18 on the right toward Highland Avenue.', 'Keep right toward Highland Avenue.', 'Turn left onto Highland Avenue.', 'Turn left onto West Main Street.', 'Continue for 95 meters or 7-9 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on I 84, live at any point after Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Station KPH Operating Station (Marshall, CA) to Hofmann, Arthur and Mona, House (Hillsborough, CA)
+
+  Route steps:
+['Drive southeast on Shoreline Highway/CA 1.', 'Turn left to stay on Shoreline Highway/CA 1.', 'Turn right to stay on Shoreline Highway/CA 1.', 'Turn right to stay on Shoreline Highway/CA 1.', 'Turn right to stay on Shoreline Highway/CA 1.', 'Turn right toward US 101 South/San Francisco.', 'Turn left toward US 101 South/San Francisco.', 'Stay straight to take the US 101 South ramp.', 'Bear left after 9296 meters or 376-459 seconds.', 'Bear left onto US 101 South/CA 1/Presidio Parkway.', 'Keep right to take exit 438 to stay on CA 1 toward 19th Avenue/Golden Gate Park.', 'Keep left to take I 280 South/Junipero Serra Freeway.', 'Take exit 36 on the right toward Black Mountain Road/Hayne Road.', 'Turn left onto Golf Course Drive.', 'Turn right onto Black Mountain Road.', 'Bear left to stay on Black Mountain Road.', 'Turn left to stay on Black Mountain Road.', 'Turn right onto Vista Road.', 'Turn right onto La Cuesta Road.', 'Continue for 72 meters or 12-15 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 15, the driver getting on Black Mountain Road, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Kresge, S. S., World Headquarters (Detroit, MI) to Wilson, Judge Robert S., House (Ann Arbor, MI)
+
+  Route steps:
+['Drive north.', 'Turn right after 46 meters or 10-12 seconds.', 'Turn right after 28 meters or 11-13 seconds.', 'Turn left onto Temple Street.', 'Turn right onto John C Lodge Drive.', 'Take exit 4B onto I 94 West toward Chicago.', 'Take exit 213B on the right onto I 96 toward Lansing.', 'Keep right to take I 96 West toward Lansing.', 'Keep left to stay on I 96.', 'Continue on M 14 West.', 'Keep left to take exit 45 to stay on M 14 West toward Ann Arbor.', 'Take exit 3 on the right onto US 23 BUS toward Downtown Ann Arbor.', 'Turn left onto East Huron Street/I 94 BL/US 23 BUS.', 'Turn left onto North Division Street.', 'Turn right onto East Ann Street.', 'Continue for 33 meters or 9-10 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 8, the driver getting on I 96, live at any point after Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Igor I Sikorsky Memorial Airport (BRIDGEPORT, CT) to South Congregational Church (New Britain, CT)
+
+  Route steps:
+['Drive north on Great Meadow Road.', 'Keep right to stay on Great Meadow Road.', 'Turn right onto Lordship Boulevard/CT 113.', 'Turn left to stay on Lordship Boulevard/CT 113.', 'Turn right onto Surf Avenue.', 'Take the I 95 North ramp on the right toward New Haven.', 'Take exit 38 on the right onto CT 15 toward Merritt and Wilbur Cross Parkways.', 'Keep right to take exit 3A onto CT 15 North toward Hartford.', 'Take the exit on the right after 54602 meters or 1904-2328 seconds.', 'Bear right onto Mill Street/CT 372.', 'Turn left to take the CT 9 North ramp toward New Britain.', 'Keep left to take Polish Legion of American Veterans Memorial Highway.', 'Take exit 1 on the right onto CT 71 toward Kensington.', 'Turn right onto New Britain Road/CT 71. Continue on CT 71.', 'Turn left onto Main Street.', 'Turn left onto Arch Street.', 'Continue for 87 meters or 9-11 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 3, the driver getting on Lordship Boulevard, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Ellsworth, Oliver, Homestead (Windsor, CT) to Norwalk City Hall (Norwalk, CT)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto Palisado Avenue/CT 159. Continue on CT 159.', 'Turn right onto South Main Street/CT 159. Continue on CT 159.', 'Turn right onto Bridge Street/CT 140.', 'Turn right onto Prospect Hill Road/US 5. Continue on US 5.', 'Turn right onto US 5/East River Drive.', 'Turn left to take the US 5 ramp.', 'Keep left to stay on US 5/CT 15 South.', 'Keep left to stay on CT 15 South.', 'Take exit 20 on the right onto CT 33 toward Westport/Wilton.', 'Turn left onto Wilton Road/CT 33. Continue on CT 33.', 'Turn right onto Sharp Hill Road/CT 106.', 'Turn right onto Hurlbutt Street/CT 106.', 'Turn right onto Van Zant Street/CT 136.', 'Turn left onto Fort Point Street/CT 136. Continue on CT 136.', 'Bear right onto Washington Street/CT 136. Continue on Washington Street.', 'Turn right onto North Main Street.', 'Turn right onto Marshall Street.', 'Continue for 27 meters or 7-8 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 2, the driver getting on CT 159, live at any point after Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Concord Municipal Airport (CONCORD, NH) to Lebanon Municipal Airport (LEBANON, NH)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 38 meters or 5-6 seconds.', 'Turn right after 16 meters or 4-5 seconds.', 'Turn right onto Airport Road.', 'Turn right onto Loudon Road/NH 9. Continue on NH 9.', 'Make a sharp left onto US 4/US 202/NH 9/Dover Road.', 'Keep right to take I 393 West/US 4/US 202.', 'Take the I 93 North/US 4 West exit on the right toward Plymouth.', 'Take exit 17 on the right onto US 4 toward NH 132/Penacook/Boscawen.', 'Keep right to stay on US 4.', 'Bear right onto Old Boyce Road/US 4.', 'Enter the roundabout and take the 2nd exit onto King Street/US 4.', 'Enter the roundabout and take the 2nd exit onto King Street/US 4.', 'Keep left to stay on US 4.', 'Turn right onto US 4 (NH)/US 4. Continue on US 4.', 'Turn left onto West Park Street/US 4.', 'Turn right onto Hanover Street/US 4.', 'Turn left onto Mascoma Street/US 4.', 'Keep left to stay on US 4.', 'Turn left onto Poverty Lane.', 'Turn right onto CAP Road.', 'Turn left after 810 meters or 224-273 seconds.', 'Continue for 134 meters or 220-269 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 9, the driver getting on US 4, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Onondaga County Savings Bank Building (Syracuse, NY) to UHS BINGHAMTON GENERAL HOSPITAL (BINGHAMTON, NY)
+
+  Route steps:
+['Drive south on South Salina Street.', 'Keep left to take North Road.', 'Turn left onto East Homer-Baltimore Road.', 'Turn left onto State Route 13/NY 13.', 'Turn right onto East Homer Crossing Road.', 'Turn right onto East River Road.', 'Turn left onto Shippey Road.', 'Turn left after 27603 meters or 1791-2189 seconds.', 'Turn right onto East Main Street/NY 221.', 'Turn left onto Broome Street/US 11.', 'Turn left to take the I 81 South ramp.', 'Take exit 8 on the right onto NY 79 toward US 11/NY 26/NY 206/Whitney Point.', 'Turn left onto US 11/NY 79. Continue on US 11.', 'Turn left to take the I 81 South ramp.', 'Take exit 5 on the right onto US 11 toward I 88 East/Broome Community College.', 'Enter the roundabout and take the 2nd exit onto Upper Front Street/US 11.', 'Enter the roundabout and take the 2nd exit onto Upper Front Street/US 11.', 'Turn left onto Bevier Street/CR 145. Continue on Bevier Street.', 'Turn right onto Chenango Street.', 'Turn left onto South Washington Street.', 'Turn right onto Vestal Avenue.', 'Turn left onto Mitchell Avenue.', 'Continue for 307 meters or 32-40 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 16, the driver getting on Upper Front Street, live at any point after Step 16?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Portsmouth International at Pease Airport (PORTSMOUTH, NH) to Gale Memorial Library (Laconia, NH)
+
+  Route steps:
+['Drive northwest.', 'Turn right onto Arboretum Drive.', 'Enter the roundabout and take the 2nd exit onto Woodbury Avenue.', 'Turn left to take the Spaulding Turnpike North/ NH 16 North/ US 4 West ramp toward Dover.', 'Take exit 15 on the right onto NH 11 West toward Farmington/Alton.', 'Turn left onto NH 11/Farmington Road. Continue on NH 11.', 'Enter the roundabout and take the 2nd exit onto NH 11/NH 28A.', 'Turn right onto NH 11/Mt. Major Highway. Continue on NH 11.', 'Turn left onto Cherry Valley Road/NH 11A. Continue on NH 11A.', 'Turn left onto Union Avenue/NH 11A/NH 107/US 3 Business.', 'Turn right onto Main Street/NH 106.', 'Continue for 420 meters or 29-36 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 11, the driver getting on Main Street, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Sparks, Gov. Chauncy, House (Eufaula, AL) to REGIONAL REHABILITATION HOSPITAL (PHENIX CITY, AL)
+
+  Route steps:
+['Drive east on East Broad Street.', 'Turn left onto North Orange Avenue.', 'Bear left onto Orange Avenue.', 'Bear left after 17 meters or 2 seconds.', 'Turn right onto North Randolph Avenue.', 'Turn left onto East Browder Street.', 'Turn right onto US 82/US 431/North Eufaula Avenue. Continue on US 431/North Eufaula Avenue.', 'Turn right onto Lakepoint Drive.', 'Turn right onto AL 165.', 'Bear right onto US 431/Martin Luther King Jr Parkway South. Continue on US 431.', 'Take the exit.', 'Turn right onto 22nd Avenue.', 'Turn left onto US 280/US 431.', 'Keep left to stay on US 280/US 431.', 'Turn left after 1894 meters or 80-98 seconds.', 'Turn right after 78 meters or 11-13 seconds.', 'Turn left after 73 meters or 14-17 seconds.', 'Continue for 27 meters or 4-5 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 13, the driver getting on US 280, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Barthel Pigeonnier (Baton Rouge, LA) to New Orleans NAS JRB/Alvin Callender Field (NEW ORLEANS, LA)
+
+  Route steps:
+['Drive west on Iowa Street.', 'Turn right onto Nicholson Drive/LA 30.', 'Turn right onto Oklahoma Street/LA 3290-1.', 'Turn right onto Highland Road/LA 3290-4. Continue on Highland Road.', 'Turn left onto Louise Street.', 'Turn right onto Braddock Street.', 'Take the I 10 East ramp.', 'Keep left to stay on I 10.', 'Keep right to take I 10/Pontchartrain Expressway toward New Orleans/Business District.', 'Keep left to take US 90 BUS.', 'Take exit 7 on the right onto LA 23 South/LA 18 West toward Lafayette Street.', 'Turn left onto LA 23/Lafayette Street. Continue on LA 23.', 'Turn right onto Buccaneer Road.', 'Turn right after 3080 meters or 291-356 seconds.', 'Turn right after 167 meters or 273-333 seconds.', 'Turn left after 857 meters or 1390-1699 seconds.', 'Continue for 308 meters or 42-52 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 7, the driver getting on I 10, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: REX HOSPITAL (RALEIGH, NC) to North Carolina Agricultural Experiment Station Cottage (Raleigh, NC)
+
+  Route steps:
+['Drive west.', 'Turn left after 30 meters or 4-5 seconds.', 'Turn right after 57 meters or 8-9 seconds.', 'Bear right after 73 meters or 10-13 seconds.', 'Turn right onto Lake Boone Trail.', 'Turn left onto Blue Ridge Road.', 'Turn left onto Hillsborough Street/NC 54. Continue on Hillsborough Street.', 'Enter the roundabout and take the 2nd exit onto Hillsborough Street.', 'Enter the roundabout and take the 2nd exit onto Hillsborough Street.', 'Enter the roundabout and take the 2nd exit onto Brooks Avenue.', 'Turn right onto Vanderbilt Avenue.', 'Continue for 185 meters or 21-26 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 11, the driver getting on Vanderbilt Avenue, live at any point after Step 11?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Lehigh Valley International Airport (ALLENTOWN, PA) to Muhlenberg, Henry Melchoir, House (Trappe, PA)
+
+  Route steps:
+['Drive southwest.', 'Turn left after 799 meters or 129-158 seconds.', 'Turn right onto Postal Road.', 'Turn left onto North Irving Street.', 'Turn right onto East Fairmont Street.', 'Turn left onto North Godfrey Street.', 'Turn right onto East Tilghman Street.', 'Turn left onto North Graham Street.', 'Turn right onto East Dent Street.', 'Turn left after 39 meters or 9-11 seconds.', 'Turn right onto Hanover Avenue.', 'Keep left to take Union Street.', 'Turn left onto South 3rd Street.', 'Turn right onto Lanark Road.', 'Bear left to stay on Lanark Road.', 'Turn right onto Limeport Pike.', 'Turn left onto Kings Highway.', 'Turn left onto Geryville Pike.', 'Turn right onto Upper Ridge Road.', 'Turn right to stay on Upper Ridge Road.', 'Turn left onto Gravel Pike/PA 29.', 'Enter the roundabout and take the 2nd exit onto Gravel Pike/PA 29/PA 73.', 'Turn right onto Ellis Road.', 'Turn left onto Oak Street.', 'Turn right onto Bridge Road/PA 113. Continue on PA 113.', 'Turn right onto West Main Street.', 'Turn left after 21 meters or 7-8 seconds.', 'Continue for 8 meters or 3-4 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 19, the driver getting on Upper Ridge Road, live at any point after Step 20?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Lay-Bozka House (Hallettsville, TX) to Stinson Municipal Airport (SAN ANTONIO, TX)
+
+  Route steps:
+['Drive southwest on US 77/US 90 Alt/Fairwinds Street. Continue on US 90 Alt.', 'Keep right to stay on US 90 Alt.', 'Turn right onto US 183.', 'Turn left to take the US 183 to US 90 ramp toward Gonzales/ Cuero/Luling/ Lockhart.', 'Keep left to take I 10/US 90/TX 130 South.', 'Take exit 581 on the right onto I 410/TX 130.', 'Keep left to stay on TX 130 South.', 'Keep right to stay on TX 130 South.', 'Keep left to stay on TX 130 South.', 'Keep left to take I 410/TX 130 South/Connally Loop.', 'Take exit 42 on the right onto Spur 122 toward South Presa Street/Southton Road.', 'Bear right onto South Presa Street/Spur 122.', 'Turn left onto Graf Road.', 'Turn right onto Mission Road.', 'Turn left onto Cadmus Street.', 'Turn left after 469 meters or 41-50 seconds.', 'Continue for 247 meters or 61-75 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 1, the driver getting on US 90 Alt, live at any point after Step 2?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Nashville International Airport (NASHVILLE, TN) to SAINT THOMAS HIGHLANDS HOSPITAL, LLC (SPARTA, TN)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Hangar Lane.', 'Turn left onto Donelson Pike/SR 255.', 'Turn right to take the I 40 ramp.', 'Take exit 221A on the right onto TN 45 North toward The Hermitage.', 'Keep right to take SR 265 East toward Central Pike.', 'Turn right onto Central Pike.', 'Turn right onto SR 109/SR 265/Central Pike.', 'Turn right onto Sparta Pike/US 70. Continue on US 70.', 'Turn left onto Old Smithville Road.', 'Turn right to stay on Old Smithville Road.', 'Turn right onto Roosevelt Drive.', 'Turn left onto Sewell Drive.', 'Continue for 684 meters or 58-70 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 13, the driver getting on Sewell Drive, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: WINDBER HOSPITAL (WINDBER, PA) to Calvary Episcopal Church (Pittsburgh, PA)
+
+  Route steps:
+['Drive southeast on Somerset Avenue.', 'Turn right onto 9th Street/PA 160.', 'Turn left onto Graham Avenue/PA 160.', 'Turn right onto 21st Street/PA 160.', 'Make a sharp right onto Clear Shade Drive/PA 56.', 'Take the US 219 ramp on the right.', 'Take the PA 56 exit on the right.', 'Keep left to take PA 56/PA 403/Broad Street.', 'Turn left onto PA 56/Fairfield Avenue.', 'Turn right onto PA 56/Strayer Street. Continue on PA 56.', 'Turn right to take the US 22 West ramp toward Blairsville.', 'Keep right to take US 22 West/Penn-Lincoln Parkway East toward Pittsburgh.', 'Take exit 74 on the right toward Squirrel Hill/Homestead.', 'Keep left toward Squirrel Hill/Homestead.', 'Turn left toward Squirrel Hill/Chatham University.', 'Turn left onto Shady Avenue/Blue Belt.', 'Turn left onto Shady Avenue/Blue Belt. Continue on Shady Avenue.', 'Turn right after 2806 meters or 243-297 seconds.', 'Continue for 34 meters or 13-16 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 16, the driver getting on Shady Avenue, live at any point after Step 17?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Nashville International Airport (NASHVILLE, TN) to SAINT THOMAS HIGHLANDS HOSPITAL, LLC (SPARTA, TN)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Hangar Lane.', 'Turn left onto Donelson Pike/SR 255.', 'Turn right to take the I 40 ramp.', 'Take exit 221A on the right onto TN 45 North toward The Hermitage.', 'Keep right to take SR 265 East toward Central Pike.', 'Turn right onto Central Pike.', 'Turn right onto SR 109/SR 265/Central Pike.', 'Turn right onto Sparta Pike/US 70. Continue on US 70.', 'Turn left onto Old Smithville Road.', 'Turn right to stay on Old Smithville Road.', 'Turn right onto Roosevelt Drive.', 'Turn left onto Sewell Drive.', 'Continue for 684 meters or 58-70 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 7, the driver getting on Central Pike, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Harada House (Riverside, CA) to Torrey Pines Lodge (San Diego, CA)
+
+  Route steps:
+['Drive northeast on Lemon Street.', 'Turn right onto 3rd Street.', 'Turn right to take the I 215 South/CA 60 East ramp toward San Diego/Indio.', 'Keep left to stay on I 215/CA 60/Escondido Freeway.', 'Keep right to stay on I 215/CA 60/Escondido Freeway.', 'Keep right to stay on I 215.', 'Take exit 31 on the right toward Valley Parkway.', 'Turn right onto West Valley Parkway/S6. Continue on S6.', 'Turn left onto Via de la Valle/S6.', 'Turn left onto Camino del Mar/S21. Continue on S21.', 'Continue for 7807 meters or 412-503 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 3, the driver getting on I 215, live at any point after Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Northeast Philadelphia Airport (PHILADELPHIA, PA) to ST LUKES HOSPITAL MONROE CAMPUS (STROUDSBURG, PA)
+
+  Route steps:
+['Drive north.', 'Turn right after 610 meters or 99-121 seconds.', 'Turn left after 215 meters or 72-88 seconds.', 'Turn left onto Red Lion Road.', 'Turn left onto Philmont Avenue/PA 63. Continue on PA 63.', 'Turn right onto Old Welsh Road/PA 63. Continue on Old Welsh Road.', 'Turn right onto Old York Road/PA 611. Continue on PA 611.', 'Keep right to take Easton Road.', 'Keep left to take PA 611 North.', 'Bear left onto PA 611/Easton Road. Continue on PA 611.', 'Turn right onto PA 611/South 3rd Street.', 'Turn right onto PA 611/Larry Holmes Drive.', 'Turn right to stay on PA 611.', 'Turn right onto North Riverside Drive/PA 611. Continue on PA 611.', 'Turn right onto South Delaware Drive/PA 611.', 'Bear left onto North Delaware Drive/PA 611. Continue on PA 611.', 'Keep right to stay on PA 611.', 'Turn left onto Delaware Avenue/PA 611. Continue on PA 611.', 'Turn left onto Foxtown Hill Road/PA 611. Continue on PA 611.', 'Turn left onto Main Street/US 209 BUS/PA 611.', 'Turn right onto North 9th Street/PA 611.', 'Turn left onto Saint Lukes Lane.', 'Turn left to stay on Saint Lukes Lane.', 'Continue for 20 meters or 5-6 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 9, the driver getting on PA 611, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: ST MARY'S MEDICAL CENTER (HUNTINGTON, WV) to Mid Ohio Valley Regional Airport (PARKERSBURG (WILLIAMSTOWN), WV)
+
+  Route steps:
+['Drive southwest.', 'Make a sharp left after 6 meters or 1 seconds.', 'Turn right onto 29th Street.', 'Turn left onto 5th Avenue/US 60.', 'Turn left onto 31st Street/US 60.', 'Turn right onto 3rd Avenue/WV 2. Continue on WV 2.', 'Turn right to stay on WV 2.', 'Turn right onto WV 2/WV 62.', 'Keep left to stay on WV 2.', 'Turn left to take the ramp.', 'Take exit 179 on the right onto Emerson Avenue toward Vienna/North Parkersburg.', 'Bear right onto WV 2/Emerson Avenue.', 'Turn left onto Williamstown Pike/WV 31.', 'Turn left onto Airport Road/CR 31/1.', 'Continue for 905 meters or 78-95 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 11, the driver getting on WV 2, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Tweed New Haven Airport (NEW HAVEN, CT) to Dana, James Dwight, House (New Haven, CT)
+
+  Route steps:
+['Drive north on Dean Street.', 'Turn left onto Burr Street.', 'Turn right onto Ley Street.', 'Turn right onto Townsend Avenue/CT 337.', 'Turn left onto Forbes Avenue/US 1. Continue on US 1.', 'Turn right onto East Street.', 'Turn left onto Wooster Street.', 'Turn right onto South Wallace Street.', 'Turn left onto Chapel Street.', 'Turn right onto Wooster Place.', 'Turn left onto Greene Street.', 'Turn right onto Olive Street.', 'Turn left to stay on Olive Street.', 'Turn right onto Hillhouse Avenue.', 'Turn left onto Trumbull Street.', 'Continue for 42 meters or 8-9 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 15, the driver getting on Trumbull Street, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: HUDSON REGIONAL HOSPITAL (SECAUCUS, NJ) to Morristown Municipal Airport (MORRISTOWN, NJ)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 213 meters or 34-41 seconds.', 'Turn left onto Meadowlands Parkway.', 'Take the NJTP/NJ 3 West ramp on the right.', 'Take the NJ 21 exit on the right toward Paterson/Newark.', 'Keep right to take NJ 21 South.', 'Keep right to take NJ 21 South toward Newark.', 'Turn right onto Center Street/CR 508. Continue on CR 508.', 'Turn left onto Carteret Place/CR 508. Continue on CR 508.', 'Turn right onto Valley Road/CR 508.', 'Bear right to stay on Valley Road/CR 508.', 'Turn left onto Whittingham Place/CR 508. Continue on CR 508.', 'Turn left onto Gregory Avenue/CR 577. Continue on CR 577.', 'Turn right onto South Orange Avenue/CR 510/CR 577.', 'Turn right after 13770 meters or 655-800 seconds.', 'Keep left at the fork.', 'Continue for 592 meters or 77-94 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 10, the driver getting on Valley Road, live at any point after Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Catt, Carrie Chapman, House (Briarcliff Manor, NY) to Poe Cottage (New York, NY)
+
+  Route steps:
+['Drive northeast on Ryder Road.', 'Bear right to stay on Ryder Road.', 'Turn left onto North State Road.', 'Turn right onto Saw Mill River Road/NY 100.', 'Take the NY 9A South exit on the right.', 'Take the Saw Mill River Parkway South exit on the right.', 'Keep left to take Mosholu Parkway/MP.', 'Turn right onto Grand Concourse.', 'Keep left to stay on Grand Concourse.', 'Make a left U-turn at East 192nd Street to stay on Grand Concourse.', 'Continue for 122 meters or 18-22 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 8, the driver getting on Grand Concourse, live at any point after Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: North Central West Virginia Airport (BRIDGEPORT, WV) to Elmhurst (Wellsburg, WV)
+
+  Route steps:
+['Drive west on Crosswind Drive/CR 50/32.', 'Turn right onto Benedum Drive/WV 131.', 'Turn right to take the I 79 North ramp.', 'Keep left to stay on I 79 North.', 'Keep left to take I 70 West/Dwight D Eisenhower Highway.', 'Take exit 17 on the right onto PA 18 toward Jefferson Avenue.', 'Turn right onto East Wylie Avenue.', 'Turn right onto Jefferson Avenue/PA 18 North.', 'Bear left onto Jefferson Avenue/PA 844.', 'Turn right onto Commerce Street/WV 2.', 'Turn right onto 16th Street.', 'Turn left onto Pleasant Avenue.', 'Turn right onto Grand Avenue.', 'Continue for 16 meters or 3 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 3, the driver getting on I 79, live at any point after Step 4?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: SONORA REGIONAL MEDICAL CENTER - GREENLEY (SONORA, CA) to JOHN MUIR BEHAVIORAL HEALTH CENTER (CONCORD, CA)
+
+  Route steps:
+['Drive west.', 'Turn left after 29 meters or 4-5 seconds.', 'Turn right onto Greenley Road.', 'Turn left onto Mono Way.', 'Turn right to take the ramp.', 'Enter the roundabout and take the 2nd exit onto CA 49/CA 108.', ""Turn right onto O'Byrnes Ferry Road/E15. Continue on E15."", 'Turn left onto CA 4.', 'Turn right to take the CA 99 ramp.', 'Keep right to stay on CA 4.', 'Keep right to take exit 65A/65B to stay on CA 4 toward Sacramento.', 'Keep left to take I 5 South.', 'Take exit 471 on the right onto CA 4 West/Charter Way.', 'Keep right to take CA 4.', 'Turn left onto CA 4/Marsh Creek Road.', 'Turn right to stay on CA 4.', 'Keep right to take CA 242 toward Oakland/Concord.', 'Take the exit on the right toward Solano Way/Grant Street.', 'Turn left onto Grant Street.', 'Turn left after 494 meters or 31-38 seconds.', 'Turn left after 86 meters or 17-21 seconds.', 'Turn left after 15 meters or 4-5 seconds.', 'Turn right after 102 meters or 18-22 seconds.', 'Continue for 77 meters or 15-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 13, the driver getting on CA 4, live at any point after Step 19?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: University of Illinois Willard Airport (SAVOY, IL) to KIRBY MEDICAL CENTER (MONTICELLO, IL)
+
+  Route steps:
+['Drive northeast on Mathis Avenue.', 'Turn left onto West Old Church Road.', 'Turn left onto South Staley Road/CTH 25.', 'Turn right after 3138 meters or 171-210 seconds.', 'Turn right onto Monticello Road/CR 18.', 'Turn right onto Chaucer Boulevard.', 'Turn left onto Dickens Drive.', 'Bear right onto Kipling Drive.', 'Turn left onto East Center Street.', 'Turn right onto North Greely Street.', 'Turn left onto East High Street.', 'Turn right onto North Colfax Street.', 'Turn left onto East Grant Street.', 'Turn right onto Chase Street.', 'Turn left onto East Chestnut Street.', 'Turn right onto North Monticello Street.', 'Turn left onto North Street.', 'Turn right onto North Union Drive.', 'Turn left to stay on North Union Drive.', 'Bear left onto Lone Beech Road.', 'Turn right onto North State Street.', 'Turn left after 422 meters or 44-54 seconds.', 'Bear right onto North Market Street/IL 105.', 'Turn left to stay on IL 105.', 'Turn right onto Medical Center Drive.', 'Turn left after 345 meters or 37-45 seconds.', 'Continue for 133 meters or 46-56 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 18, the driver getting on North Union Drive, live at any point after Step 19?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Laurence G Hanscom Field (BEDFORD, MA) to CLINTON HOSPITAL (CLINTON, MA)
+
+  Route steps:
+['Drive east.', 'Turn left after 157 meters or 254-311 seconds.', 'Turn left after 131 meters or 213-260 seconds.', 'Turn right after 1089 meters or 183-223 seconds.', 'Turn right after 195 meters or 68-83 seconds.', 'Turn left after 70 meters or 27-34 seconds.', 'Turn right after 168 meters or 56-69 seconds.', 'Turn left onto Hartwell Road.', 'Turn right onto Concord Road/MA 62.', 'Make a sharp left onto North Road/MA 4/MA 225. Continue on MA 4.', 'Turn left onto Littleton Road/MA 4/MA 110. Continue on MA 110.', 'Enter the roundabout and take the 2nd exit onto Harvard Road/MA 110/MA 111 South.', 'Turn right onto Still River Road/MA 110. Continue on MA 110.', 'Turn right onto Water Street/MA 110.', 'Turn left onto Main Street/MA 62/MA 70/MA 110.', 'Turn left onto Union Street/MA 62/MA 70.', 'Make a left U-turn to stay on Union Street/MA 62/MA 70.', 'Turn right onto Main Street/MA 62/MA 70/MA 110.', 'Turn left onto Sterling Street/MA 62.', 'Turn right onto Highland Street.', 'Turn left after 655 meters or 56-69 seconds.', 'Continue for 74 meters or 10-12 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 11, the driver getting on MA 110, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: ST ELIZABETH YOUNGSTOWN HOSPITAL (YOUNGSTOWN, OH) to EAST OHIO REGIONAL HOSPITAL (MARTINS FERRY, OH)
+
+  Route steps:
+['Drive southeast.', 'Turn right onto Park Avenue.', 'Turn left onto Wirt Street/SR 193.', 'Turn right onto Martin Luther King Junior Boulevard/US 422. Continue on US 422.', 'Turn left to take the US 422 ramp toward Girard.', 'Keep left to take exit 224 to stay on SR 11 South toward Canfield.', 'Take the exit on the right after 63726 meters or 1877-2294 seconds.', 'Turn right onto SR 213.', 'Turn left onto SR 152/SR 213.', 'Turn right to stay on SR 213.', 'Turn left to stay on SR 213.', 'Turn right to take the US 22 East ramp.', 'Keep left to take exit 244A to stay on Dean Martin Boulevard.', 'Turn right onto North Zane Highway.', 'Bear right to stay on North Zane Highway.', 'Turn left onto Hanover Street/SR 647.', 'Turn left onto North 4th Street.', 'Continue for 345 meters or 34-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 10, the driver getting on SR 213, live at any point after Step 15?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: PHOENIX CHILDREN'S HOSPITAL AT DIGNITY HEALTH'S MERCY GILBERT (GILBERT, AZ) to St. Mary's Church (Phoenix, AZ)
+
+  Route steps:
+['Drive south.', 'Turn right after 157 meters or 26-31 seconds.', 'Turn right after 161 meters or 30-36 seconds.', 'Enter the roundabout and take the 2nd exit.', 'Turn right onto South Val Vista Drive.', 'Turn left to take the AZ 202 Loop West ramp.', 'Take exit 55C onto I 10 West.', 'Keep left to take I 10/Papago Freeway.', 'Take exit 148 on the right toward Washington Street.', 'Keep left toward Washington Street.', 'Continue toward I 10 East.', 'Turn left onto East Washington Street.', 'Keep left to stay on East Washington Street.', 'Keep left to stay on East Washington Street.', 'Keep left to stay on East Washington Street.', 'Keep left to stay on East Washington Street.', 'Keep right to stay on East Washington Street.', 'Keep left to stay on East Washington Street.', 'Turn right onto North 3rd Street.', 'Turn right after 323 meters or 43-53 seconds.', 'Continue for 61 meters or 19-23 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 7, the driver getting on I 10, live at any point after Step 10?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: YORK HOSPITAL (YORK, PA) to Reading Regional Airport (Carl A Spaatz Field) (READING, PA)
+
+  Route steps:
+['Drive southeast.', 'Bear left onto Irving Road.', 'Turn right onto Peyton Road.', 'Turn right onto Rathton Road.', 'Turn right onto Niles Road.', 'Turn left onto Grandview Road.', 'Turn left onto Greenhill Road.', 'Turn right onto Mount Rose Avenue/PA 124.', 'Turn left onto Haines Road.', 'Turn right onto Eastern Boulevard.', 'Turn left after 250 meters or 14-18 seconds.', 'Turn right onto East Market Street/PA 462. Continue on PA 462.', 'Bear right to stay on PA 462.', 'Turn right onto North 3rd Street.', 'Turn left onto Locust Street.', 'Turn right onto Lancaster Avenue/PA 462. Continue on PA 462.', 'Turn left onto Prospect Road.', 'Turn right to take the US 30 East ramp toward Lancaster.', 'Take the US 30 East exit on the right.', 'Take the PA 283 West exit on the right toward Harrisburg/Downtown Lancaster.', 'Keep right at the fork.', 'Keep left at the fork.', 'Continue on Chester Road.', 'Turn left onto PA 272/Oregon Pike. Continue on PA 272.', 'Turn left onto Wabash Road.', 'Turn right onto High School Road.', 'Turn left onto Lancaster Avenue.', 'Turn right onto South 4th Street.', 'Turn left onto Main Street.', 'Turn right onto North 6th Street.', 'Turn right onto US 422/Penn Avenue.', 'Bear left onto Mull Avenue.', 'Turn left to take the US 222 North ramp toward Allentown.', 'Take the PA 183 exit on the right toward Bernville Road/Strausstown.', 'Keep right to take PA 183 South toward Reading Airport/Reading.', 'Turn left onto Van Reed Road.', 'Turn right onto Arnold Road.', 'Turn right onto General Spaatz Drive.', 'Turn left onto Air Museum Drive.', 'Continue for 116 meters or 44-54 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 18, the driver getting on US 30, live at any point after Step 18?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Hartford Club (Hartford, CT) to Igor I Sikorsky Memorial Airport (BRIDGEPORT, CT)
+
+  Route steps:
+['Drive east on Prospect Street.', 'Turn right onto US 5/Main Street.', 'Turn right onto US 5/East River Drive.', 'Turn left to take the US 5 ramp.', 'Keep left to stay on US 5/CT 15 South.', 'Keep right to stay on US 5.', 'Turn right to take the CT 15 South ramp toward New Haven.', 'Take exit 36 on the right onto CT 110 toward Stratford/Shelton.', 'Turn left onto Main Street/CT 110. Continue on CT 110.', 'Turn left onto East Main Street/CT 110.', 'Bear right onto Barnum Avenue/US 1.', 'Keep left to take Ferry Boulevard/CT 130 West.', 'Bear left onto Ferry Boulevard/CT 130 West. Continue on Ferry Boulevard.', 'Turn left onto Elm Street.', 'Turn right onto Birdseye Street.', 'Bear left onto Woodend Road.', 'Turn left onto Sperry Avenue.', 'Turn right after 144 meters or 16-19 seconds.', 'Turn left onto Dodge Avenue.', 'Turn right onto Access Road.', 'Turn left onto Lordship Boulevard/CT 113.', 'Turn left onto Great Meadow Road.', 'Continue for 622 meters or 59-73 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 2, the driver getting on US 5, live at any point after Step 9?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: TEXAS HEALTH HOSPITAL CLEARFORK (FORT WORTH, TX) to NORTH TEXAS COMMUNITY HOSPITAL (BRIDGEPORT, TX)
+
+  Route steps:
+['Drive west.', 'Turn right onto Clearfork Main Street.', 'Turn left after 432 meters or 40-49 seconds.', 'Turn right onto Acme Brick Plaza.', 'Turn left onto Edwards Ranch Road.', 'Turn right onto Bryant Irvin Road.', 'Turn right after 695 meters or 47-58 seconds.', 'Turn right onto Manhattan Drive.', 'Turn left after 281 meters or 35-43 seconds.', 'Turn left onto Horne Street.', 'Turn right onto Volder Drive.', 'Turn left onto Tanny Street.', 'Turn right onto Fursman Avenue.', 'Turn left onto Burton Hill Road.', 'Turn right onto White Settlement Road.', 'Turn left onto Roberts Cut Off Road.', 'Turn left onto Lake Worth Boulevard/TX 199.', 'Take the TX 199 West ramp.', 'Take the exit on the right toward Tenderfoot Trail/Hanger Cut-Off Road.', 'Bear left onto Jacksboro Highway.', 'Take the TX 199 West ramp.', 'Bear right toward FM 730/Boyd.', 'Bear left onto Northwest Parkway.', 'Bear right onto Boyd Road/FM 730. Continue on FM 730.', 'Turn left onto West Rock Island Avenue/TX 114. Continue on TX 114.', 'Keep left to stay on TX 114.', 'Turn left onto Brush Avenue.', 'Turn right onto 10th Street.', 'Turn left after 850 meters or 80-98 seconds.', 'Turn right after 20 meters or 5-6 seconds.', 'Turn left after 37 meters or 10-12 seconds.', 'Turn left onto Thompson Street.', 'Turn right onto 9th Street.', 'Turn left onto Be Hawkins Drive.', 'Turn left after 268 meters or 27-33 seconds.', 'Continue for 148 meters or 21-26 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 25, the driver getting on TX 114, live at any point after Step 25?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Fairbanks House (Fernandina Beach, FL) to Northeast Florida Regional Airport (ST AUGUSTINE, FL)
+
+  Route steps:
+['Drive east on Cedar Street.', 'Turn right onto South 7th Street.', 'Turn left after 1074 meters or 104-128 seconds.', 'Turn right after 39 meters or 7-8 seconds.', 'Turn left onto Kelp Street.', 'Turn right onto South 8th Street/FL A1A/FL 200.', 'Turn left onto Sadler Road/CR 108.', 'Turn right after 140 meters or 11-13 seconds.', 'Turn left after 24 meters or 7-9 seconds.', 'Turn right after 38 meters or 6-8 seconds.', 'Turn left after 63 meters or 13-16 seconds.', 'Turn right onto South 14th Street.', 'Enter the roundabout and take the 2nd exit onto Amelia Island Parkway.', 'Turn right onto Buccaneer Trail/CR 105A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Enter the roundabout and take the 2nd exit onto First Coast Highway/FL A1A.', 'Turn left to stay on FL A1A.', 'Take the Saint Johns River Ferry/FL A1A Ferry.', 'Drive southeast.', 'Bear right onto FL A1A.', 'Turn right onto Mayport Road/FL A1A.', 'Keep right to stay on Mayport Road/FL A1A.', 'Turn left onto Plaza Street.', 'Turn right onto Sherry Drive.', 'Turn left onto Atlantic Boulevard/FL A1A/FL 10.', 'Turn right onto 3rd Street/FL A1A. Continue on FL A1A.', 'Turn right onto Palm Valley Road/CR 210.', 'Enter the roundabout and take the 2nd exit onto Palm Valley Road/CR 210.', 'Take the exit on the right toward Nocatee Town Center/Crosswater Parkway.', 'Keep left toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Keep right toward Welcome Center/Town Center/Water Parks/Crosswater Hall.', 'Bear left onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Enter the roundabout and take the 2nd exit onto Crosswater Parkway.', 'Turn right onto Pine Island Road.', 'Turn left onto US 1.', 'Turn left after 12385 meters or 423-517 seconds.', 'Turn right after 126 meters or 18-21 seconds.', 'Continue for 513 meters or 93-114 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 15, the driver getting on First Coast Highway, live at any point after Step 19?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Baltimore/Washington International Thurgood Marshall Airport (BALTIMORE, MD) to Hagerstown Regional Richard A Henson Field (HAGERSTOWN, MD)
+
+  Route steps:
+['Drive east on Arrival Roadway (Authorized Vehicles).', 'Bear right onto Arrival Roadway.', 'Take the I 195 West ramp toward Baltimore-Washington Parkway/Parking/Return to Terminal.', 'Continue on I 195 West/Metropolitan Boulevard.', 'Take exit 4A on the right onto I 95 North toward I 695/Baltimore.', 'Take exit 49B onto I 695 West toward Towson.', 'Take exit 16A-B on the right onto I 70 toward Frederick.', 'Keep left to take exit 16A onto I 70 West toward Frederick.', 'Keep right to stay on I 70.', 'Take exit 26 on the right onto I 81 North toward Harrisburg.', 'Keep right to take exit 26B onto I 81 North toward Harrisburg.', 'Take exit 1 on the right onto PA 163 toward State Line.', 'Turn left onto Mason Dixon Road/PA 163.', 'Turn right onto Pennsylvania Avenue South/US 11 South.', 'Turn right onto Henson Boulevard.', 'Continue for 1016 meters or 123-150 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 3, the driver getting on I 195, live at any point after Step 3?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: POCONO MEDICAL CENTER (EAST STROUDSBURG, PA) to Cliveden (Chew House) (Philadelphia, PA)
+
+  Route steps:
+['Drive west.', 'Turn left after 38 meters or 8-10 seconds.', 'Turn right onto East Brown Street.', 'Turn left onto Prospect Street.', 'Take the I 80 ramp on the right.', 'Keep left to stay on I 80.', 'Keep left to stay on I 80.', 'Take exit 277 on the right onto PA 940/PATP/I 476 toward Allentown/Wilkes-Barre.', 'Keep left at the fork.', 'Keep right to take I 476 South toward Allentown.', 'Keep left to take I 476/PATP South/Pennsylvania Turnpike Northeast Extension.', 'Take exit 16 on the right onto I 76 East toward Philadelphia.', 'Keep left to take exit 16A onto I 76 East toward Philadelphia.', 'Take exit 340B on the right onto US 1 North toward Roosevelt Boulevard.', 'Keep left to take US 1 North toward Roosevelt Boulevard.', 'Take the exit on the right toward Germantown Avenue.', 'Keep left to take Roberts Avenue toward Germantown Avenue.', 'Turn left onto Germantown Avenue.', 'Turn right after 3289 meters or 224-274 seconds.', 'Continue for 144 meters or 55-67 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 5, the driver getting on I 80, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: St. George's Parish Vestry House (Perryman, MD) to MEDSTAR SOUTHERN MARYLAND HOSPITAL CENTER (CLINTON, MD)
+
+  Route steps:
+['Drive northwest.', 'Turn right onto Perryman Road/MD 159.', 'Bear right to stay on Perryman Road/MD 159.', 'Turn left to stay on Perryman Road/MD 159.', 'Turn left onto Spesutia Road.', 'Turn left onto US 40/South Philadelphia Boulevard. Continue on US 40.', 'Turn left onto Riverside Parkway/MD 543.', 'Turn left to take the I 95 South ramp toward Baltimore.', 'Keep right to stay on I 95 South/John F. Kennedy Memorial Highway.', 'Keep right to take exit 62 onto I 895 South toward Annapolis.', 'Keep left to stay on I 895 South.', 'Take exit 4 on the right onto Baltimore-Washington Parkway toward I 695 East/Essex/BWI Marshall Airport.', 'Take the I 95 South exit on the right toward Richmond/Andrews Air Force Base.', 'Take exit 7A/7B on the right onto MD 5/Branch Avenue toward Waldorf.', 'Keep left to take exit 7A onto MD 5 South toward Waldorf.', 'Turn left onto Surratts Road.', 'Turn right after 241 meters or 20-24 seconds.', 'Turn right onto Hospital Drive.', 'Turn left after 188 meters or 22-26 seconds.', 'Turn right after 57 meters or 9-11 seconds.', 'Continue for 51 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 2, the driver getting on Perryman Road, live at any point after Step 8?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: WHITTIER PAVILION (HAVERHILL, MA) to New Bedford Regional Airport (NEW BEDFORD, MA)
+
+  Route steps:
+['Drive north.', 'Turn left after 44 meters or 7-9 seconds.', 'Turn right onto Webster Street.', 'Make a sharp left onto Kenoza Avenue/MA 110.', 'Turn left onto Main Street/MA 110/MA 125.', 'Turn left onto MA 114 East/MA 125 South/Turnpike Street.', 'Keep right to take Andover Bypass/MA 125 South.', 'Take the exit on the right after 41 meters or 2-3 seconds.', 'Bear right onto Andover Bypass/MA 125. Continue on MA 125.', 'Take the I 93 South ramp on the right toward Boston.', 'Keep left to take I 93 South/Interstate 93 HOV lane.', 'Keep left to stay on I 93 South/Interstate 93 HOV lane.', 'Keep right to take I 93 South/US 1 toward I 95/Providence Rhode Island.', 'Take exit 2A on the right onto MA 138 South toward Stoughton.', 'Keep left to stay on MA 138.', 'Turn left onto Washington Street/MA 138.', 'Keep right to stay on Washington Street.', 'Enter Taunton Green and take the 2nd exit onto US 44/MA 140/Taunton Green.', 'Bear right onto Summer Street/MA 140. Continue on MA 140.', 'Take exit 4 on the right toward Mount Pleasant Street/Airport Road.', 'Turn left onto Mount Pleasant Street.', 'Turn right onto Downey Street.', 'Turn right after 1330 meters or 95-116 seconds.', 'Continue for 59 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 10, the driver getting on I 93, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: LAHEY CLINIC MEDICAL CENTER (BURLINGTON, MA) to Chandler-Hidden House (Andover, MA)
+
+  Route steps:
+['Drive north.', 'Turn right after 24 meters or 8-10 seconds.', 'Turn right onto Burlington Woods Drive.', 'Make a sharp left to stay on Burlington Woods Drive.', 'Turn right onto Burlington Mall Road.', 'Turn right onto Cambridge Street/MA 3A.', 'Take the I 95 North/MA 128 North ramp on the right toward Peabody/Portsmouth New Hampshire.', 'Take exit 55B on the right onto I 93 North toward Concord New Hampshire.', 'Take exit 35 on the right onto MA 125 toward Andover/North Andover.', 'Keep right to take MA 125 North toward Andover/North Andover.', 'Turn left onto Gould Road.', 'Bear right onto South Main Street/MA 28.', 'Turn left onto Hidden Road.', 'Continue for 177 meters or 14-17 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 3, the driver getting on Burlington Woods Drive, live at any point after Step 5?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Hilton Head Airport (HILTON HEAD ISLAND, SC) to St. Michael's Episcopal Church (Charleston, SC)
+
+  Route steps:
+['Drive southeast.', 'Turn right onto Summit Drive.', 'Turn left onto Gateway Circle.', 'Turn right onto Dillon Road.', 'Turn right onto US 278 BUS/William Hilton Parkway.', 'Stay straight to take the ramp.', 'Keep left to stay on US 278 BUS/William Hilton Parkway.', 'Keep left to take US 278 BUS/William Hilton Parkway.', 'Continue on US 278.', 'Take the exit on the right after 20711 meters or 829-1014 seconds.', 'Keep right to take SC 170/Okatie Highway.', 'Take the exit.', 'Turn left onto Lowcountry Drive/SC 462. Continue on SC 462.', 'Take the I 95 North/US 17 North ramp on the right toward Florence.', 'Take exit 33 on the right onto US 17 North toward Charleston/Beaufort.', 'Keep left to take US 17.', 'Bear left onto US 17 North/Savannah Highway. Continue on Savannah Highway.', 'Take the exit on the right after 7550 meters or 400-488 seconds.', 'Keep right to take Lockwood Drive.', 'Turn right onto Meeting Street/S-10-107.', 'Continue for 114 meters or 14-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 15, the driver getting on US 17, live at any point after Step 20?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: MONROE COUNTY HOSPITAL (FORSYTH, GA) to Rankin House (Columbus, GA)
+
+  Route steps:
+['Drive north.', 'Turn left after 69 meters or 15-18 seconds.', 'Turn right onto Martin Luther King Jr Drive/GA 83.', 'Turn left onto West Main Street/US 41/ GA 18. Continue on US 41.', 'Turn left onto Martin Luther King Junior Parkway/US 41/GA 18. Continue on Martin Luther King Junior Parkway/US 41.', 'Turn right onto US 41/GA 7/GA 18.', 'Turn left onto Burnette Road/GA 18. Continue on GA 18.', 'Turn right onto South Main Street/GA 18/GA 74/GA 109.', 'Enter South Court Square and take the 2nd exit onto South Talbotton Street/US 27 Alternate/GA 18/GA 41.', 'Enter the roundabout and take the 2nd exit onto Roosevelt Highway/US 27 Alternate/GA 41.', 'Turn right toward Waverly Hall.', 'Turn left onto 2nd Avenue/GA 85.', 'Continue for 3777 meters or 256-313 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 12, the driver getting on 2nd Avenue, live at any point after Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Reynolds Metals Company International Headquarters (Richmond, VA) to Newport News Williamsburg International Airport (NEWPORT NEWS, VA)
+
+  Route steps:
+['Drive southeast on West Broad Street/US 33/US 250. Continue on US 250.', 'Turn left onto North 18th Street/US 360.', 'Turn right onto Venable Street.', 'Turn left onto North 25th Street.', 'Enter the roundabout and take the 2nd exit onto Nine Mile Road/VA 33.', 'Turn right to take the I 64 East ramp.', 'Keep left to stay on I 64 East.', 'Take exit 247 on the right onto VA 143 toward VA 238/Yorktown/Lee Hall.', 'Turn left onto Merrimac Trail/VA 143. Continue on VA 143.', 'Turn left onto Turnberry Boulevard.', 'Turn right onto McManus Boulevard.', 'Turn left onto HV Kelly Drive.', 'Turn left onto Bland Boulevard.', 'Turn right after 264 meters or 23-28 seconds.', 'Continue for 65 meters or 13-16 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on I 64, live at any point after Step 7?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Seattle Paine Field International Airport (EVERETT, WA) to PROVIDENCE ST. PETER HOSPITAL (OLYMPIA, WA)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 179 meters or 39-47 seconds.', 'Keep left at the fork.', 'Turn right onto 100th Street Southwest.', 'Turn left to stay on 100th Street Southwest.', 'Turn right after 576 meters or 38-46 seconds.', 'Turn left after 31 meters or 7-9 seconds.', 'Bear right after 63 meters or 6-8 seconds.', 'Turn right onto East Minuteman Drive.', 'Turn left onto 112th Street Southwest.', 'Turn right onto Bomarc Road.', 'Turn left after 203 meters or 28-34 seconds.', 'Turn right after 10 meters or 5-6 seconds.', 'Turn right onto Beverly Park Road.', 'Turn left onto Mukilteo Speedway/WA 525. Continue on WA 525.', 'Take the WA 99 South exit on the right toward Lynnwood.', 'Keep right to stay on WA 99.', 'Keep left to take East Marginal Way South.', 'Bear left onto South Kent Des Moines Road/SR 516.', 'Turn right to take the I 5 South ramp toward Portland.', 'Keep right to stay on I 5 South.', 'Take exit 130 on the right toward South 56th Street.', 'Keep left toward South 56th Street East.', 'Keep left to take I 5 South.', 'Take exit 122B-A on the right toward Berkeley Street/Madigan.', 'Keep right to take exit 122A onto I 5 South toward Berkeley Street/Madigan.', 'Take exit 120B-A on the right toward Joint Base Lewis–McChord/Lewis-Main.', 'Keep left toward Joint Base Lewis–McChord/Lewis-Main.', 'Keep left to take I 5 South toward Olympia/Portland.', 'Take exit 119 on the right toward Steilacoom/DuPont Road.', 'Keep left to take I 5 South toward Joint Base Lewis–McChord/DuPont Gate.', 'Take exit 109 on the right toward Martin Way/College Street/Sleater-Kinney Road North.', 'Turn right onto Martin Way East.', 'Turn right after 1766 meters or 112-137 seconds.', 'Turn left after 79 meters or 18-22 seconds.', 'Turn right after 28 meters or 7-8 seconds.', 'Turn left after 85 meters or 18-23 seconds.', 'Turn right onto Lilly Road Northeast.', 'Turn left after 194 meters or 18-22 seconds.', 'Turn right after 67 meters or 13-16 seconds.', 'Turn left onto Ensign Road Northeast.', 'Turn right after 110 meters or 11-13 seconds.', 'Turn right after 40 meters or 11-14 seconds.', 'Bear right after 153 meters or 33-41 seconds.', 'Make a sharp left after 48 meters or 11-13 seconds.', 'Continue for 14 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 20, the driver getting on I 5, live at any point after Step 25?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: STAMFORD HOSPITAL (STAMFORD, CT) to Spencer House (Hartford, CT)
+
+  Route steps:
+['Drive south.', 'Turn left after 62 meters or 10-12 seconds.', 'Turn right onto Shelburne Road.', 'Turn right onto West Broad Street.', 'Turn left onto Washington Boulevard/CT 137. Continue on CT 137.', 'Take the CT 15 North ramp on the right toward New Haven.', 'Keep left to take US 5/CT 15 North/Wilbur Cross Highway.', 'Keep right to take exit 90 to stay on US 5 toward Main Street.', 'Keep left to take exit 90 to stay on US 5 toward Main Street.', 'Turn left onto US 5/Main Street.', 'Turn left to stay on Main Street.', 'Make a sharp left to stay on Main Street.', 'Turn right onto Connecticut Boulevard/US 44.', 'Turn left toward I 84 West/US 44 West/I 91/Hartford.', 'Take exit 47 on the right toward Sigourney Street.', 'Turn right onto Sigourney Street.', 'Turn left onto Asylum Avenue.', 'Turn left after 518 meters or 35-43 seconds.', 'Continue for 75 meters or 27-33 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 11, the driver getting on Main Street, live at any point after Step 13?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: White, Joseph and Minnie, House (Middlesex, NJ) to VIRTUA MEMORIAL HOSPITAL OF BURLINGTON COUNTY (MOUNT HOLLY, NJ)
+
+  Route steps:
+['Drive south on Hazelwood Avenue.', 'Turn left onto Union Avenue/NJ 28.', 'Bear right onto Harris Avenue.', 'Turn right onto Hooker Street.', 'Bear right onto Cedar Avenue.', 'Turn left onto NJ 18/Centennial Avenue.', 'Take the NJ 18 exit on the right.', 'Take the NJTP Toll/I 95 Toll ramp on the right toward New Jersey Turnpike.', 'Keep right to take I 95 South/NJTP South toward Trenton.', 'Keep right to take I 95/NJTP/New Jersey Turnpike.', 'Keep left to stay on New Jersey Turnpike toward Camden/Wilmington.', 'Take exit 5 on the right toward Burlington/Mount Holly.', 'Turn right onto CR 541/Burlington-Mount Holly Road.', 'Take the CR 541 South exit on the right toward NJ 38/Lumberton/Medford.', 'Turn left onto NJ 38/State Route 38.', 'Turn right onto Main Street/CR 691.', 'Make a sharp left to stay on CR 691.', 'Turn right after 612 meters or 47-57 seconds.', 'Continue for 48 meters or 12-15 seconds.', 'Your destination is on the right.']
+
+Question:
+  Is the effect from Step 13, the driver getting on CR 541, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: Stettler, Frank C., House (Portland, OR) to US Post Office (The Dalles, OR)
+
+  Route steps:
+['Drive northeast on Northwest Lovejoy Street.', 'Bear left onto Broadway Bridge.', 'Turn left onto Northeast 24th Avenue.', 'Turn right onto Northeast Broadway.', 'Turn right onto Northeast 37th Avenue.', 'Keep left to take Northeast Halsey Street.', 'Turn left onto Northeast 238th Drive.', 'Turn right to take the I 84 East ramp toward Troutdale/Hood River.', 'Keep left to stay on I 84 East/US 30/Columbia River Highway.', 'Take exit 22 on the right toward Corbett.', 'Take exit 64 on the right onto OR 35 toward White Salmon/Government Camp.', 'Take exit 76 on the right toward Rowena.', 'Keep right to take I 84 East/Columbia River Highway toward Rowena.', 'Take exit 84 on the right onto US 30 east toward The Dalles City Center.', 'Bear right onto West 2nd Street/US 30. Continue on US 30.', 'Turn left after 657 meters or 29-35 seconds.', 'Turn left onto Union Street.', 'Turn left onto West 2nd Street/US 30.', 'Continue for 13 meters or 4-5 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 8, the driver getting on I 84, live at any point after Step 14?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: United States Custom House (Philadelphia, PA) to PHYSICIANS CARE SURGICAL HOSPITAL (ROYERSFORD, PA)
+
+  Route steps:
+['Drive east.', 'Turn right onto South 2nd Street.', 'Turn right onto Walnut Street.', 'Turn right onto Schuylkill Avenue.', 'Keep left to stay on Schuylkill Avenue.', 'Take the I 76 West ramp on the right toward Valley Forge.', 'Keep left to take I 76 West toward Valley Forge.', 'Keep left to stay on I 76 West/Schuylkill Expressway.', 'Keep right to take exit 328B-A/327 onto US 422 West toward Pottstown.', 'Keep left to take US 422 West toward Pottstown.', 'Keep right to take exit 328A onto US 202 South/US 422 West toward Pottstown.', 'Keep right to take US 422 toward Pottstown.', 'Keep left to take US 422 West toward Pottstown.', 'Keep left to take US 422/Pottstown Expressway.', 'Take the exit on the right toward Sanatoga.', 'Turn right toward Ridge Pike.', 'Turn right onto Limerick Center Road.', 'Turn left onto Enterprise Drive.', 'Turn right after 1243 meters or 86-106 seconds.', 'Continue for 84 meters or 16-19 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 13, the driver getting on US 422, live at any point after Step 17?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: GUNNISON VALLEY HOSPITAL (GUNNISON, UT) to Dallin House (Springville, UT)
+
+  Route steps:
+['Drive west on East 100 North Street.', 'Turn right onto North Main Street/US 89.', 'Turn right onto East 300 North Street/US 89. Continue on US 89.', 'Turn left onto US 6/US 89.', 'Turn right onto State Road/US 89. Continue on US 89.', 'Turn right onto 200 South.', 'Continue for 462 meters or 42-52 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 6, the driver getting on 200, live at any point after Step 6?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: ST FRANCIS-EASTSIDE (GREENVILLE, SC) to Anderson Regional Airport (ANDERSON, SC)
+
+  Route steps:
+['Drive east.', 'Turn right after 73 meters or 16-19 seconds.', 'Turn right after 226 meters or 78-96 seconds.', 'Turn left after 36 meters or 7-8 seconds.', 'Turn right onto Commonwealth Drive.', 'Turn left onto Patewood Drive.', 'Turn left onto Haywood Road.', 'Bear left to stay on Haywood Road.', 'Bear right after 61 meters or 5-6 seconds.', 'Turn left after 57 meters or 11-14 seconds.', 'Turn right onto Laurel Creek Lane.', 'Turn left onto Carolina Avenue.', 'Turn right onto Amber Drive.', 'Turn left onto Wembley Road.', 'Turn right onto Shelburne Road.', 'Turn left onto Parkins Mill Road.', 'Turn right onto Cleveland Street Extension.', 'Turn left onto South Pleasantburg Drive/SC 291.', 'Turn right onto Chalmers Road.', 'Turn left onto Augusta Road.', 'Take the I 85 South ramp on the right toward Atlanta.', 'Take exit 44B-A on the right onto SC 20 toward Piedmont Highway.', 'Keep left to take SC 20 toward Piedmont Highway.', 'Keep left to take I 85 South toward Atlanta.', 'Take exit 32 on the right onto SC 8 toward Pelzer/Belton.', 'Bear left after 460 meters or 18-22 seconds.', 'Turn left onto Easley Highway/SC 8.', 'Turn right onto Midway Road.', 'Bear right onto McConnell Springs Road.', 'Turn right to stay on McConnell Springs Road.', 'Turn left onto East Greenville Street/SC 81.', 'Turn right onto East Mauldin Street.', 'Turn left onto 2nd Avenue.', 'Turn right onto Lee Street.', 'Turn right onto Bleckley Street.', 'Turn left onto Rogers Street.', 'Turn right onto Jackson Street.', 'Turn left onto Standridge Road.', 'Turn left onto Michelin Boulevard/383.', 'Turn right onto West Whitner Street/SC 24. Continue on SC 24.', 'Turn left onto Airport Road.', 'Make a sharp left to stay on Airport Road.', 'Turn right after 17 meters or 8-9 seconds.', 'Continue for 89 meters or 35-43 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Is the effect from Step 7, the driver getting on Haywood Road, live at any point after Step 12?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Live Variable Analysis
+Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
+
+Given the following travel planning scenario:
+
+  Goal: POCONO MEDICAL CENTER (EAST STROUDSBURG, PA) to Cliveden (Chew House) (Philadelphia, PA)
+
+  Route steps:
+['Drive west.', 'Turn left after 38 meters or 8-10 seconds.', 'Turn right onto East Brown Street.', 'Turn left onto Prospect Street.', 'Take the I 80 ramp on the right.', 'Take exit 307 on the right onto PA 191 toward Broad Street.', 'Turn left onto Broad Street/PA 191. Continue on PA 191.', 'Turn left onto Messinger Street.', 'Turn right onto South Main Street.', 'Turn right onto Front Street.', 'Bear left onto Knox Avenue.', 'Bear right onto Cattell Street.', 'Bear right onto College Avenue.', 'Enter Centre Square and take the 2nd exit onto South 3rd Street.', 'Turn left onto PA 611/South Delaware Drive.', 'Keep left to take North Easton Road.', 'Enter the roundabout and take the 2nd exit onto South Easton Road.', 'Keep straight to take PA 611/Easton Road.', 'Turn right onto Dresher Road.', 'Bear left to stay on Dresher Road.', 'Turn left onto Welsh Road/PA 63.', 'Turn right onto Dreshertown Road.', 'Turn left onto Limekiln Pike/PA 152.', 'Stay straight to take the ramp.', 'Keep right to stay on PA 152.', 'Turn left onto Susquehanna Road/PA 152.', 'Bear right after 277 meters or 17-21 seconds.', 'Bear right onto Limekiln Pike/PA 152.', 'Bear right to stay on Limekiln Pike/PA 152.', 'Turn right to stay on Limekiln Pike/PA 152.', 'Turn right onto South Easton Road/PA 152 South.', 'Turn left to take the PA 309 South ramp toward Philadelphia.', 'Turn right to stay on Limekiln Pike.', 'Bear right onto East Upsal Street.', 'Turn left onto Belfield Avenue.', 'Turn right onto East Cliveden Street.', 'Turn left onto Chew Avenue.', 'Turn right onto East Cliveden Street.', 'Turn left onto Morton Street.', 'Turn right after 57 meters or 8-10 seconds.', 'Turn left after 112 meters or 50-61 seconds.', 'Continue for 19 meters or 5-6 seconds.', 'Your destination is on the left.']
+
+Question:
+  Is the effect from Step 24, the driver getting on PA 152, live at any point after Step 28?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No

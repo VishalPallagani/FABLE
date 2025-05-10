@@ -1,0 +1,1501 @@
+prompt,ground_truth,response
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: VA MEDICAL CENTER - WEST ROXBURY DIVISION (WEST ROXBURY, MA) to Noyes, J.A., House (Cambridge, MA)
+
+  Route steps:
+['Drive south.', 'Turn left after 117 meters or 19-23 seconds.', 'Turn right onto Spring Street.', 'Turn right onto Veterans of Foreign Wars Parkway.', 'Bear left onto Baker Street.', 'Bear left onto Dedham Street.', 'Turn right onto Parker Street.', 'Keep left to take Centre Street.', 'Turn left onto Brattle Street.', 'Turn left onto Fayerweather Street.', 'Turn right onto Reservoir Street.', 'Turn right onto Highland Street.', 'Continue for 400 meters or 44-54 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: McDonald, J. D., House (Fremont, NE) to NORFOLK REGIONAL CENTER (NORFOLK, NE)
+
+  Route steps:
+['Drive west on East Military Avenue.', 'Turn right onto North Broad Street.', 'Keep left to take Highway 275.', 'Turn right onto Channel Road/NE 35/US 275 Business. Continue on NE 35/US 275 Business.', 'Enter the roundabout and take the 2nd exit onto North Victory Road.', 'Turn right after 1946 meters or 99-121 seconds.', 'Turn right after 207 meters or 29-35 seconds.', 'Turn left after 187 meters or 29-36 seconds.', 'Turn left after 53 meters or 7-9 seconds.', 'Continue for 48 meters or 8-9 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: GAYLORD HOSPITAL (WALLINGFORD, CT) to Strong House (Coventry, CT)
+
+  Route steps:
+['Drive west.', 'Turn right after 67 meters or 22-27 seconds.', 'Turn right onto Gaylord Farm Road.', 'Turn right onto Parker Farms Road.', 'Turn left onto Cheshire Road.', 'Turn left onto South Turnpike Road.', 'Turn left onto Masonic Avenue.', 'Turn right onto Hall Avenue/CT 150.', 'Turn left to take the CT 15 North ramp toward Hartford.', 'Take exit 64B on the right onto I 91 North toward Hartford/Middletown.', 'Take exit 29 onto CT 15 North toward I 84 East/East Hartford/Boston.', 'Keep left to stay on Wilbur Cross Highway.', 'Keep right to take exit 59 onto I 384 East/State Trooper Russell A. Bagshaw Highway toward Providence.', 'Keep right to take US 6 East toward Willimantic/Providence.', 'Turn left onto South Street.', 'Continue for 5357 meters or 351-429 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: DECATUR MORGAN HOSPITAL - DECATUR CAMPUS (DECATUR, AL) to Northwest Alabama Regional Airport (MUSCLE SHOALS, AL)
+
+  Route steps:
+['Drive south.', 'Turn right onto 8th Street Southeast.', 'Turn right onto Sommerville Road Southeast.', 'Turn left onto Church Street Northeast.', 'Turn right onto Well Street Northeast.', 'Turn left onto US 72 Alternate/AL 20/Wilson Street Northeast. Continue on US 72 Alternate/AL 20.', 'Stay straight to take the ramp.', 'Turn right onto AL 133/AL 157.', 'Turn right onto 2nd Street/AL 184. Continue on AL 184.', 'Turn right onto Airport Road.', 'Continue for 968 meters or 94-115 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Columbia Regional Airport (COLUMBIA, MO) to St. Mary's Episcopal Church (Fayette, MO)
+
+  Route steps:
+['Drive west.', 'Turn right onto South Airport Road.', 'Turn left onto MO H.', 'Enter the roundabout and take the 2nd exit.', 'Keep right to take I 70/US 40/MO PP toward Kansas City/Saint Louis.', 'Keep left at the fork.', 'Continue on US 63 Conn.', 'Turn left to take the US 40 West ramp toward Kansas City.', 'Take exit 121 on the right onto US 40/MO 240 toward Fayette.', 'Bear right onto US 40/MO 240.', 'Bear right to stay on MO 240.', 'Keep right to stay on MO 240.', 'Turn left onto West Davis Street.', 'Continue for 63 meters or 8-10 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Welles, Gideon, House (Glastonbury, CT) to Barnum Museum (Bridgeport, CT)
+
+  Route steps:
+['Drive west on Hebron Avenue.', 'Turn right onto Main Street.', 'Turn left onto Putnam Boulevard.', 'Turn left to take the CT 3 South ramp toward Wethersfield.', 'Take exit 11A onto I 91 South toward New Haven.', 'Take exit 17 on the right onto CT 15 South.', 'Keep left to take CT 15 South.', 'Take exit 52 on the right onto CT 8/CT 108 toward Bridgeport.', 'Keep left to take CT 8 South toward Bridgeport.', 'Keep left to take CT 8 South toward Bridgeport.', 'Take exit 2A on the right toward Main Street/Washington Avenue.', 'Keep left to take Main Street toward Main Street South/East Washington Avenue.', 'Continue for 1572 meters or 91-111 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 10 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Bennett, Henry, House (Ann Arbor, MI) to Ford, Henry, Square House (Garden City, MI)
+
+  Route steps:
+['Drive west.', 'Turn right onto East Liberty Street.', 'Turn left onto South Division Street.', 'Turn left onto East Huron Street/I 94 BL/US 23 BUS.', 'Turn right onto North Main Street/US 23 BUS.', 'Stay straight to take the M 14 East ramp toward Flint/Detroit.', 'Keep left to take exit 42 to stay on M 14 East toward Plymouth/Livonia.', 'Take exit 10 on the right onto M 153 toward Ford Road.', 'Turn left onto Brandt Street.', 'Turn right onto Beechwood Avenue.', 'Turn right after 58 meters or 11-14 seconds.', 'Continue for 10 meters or 5-6 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ALTRU HOSPITAL (GRAND FORKS, ND) to Devils Lake Regional Airport (DEVILS LAKE, ND)
+
+  Route steps:
+['Drive east.', 'Turn left after 99 meters or 16-20 seconds.', 'Turn right onto South 30th Street.', 'Turn left onto DeMers Avenue.', 'Turn left to take the I 29 North ramp.', 'Take exit 141 on the right onto US 2 toward Grand Forks Air Force Base.', 'Turn left onto US 2 West/Gateway Drive. Continue on US 2 West.', 'Turn left onto State Highway 19/ND 19.', 'Turn right after 2404 meters or 83-102 seconds.', 'Turn left after 58 meters or 8-9 seconds.', 'Continue for 684 meters or 57-70 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Chapelle Administration Building (Columbia, SC) to Building at 303 Saluda Avenue (Columbia, SC)
+
+  Route steps:
+['Drive south.', 'Turn right onto Harden Street/SC 555.', 'Make a left U-turn to stay on Harden Street.', 'Turn right onto Greene Street.', 'Turn left onto Saluda Avenue.', 'Turn right onto Catawba Street.', 'Continue for 44 meters or 11-13 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: WESTWOOD/PEMBROKE HEALTH SYSTEM WESTWOOD (WESTWOOD, MA) to Hazen-Spiller House (Haverhill, MA)
+
+  Route steps:
+['Drive north on Abbey Road.', 'Turn left onto Clapboardtree Street.', 'Turn right to stay on Clapboardtree Street.', 'Bear right onto Pond Street.', 'Bear right onto High Street/MA 109. Continue on High Street.', 'Take the I 95 North ramp on the right toward Peabody/Portsmouth New Hampshire.', 'Take exit 50A-B on the right onto US 3 North toward Lowell/Nashua New Hampshire.', 'Keep right to take exit 50A onto US 3 North toward Lowell/Nashua New Hampshire.', 'Keep right to take exit 80-81A onto Lowell Connector toward Lawrence.', 'Take exit 81A on the right onto I 495 North toward Lawrence.', 'Take exit 107 on the right onto MA 110/MA 113 toward River Street.', 'Bear right onto River Street/MA 110/MA 113. Continue on MA 113.', 'Keep left to take Water Street/MA 113.', 'Bear left onto Groveland Street.', 'Continue for 32 meters or 4-5 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: OUR CHILDRENS HOUSE (DALLAS, TX) to PLANO SPECIALTY HOSPITAL (PLANO, TX)
+
+  Route steps:
+['Drive south.', 'Turn left onto Brookriver Drive.', 'Turn left onto Empire Central Drive.', 'Turn right onto North Stemmons Freeway.', 'Bear left toward I 35E North.', 'Take exit 445B on the right onto PGBT toward President George Bush Turnpike.', 'Keep right to take PGBT East Toll toward President George Bush Turnpike East.', 'Take the exit on the right toward Coit Road.', 'Turn left onto Coit Road.', 'Turn left after 2503 meters or 132-161 seconds.', 'Turn right after 37 meters or 10-13 seconds.', 'Continue for 64 meters or 14-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 9 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: U.S. Courthouse and Post Office (Indianapolis, IN) to Hermitage, The (Brookville, IN)
+
+  Route steps:
+['Drive east on East New York Street.', 'Turn right onto North Pennsylvania Street.', 'Turn left onto East Maryland Street.', 'Bear right onto East Washington Street.', 'Turn right onto Southeastern Avenue.', 'Enter the roundabout and take the 2nd exit onto Southeastern Avenue.', 'Continue on US 421X.', 'Take exit 116 on the right onto SR 44 South/SR 9 South toward Shelbyville/Rushville.', 'Bear right onto SR 44.', 'Turn right onto South Main Street/US 52/SR 3. Continue on US 52.', 'Turn right onto Main Street/US 52/SR 1.', 'Turn left onto East 9th Street.', 'Turn right onto Market Street.', 'Turn left onto East 8th Street.', 'Turn left after 61 meters or 8-10 seconds.', 'Continue for 79 meters or 26-32 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: LANDMARK MEDICAL CENTER (WOONSOCKET, RI) to Malbone, Francis, House (Newport, RI)
+
+  Route steps:
+['Drive north.', 'Turn left onto Cass Avenue.', 'Turn left onto Cumberland Street/RI 126.', 'Turn right onto Hamlet AVenue/RI 126.', 'Make a sharp left after 57 meters or 3-4 seconds.', 'Bear right onto Cumberland Hill Road/RI 122. Continue on RI 122.', 'Bear right toward RI 99 South.', 'Take the exit.', 'Keep right to take exit 8B onto I 295 South toward Warwick.', 'Keep left to take exit 24B onto RI 4 South toward North Kingstown.', 'Take the RI 138 East ramp on the right toward Jamestown/Newport.', 'Turn left onto JT Connell Connector/RI 138A.', 'Turn left onto JT Connell Highway.', 'Turn right onto Thames Street.', 'Continue for 194 meters or 21-26 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 13 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Franklin Institute (Philadelphia, PA) to Northeast Philadelphia Airport (PHILADELPHIA, PA)
+
+  Route steps:
+['Drive west.', 'Turn right onto South 7th Street.', 'Bear right onto North Franklin Street.', 'Turn right to take the I 95 ramp toward New York/Chester.', 'Keep left to take I 95 North toward New York.', 'Take exit 35 on the right onto PA 63 West toward Woodhaven Road.', 'Bear right toward Thornton Road.', 'Turn left onto Thornton Road.', 'Turn right onto Comly Road.', 'Turn left onto Norcom Road.', 'Turn left after 1611 meters or 135-164 seconds.', 'Turn left after 121 meters or 22-26 seconds.', 'Turn left after 215 meters or 70-86 seconds.', 'Continue for 610 meters or 100-122 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 12 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: High Gate (Fairmont, WV) to Ogden, H. C., House (Wheeling, WV)
+
+  Route steps:
+['Drive northeast on Fairmont Avenue/US 250. Continue on US 250.', 'Turn left onto Monroe Street/US 250.', 'Turn left onto US 19/US 250/Jackson Street.', 'Turn right onto US 250/Cleveland Avenue. Continue on US 250.', 'Turn right onto US 250/East Main Street. Continue on US 250.', 'Turn right onto US 250/Hornet Highway. Continue on US 250.', 'Turn left onto US 250/Waynesburg Pike Road.', 'Turn left to stay on US 250/Waynesburg Pike Road.', 'Turn right onto US 250/1st Street.', 'Turn right onto US 250/Jefferson Avenue.', 'Turn right onto US 250/WV 2/Wheeling Avenue.', 'Take the I 70 exit on the right.', 'Take exit 2A on the right onto WV 88 North toward Oglebay Park.', 'Continue.', 'Bear right onto National Road/US 40.', 'Turn left onto Park Road.', 'Bear left onto Orchard Road.', 'Turn right after 3 meters or 0 seconds.', 'Continue for 35 meters or 34-42 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 11 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: WHITTIER PAVILION (HAVERHILL, MA) to New Bedford Regional Airport (NEW BEDFORD, MA)
+
+  Route steps:
+['Drive north.', 'Turn left after 44 meters or 7-9 seconds.', 'Turn left onto Webster Street.', 'Turn right onto Summer Street.', 'Turn left onto Main Street/MA 97/MA 125.', 'Turn right onto Route 125 Connector.', 'Take the I 495 South ramp on the right toward Lawrence.', 'Take exit 97A on the right onto I 93 South toward Boston.', 'Keep left to take I 93 South/Interstate 93 HOV lane.', 'Keep left to stay on I 93 South/Interstate 93 HOV lane.', 'Keep right to take I 93 South/US 1 toward I 95/Providence Rhode Island.', 'Take exit 4 onto MA 24 South toward Fall River.', 'Take exit 17A on the right onto MA 140 South toward New Bedford.', 'Take exit 4 on the right toward Mount Pleasant Street/Airport Road.', 'Turn left onto Mount Pleasant Street.', 'Turn right onto Downey Street.', 'Turn right after 1330 meters or 95-116 seconds.', 'Continue for 59 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Zanesville Municipal Airport (ZANESVILLE, OH) to The Ohio State University Airport - Don Scott Field (COLUMBUS, OH)
+
+  Route steps:
+['Drive northeast on Ritchey Parkway.', 'Turn left onto Air Park Drive.', 'Turn right onto Airport Road.', 'Turn left to take the I 70 ramp.', 'Keep right to take exit 108 onto I 270 North.', 'Keep right to take I 270 North.', 'Keep left to take I 270 North toward Main Street/Whitehall.', 'Keep left to take I 270 North/Jack Nicklaus Freeway.', 'Keep left to stay on Jack Nicklaus Freeway.', 'Take exit 20 on the right toward Sawmill Road.', 'Keep left to take Sawmill Road/CR 70 toward Sawmill Road South.', 'Turn left after 3426 meters or 178-217 seconds.', 'Continue for 1238 meters or 400-489 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Woodmen of Union Building (Hot Springs, AR) to Smith, S. G., House (Conway, AR)
+
+  Route steps:
+['Drive southeast on Malvern Avenue.', 'Turn left onto East Grand Avenue/US 70B.', 'Take the I 30 ramp.', 'Take exit 129 on the right onto I 430 North toward Fort Smith.', 'Keep left to take exit 13B onto I 40 West toward Fort Smith/Oklahoma City.', 'Take exit 127 on the right onto US 64/Oak Street.', 'Turn left onto US 64/East Oak Street.', 'Continue for 2552 meters or 161-197 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Camarillo International Airport (CAMARILLO, CA) to Santa Paula Hardware Company Block-Union Oil Company (Santa Paula, CA)
+
+  Route steps:
+['Drive north.', 'Turn left onto Verdulera Street.', 'Turn right onto North Wood Road.', 'Turn left onto West Ventura Boulevard.', 'Turn right onto Central Avenue.', 'Turn right onto Santa Clara Avenue.', 'Turn left onto West Los Angeles Avenue/CA 118.', 'Keep left to take South Wells Road.', 'Take the CA 126 East ramp on the right toward Santa Clarita/Santa Paula.', 'Take the CA 150 exit on the right toward 10th Street/Santa Paula.', 'Turn left onto South 10th Street/CA 150.', 'Turn right onto East Main Street.', 'Continue for 34 meters or 9-11 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Temora (Ellicott City, MD) to Martin State Airport (BALTIMORE, MD)
+
+  Route steps:
+['Drive northeast on Columbia Road.', 'Turn right to stay on Columbia Road.', 'Turn right onto Saint Johns Lane.', 'Turn right onto Long Gate Parkway.', 'Turn left to take the ramp toward MD 100 East.', 'Take exit 5B on the right onto I 95 North toward Baltimore.', 'Keep left to take I 95 North (left tunnel).', 'Take exit 61 on the right onto US 40 East toward Pulaski Highway.', 'Turn right toward MD 700 South/Martin Boulevard.', 'Bear right to stay on Martin Boulevard/MD 700 South.', 'Bear right toward MD 150 East/Chase.', 'Bear right onto Eastern Boulevard/MD 150.', 'Turn right onto Wilson Point Road/MD 587 South.', 'Bear left onto Strawberry Point Road.', 'Turn left after 397 meters or 64-78 seconds.', 'Continue for 60 meters or 9-11 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Harder Hotel (Scribner, NE) to McDonald, J. D., House (Fremont, NE)
+
+  Route steps:
+['Drive south on Main Street.', 'Turn right onto Pearl Street.', 'Turn left onto Railroad Street.', 'Bear right onto 13 Boulevard.', 'Turn left onto US 275 South/NE 91 East/Highway 275.', 'Turn left onto West Military Avenue.', 'Continue for 342 meters or 30-37 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: US Post Office (The Dalles, OR) to Cumberland Apartments (Portland, OR)
+
+  Route steps:
+['Drive northwest on West 2nd Street/US 30. Continue on West 2nd Street.', 'Bear left after 1755 meters or 78-95 seconds.', 'Stay straight to take the I 84 West ramp.', 'Keep right to take Banfield Freeway/T. H. Banfield Expressway.', 'Keep left to take I 5 South toward Salem.', 'Keep left to take I 5 South toward Salem.', 'Keep left to take I 405/US 26 toward Beaverton.', 'Take exit 1D on the right onto US 26 West toward Beaverton.', 'Keep right toward 12th Avenue.', 'Continue on Southwest 12th Avenue.', 'Turn right onto Southwest Columbia Street.', 'Continue for 227 meters or 34-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 11 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Manchester-Boston Regional Airport (MANCHESTER, NH) to St. John's Church (Portsmouth, NH)
+
+  Route steps:
+['Drive south.', 'Turn left after 1311 meters or 170-208 seconds.', 'Turn right onto Airport Road.', 'Keep right to stay on Airport Road.', 'Turn right to stay on Airport Road.', 'Turn right to take the I 293 South ramp.', 'Keep left to stay on NH 101 toward Concord/Portsmouth.', 'Keep right to take exit 7 to stay on NH 101 toward Portsmouth.', 'Take exit 12 on the right onto I 95 toward Portsmouth.', 'Keep left to take I 95 North toward Portsmouth.', 'Keep right to stay on I 95 toward Portsmouth, New Hampshire/ Maine Points.', 'Take exit 7 on the right.', 'Turn right onto Market Street.', 'Turn left onto Bow Street.', 'Turn right onto Chapel Street.', 'Continue for 112 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Presqui'ile (Charleston, SC) to Hilton Head Airport (HILTON HEAD ISLAND, SC)
+
+  Route steps:
+['Drive southwest on Amherst Street.', 'Turn left onto Drake Street.', 'Turn right onto Reid Street.', 'Turn left onto Meeting Street/S-10-107.', 'Turn right onto Calhoun Street.', 'Turn left onto King Street/S-10-104.', 'Turn right onto Calhoun Street.', 'Take exit 1 on the right onto SC 61 toward Summerville.', 'Turn left onto Wesley Drive.', 'Turn right onto US 17/Savannah Highway.', 'Take the exit on the right after 82923 meters or 3091-3778 seconds.', 'Enter the roundabout and take the 2nd exit onto Trask Parkway.', 'Turn right onto US 21/Parris Island Gateway.', 'Turn right onto SC 170/Robert Smalls Parkway. Continue on SC 170.', 'Bear left onto SC 170/Okatie Highway.', 'Take the US 278 exit on the right.', 'Take the exit on the right after 21446 meters or 860-1051 seconds.', 'Keep left to stay on US 278 BUS/William Hilton Parkway.', 'Keep left to stay on US 278 BUS/William Hilton Parkway.', 'Continue on US 278 BUS/William Hilton Parkway.', 'Take the exit.', 'Turn left onto Dillon Road.', 'Turn left onto Gateway Circle.', 'Turn right onto Summit Drive.', 'Turn left after 249 meters or 22-27 seconds.', 'Continue for 155 meters or 49-60 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 22 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Hook and Ladder Company No. 5 (Louisville, KY) to Brown, Joshua, House (Lexington, KY)
+
+  Route steps:
+['Drive north.', 'Turn left onto Garland Avenue.', 'Turn right onto Doctor W J Hodge Street/US 31W/US 60.', 'Turn right to take the I 64 East ramp toward Lexington.', 'Keep right to stay on I 64 East toward I 71/Lexington/Cincinnati.', 'Keep left to stay on I 64 East.', 'Take exit 58 on the right onto US 60 toward Versailles.', 'Keep right to take US 60 toward Versailles.', 'Keep left to take US 60/Versailles Bypass.', 'Turn left onto US 60/Lexington Road. Continue on US 60.', 'Take the KY 4 South ramp on the right toward New Circle Road.', 'Take exit 18 on the right onto Tates Creek Road toward Lexington.', 'Turn left onto Tates Creek Road/KY 1974. Continue on Tates Creek Road.', 'Take the exit.', 'Make a left U-turn onto Tates Creek Road.', 'Turn right after 189 meters or 20-25 seconds.', 'Continue for 81 meters or 32-39 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 13 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Payne, Daniel, House (Windsor, CT) to Eells-Stow House (Milford, CT)
+
+  Route steps:
+['Drive west on Park Avenue/CT 178.', 'Turn left to take the I 91 South ramp toward Hartford.', 'Take exit 17 on the right onto CT 15 South/Wilbur Cross Parkway.', 'Keep left to take CT 15 South/Wilbur Cross Parkway.', 'Take exit 37 on the right toward I 95/US 1/Milford.', 'Keep right to take exit 1B onto US 1 South.', 'Bear right onto Meadow Street.', 'Turn right onto Boston Post Road/US 1.', 'Turn left onto High Street.', 'Continue for 1407 meters or 110-134 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ANNIE JEFFREY MEMORIAL COUNTY HEALTH CENTER (OSCEOLA, NE) to Roeser, Oscar, House (Grand Island, NE)
+
+  Route steps:
+['Drive north.', 'Turn left onto Beebe Street.', 'Turn right onto South Nance Street.', 'Turn left onto US 81/NE 92/Highway 81 & 92. Continue on NE 92.', 'Turn right to take the ramp.', 'Turn left onto US 30/Highway 30.', 'Turn left onto North Walnut Street/NE 2 Business. Continue on NE 2 Business.', 'Turn right onto West Koenig Street.', 'Continue for 344 meters or 33-40 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: MILFORD HOSPITAL (MILFORD, CT) to Groton New London Airport (GROTON, CT)
+
+  Route steps:
+['Drive southeast.', 'Turn left after 36 meters or 8-10 seconds.', 'Turn right after 51 meters or 15-18 seconds.', 'Turn left onto Seaside Avenue.', 'Bear left to stay on Seaside Avenue.', 'Turn left onto Bridgeport Avenue/CT 162.', 'Turn right onto Clark Street.', 'Keep left to take West Clark Street.', 'Turn right onto Boston Post Road/US 1.', 'Turn left to stay on Boston Post Road/US 1.', 'Take the I 95 North ramp on the right toward New Haven.', 'Take exit 85 on the right onto US 1 North toward Thames Street/Downtown Groton.', 'Keep left to stay on US 1.', 'Turn right onto South Road.', 'Turn left after 930 meters or 56-68 seconds.', 'Turn right after 38 meters or 40-49 seconds.', 'Continue for 1033 meters or 341-417 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Waterloo Regional Airport (WATERLOO, IA) to Northeast Iowa Regional Airport (CHARLES CITY, IA)
+
+  Route steps:
+['Drive northeast.', 'Turn left onto West Dunkerton Road.', 'Turn left onto Leversee Road.', 'Turn right onto East Lone Tree Road.', 'Turn right to take the US 218 north/IA 27 north ramp toward Waverly.', 'Take exit 218 on the right.', 'Turn right onto Shadow Avenue/US 18/US 218 Business. Continue on US 18/US 218 Business.', 'Turn right onto Brantingham Street/US 18. Continue on US 18.', 'Turn left onto Underwood Avenue.', 'Turn right onto 190th Street.', 'Turn right onto Victory Avenue.', 'Continue for 839 meters or 82-100 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Norfolk Naval Station (Chambers Field) (NORFOLK, VA) to RIVERSIDE REHABILITATION INSTITUTE (NEWPORT NEWS, VA)
+
+  Route steps:
+['Drive north.', 'Turn right onto Bellinger Boulevard.', 'Bear right onto West Bay Avenue.', 'Turn left onto First View Street.', 'Turn left onto Ridgewell Avenue.', 'Bear right onto Rippard Avenue.', 'Bear right onto O Connor Crescent.', 'Turn right onto 4th View Street.', 'Turn left to take the ramp toward I 64 East.', 'Take exit 264 on the right onto I 664 South toward Downtown/Newport News/Suffolk.', 'Take exit 3 on the right toward Aberdeen Road.', 'Turn left onto Aberdeen Road.', 'Bear left onto Buxton Avenue.', 'Turn right onto Blair Avenue.', 'Turn left after 32 meters or 8-10 seconds.', 'Continue for 31 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 15 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Cleveland Hopkins International Airport (CLEVELAND, OH) to Cleveland Arcade (Cleveland, OH)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto West Hangar Road.', 'Turn right onto Brookpark Road/SR 17.', 'Turn left to take the I 480 East ramp toward I 71/Youngstown.', 'Take exit 11 on the right onto I 71 toward Cleveland.', 'Keep left to take I 71 North toward Cleveland.', 'Keep left to take I 71 North.', 'Take exit 172A on the right toward East 9th Street/Downtown.', 'Turn left onto Euclid Avenue/US 20.', 'Turn right onto East 6th Street.', 'Turn left after 94 meters or 15-19 seconds.', 'Continue for 57 meters or 11-13 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 9 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Evans-Russell House (Spartanburg, SC) to SPRINGBROOK BEHAVIORAL HEALTH SYSTEM (TRAVELERS REST, SC)
+
+  Route steps:
+['Drive southwest on Otis Boulevard.', 'Turn right onto Connecticut Avenue.', 'Turn left onto East Main Street/US 29.', 'Turn right onto East Saint John Street/US 29.', 'Turn right onto US 176/SC 9/North Pine Street. Continue on North Pine Street.', 'Take the I 85 Business South exit on the right toward Greenville.', 'Keep right to take exit 51B-C-A onto SC 146 toward Greenville.', 'Keep left to take I 385 North toward Greenville.', 'Keep right to take exit 51C onto I 385 North toward Greenville.', 'Take exit 40A on the right onto SC 291 North toward Pleasantburg Drive North.', 'Turn left to stay on North Pleasantburg Drive/SC 291.', 'Bear right to stay on North Pleasantburg Drive/SC 291.', 'Turn right onto US 276/Poinsett Highway. Continue on US 276.', 'Turn left onto McElhaney Road.', 'Turn right onto Havenwood Lane.', 'Continue for 533 meters or 58-71 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: McClurg Building (Chicago, IL) to Chicago Midway International Airport (CHICAGO, IL)
+
+  Route steps:
+['Drive north.', 'Turn left onto East Adams Street/Hist US 66. Continue on Hist US 66.', 'Turn left onto South Clark Street.', 'Turn right onto West Ida B. Wells Drive.', 'Take the I 94 East/Dan Ryan Expressway exit on the right toward Indiana.', 'Keep left to take I 94 East/Dan Ryan Expressway toward Indiana.', 'Take exit 53 on the right onto Stevenson Expressway toward Saint Louis/DuSable Lake Shore Drive.', 'Keep right to take I 55 South/Stevenson Expressway toward St. Louis.', 'Take exit 286 on the right onto IL 50 toward Cicero Avenue.', 'Turn left onto South Cicero Avenue/IL 50.', 'Turn right after 3743 meters or 229-280 seconds.', 'Turn left after 94 meters or 49-60 seconds.', 'Turn right after 156 meters or 27-33 seconds.', 'Continue for 411 meters or 71-87 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: St. George's Parish Vestry House (Perryman, MD) to MEDSTAR SOUTHERN MARYLAND HOSPITAL CENTER (CLINTON, MD)
+
+  Route steps:
+['Drive northwest.', 'Turn right onto Perryman Road/MD 159.', 'Bear right to stay on Perryman Road/MD 159.', 'Turn left to stay on Perryman Road/MD 159.', 'Turn left onto Spesutia Road.', 'Turn left onto US 40/South Philadelphia Boulevard. Continue on US 40.', 'Turn left onto Riverside Parkway/MD 543.', 'Turn left to take the I 95 South ramp toward Baltimore.', 'Keep right to stay on I 95 South/John F. Kennedy Memorial Highway.', 'Keep right to take exit 62 onto I 895 South toward Annapolis.', 'Keep left to stay on I 895 South.', 'Take exit 4 on the right onto Baltimore-Washington Parkway toward I 695 East/Essex/BWI Marshall Airport.', 'Take the I 95 South exit on the right toward Richmond/Andrews Air Force Base.', 'Take exit 7A/7B on the right onto MD 5/Branch Avenue toward Waldorf.', 'Keep left to take exit 7A onto MD 5 South toward Waldorf.', 'Turn left onto Surratts Road.', 'Turn right after 241 meters or 20-24 seconds.', 'Turn right onto Hospital Drive.', 'Turn left after 188 meters or 22-26 seconds.', 'Turn right after 57 meters or 9-11 seconds.', 'Continue for 51 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 20 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Northeast Philadelphia Airport (PHILADELPHIA, PA) to ST LUKES HOSPITAL MONROE CAMPUS (STROUDSBURG, PA)
+
+  Route steps:
+['Drive north.', 'Turn right after 610 meters or 99-121 seconds.', 'Turn right after 215 meters or 72-88 seconds.', 'Turn left onto Norcom Road.', 'Turn right onto US 1 North/PA 63 East/Roosevelt Boulevard.', 'Keep right to take I 276/PATP.', 'Keep right to take I 276 Toll West toward I 76/I 476/Harrisburg/Allentown.', 'Take the I 476 exit on the right toward Allentown.', 'Keep right to take I 476 North toward Allentown.', 'Keep left to stay on I 476 North/PATP North/Pennsylvania Turnpike Northeast Extension.', 'Take exit 44 on the right onto PA 663 toward Quakertown.', 'Turn left onto John Fries Highway/PA 663.', 'Turn left onto PA 309 North/North West End Boulevard.', 'Take the I 78 East ramp on the right toward Bethlehem.', 'Take exit 71 on the right onto PA 33 North toward US 22/Stroudsburg.', 'Keep left to stay on PA 33 North toward I 80 West/Bartonsville/Hazleton.', 'Keep right to stay on PA 33 North toward Bartonsville.', 'Turn right toward PA 611 South/Stroudsburg.', 'Turn right onto Saint Lukes Lane.', 'Turn left to stay on Saint Lukes Lane.', 'Continue for 20 meters or 5-6 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping left in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Canal Dime Savings Bank (Columbia, SC) to Florence Regional Airport (FLORENCE, SC)
+
+  Route steps:
+['Drive north on Main Street.', 'Turn right onto Taylor Street/SC 12.', 'Turn left onto Bull Street/US 76 West.', 'Take the I 20 East exit on the right toward Florence.', 'Continue on I 20 Business.', 'Turn right onto West Evans Street/S-21-31.', 'Turn left onto US 301/Freedom Boulevard.', 'Turn left onto Gilbert Drive.', 'Bear right onto South McCurdy Road.', 'Turn left after 1532 meters or 100-122 seconds.', 'Turn right after 482 meters or 64-78 seconds.', 'Continue for 197 meters or 30-37 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Frost, Walter, House (Cambridge, MA) to Newman-Fiske-Dodge House (Wenham, MA)
+
+  Route steps:
+['Drive north on Frost Street.', 'Turn left onto Roseland Street.', 'Turn right onto Massachusetts Avenue/MA 2A.', 'Turn right onto Alewife Brook Parkway/MA 16.', 'Enter the roundabout and take the 2nd exit onto Mystic Valley Parkway/MA 16.', 'Bear left to stay on Mystic Valley Parkway/MA 16.', 'Take the I 93 North ramp toward Concord New Hampshire.', 'Keep left to take I 93 North toward Concord New Hampshire.', 'Take exit 28A on the right onto I 95 North toward Peabody.', 'Keep left to take exit 64 to stay on MA 128 North/Yankee Division Highway toward Gloucester.', 'Keep left to stay on MA 128 North/Yankee Division Highway.', 'Take exit 43 on the right onto MA 62 toward Middleton.', 'Turn left onto Elliott Street/MA 62.', 'Turn right onto State Road.', 'Bear left onto Burley Street.', 'Turn left onto Old Burley Street.', 'Turn right onto Maple Street.', 'Continue for 1358 meters or 79-97 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 17 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: CHILDREN'S REHABILITATION CENTER (SPARTANBURG, SC) to Hall, Ainsley, House (Columbia, SC)
+
+  Route steps:
+['Drive northwest.', 'Turn left after 12 meters or 2 seconds.', 'Turn left after 91 meters or 12-15 seconds.', 'Turn right onto Holmes Boulevard.', 'Turn right onto Cedar Springs Road/SC 56.', 'Turn left onto Southport Road/SC 295.', 'Turn left onto South Church Street/US 221.', 'Bear left onto South Church Street/US 221. Continue on US 221.', 'Turn left to take the I 26 East ramp.', 'Keep left to take I 126 East/US 76 East/Lester Bates Freeway toward Columbia.', 'Keep left to stay on US 76 East.', 'Turn right onto Bull Street/US 76 East.', 'Turn left onto Taylor Street/SC 12.', 'Turn left onto Pickens Street.', 'Turn right after 81 meters or 9-10 seconds.', 'Continue for 45 meters or 15-18 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Eppley Airfield (OMAHA, NE) to Packer's National Bank Building (Omaha, NE)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 1349 meters or 437-535 seconds.', 'Turn left onto Lindbergh Plaza.', 'Turn right onto Arthur C Storz Expressway.', 'Take the US 75 South ramp.', 'Keep right to stay on US 75.', 'Take the Q Street exit on the right.', 'Continue on South 26th Avenue.', 'Turn left onto Q Street.', 'Turn left onto South 24th Street.', 'Continue for 392 meters or 30-36 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 9 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Webster Auditorium (Phoenix, AZ) to WICKENBURG COMMUNITY HOSPITAL (WICKENBURG, AZ)
+
+  Route steps:
+['Drive south on North Galvin Parkway.', 'Turn right onto East Van Buren Street/US 80 Hist.', 'Turn right onto North 52nd Street.', 'Take the AZ 202 Loop West ramp.', 'Bear right onto I 10.', 'Take exit 124A on the right onto AZ 303 Loop North.', 'Take exit 119 on the right onto US 60 toward Grand Avenue.', 'Turn left onto US 60/West Grand Avenue. Continue on US 60.', 'Keep right to stay on US 60.', 'Enter the roundabout and take the 2nd exit onto East Wickenburg Way/US 60.', 'Turn right onto North Tegner Street.', 'Turn left onto Bralliar Road.', 'Turn left after 246 meters or 24-30 seconds.', 'Continue for 44 meters or 8-10 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 13 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Chace, A. B., Rowhouses (Fall River, MA) to Norwood Memorial Airport (NORWOOD, MA)
+
+  Route steps:
+['Drive west on Middle Street.', 'Turn right onto Broadway/MA 138.', 'Keep left to take Davol Street.', 'Take the US 6 West/MA 138 North exit toward Somerset.', 'Keep left to take MA 79 North toward MA 24/Taunton/Middleboro.', 'Keep left to take exit 41B onto I 93 South toward I 95.', 'Take exit 1A on the right onto I 95 South toward Providence Rhode Island.', 'Take exit 1A onto I 95 South toward Providence Rhode Island.', 'Take exit 23B on the right toward Neponset Street/Norwood.', 'Bear right onto Neponset Street.', 'Turn right onto Access Road.', 'Turn right after 537 meters or 39-47 seconds.', 'Continue for 146 meters or 24-29 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does keeping right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Teterboro Airport (TETERBORO, NJ) to New Jersey Hall (New Brunswick, NJ)
+
+  Route steps:
+['Drive east.', 'Turn left onto Fred Wehran Drive.', 'Turn right onto US 46.', 'Take the I 95 South ramp on the right toward NJ Turnpike.', 'Keep left to take I 95 South toward NJ Turnpike.', 'Keep right to take I 95 South toward Trenton.', 'Keep left to take I 95.', 'Keep right to take I 95/NJTP.', 'Take exit 9 on the right onto NJ 18/US 1 toward New Brunswick.', 'Keep right to take NJ 18 North toward New Brunswick.', 'Keep left to take NJ 18 North toward US 1/New Brunswick/Rutgers University.', 'Take the exit on the right toward College Avenue Campus/George Street.', 'Turn left onto George Street/CR 672.', 'Turn right onto Hamilton Street.', 'Turn right after 381 meters or 39-48 seconds.', 'Continue for 59 meters or 14-17 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: St. Paul City Hall and Ramsey County Courthouse (St. Paul, MN) to Parker, Charles and Grace, House (Minneapolis, MN)
+
+  Route steps:
+['Drive north on Kellogg Boulevard.', 'Turn left onto Rondo Avenue.', 'Take the I 94 West ramp.', 'Take exit 233B onto I 35W South.', 'Take exit 13 on the right toward 46th Street.', 'Turn right onto East 46th Street/CR 46.', 'Turn left onto Colfax Avenue South.', 'Continue for 501 meters or 53-65 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Merrick-Simmons House (Fernandina Beach, FL) to Northeast Florida Regional Airport (ST AUGUSTINE, FL)
+
+  Route steps:
+['Drive north on South 10th Street.', 'Turn left onto Ash Street.', 'Turn left onto South 8th Street/FL A1A/FL 200. Continue on FL A1A/FL 200.', 'Turn left onto US 17.', 'Turn left to take the I 295 South ramp.', 'Keep left to stay on I 295 South/East Beltway.', 'Keep left to stay on I 295 South/East Beltway.', 'Keep right to stay on East Beltway.', 'Keep right to take I 295 South/East Beltway.', 'Keep left to take exit 58 onto FL 9B South toward I 95/Daytona Beach.', 'Take exit 2 on the right onto US 1 toward Philips Highway/St Augustine.', 'Turn left onto Philips Highway/US 1. Continue on US 1.', 'Make a left U-turn to stay on US 1.', 'Turn right after 103 meters or 8-10 seconds.', 'Continue for 547 meters or 98-119 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 14 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: CORE INSTITUTE SPECIALTY HOSPITAL (PHOENIX, AZ) to Phoenix Towers (Phoenix, AZ)
+
+  Route steps:
+['Drive north.', 'Turn left after 39 meters or 8-10 seconds.', 'Turn right onto North 19th Avenue.', 'Make a left U-turn to stay on North 19th Avenue.', 'Turn left onto West Camelback Road.', 'Turn right onto North Central Avenue.', 'Make a left U-turn at West Palm Lane to stay on North Central Avenue.', 'Continue for 296 meters or 25-31 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: WEST HAVEN VA MEDICAL CENTER (WEST HAVEN, CT) to Tweed New Haven Airport (NEW HAVEN, CT)
+
+  Route steps:
+['Drive southwest on Veterans Street.', 'Bear left to stay on Veterans Street.', 'Turn left after 21 meters or 3-4 seconds.', 'Turn left onto West Spring Street.', 'Turn left onto Campbell Avenue.', 'Turn right onto Spring Street.', 'Turn right onto First Avenue/CT 122.', 'Take the I 95 North ramp on the right toward New Haven.', 'Take exit 50 on the right toward Woodward Avenue/Lighthouse Point.', 'Keep left toward Woodward Avenue/Lighthouse Point.', 'Continue on Main Street Annex.', 'Turn right onto Townsend Avenue/CT 337.', 'Turn left onto Ley Street.', 'Turn left onto Burr Street.', 'Turn right onto Dean Street.', 'Continue for 600 meters or 55-68 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 10 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Unity Temple (Oak Park, IL) to Building at 2519 Central Street (Evanston, IL)
+
+  Route steps:
+['Drive north on North Kenilworth Avenue.', 'Turn left onto Lake Street.', 'Turn right onto North Harlem Avenue/IL 43.', 'Turn right onto West Irving Park Road/IL 19.', 'Turn left onto North Keeler Avenue.', 'Turn left to take the I 90 West/I 94 West ramp.', 'Keep right to take I 94 West/Edens Expressway toward Milwaukee.', 'Take exit 35 on the right toward Old Orchard Road.', 'Bear right onto Old Orchard Road.', 'Turn left onto Gross Point Road.', 'Turn right onto Central Street.', 'Continue for 1586 meters or 115-141 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Calef, Dr. John, House (Ipswich, MA) to Carney, Sgt. William H., House (New Bedford, MA)
+
+  Route steps:
+['Drive west on Poplar Street.', 'Bear left onto South Main Street/MA 1A/MA 133.', 'Turn left onto Market Street.', 'Bear left onto Topsfield Road.', 'Turn left onto Boston Street/US 1. Continue on US 1.', 'Take the I 95 South ramp toward Boston.', 'Keep right to take exit 66 onto US 1 toward Boston.', 'Keep left to stay on US 1.', 'Keep right to take I 93 South/US 1 toward I 95/Providence Rhode Island.', 'Take exit 4 onto MA 24 South toward Fall River.', 'Take exit 17A on the right onto MA 140 South toward New Bedford.', 'Turn left onto Kempton Street/US 6.', 'Turn left onto Summer Street.', 'Turn left onto Mill Street/US 6.', 'Continue for 39 meters or 5-6 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 13 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Goodman, Timothy, House (West Hartford, CT) to Commodore Hull School (Shelton, CT)
+
+  Route steps:
+['Drive north on Quaker Lane South.', 'Turn left onto Park Road.', 'Turn left to take the I 84 ramp toward Waterbury.', 'Keep right to take I 84 West toward Waterbury.', 'Keep left to stay on I 84 West/Yankee Expressway.', 'Take exit 19 onto CT 8 South toward Naugatuck/Bridgeport.', 'Take exit 12A on the right onto CT 110/Howe Avenue toward Shelton.', 'Turn right onto Howe Avenue/CT 110.', 'Turn left onto Center Street/CT 108.', 'Turn right onto Coram Avenue/CT 108.', 'Turn left onto Wooster Street/CT 108.', 'Turn left onto Oak Avenue.', 'Turn right after 47 meters or 5-6 seconds.', 'Continue for 26 meters or 7-9 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Ponca City Regional Airport (PONCA CITY, OK) to Harwelden (Tulsa, OK)
+
+  Route steps:
+['Drive west.', 'Turn right after 38 meters or 5-6 seconds.', 'Turn left onto Waverly Street.', 'Turn left onto US 60/US 77/US 177.', 'Turn right to stay on US 177.', 'Turn right to take the US 412 East ramp toward Tulsa.', 'Take the I 244 West exit on the right toward Broken Arrow/Okmulgee/Oklahoma City.', 'Take exit 4B onto US 75 North/US 64 East/OK 51 East toward Broken Arrow.', 'Bear right toward 13th Street/Denver Avenue/13th Street/Denver Avenue.', 'Turn left onto West 13th Street.', 'Turn right onto South Denver Avenue.', 'Bear left onto Riverside Drive.', 'Turn left onto West Woodward Boulevard.', 'Turn left onto South Main Street.', 'Turn right after 22 meters or 4 seconds.', 'Continue for 75 meters or 14-17 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 11 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Jersey City High School (Jersey City, NJ) to EAST MOUNTAIN HOSPITAL (BELLE MEAD, NJ)
+
+  Route steps:
+['Drive northeast.', 'Turn right after 111 meters or 18-22 seconds.', 'Turn left after 13 meters or 4-5 seconds.', 'Turn right onto Palisade Avenue.', 'Turn right to take the NJ 139 East ramp.', 'Turn left onto Jersey Avenue.', 'Turn left onto I 78 West/NJ 139/14th Street Viaduct.', 'Keep left to stay on NJ 139/14th Street Viaduct toward US 1-9/I 280/Pulaski Skyway/Kennedy Boulevard.', 'Keep left to stay on NJ 139.', 'Keep left to take Pulaski Skyway.', 'Take the US 1-9 Local South exit on the right toward I 95/NTPJ/I 78/US 22.', 'Keep right to take I 78 West toward Port Newark/Newark Airport North Area.', 'Keep left to take I 78 West toward GSP.', 'Keep left to take I 78 West toward GSP.', 'Keep left to take I 78 West toward GSP.', 'Take exit 29 on the right onto I 287 toward Somerville.', 'Keep left to take I 287 South toward Somerville.', 'Keep left to take exit 17 onto US 202 South/US 206 South toward US 22 West/Somerville/Flemington.', 'Take the NJ 28 exit on the right toward Somerville/Princeton.', 'Enter Somerville Circle and take the 3rd exit onto US 206.', 'Turn right onto Trent Avenue/CR 601. Continue on CR 601.', 'Turn right onto East Mountain Road.', 'Turn right after 282 meters or 21-26 seconds.', 'Continue for 117 meters or 19-23 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Tuscaloosa National Airport (TUSCALOOSA, AL) to DCH REGIONAL MEDICAL CENTER (TUSCALOOSA, AL)
+
+  Route steps:
+['Drive northeast.', 'Turn left after 136 meters or 13-15 seconds.', 'Turn left onto Robert Cardinal Road.', 'Turn right onto Airport Road.', 'Turn right onto US 82/McFarland Boulevard. Continue on US 82.', 'Take the exit on the right after 11150 meters or 477-583 seconds.', 'Turn right after 81 meters or 3-4 seconds.', 'Turn left after 76 meters or 19-23 seconds.', 'Turn left after 212 meters or 35-42 seconds.', 'Continue for 62 meters or 12-15 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: UC SAN DIEGO HEALTH HILLCREST - HILLCREST MEDICAL CENTER (SAN DIEGO, CA) to US Post Office-Long Beach Main (Long Beach, CA)
+
+  Route steps:
+['Drive east on Dickinson Street.', 'Turn right onto Front Street.', 'Turn right onto West Washington Street.', 'Turn right onto San Diego Avenue.', 'Take the I 5 North ramp.', 'Keep left to stay on San Diego Freeway.', 'Keep right to take San Joaquin Hills Transportation Corridor toward Long Beach.', 'Keep right to take exit 23 onto CA 22 toward Long Beach.', 'Turn left onto Channel Drive.', 'Turn left onto CA 1/East Pacific Coast Highway.', 'Turn right onto 2nd Street.', 'Bear left onto Livingston Drive.', 'Bear right onto East Ocean Boulevard.', 'Turn right onto Long Beach Boulevard.', 'Continue for 383 meters or 40-48 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does keeping left in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Chamber of Commerce Building (New York, NY) to GRACIE SQUARE HOSPITAL (NEW YORK, NY)
+
+  Route steps:
+['Drive southwest on Liberty Street.', 'Turn right onto Clinton Avenue.', 'Turn right onto Saint James Street.', 'Bear right onto NY 32/Broadway.', 'Make a sharp left to stay on NY 32/Broadway.', 'Enter the roundabout and take the 2nd exit toward I 87/NYST.', 'Take the I 87 ramp on the right.', 'Keep left to take I 87 toward New York State Thruway.', 'Take exit 13S on the right toward Palisades Parkway South/New Jersey.', 'Keep right to take I 95 North/Hudson Terrace toward George Washington Bridge.', 'Keep left to take I 95/US 1 toward George Washington Bridge.', 'Take exit 2 on the right toward Harlem River Drive.', 'Keep left to take HRD/Harlem River Drive toward Harlem River Drive.', 'Take exit 14 on the right toward East 96th Street.', 'Bear left onto FDR Drive.', 'Turn right onto East 96th Street.', 'Turn left onto 2nd Avenue.', 'Turn left onto East 76th Street.', 'Continue for 346 meters or 43-53 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping left in Step 10 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Kresge, S. S., World Headquarters (Detroit, MI) to Wilson, Judge Robert S., House (Ann Arbor, MI)
+
+  Route steps:
+['Drive north.', 'Turn right after 46 meters or 10-12 seconds.', 'Turn right after 28 meters or 11-13 seconds.', 'Turn left onto Temple Street.', 'Turn right onto John C Lodge Drive.', 'Take exit 4B onto I 94 West toward Chicago.', 'Take exit 213B on the right onto I 96 toward Lansing.', 'Keep right to take I 96 West toward Lansing.', 'Keep left to stay on I 96.', 'Continue on M 14 West.', 'Keep left to take exit 45 to stay on M 14 West toward Ann Arbor.', 'Take exit 3 on the right onto US 23 BUS toward Downtown Ann Arbor.', 'Turn left onto East Huron Street/I 94 BL/US 23 BUS.', 'Turn left onto North Division Street.', 'Turn right onto East Ann Street.', 'Continue for 33 meters or 9-10 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping right in Step 9 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Elkins-Randolph County Regional Airport (ELKINS, WV) to Morgantown Municipal Airport Walter L. (Bill) Hart Field (MORGANTOWN, WV)
+
+  Route steps:
+['Drive southeast on Elkins-Randolf County Airport Road.', 'Turn left onto Country Club Road/CR 219/11.', 'Turn left onto US 219 South/US 250 South/WV 55 West/WV 92 South/Beverly Pike. Continue on Beverly Pike.', 'Bear left onto US 219/US 250/WV 92/Beverly Pike. Continue on US 219/US 250/WV 92.', 'Turn right onto US 33/US 219/US 250/North Randolph Avenue. Continue on US 33/US 219/US 250.', 'Turn left to take the US 33 West ramp.', 'Turn right onto US 250/WV 92/Barbour County Highway. Continue on US 250.', 'Turn right onto US 119/US 250/Barbour County Highway. Continue on US 119.', 'Turn left to stay on US 119.', 'Turn left to take the I 68 East ramp.', 'Take exit 7 on the right onto CR-857/Pierpont Rd toward WV-705/Airport.', 'Turn left onto Cheat Road/CR 857.', 'Turn left onto Hartman Run Road/CR 857.', 'Turn left onto Hart Field Road/CR 62-1.', 'Turn right after 237 meters or 26-32 seconds.', 'Turn left after 39 meters or 11-14 seconds.', 'Continue for 54 meters or 9-10 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Grand Lodge and Library of the Ancient Free and Accepted Masons (Sioux Falls, SD) to SANFORD UNIVERSITY OF SOUTH DAKOTA MEDICAL CENTER (SIOUX FALLS, SD)
+
+  Route steps:
+['Drive west.', 'Turn right onto West 13th Street.', 'Turn left onto South Minnesota Avenue/I 229 Business/SD 115.', 'Turn right onto West 18th Street.', 'Turn left onto South Grange Avenue.', 'Turn right after 202 meters or 17-21 seconds.', 'Turn right after 39 meters or 17-21 seconds.', 'Turn left after 20 meters or 8-10 seconds.', 'Continue for 26 meters or 6-7 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: OREGON STATE HOSPITAL- SALEM (NE SALEM, OR) to Portland International Airport (PORTLAND, OR)
+
+  Route steps:
+['Drive north on Recovery Drive.', 'Turn right onto Market Street Northeast.', 'Turn left to take the I 5 North ramp toward Portland.', 'Take exit 288 on the right onto I 205 North toward Oregon City.', 'Take exit 24A on the right toward Airport Way West/Portland Airport.', 'Keep right to stay on Northeast Airport Way toward Departures/Upper Roadway.', 'Keep right toward Inner Roadway/Drop Off.', 'Continue for 251 meters or 51-62 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: CHILDRENS HOSPITAL OF PHILADELPHIA (PHILADELPHIA, PA) to GOOD SHEPHERD PENN PARTNERS SPECIALTY HOSPITAL AT RITTENHOUSE (PHILADELPHIA, PA)
+
+  Route steps:
+['Drive southeast.', 'Turn right onto Civic Center Boulevard.', 'Turn right onto South University Avenue.', 'Turn left to stay on South University Avenue.', 'Take the I 76 West ramp on the right.', 'Take exit 346A toward South Street.', 'Turn right onto South Street.', 'Turn left onto South 18th Street.', 'Turn left after 89 meters or 13-16 seconds.', 'Continue for 98 meters or 34-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Cape Cod Gateway Airport (HYANNIS, MA) to ARBOUR HUMAN RESOURCE INSTITUTE (BROOKLINE, MA)
+
+  Route steps:
+['Drive north.', 'Turn right onto Mary Dunn Road.', 'Turn left onto Independence Drive.', 'Turn right onto Attucks Lane.', 'Turn left onto Phinneys Lane.', 'Turn right onto Iyannough Road/MA 132.', 'Take the US 6 West ramp on the right toward Boston/Providence, RI.', 'Keep left to take MA 3.', 'Keep right to take exit 43B to stay on MA 3 toward Boston.', 'Take exit 16 on the right onto I 90 toward Worcester.', 'Keep right to take I 90 West toward Worcester.', 'Keep right to take I 90 West toward Worcester.', 'Take exit 131 on the right toward Brighton/Allston.', 'Keep right toward Allston/Brighton.', 'Keep left toward Allston/Brighton.', 'Turn right to take the ramp toward Allston/Brighton.', 'Turn left onto Harvard Avenue.', 'Turn left onto Brighton Avenue/US 20. Continue on US 20.', 'Turn right onto Babcock Street.', 'Turn left after 144 meters or 17-20 seconds.', 'Turn left after 41 meters or 8-10 seconds.', 'Continue for 34 meters or 8-9 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Muskegon County Airport (MUSKEGON, MI) to Holland Reformed Protestant Dutch Church (Holland, MI)
+
+  Route steps:
+['Drive southeast.', 'Turn right onto Sinclair Drive.', 'Bear left after 305 meters or 37-46 seconds.', 'Turn left after 72 meters or 5-6 seconds.', 'Turn left onto East Ellis Road.', 'Turn right onto Robert Hunter Drive.', 'Turn left onto East Sternberg Road.', 'Turn right to take the US 31 South ramp toward Grand Haven.', 'Take the BL I 196 East exit on the right toward Downtown Holland/Grand Rapids.', 'Turn right onto Chicago Drive.', 'Turn left onto College Avenue.', 'Turn right onto East 10th Street.', 'Turn right after 102 meters or 13-16 seconds.', 'Continue for 10 meters or 7-9 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Headquarters House (Boston, MA) to BAYSTATE MARY LANE HOSPITAL (WARE, MA)
+
+  Route steps:
+['Drive west on Beacon Street.', 'Bear left toward Arlington Street.', 'Keep left to stay on Arlington Street.', 'Turn right to take the I 90 West ramp.', 'Keep right to take exit 78 onto Wilbur Cross Highway toward US 20/Hartford/New York City.', 'Take exit 6B on the right onto US 20 West toward MA 131/Sturbridge/Palmer.', 'Turn right onto Brookfield Road/MA 148.', 'Bear left onto Warren Road.', 'Keep right to take Southbridge Road Extension.', 'Bear right onto Brookfield Road.', 'Keep left to take Southbridge Road.', 'Turn right onto Maple Street/MA 19.', 'Turn left onto Main Street/MA 67.', 'Turn right onto Ware Road.', 'Turn left onto Marjorie Street.', 'Turn right after 105 meters or 14-18 seconds.', 'Continue for 60 meters or 13-16 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 15 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: BROADDUS HOSPITAL (PHILIPPI, WV) to Morgantown Municipal Airport Walter L. (Bill) Hart Field (MORGANTOWN, WV)
+
+  Route steps:
+['Drive south.', 'Bear left onto 3rd Street.', 'Bear left onto Beech Street.', 'Turn right onto North Walnut Street.', 'Turn left onto Locust Avenue.', 'Turn right onto US 119/US 250/Barbour County Highway. Continue on US 119.', 'Turn left to stay on US 119.', 'Turn left to take the I 68 East ramp.', 'Take exit 7 on the right onto CR-857/Pierpont Rd toward WV-705/Airport.', 'Turn left onto Cheat Road/CR 857.', 'Turn left onto Hartman Run Road/CR 857.', 'Turn left onto Hart Field Road/CR 62-1.', 'Turn right after 237 meters or 26-32 seconds.', 'Turn left after 39 meters or 11-14 seconds.', 'Continue for 54 meters or 9-10 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: WINDBER HOSPITAL (WINDBER, PA) to Calvary Episcopal Church (Pittsburgh, PA)
+
+  Route steps:
+['Drive northwest on Somerset Avenue.', 'Turn left onto 5th Street.', 'Turn right onto Graham Avenue.', 'Turn left onto Main Street/PA 601.', 'Turn right to take the Clear Shade Drive ramp.', 'Turn left to take the US 219 ramp.', 'Take the I 70/PATP/I 76 exit on the right toward Pittsburgh/Harrisburg.', 'Turn left toward I 70/I 76/PATP.', 'Turn right onto Ramada Road.', 'Take the I 76 West/I 70 West ramp toward Pittsburgh.', 'Take exit 57 on the right onto I 376 West toward Pittsburgh.', 'Keep left to take I 376 West toward Pittsburgh.', 'Keep right to take I 376 West/US 22 West toward Pittsburgh.', 'Take exit 78B on the right onto PA 8 North toward Wilkinsburg.', 'Turn left onto Shady Avenue.', 'Turn left after 433 meters or 37-46 seconds.', 'Continue for 34 meters or 9-11 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Nashville International Airport (NASHVILLE, TN) to SAINT THOMAS HIGHLANDS HOSPITAL, LLC (SPARTA, TN)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Hangar Lane.', 'Turn left onto Donelson Pike/SR 255.', 'Turn right to take the I 40 ramp.', 'Take exit 288 on the right onto TN 111 toward Livingston/Sparta.', 'Keep right to take SR 111.', 'Take the exit on the right after 19376 meters or 597-730 seconds.', 'Turn left onto North Spring Street/SR 289. Continue on SR 289.', 'Turn right onto Sewell Drive.', 'Continue for 185 meters or 20-25 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping left in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Naval Station Mayport / Admiral David L McDonald Field (JACKSONVILLE, FL) to Jacksonville Naval Air Station (Towers Field) (JACKSONVILLE, FL)
+
+  Route steps:
+['Drive southwest on Patrol Road.', 'Turn right onto Perimeter Road.', 'Turn left onto FL A1A.', 'Turn right onto Wonderwood Drive/FL 116. Continue on FL 116.', 'Turn left onto Kernan Boulevard North.', 'Take the exit on the right after 4381 meters or 201-245 seconds.', 'Take the Kernan Boulevard ramp.', 'Take the Kernan Boulevard ramp.', 'Take the I 295 South ramp.', 'Keep right to stay on East Beltway.', 'Keep right to take I 295 South/East Beltway.', 'Keep right to stay on I 295 South/East Beltway toward Orange Park.', 'Take exit 10 on the right onto US 17 toward Roosevelt Boulevard.', 'Keep right to take US 17 North toward Roosevelt Boulevard.', 'Turn right onto Yorktown Avenue.', 'Turn left onto Allegheny Road.', 'Turn right after 504 meters or 37-45 seconds.', 'Turn left onto Albermarle Avenue.', 'Turn left onto Patrol Road.', 'Turn right after 234 meters or 31-37 seconds.', 'Turn right after 323 meters or 47-58 seconds.', 'Continue for 183 meters or 30-36 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 19 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Columbus Municipal Airport (COLUMBUS, IN) to Monroe County Airport (BLOOMINGTON, IN)
+
+  Route steps:
+['Drive north.', 'Turn left after 987 meters or 128-156 seconds.', 'Turn left onto County Road 500 North.', 'Turn left onto River Road.', 'Turn right onto County Road 400 North.', 'Turn left onto US 31.', 'Turn right onto West Lowell Road.', 'Turn left onto County Road North 325 West.', 'Turn right onto Jonathan Moore Pike/SR 46. Continue on SR 46.', 'Turn left onto Van Buren Street/SR 46. Continue on SR 46.', 'Turn right to stay on SR 46.', 'Turn left to take the I 69 ramp.', 'Take exit 118 on the right.', 'Keep right to take SR 48.', 'Turn left onto South Kirby Road.', 'Turn right onto Airport Road.', 'Continue for 608 meters or 81-99 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: INSPIRA MEDICAL CENTER VINELAND (VINELAND, NJ) to Baker-Dauderstadt Farm (Warren, NJ)
+
+  Route steps:
+['Drive east.', 'Turn left after 5 meters or 1 seconds.', 'Turn left onto West Sherman Avenue/CR 552.', 'Take the NJ 55 North ramp on the right.', 'Take exit 58 on the right toward CR 621/Deptford/Almonesson.', 'Turn left onto Hurffville Road/NJ 41. Continue on NJ 41.', 'Keep left to take West Clements Bridge Road/NJ 41.', 'Turn left onto Black Horse Pike/NJ 168.', 'Take the NJTP Toll ramp on the right toward New Jersey Turnpike.', 'Keep left to take NJTP North toward New York.', 'Keep right to stay on New Jersey Turnpike.', 'Take exit 9 on the right onto NJ 18/US 1 toward New Brunswick.', 'Keep right to take NJ 18 North toward New Brunswick.', 'Keep left to take NJ 18 North toward US 1/New Brunswick/Rutgers University.', 'Turn left onto NJ 18/Centennial Avenue.', 'Take the exit on the right after 539 meters or 31-38 seconds.', 'Bear left onto Hooker Street.', 'Turn right onto Harris Avenue.', 'Turn left onto Marlborough Avenue.', 'Turn left onto Bound Brook Road/NJ 28.', 'Make a sharp right onto Greenbrook Road.', 'Turn right onto US 22.', 'Take the exit on the right after 1994 meters or 82-101 seconds.', 'Take the exit on the right after 4223 meters or 247-301 seconds.', 'Bear right onto Dubois Road.', 'Continue for 497 meters or 46-57 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Denver International Airport (DENVER, CO) to City of Colorado Springs Municipal Airport (COLORADO SPRINGS, CO)
+
+  Route steps:
+['Drive west on Loading Dock Road.', 'Keep left to stay on Loading Dock Road.', 'Turn left onto North Jackson Gap Street.', 'Take the ramp on the right toward I 70/E470/Pena Boulevard/Airport Exit.', 'Take exit 6A on the right onto E470 Toll South toward Colorado Springs.', 'Keep left to take E470.', 'Keep right to take exit 1A onto I 25.', 'Keep left to take I 25 South toward Colorado Springs.', 'Take exit 153 on the right toward Interquest Parkway.', 'Take the CO 21 South ramp on the right.', 'Turn left onto Airport Road.', 'Turn right onto Stewart Avenue.', 'Turn right to stay on Stewart Avenue.', 'Enter the roundabout and take the 2nd exit onto Malmstrom Street.', 'Turn left onto Duluth Avenue.', 'Turn right to stay on Duluth Avenue.', 'Continue for 419 meters or 44-53 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does keeping right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: NELL J. REDFIELD MEMORIAL HOSPITAL (MALAD CITY, ID) to Burley Municipal Airport (BURLEY, ID)
+
+  Route steps:
+['Drive south.', 'Turn left onto Bannock Street.', 'Turn left onto 50 North/ID 38.', 'Take the I 15 South ramp on the right.', 'Take exit 379 on the right onto I 84 West toward Boise.', 'Take exit 211 on the right onto I 84 Business/US 30 toward Heyburn/Burley.', 'Turn left to stay on I 84 Business/US 30.', 'Turn right onto Hiland Avenue.', 'Turn right after 485 meters or 52-63 seconds.', 'Continue for 937 meters or 90-110 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Bird Homestead (Rye, NY) to Lyndhurst (Tarrytown, NY)
+
+  Route steps:
+['Drive north on Milton Road.', 'Turn left onto Playland Parkway.', 'Keep right to take I 95 North toward I 287.', 'Take exit 21 on the right onto I 287 West/US 1 North toward Port Chester/Governor Mario M. Cuomo Bridge.', 'Keep left to take I 287 toward White Plains/Tappan Zee Bridge.', 'Take exit 9 on the right onto US 9 toward Tarrytown/Sleepy Hollow.', 'Turn left onto White Plains Road/NY 119.', 'Turn left onto South Broadway/US 9.', 'Turn right onto Lyndhurst Museum Lane.', 'Continue for 621 meters or 206-252 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Havens-Page House (Omaha, NE) to PAWNEE COUNTY MEMORIAL HOSPITAL (PAWNEE CITY, NE)
+
+  Route steps:
+['Drive east on US 6/Dodge Street.', 'Turn right toward I 480 South/US 75 South.', 'Take the I 480 South/US 75 South ramp.', 'Take exit 452C on the right.', 'Take exit 440 on the right onto NE 50 toward Springfield.', 'Turn left onto South 144th Street/NE 50/I 80 Alt. Continue on NE 50.', 'Keep right to stay on NE 50.', 'Turn left onto 7th Street/NE 50/NE 8.', 'Turn right after 384 meters or 23-28 seconds.', 'Continue for 87 meters or 16-20 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping left in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ACUITY SPECIALTY HOSPITAL OHIO VALLEY WEIRTON (WEIRTON, WV) to STONEWALL JACKSON MEMORIAL HOSPITAL (WESTON, WV)
+
+  Route steps:
+['Drive northeast.', 'Turn left after 100 meters or 13-16 seconds.', 'Turn right onto Colliers Way/CR 1/8.', 'Take the US 22 East ramp on the right.', 'Take the PA Turnpike 576 West exit on the right toward Washington Pennsylvania.', 'Keep right to take PA Tpke 576 East toward Washington Pennsylvania.', 'Take exit 18 on the right onto I 79 South toward Washington.', 'Keep left to take I 79 South toward New Stanton/Morgantown.', 'Take exit 21 on the right onto I 79 south toward Waynesburg/Morgantown.', 'Keep left to take I 79 South/Senator Jennings Randolph Highway.', 'Take exit 99 on the right onto US 33/US 48/US 119 toward Weston/Buckhannon.', 'Turn right onto US 33 West/US 119 South.', 'Turn left onto Main Avenue/US 19/US 33/US 119.', 'Turn right onto 2nd Street/US 33/US 119. Continue on US 33/US 119.', 'Turn left onto Hospital Place.', 'Turn right after 39 meters or 14-18 seconds.', 'Continue for 101 meters or 33-41 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 15 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: HOLYOKE MEDICAL CENTER (HOLYOKE, MA) to Mills-Stebbins Villa (Springfield, MA)
+
+  Route steps:
+['Drive east.', 'Turn right after 23 meters or 4-5 seconds.', 'Turn left onto Beech Street/US 202.', 'Turn right onto Resnic Boulevard.', 'Stay straight to take the ramp.', 'Keep left to take I 391 South.', 'Keep left to take exit 1A onto I 91 South toward Springfield/Hartford Connecticut.', 'Take exit 4 on the right onto MA 83 South toward Main Street/East Longmeadow.', 'Bear left onto East Columbus Avenue.', 'Keep right to take Mill Street.', 'Keep left to take Pine Street.', 'Turn left onto Crescent Hill.', 'Turn left after 61 meters or 7-9 seconds.', 'Continue for 33 meters or 13-15 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Dubuque Regional Airport (DUBUQUE, IA) to Waterloo Regional Airport (WATERLOO, IA)
+
+  Route steps:
+['Drive north.', 'Bear right after 1129 meters or 1005-1229 seconds.', 'Turn left onto Jecklin Lane.', 'Turn left onto Swiss Valley Road.', 'Turn left to take the US 20 West ramp.', 'Keep right to take I 380 North toward Waterloo.', 'Keep left to take US 218 North.', 'Take the exit on the right after 10177 meters or 336-411 seconds.', 'Keep right to take US 218 North toward Waverly.', 'Take exit 189 on the right onto Lone Tree Road toward North Industrial Park.', 'Turn right onto East Lone Tree Road.', 'Turn left onto Leversee Road.', 'Turn right onto West Dunkerton Road.', 'Turn right after 1617 meters or 215-262 seconds.', 'Keep right at the fork.', 'Continue for 281 meters or 36-45 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does keeping left in Step 15 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Palmer, Gen. Joseph B., House (Murfreesboro, TN) to Smyrna Airport (SMYRNA, TN)
+
+  Route steps:
+['Drive west on East Main Street.', 'Turn left onto South Academy Street.', 'Turn right onto Southeast Broad Street/US 41/US 70S.', 'Turn left onto South Church Street/US 231.', 'Turn right to take the I 24 West ramp toward Nashville.', 'Take exit 66 on the right onto Sam Ridley Parkway toward Smyrna.', 'Keep right to take Sam Ridley Parkway toward Smyrna.', 'Turn left onto Threet Industrial Road.', 'Turn right onto Thunderbird Drive.', 'Turn right onto Blue Angel Way.', 'Enter the roundabout and take the 2nd exit.', 'Continue for 83 meters or 19-23 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ORCHARD HOSPITAL (GRIDLEY, CA) to PETALUMA VALLEY HOSPITAL (PETALUMA, CA)
+
+  Route steps:
+['Drive south on Parking Lot Road.', 'Turn left onto Spruce Street.', 'Turn right onto CA 99.', 'Take the CA 113 South exit on the right toward Woodland/Tudor Road.', 'Turn right onto Tudor Road/CA 113. Continue on CA 113.', 'Keep right to stay on CA 113.', 'Turn right to stay on CA 113.', 'Turn left to take the ramp toward Sacramento.', 'Keep right to take CA 113/Vic Fazio Highway toward Davis.', 'Keep left to stay on CA 113/Vic Fazio Highway toward San Francisco.', 'Bear right onto I 80 West.', 'Keep left to take I 80 West/CA 12.', 'Keep right to stay on CA 12.', 'Take the exit on the right after 10733 meters or 382-467 seconds.', 'Keep left to stay on CA 12/CA 29.', 'Turn left onto Carneros Highway/CA 12/CA 121.', 'Turn right onto Arnold Drive.', 'Bear right onto Arnold Drive/CA 116.', 'Turn right onto Old Adobe Road.', 'Turn left onto East Washington Street.', 'Turn right onto Maria Drive.', 'Turn left onto Professional Drive.', 'Turn left after 230 meters or 28-34 seconds.', 'Continue for 118 meters or 21-26 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: SAINT FRANCIS HOSPITAL (ROSLYN, NY) to NYACK HOSPITAL (NYACK, NY)
+
+  Route steps:
+['Drive north.', 'Turn right after 13 meters or 3 seconds.', 'Turn right onto Port Washington Boulevard/NY 101.', 'Turn right onto North Service Road.', 'Take the I 495 West ramp toward New York.', 'Take exit 31N-S on the right toward Whitestone Bridge.', 'Keep right to take exit 31N onto CI/Cross Island Parkway/100th Infantry Division Parkway toward Whitestone Bridge.', 'Keep right to take exit 33 onto I 295 North toward Throgs Neck Bridge/Bronx/New England.', 'Keep left to take Cross Bronx Expressway.', 'Keep left toward Upper Level.', 'Take exit 74 on the right toward Palisades Parkway.', 'Take exit 4 on the right onto US 9W.', 'Turn left onto Palisades Boulevard/US 9W. Continue on US 9W.', 'Turn left to stay on US 9W.', 'Turn right onto Hillside Avenue/US 9W. Continue on US 9W.', 'Turn right after 1623 meters or 79-97 seconds.', 'Continue for 48 meters or 11-14 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 16 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: North Central West Virginia Airport (BRIDGEPORT, WV) to Elmhurst (Wellsburg, WV)
+
+  Route steps:
+['Drive west on Crosswind Drive/CR 50/32.', 'Turn right onto Benedum Drive/WV 131.', 'Turn right to take the I 79 North ramp.', 'Keep left to stay on I 79 North.', 'Keep left to take I 70 West/Dwight D Eisenhower Highway.', 'Take exit 17 on the right onto PA 18 toward Jefferson Avenue.', 'Turn right onto East Wylie Avenue.', 'Turn right onto Jefferson Avenue/PA 18 North.', 'Bear left onto Jefferson Avenue/PA 844.', 'Turn right onto Commerce Street/WV 2.', 'Turn right onto 16th Street.', 'Turn left onto Pleasant Avenue.', 'Turn right onto Grand Avenue.', 'Continue for 16 meters or 3 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 10 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: LOS ANGELES METROPOLITAN MEDICAL CENTER (LOS ANGELES, CA) to Gonzalez, Rafael, House (Santa Barbara, CA)
+
+  Route steps:
+['Drive north on South Western Avenue.', 'Turn left to take the I 10 West ramp toward Santa Monica Freeway.', 'Take exit 3A on the right onto I 405 North toward Sacramento.', 'Take exit 63B on the right onto US 101 North toward Ventura.', 'Keep left to take US 101 North toward Ventura.', 'Keep left to stay on US 101 North/Ventura Freeway.', 'Keep left to stay on US 101 North toward San Francisco.', 'Take exit 96B on the right toward Laguna Street/Garden Street.', 'Keep left toward Garden Street-Downtown.', 'Turn right onto Garden Street.', 'Turn right onto East de la Guerra Street.', 'Turn left onto Laguna Street.', 'Continue for 102 meters or 13-16 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Trinity Methodist Church (Idaho Falls, ID) to Sullivan-Kinney House (Pocatello, ID)
+
+  Route steps:
+['Drive southwest.', 'Turn right onto Elm Street.', 'Turn left onto I 15 Business/US 26/Yellowstone Avenue. Continue on I 15 Business/US 26.', 'Turn right onto I 15 Business/US 26/West Sunnyside Road.', 'Turn left to take the ramp toward Blackfook/Pocatello/Salt Lake City.', 'Take exit 67 on the right onto 5th Avenue.', 'Turn right onto South 5th Avenue/I 15 Business/US 30/US 91.', 'Turn left onto East Benton Street.', 'Turn right onto South Garfield Avenue.', 'Continue for 63 meters or 11-13 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Ithaca Tompkins Regional Airport (ITHACA, NY) to US Post Office-Canandaigua (Canandaigua, NY)
+
+  Route steps:
+['Drive northwest.', 'Turn left onto Kline Boulevard.', 'Turn left onto Brown Road.', 'Turn right onto NY 13/State Route 13. Continue on NY 13.', 'Turn right onto West Buffalo Street/NY 89/ NY 96.', 'Turn left onto US 20/NY 5/Waterloo-Geneva Road. Continue on US 20/NY 5.', 'Take the NY 21 North exit on the right.', 'Make a left U-turn onto NY 21 South/NY 332 South/North Main Street.', 'Continue for 25 meters or 5-6 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: U.S. Post Office and County Courthouse (Statesville, NC) to Blandwood (Greensboro, NC)
+
+  Route steps:
+['Drive south on South Center Street/NC 115.', 'Turn left onto East Front Street/US 21/US 64.', 'Turn left onto South Trade Street/US 21/US 64.', 'Turn right onto Davie Avenue/US 21/US 64.', 'Bear left onto Sullivan Road/US 21.', 'Enter the roundabout and take the 2nd exit onto Sullivan Road/US 21.', 'Take the ramp on the right after 104 meters or 5-6 seconds.', 'Keep left to take I 40 East.', 'Keep right to take I 40 East toward Greensboro.', 'Keep left to stay on I 40.', 'Keep right to stay on I 40 toward I 73 North/I 840 East/Greensboro/Martinsville.', 'Take exit 218B on the right toward Freeman Mill Road.', 'Bear right after 3799 meters or 196-240 seconds.', 'Bear right onto Freeman Mill Road.', 'Turn right onto West Washington Street.', 'Continue for 81 meters or 13-16 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping right in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Whiting Field Naval Air Station - North (MILTON, FL) to Naval Air Station Pensacola Forrest Sherman Field (PENSACOLA, FL)
+
+  Route steps:
+['Drive northeast on Whiting Field NAS North.', 'Turn right to stay on Whiting Field NAS North.', 'Turn left onto Langley Street.', 'Bear right onto East Gate Road.', 'Bear right onto Munson Highway/CR 191.', 'Turn left onto Munson Highway/CR 191.', 'Turn right onto Caroline Street/US 90/FL 87.', 'Turn left onto Canal Street/CR 191. Continue on CR 191.', 'Turn right onto Garcon Point Road/CR 191.', 'Take the I 10 ramp on the right.', 'Keep left to stay on I 10.', 'Take exit 7 on the right onto FL 297 toward Pine Forest Road/Pensacola N.A.S./Perdido Key.', 'Turn left onto Pine Forest Road/FL 297.', 'Bear right after 3881 meters or 183-224 seconds.', 'Bear right onto North Blue Angel Parkway/FL 173.', 'Turn left onto San Carlos Road.', 'Turn left onto Skyhawk Drive.', 'Turn right after 244 meters or 20-25 seconds.', 'Turn left after 68 meters or 11-13 seconds.', 'Turn right after 41 meters or 8-9 seconds.', 'Turn left after 10 meters or 7-9 seconds.', 'Continue for 59 meters or 14-18 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 9 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: CLARITY CHILD GUIDANCE CENTER (SAN ANTONIO, TX) to ROUND ROCK MEDICAL CENTER (ROUND ROCK, TX)
+
+  Route steps:
+['Drive east.', 'Turn left onto Tom Slick.', 'Turn right onto Hamilton Wolfe Road.', 'Turn right onto Fredericksburg Road/Spur 345.', 'Turn left onto Wurzbach Road.', 'Keep left to take PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Keep left to stay on PA 1502/Wurzbach Parkway.', 'Turn left onto Interstate 35 North.', 'Take the I 35 North ramp.', 'Take exit 231 on the right onto US 290 West/TX 71 West toward Johnson City.', 'Keep left to take US 290 West/TX 71 West toward Johnson City.', 'Keep right to take Loop 360/South Capital of Texas Highway toward Loop 360/Capital of Texas Highway.', 'Turn right onto South Mopac Service Road.', 'Take the Loop 1 North ramp.', 'Keep left to take Express 1 Toll.', 'Keep left to stay on Express 1 Toll.', 'Keep left to stay on Express 1 Toll.', 'Keep left to take TX 45 Toll West.', ""Keep right toward O'Connor Drive."", 'Continue on State Highway 45 Frontage Road.', ""Turn right onto O'Connor Drive."", 'Turn right onto RM 620.', 'Turn left onto Oakwood Boulevard.', 'Turn left after 384 meters or 23-28 seconds.', 'Turn right after 199 meters or 27-33 seconds.', 'Continue for 166 meters or 26-32 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 29 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Foster, Phineas, House (Boxford, MA) to CLINTON HOSPITAL (CLINTON, MA)
+
+  Route steps:
+['Drive northwest on Old Topsfield Road.', 'Turn left onto Topsfield Road.', 'Bear left onto Topsfield Road Extension.', 'Bear left onto Main Street.', 'Bear left onto Lawrence Road.', 'Bear left onto Salem Street.', 'Bear right onto Johnson Street.', 'Enter the roundabout and take the 2nd exit onto Andover Street.', 'Bear left onto Andover Street/MA 125.', 'Turn right onto MA 114 West/Turnpike Street. Continue on MA 114 West.', 'Turn left to take the I 495 South ramp toward I 93/Lowell/Marlboro.', 'Take exit 70 on the right onto MA 117 toward Bolton.', 'Turn left onto Main Street/MA 117.', 'Turn left onto Wattaquadock Hill Road.', 'Bear left onto Acre Road.', 'Turn right onto Highland Street.', 'Turn left after 655 meters or 56-69 seconds.', 'Continue for 74 meters or 10-12 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning right in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ASHLAND HEALTH CENTER (ASHLAND, KS) to MINNEOLA DISTRICT HOSPITAL (MINNEOLA, KS)
+
+  Route steps:
+['Drive east on West 7th Avenue.', 'Turn left onto South Oak Street.', 'Turn left onto West 4th Avenue/US 160.', 'Turn right onto West Ash Street.', 'Turn left after 179 meters or 21-26 seconds.', 'Continue for 89 meters or 13-16 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does turning left in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: MBS International Airport (FREELAND, MI) to Bennett, Henry, House (Ann Arbor, MI)
+
+  Route steps:
+['Drive north on Flight Service Drive.', 'Turn right onto Air Terminal Drive.', 'Turn right onto Garfield Road.', 'Turn right onto West Salzburg Road.', 'Turn left onto Nine Mile Road.', 'Turn right to take the US 10 East ramp toward Bay City.', 'Take exit 140A on the right onto I 75 South/US 23 South toward Saginaw.', 'Keep left to stay on I 75 South/US 23 South.', 'Keep right to stay on US 23 South toward Ann Arbor.', 'Keep right to take exit 45 onto M 14 West toward Ann Arbor.', 'Take exit 3 on the right onto US 23 BUS toward Downtown Ann Arbor.', 'Turn left onto East Huron Street/I 94 BL/US 23 BUS.', 'Turn right onto South Fifth Avenue.', 'Turn left onto East Liberty Street.', 'Turn right after 94 meters or 11-14 seconds.', 'Continue for 78 meters or 17-21 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 15 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Loew's and United Artists State Theatre (Louisville, KY) to Higgins Block (Lexington, KY)
+
+  Route steps:
+['Drive north on South 4th Street.', 'Turn right onto West Chestnut Street.', 'Turn left onto South 3rd Street/KY 1020.', 'Turn right onto West Liberty Street.', 'Take the ramp on the right toward Lexington.', 'Keep left to take I 64 East toward Lexington.', 'Keep right to take I 64 East toward Lexington.', 'Take exit 115 on the right onto KY 922/Newtown Pike toward Bluegrass Parkway/Airport/Lexington.', 'Keep right to take KY 922 South toward Bluegrass Parkway/Airport/Lexington.', 'Turn left onto West Main Street/US 25/US 421. Continue on US 25/US 421.', 'Turn left onto South Limestone.', 'Turn left onto West Main Street/US 25/US 60/US 421.', 'Continue for 59 meters or 7-9 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning right in Step 12 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: ST ELIZABETH YOUNGSTOWN HOSPITAL (YOUNGSTOWN, OH) to EAST OHIO REGIONAL HOSPITAL (MARTINS FERRY, OH)
+
+  Route steps:
+['Drive southeast.', 'Turn left onto Park Avenue.', 'Turn right onto North Avenue.', 'Stay straight to take the Madison Avenue Expressway ramp.', 'Keep right to take I 680 North.', 'Take exit 1 onto SR 11 South toward Canfield.', 'Take the SR 7 South exit on the right.', 'Stay straight to take the US 22 East ramp.', 'Keep left to take exit 244A to stay on Dean Martin Boulevard.', 'Turn right onto Hanover Street/SR 647.', 'Turn right onto North 4th Street.', 'Continue for 345 meters or 37-45 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping left in Step 5 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Memorial Field Airport (HOT SPRINGS, AR) to McRae, D. L., House (Prescott, AR)
+
+  Route steps:
+['Drive northwest.', 'Turn right after 51 meters or 7-8 seconds.', 'Turn left onto Private Drive.', 'Turn left onto Airport Road/US 70B. Continue on Airport Road.', 'Turn left to take the US 70/US 270 East ramp toward Malvern.', 'Take exit 4 on the right onto AR 88/Higdon Ferry Road.', 'Bear right onto Higdon Ferry Road/AR 88.', 'Bear right onto AR 7/Central Avenue. Continue on AR 7.', 'Take the I 30 ramp on the right.', 'Take exit 46 on the right onto AR 19 toward Prescott.', 'Turn left onto Delight Highway/AR 19.', 'Continue for 4293 meters or 227-277 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Portsmouth International at Pease Airport (PORTSMOUTH, NH) to Stark, Gen. John, House (Manchester, NH)
+
+  Route steps:
+['Drive southeast.', 'Bear right after 574 meters or 74-91 seconds.', 'Turn right after 783 meters or 102-124 seconds.', 'Keep right to take Sherburne Road.', 'Turn right to stay on Sherburne Road.', 'Turn right onto Grafton Drive.', 'Turn right onto Greenland Road/NH 33.', 'Turn left to take the I 95 ramp.', 'Take exit 2 on the right onto NH 101 toward Manchester.', 'Keep right to take 101 West toward Manchester.', 'Keep right to take I 93 North toward Concord.', 'Take exit 9S on the right onto US 3 South/NH 28 South toward Manchester.', 'Turn right onto Elm Street.', 'Turn left onto West Clarke Street.', 'Turn left onto Everett Street.', 'Turn left onto Waldo Street.', 'Continue for 51 meters or 6-7 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: TEXAS REHABILITATION HOSPITAL OF ARLINGTON (ARLINGTON, TX) to Waco Regional Airport (WACO, TX)
+
+  Route steps:
+['Drive southwest.', 'Turn right after 117 meters or 19-23 seconds.', 'Turn right after 9 meters or 3-4 seconds.', 'Turn right after 223 meters or 40-49 seconds.', 'Turn left after 24 meters or 9-11 seconds.', 'Turn right onto West Interstate 20.', 'Take the I 20 West/TX 157 South/Cooper Street ramp toward Fort Worth.', 'Keep right to take FM 157 South toward Cooper Street.', 'Keep left to take I 20 West toward Fort Worth.', 'Take exit 437 on the right onto I 35W South toward Waco.', 'Keep left to take I 35W South toward Waco.', 'Keep left to stay on I 35W South.', 'Take exit 339 on the right onto Loop 340 toward Lake Waco/Lake Shore Drive.', 'Turn right onto North Loop 340/Loop 340.', 'Turn right onto North 19th Street/FM 1637.', 'Turn left to stay on North 19th Street.', 'Turn left onto Steinbeck Bend Drive/FM 3051. Continue on Steinbeck Bend Drive.', 'Turn right onto Access Road.', 'Turn left onto Skeet Eason Road.', 'Continue for 1720 meters or 141-172 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 2 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Trotter, William Monroe, House (Dorchester, MA) to Bryant-Cushing House (Norwell, MA)
+
+  Route steps:
+['Drive southeast on Sawyer Avenue.', 'Turn right onto Downer Avenue.', 'Turn right onto Pleasant Street.', 'Turn right onto Dorchester Avenue.', 'Bear left onto Freeport Street.', 'Turn left to take the I 93 South ramp toward Braintree/Cape Cod.', 'Continue on MA 3.', 'Take exit 32 on the right onto MA 53/MA 123 toward Norwell.', 'Turn left onto Washington Street/MA 53 North. Continue on Washington Street.', 'Turn right onto Webster Street/MA 123. Continue on MA 123.', 'Turn right after 5612 meters or 312-381 seconds.', 'Continue for 67 meters or 27-33 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: GUNNISON VALLEY HOSPITAL (GUNNISON, UT) to Dallin House (Springville, UT)
+
+  Route steps:
+['Drive west on East 100 North Street.', 'Turn right onto North Main Street/US 89.', 'Keep left to take Main Street/UT 28.', 'Turn right to stay on UT 28.', 'Take the I 15 North ramp on the right.', 'Take exit 260 on the right onto UT 77 toward 400 South.', 'Keep right to take UT 77.', 'Turn left onto 200 East.', 'Turn right onto East 200 South Street.', 'Continue for 155 meters or 18-21 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does keeping right in Step 3 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Edward F Knapp State Airport (BARRE/MONTPELIER, VT) to Dewey House (Hartford, VT)
+
+  Route steps:
+['Drive west on Piper Road.', 'Turn right onto Airport Road.', 'Turn left onto Vermont Route 62/VT 62.', 'Keep left to take I 89 South toward White River Junction.', 'Take exit 1 on the right onto US 4 toward Woodstock/Quechee.', 'Turn left onto US 4/Woodstock Road.', 'Turn right onto Quechee Main Street.', 'Turn left onto Deweys Mills Road.', 'Continue for 458 meters or 33-40 seconds.', 'Your destination is on the left.']
+
+Question:
+  Does keeping right in Step 4 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: State Bank of Wisconsin (Milwaukee, WI) to Columbus Public Library (Columbus, WI)
+
+  Route steps:
+['Drive east.', 'Turn right after 15 meters or 5-6 seconds.', 'Turn left onto East Michigan Street.', 'Turn right toward I 94 West.', 'Take the I 794 West ramp on the right toward I 94 West.', 'Keep left to take exit 1A to stay on I 794/East-West Freeway toward Madison.', 'Keep left to take I 94 West.', 'Take exit 267 on the right onto WI 26 toward Watertown.', 'Turn right onto WI 26.', 'Take exit 52 on the right onto WI 16 West toward ColumbusHustisford.', 'Turn left onto State Highway 60/WI 16 West/WI 60 West.', 'Turn left onto South Dickason Boulevard.', 'Continue for 24 meters or 4-5 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does keeping right in Step 6 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Howd, Eliphalet, House (Branford, CT) to Danbury Municipal Airport (DANBURY, CT)
+
+  Route steps:
+['Drive northwest.', 'Turn left onto East Main Street/US 1.', 'Turn left onto Leetes Island Road.', 'Turn right to take the I 95 South ramp.', 'Keep left to stay on I 95 South/Governor John Davis Lodge Turnpike.', 'Take exit 44 on the right onto CT 10 toward Downtown/West Haven.', 'Turn right onto Ella T. Grasso Boulevard/CT 10.', 'Turn left onto CT 34/Derby Avenue.', 'Turn left onto Roosevelt Drive/CT 34. Continue on CT 34.', 'Turn right to take the ramp.', 'Keep left to take I 84 West/Yankee Expressway.', 'Keep left to take US 7 South/Ethan Allen Highway toward Norwalk.', 'Take exit 8 on the right toward Park Avenue.', 'Turn left onto Backus Avenue.', 'Turn left onto Kenosia Avenue.', 'Continue for 320 meters or 33-41 seconds.', 'You have arrived at your destination.']
+
+Question:
+  Does turning left in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: House at 220 Walnut Street (Nogales, AZ) to BENSON HOSPITAL (BENSON, AZ)
+
+  Route steps:
+['Drive east on West Oak Street.', 'Turn left onto North Grand Avenue/I 19 Bus.', 'Make a sharp left to stay on North Grand Avenue/I 19 Bus.', 'Turn right onto AZ 82.', 'Turn left onto AZ 90/State Route 90. Continue on AZ 90.', 'Turn right to take the ramp toward I 10/Benson/Douglas.', 'Take exit 303 on the right onto I 10 Business toward AZ 80 East/Tombstone/Douglas.', 'Turn right onto South Ocotillo Avenue.', 'Turn right after 569 meters or 42-52 seconds.', 'Continue for 71 meters or 14-18 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 8 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+"You are an AI analyst being evaluated on data-flow analyses for travel routes.
+Benchmark: Taint Analysis
+Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
+
+Given the following travel planning scenario:
+
+  Goal: Hariman Sanatorium (Grand Forks, ND) to Grace Episcopal Church (Pembina, ND)
+
+  Route steps:
+['Drive west on University Avenue.', 'Turn right onto North Columbia Road.', 'Turn left onto US 2 West/Gateway Drive.', 'Take the I 29 North ramp on the right toward Winnipeg.', 'Take exit 215 on the right onto ND 59 toward Neche/Pembina.', 'Turn right onto State Highway 59/ND 59.', 'Turn right onto South 3rd Street.', 'Turn left onto West Ramsey Street.', 'Continue for 213 meters or 22-27 seconds.', 'Your destination is on the right.']
+
+Question:
+  Does turning left in Step 7 taint the preconditions for the rest of the directions?
+
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No

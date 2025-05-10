@@ -1,0 +1,7 @@
+# get the file
+1. prepare prompts
+2. output directory, prepare results
+3. prepare scores 
+4. final time analysis\
+
+# random baseline

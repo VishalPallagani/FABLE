@@ -1,0 +1,4 @@
+LLM,Reaching Definitions,Very Busy Expressions,Available Expressions,Live Variable Analysis,Interval Analysis,Type-State Analysis,Taint Analysis,Concurrency Analysis
+deepseek_r1_8b,99,100,64,84,39,100,65,100
+granite_code_8b,48,35,85,48,0,69,52,59
+llama3_1,62,48,44,46,2,83,45,72
