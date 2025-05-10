@@ -37,7 +37,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -76,7 +76,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -116,7 +116,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -136,7 +136,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -154,7 +154,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -193,7 +193,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -279,7 +279,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -305,7 +305,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -324,7 +324,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -343,7 +343,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -361,7 +361,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -383,7 +383,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -426,7 +426,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -443,7 +443,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -462,7 +462,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -549,7 +549,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -566,7 +566,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -629,7 +629,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -666,7 +666,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -694,7 +694,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -715,7 +715,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -736,7 +736,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -763,7 +763,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -800,7 +800,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -824,7 +824,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -868,7 +868,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -886,7 +886,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -970,7 +970,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1030,7 +1030,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1051,7 +1051,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1165,7 +1165,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1209,7 +1209,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1246,7 +1246,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1287,7 +1287,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1314,7 +1314,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1356,7 +1356,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1375,7 +1375,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1419,7 +1419,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1461,7 +1461,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1576,7 +1576,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1676,7 +1676,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1694,7 +1694,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1711,7 +1711,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1747,7 +1747,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1770,7 +1770,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1825,7 +1825,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1844,7 +1844,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -1946,7 +1946,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -2028,7 +2028,7 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Taint Analysis
 Definition: Tracks tainted or untrusted data to ensure it does not reach sensitive areas without sanitization.
@@ -2048,4 +2048,4 @@ Given the following planning task:
 Question:
   Does any step in this plan interfere with (taint) the preconditions of the immediately following step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No

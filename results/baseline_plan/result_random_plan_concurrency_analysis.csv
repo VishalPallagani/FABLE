@@ -18,7 +18,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (board) and Step 3 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -55,7 +55,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (drive-truck) and Step 4 (unload-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -116,7 +116,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 5 (unload-truck) and Step 9 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -136,7 +136,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (walk) and Step 2 (board-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -154,7 +154,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -177,7 +177,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 5 (load-truck) and Step 6 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -193,7 +193,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 2 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -220,7 +220,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (load-truck) and Step 4 (load-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -241,7 +241,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 7 (move) and Step 1 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -261,7 +261,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 6 (unload-truck) and Step 1 (board-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -279,7 +279,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (board) and Step 4 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -383,7 +383,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 8 (debark) and Step 1 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -401,7 +401,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (move) and Step 3 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -443,7 +443,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (move) and Step 1 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -462,7 +462,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 3 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -524,7 +524,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 5 (move) and Step 6 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -649,7 +649,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (move) and Step 1 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -666,7 +666,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (move) and Step 3 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -715,7 +715,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 5 (board) and Step 7 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -736,7 +736,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -763,7 +763,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 5 (drive-truck) and Step 10 (unload-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -800,7 +800,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (debark) and Step 3 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -824,7 +824,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 6 (sail) and Step 7 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -886,7 +886,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (debark) and Step 1 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -906,7 +906,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (board) and Step 6 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -929,7 +929,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (drive-truck) and Step 3 (load-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1030,7 +1030,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (move) and Step 3 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1051,7 +1051,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 6 (unload-truck) and Step 5 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1087,7 +1087,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (load-truck) and Step 5 (unload-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1124,7 +1124,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 2 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1145,7 +1145,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (drive-truck) and Step 4 (load-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1165,7 +1165,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (move) and Step 5 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1209,7 +1209,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 12 (unload-truck) and Step 5 (load-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1266,7 +1266,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1287,7 +1287,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 7 (debark) and Step 6 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1314,7 +1314,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 12 (drive-truck) and Step 3 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1340,7 +1340,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 10 (drive-truck) and Step 8 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1375,7 +1375,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 4 (move) and Step 1 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1437,7 +1437,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (sail) and Step 2 (board) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1461,7 +1461,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 7 (sail) and Step 5 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1483,7 +1483,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 7 (drive-truck) and Step 4 (unload-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1530,7 +1530,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 8 (unload-truck) and Step 2 (load-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1596,7 +1596,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 6 (move) and Step 2 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1676,7 +1676,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1694,7 +1694,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 2 (board) and Step 4 (debark) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1729,7 +1729,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 3 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1747,7 +1747,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1770,7 +1770,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (board-truck) and Step 3 (drive-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1788,7 +1788,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 4 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1825,7 +1825,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (debark) and Step 1 (board) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1906,7 +1906,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 3 (debark) and Step 5 (sail) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1946,7 +1946,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (board-truck) and Step 7 (unload-truck) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -1985,7 +1985,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 2 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -2006,7 +2006,7 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 1 (move) and Step 5 (move) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Concurrency Analysis
 Definition: Examines parallel (concurrent) execution paths to detect data races or synchronization issues.
@@ -2048,4 +2048,4 @@ Given the following planning task:
 Question:
   Based on simple precondition/delete analysis, can Step 6 (debark) and Step 4 (board) run concurrently?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No

@@ -18,7 +18,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (sail(l1, l2)) 'very busy' in the sense that its effect '('at-ferry', 'l2')' is used by the next step, Step 3 (debark(c2, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -92,7 +92,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d2, peg1, peg2)) 'very busy' in the sense that its effect '('clear', 'peg1')' is used by the next step, Step 2 (move(d1, peg3, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -193,7 +193,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d3, d2)) 'very busy' in the sense that its effect '('clear', 'd3')' is used by the next step, Step 2 (move(d3, peg2, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -220,7 +220,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (drive-truck(truck2, s3, s1, driver1)) 'very busy' in the sense that its effect '('at', 'truck2', 's1')' is used by the next step, Step 3 (load-truck(package4, truck2, s1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -279,7 +279,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (sail(l3, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 2 (board(c0, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -305,7 +305,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (walk(driver2, s2, s3)) 'very busy' in the sense that its effect '('at', 'driver2', 's3')' is used by the next step, Step 2 (board-truck(driver2, truck1, s3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -401,7 +401,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d2, peg2)) 'very busy' in the sense that its effect '('clear', 'd2')' is used by the next step, Step 2 (move(d2, d3, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -426,7 +426,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (debark(c1, l3)) 'very busy' in the sense that its effect '('empty-ferry',)' is used by the next step, Step 5 (board(c0, l3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -486,7 +486,7 @@ Given the following planning task:
 Question:
   Is the action in Step 8 (drive-truck(truck3, s1, s2, driver1)) 'very busy' in the sense that its effect '('at', 'truck3', 's2')' is used by the next step, Step 9 (unload-truck(package4, truck3, s2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -524,7 +524,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (move(d3, peg3, peg2)) 'very busy' in the sense that its effect '('clear', 'peg3')' is used by the next step, Step 5 (move(d1, d2, peg3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -566,7 +566,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (move(d2, peg1, peg3)) 'very busy' in the sense that its effect '('clear', 'peg1')' is used by the next step, Step 3 (move(d1, d3, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -587,7 +587,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (debark(c0, l2)) 'very busy' in the sense that its effect '('empty-ferry',)' is used by the next step, Step 5 (board(c2, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -609,7 +609,7 @@ Given the following planning task:
 Question:
   Is the action in Step 7 (drive-truck(truck1, s1, s2, driver1)) 'very busy' in the sense that its effect '('at', 'truck1', 's2')' is used by the next step, Step 8 (unload-truck(package2, truck1, s2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -629,7 +629,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (move(d3, peg1, peg2)) 'very busy' in the sense that its effect '('clear', 'peg1')' is used by the next step, Step 4 (move(d1, d2, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -649,7 +649,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (move(d3, peg3, peg2)) 'very busy' in the sense that its effect '('clear', 'peg3')' is used by the next step, Step 4 (move(d1, d2, peg3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -666,7 +666,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d3, peg3)) 'very busy' in the sense that its effect '('clear', 'd3')' is used by the next step, Step 2 (move(d2, peg2, d3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -715,7 +715,7 @@ Given the following planning task:
 Question:
   Is the action in Step 6 (sail(l3, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 7 (debark(c0, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -736,7 +736,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (move(d3, peg3, peg2)) 'very busy' in the sense that its effect '('clear', 'peg3')' is used by the next step, Step 5 (move(d1, d2, peg3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -763,7 +763,7 @@ Given the following planning task:
 Question:
   Is the action in Step 11 (drive-truck(truck1, s1, s3, driver1)) 'very busy' in the sense that its effect '('at', 'truck1', 's3')' is used by the next step, Step 12 (unload-truck(package4, truck1, s3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -800,7 +800,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (sail(l2, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 4 (debark(c1, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -824,7 +824,7 @@ Given the following planning task:
 Question:
   Is the action in Step 9 (sail(l1, l2)) 'very busy' in the sense that its effect '('at-ferry', 'l2')' is used by the next step, Step 10 (debark(c2, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -868,7 +868,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (sail(l0, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 3 (debark(c0, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -886,7 +886,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (sail(l3, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 4 (debark(c1, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -929,7 +929,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (drive-truck(truck1, s1, s4, driver1)) 'very busy' in the sense that its effect '('at', 'truck1', 's4')' is used by the next step, Step 5 (load-truck(package3, truck1, s4))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -970,7 +970,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (debark(c0, l2)) 'very busy' in the sense that its effect '('empty-ferry',)' is used by the next step, Step 5 (board(c2, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -988,7 +988,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, peg1, d2)) 'very busy' in the sense that its effect '('clear', 'peg1')' is used by the next step, Step 2 (move(d3, peg3, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1068,7 +1068,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (sail(l3, l2)) 'very busy' in the sense that its effect '('at-ferry', 'l2')' is used by the next step, Step 3 (debark(c2, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1108,7 +1108,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (sail(l0, l2)) 'very busy' in the sense that its effect '('at-ferry', 'l2')' is used by the next step, Step 2 (board(c0, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1124,7 +1124,7 @@ Given the following planning task:
 Question:
   Is any action in this plan 'very busy' in the sense that its effect is immediately used by the next step?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1145,7 +1145,7 @@ Given the following planning task:
 Question:
   Is the action in Step 5 (drive-truck(truck1, s1, s4, driver2)) 'very busy' in the sense that its effect '('at', 'truck1', 's4')' is used by the next step, Step 6 (unload-truck(package4, truck1, s4))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1183,7 +1183,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (drive-truck(truck1, s1, s2, driver1)) 'very busy' in the sense that its effect '('at', 'truck1', 's2')' is used by the next step, Step 4 (unload-truck(package1, truck1, s2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1266,7 +1266,7 @@ Given the following planning task:
 Question:
   Is the action in Step 4 (move(d3, peg2, peg1)) 'very busy' in the sense that its effect '('clear', 'peg2')' is used by the next step, Step 5 (move(d1, d2, peg2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1287,7 +1287,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (sail(l2, l3)) 'very busy' in the sense that its effect '('at-ferry', 'l3')' is used by the next step, Step 3 (debark(c1, l3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1356,7 +1356,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d3, peg1)) 'very busy' in the sense that its effect '('clear', 'd3')' is used by the next step, Step 2 (move(d2, peg2, d3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1419,7 +1419,7 @@ Given the following planning task:
 Question:
   Is the action in Step 5 (drive-truck(truck2, s4, s2, driver2)) 'very busy' in the sense that its effect '('at', 'truck2', 's2')' is used by the next step, Step 6 (unload-truck(package3, truck2, s2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1505,7 +1505,7 @@ Given the following planning task:
 Question:
   Is the action in Step 5 (sail(l0, l3)) 'very busy' in the sense that its effect '('at-ferry', 'l3')' is used by the next step, Step 6 (board(c0, l3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1530,7 +1530,7 @@ Given the following planning task:
 Question:
   Is the action in Step 9 (drive-truck(truck3, s4, s3, driver2)) 'very busy' in the sense that its effect '('at', 'truck3', 's3')' is used by the next step, Step 10 (unload-truck(package3, truck3, s3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1576,7 +1576,7 @@ Given the following planning task:
 Question:
   Is the action in Step 8 (sail(l0, l1)) 'very busy' in the sense that its effect '('at-ferry', 'l1')' is used by the next step, Step 9 (board(c1, l1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1637,7 +1637,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d3, peg3)) 'very busy' in the sense that its effect '('clear', 'd3')' is used by the next step, Step 2 (move(d2, peg2, d3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1694,7 +1694,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (sail(l2, l0)) 'very busy' in the sense that its effect '('at-ferry', 'l0')' is used by the next step, Step 4 (debark(c0, l0))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1788,7 +1788,7 @@ Given the following planning task:
 Question:
   Is the action in Step 3 (move(d1, d2, d3)) 'very busy' in the sense that its effect '('clear', 'd2')' is used by the next step, Step 4 (move(d2, peg1, peg3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1805,7 +1805,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d2, peg1)) 'very busy' in the sense that its effect '('clear', 'd2')' is used by the next step, Step 2 (move(d2, peg2, d3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1844,7 +1844,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, peg1, d2)) 'very busy' in the sense that its effect '('clear', 'peg1')' is used by the next step, Step 2 (move(d3, peg3, peg1))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1906,7 +1906,7 @@ Given the following planning task:
 Question:
   Is the action in Step 7 (sail(l2, l0)) 'very busy' in the sense that its effect '('at-ferry', 'l0')' is used by the next step, Step 8 (board(c2, l0))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1925,7 +1925,7 @@ Given the following planning task:
 Question:
   Is the action in Step 1 (move(d1, d3, d2)) 'very busy' in the sense that its effect '('clear', 'd3')' is used by the next step, Step 2 (move(d3, peg1, peg2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -1985,7 +1985,7 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (move(d1, peg2, d2)) 'very busy' in the sense that its effect '('clear', 'peg2')' is used by the next step, Step 3 (move(d3, peg3, peg2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -2006,7 +2006,7 @@ Given the following planning task:
 Question:
   Is the action in Step 6 (move(d3, peg3, peg2)) 'very busy' in the sense that its effect '('clear', 'peg3')' is used by the next step, Step 7 (move(d1, d2, peg3))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -2028,7 +2028,7 @@ Given the following planning task:
 Question:
   Is the action in Step 7 (drive-truck(truck2, s4, s2, driver1)) 'very busy' in the sense that its effect '('at', 'truck2', 's2')' is used by the next step, Step 8 (unload-truck(package2, truck2, s2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Very Busy Expressions
 Definition: An expression is very busy if on every path forward from that point, the expression will be evaluated before any operand changes.
@@ -2048,4 +2048,4 @@ Given the following planning task:
 Question:
   Is the action in Step 2 (sail(l0, l2)) 'very busy' in the sense that its effect '('at-ferry', 'l2')' is used by the next step, Step 3 (debark(c1, l2))?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No

@@ -20,7 +20,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -42,7 +42,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -59,7 +59,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'peg1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -165,7 +165,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -183,7 +183,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'd2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -201,7 +201,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'peg1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -222,7 +222,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -335,7 +335,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck2')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -422,7 +422,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -461,7 +461,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c0')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -481,7 +481,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'peg1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -505,7 +505,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c0')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -562,7 +562,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck3')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -587,7 +587,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l3')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -605,7 +605,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -624,7 +624,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'peg1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -714,7 +714,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'd3')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -826,7 +826,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 4)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -887,7 +887,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'd3')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -905,7 +905,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'peg1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -968,7 +968,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -986,7 +986,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'peg2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1004,7 +1004,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1047,7 +1047,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'd3')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1100,7 +1100,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1118,7 +1118,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1144,7 +1144,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 4)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1170,7 +1170,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l0')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1186,7 +1186,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'd3')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1208,7 +1208,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1279,7 +1279,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck3')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1334,7 +1334,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l0')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1353,7 +1353,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck2')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1461,7 +1461,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1482,7 +1482,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l0')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1499,7 +1499,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'peg2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1539,7 +1539,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l2')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1556,7 +1556,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1649,7 +1649,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('clear', 'peg1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1698,7 +1698,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver2', 'truck3')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1738,7 +1738,7 @@ Given the following planning task:
 Question:
   After Step 1 (sail), is the effect '('at-ferry', 'l3')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1801,7 +1801,7 @@ Given the following planning task:
 Question:
   After Step 1 (board), is the effect '('on', 'c2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1827,7 +1827,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 4)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1877,7 +1877,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck2')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1894,7 +1894,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'd3')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1914,7 +1914,7 @@ Given the following planning task:
 Question:
   After Step 1 (move), is the effect '('on', 'd1', 'peg2')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",No,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1961,7 +1961,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 4)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -1998,7 +1998,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -2047,7 +2047,7 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 2)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Live Variable Analysis
 Definition: A variable is live if its value will be used again in the future (i.e., before being overwritten or discarded).
@@ -2127,4 +2127,4 @@ Given the following planning task:
 Question:
   After Step 1 (board-truck), is the effect '('driving', 'driver1', 'truck1')' 'live' (i.e., needed by a future step like Step 3)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes

@@ -42,7 +42,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l1')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -59,7 +59,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd3')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -84,7 +84,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l1')' from Step 2 (sail) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -104,7 +104,7 @@ Given the following planning task:
 Question:
   Is the effect '('at', 'driver1', 's3')' from Step 1 (walk) still available for Step 2 (board-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -125,7 +125,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l2')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -165,7 +165,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 3 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -222,7 +222,7 @@ Given the following planning task:
 Question:
   Is the effect '('on', 'c2')' from Step 1 (board) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -264,7 +264,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 3 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -309,7 +309,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -335,7 +335,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck2')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -356,7 +356,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l2')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -377,7 +377,7 @@ Given the following planning task:
 Question:
   Is the effect '('on', 'c2')' from Step 1 (board) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -398,7 +398,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 4 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -461,7 +461,7 @@ Given the following planning task:
 Question:
   Is the effect '('on', 'c0')' from Step 1 (board) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -481,7 +481,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -624,7 +624,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -714,7 +714,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg1')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -735,7 +735,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l3')' from Step 2 (sail) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -826,7 +826,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 4 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -887,7 +887,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg3')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -931,7 +931,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver2', 'truck2')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -968,7 +968,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -986,7 +986,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg2')' from Step 1 (move) still available for Step 3 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1029,7 +1029,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l1')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1100,7 +1100,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1118,7 +1118,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l1')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1170,7 +1170,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l0')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1186,7 +1186,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd3')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1279,7 +1279,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver2', 'truck3')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1296,7 +1296,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l0')' from Step 2 (sail) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1316,7 +1316,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l1')' from Step 2 (sail) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1353,7 +1353,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck2')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1393,7 +1393,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg3')' from Step 2 (move) still available for Step 3 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1482,7 +1482,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l0')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1499,7 +1499,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg2')' from Step 1 (move) still available for Step 3 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1539,7 +1539,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l2')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1556,7 +1556,7 @@ Given the following planning task:
 Question:
   Is the effect '('on', 'c2')' from Step 1 (board) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1580,7 +1580,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck3')' from Step 1 (board-truck) still available for Step 4 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1630,7 +1630,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 4 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1670,7 +1670,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 3 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1714,7 +1714,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1738,7 +1738,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l3')' from Step 1 (sail) still available for Step 2 (board)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1780,7 +1780,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1801,7 +1801,7 @@ Given the following planning task:
 Question:
   Is the effect '('on', 'c2')' from Step 1 (board) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1852,7 +1852,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck2')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1877,7 +1877,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck2')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1894,7 +1894,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1914,7 +1914,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1937,7 +1937,7 @@ Given the following planning task:
 Question:
   Is the effect '('at-ferry', 'l2')' from Step 2 (sail) still available for Step 3 (debark)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1961,7 +1961,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 4 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -1977,7 +1977,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'd2')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -2047,7 +2047,7 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 2 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -2068,7 +2068,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg3')' from Step 1 (move) still available for Step 2 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -2088,7 +2088,7 @@ Given the following planning task:
 Question:
   Is the effect '('clear', 'peg1')' from Step 1 (move) still available for Step 3 (move)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
 "You are an AI analyst being evaluated on data-flow analyses for planning tasks.
 Benchmark: Available Expressions
 Definition: An expression is available if it has already been computed and its operands have not been redefined since.
@@ -2127,4 +2127,4 @@ Given the following planning task:
 Question:
   Is the effect '('driving', 'driver1', 'truck1')' from Step 1 (board-truck) still available for Step 3 (drive-truck)?
 
-Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,No
+Please answer with only “Yes” or “No” without any further explanation. Adhere to this rule strictly.",Yes,Yes

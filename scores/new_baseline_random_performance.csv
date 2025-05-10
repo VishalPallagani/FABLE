@@ -1,0 +1,3 @@
+Model,Reaching Definitions,Very Busy Expressions,Available Expressions,Live Variable Analysis,Interval Analysis,Type-State Analysis,Taint Analysis,Concurrency Analysis
+Random Travel,50,43,55,53,0,59,49,59
+Random Plan,44,53,46,58,2,0,58,50

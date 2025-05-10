@@ -7,12 +7,12 @@ import pandas as pd
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 random.seed(42)
 
-TRAVEL_PROMPT_DIR   = "../prompts/travel_routes"
+TRAVEL_PROMPT_DIR   = "../prompts/new_travel_routes"
 PLANNING_PROMPT_DIR = "../prompts/plans"
 
-RESULT_DIR_TRAVEL   = "../results/baseline_travel"
+RESULT_DIR_TRAVEL   = "../results/new_baseline_travel"
 RESULT_DIR_PLAN     = "../results/baseline_plan"
-SUMMARY_PATH        = "../scores/baseline_random_performance.csv"
+SUMMARY_PATH        = "../scores/new_baseline_random_performance.csv"
 
 os.makedirs(RESULT_DIR_TRAVEL, exist_ok=True)
 os.makedirs(RESULT_DIR_PLAN,   exist_ok=True)
