@@ -37,7 +37,7 @@ Step 4: Spread noodle mixture in a 9x13-inch glass baking dish. Sprinkle corn fl
 Step 5: Bake in the preheated oven until golden brown, about 40 minutes.
 
 Question:
-Can we spread (Step 4) and bake (Step 5) at the same time?",False
+Can we spread (Step 4) and bake (Step 5) at the same time?",No
 "Goal: Blueberry Peach Muffins
 
 Steps:
@@ -169,7 +169,7 @@ Step 5: Peel egg and place in a bowl. Mash very well.
 Step 6: Combine egg with 1/4 cup (60 mL) pureed peaches and mashed banana. Mash together well until you have your desired consistency. Add a little breast milk or formula to thin if you like.
 
 Question:
-Can we steam (Step 1) and remove (Step 3) at the same time?",False
+Can we steam (Step 1) and remove (Step 3) at the same time?",No
 "Goal: Franks Under Wraps
 
 Steps:
@@ -198,7 +198,7 @@ Step 4: Bake in the preheated oven until the center is set and apples are tender
 Step 5: Meanwhile, make vanilla sauce: Mix milk, butter, white sugar, and brown sugar together in a saucepan. Bring to a boil, remove from heat, and stir in vanilla. Serve over pudding.
 
 Question:
-Can we preheat (Step 1) and bake (Step 4) at the same time?",False
+Can we preheat (Step 1) and bake (Step 4) at the same time?",No
 "Goal: Grandma's Chicken Chardon
 
 Steps:
@@ -229,7 +229,7 @@ Step 4: Pour batter into 9x13 inch pan. Bake at 350 degrees F (175 degrees C) fo
 Step 5: To make the frosting: In a saucepan, combine brown sugar, coconut, 6 tablespoons butter and 4 tablespoons milk. Heat and stir until butter is melted and mixture is smooth. Pour over cake as soon as it comes out of the oven. Put cake in the oven under the broiler and bake 3 to 4 minutes, or until icing is light brown.
 
 Question:
-Can we beat (Step 2) and pour (Step 4) at the same time?",False
+Can we beat (Step 2) and pour (Step 4) at the same time?",No
 "Goal: Lepp Cookies II
 
 Steps:
@@ -317,7 +317,7 @@ Step 5: Heat oil in a large skillet over medium-low heat. Cook breaded chicken i
 Step 6: Spread mayonnaise over bottom half of each sandwich roll; top with 1 piece of breaded chicken, a few drops of lemon juice, 1 dash hot sauce, and 1 lettuce leaf. Spread mustard over the top half of each sandwich roll. Place top halves over lettuce to form sandwiches.
 
 Question:
-Can we place (Step 1) and dredge (Step 3) at the same time?",False
+Can we place (Step 1) and dredge (Step 3) at the same time?",No
 "Goal: Simply Delicious Banana Crumb Bread
 
 Steps:
@@ -395,7 +395,7 @@ Step 9: Return cookies to the oven and bake until set, about 8 minutes.
 Step 10: Remove from the oven and transfer to wire racks to cool completely.
 
 Question:
-Can we bake (Step 7) and remove (Step 10) at the same time?",False
+Can we bake (Step 7) and remove (Step 10) at the same time?",No
 "Goal: Tomato Bread II
 
 Steps:
@@ -586,7 +586,7 @@ Step 2: In a bowl, mix the flour, sugar, oats, cocoa powder, baking powder, and 
 Step 3: Bake 10 minutes in the preheated oven.
 
 Question:
-Can we mix (Step 2) and bake (Step 3) at the same time?",False
+Can we mix (Step 2) and bake (Step 3) at the same time?",No
 "Goal: Butter Rich Spritz Butter Cookies
 
 Steps:
@@ -610,7 +610,7 @@ Step 3: Arrange potatoes over the bottom of the prepared baking dish. Pour sauce
 Step 4: Bake in the preheated oven for 1 hour, stirring halfway through. Stir once more, top with remaining 1/4 cup Parmesan, and bake until cheese is melted and golden brown, about 20 more minutes.
 
 Question:
-Can we preheat (Step 1) and bake (Step 4) at the same time?",False
+Can we preheat (Step 1) and bake (Step 4) at the same time?",No
 "Goal: Cake Balls
 
 Steps:
@@ -682,7 +682,7 @@ Step 3: Place half the chips in 13x9-inch baking dish; cover with layers of half
 Step 4: Bake 20 min. or until heated through. Top with onions and remaining sour cream.
 
 Question:
-Can we place (Step 3) and bake (Step 4) at the same time?",False
+Can we place (Step 3) and bake (Step 4) at the same time?",No
 "Goal: Cheesy Scalloped Potatoes with Ham
 
 Steps:
@@ -716,7 +716,7 @@ Step 5: For the icing: In the heatproof bowl of an electric mixer, briefly whisk
 Step 6: Transfer cake to a platter and spread icing all over it, swirling icing in a decorative pattern.
 
 Question:
-Can we preheat (Step 1) and bake (Step 4) at the same time?",False
+Can we preheat (Step 1) and bake (Step 4) at the same time?",No
 "Goal: Chocolate Silk Pecan Pie
 
 Steps:
@@ -774,7 +774,7 @@ Step 2: Break eggs into bowl and beat well. Add milk, flour and salt. Beat with 
 Step 3: Place popovers in cold oven. Set oven to 450 degrees F (230 degrees C). Turn oven on and bake for 30 minutes, until golden and puffed. Serve immediately. If you must hold them, pierce, and keep warm in a 170 degree F (75 degrees C) oven.
 
 Question:
-Can we break (Step 2) and place (Step 3) at the same time?",False
+Can we break (Step 2) and place (Step 3) at the same time?",No
 "Goal: Confetti Chicken
 
 Steps:
@@ -954,7 +954,7 @@ Step 2: Combine the oats, flour, walnuts, yeast, salt, milk powder, and coconut 
 Step 3: Bake in the preheated oven for 45 minutes, stirring every 15 minutes. Turn the oven off and allow the granola to cool in the oven until dry, about 3 hours.
 
 Question:
-Can we preheat (Step 1) and bake (Step 3) at the same time?",False
+Can we preheat (Step 1) and bake (Step 3) at the same time?",No
 "Goal: Meringue Ghosts
 
 Steps:
@@ -966,7 +966,7 @@ Step 5: Bake until meringues begin to turn pale gold and are firm to touch, 1 1/
 Step 6: Slide a spatula under meringues to release.
 
 Question:
-Can we preheat (Step 1) and bake (Step 5) at the same time?",False
+Can we preheat (Step 1) and bake (Step 5) at the same time?",No
 "Goal: Pork Chops with Grapes and Almonds
 
 Steps:
@@ -976,7 +976,7 @@ Step 3: Meanwhile, heat 2 tablespoons olive oil in a separate large skillet over
 Step 4: To serve, place pork chops onto a serving platter and top with the mushroom mixture. Ladle Alfredo sauce over top, and sprinkle with grapes, almonds, and the remaining 2 tablespoons parsley to garnish.
 
 Question:
-Can we pour (Step 1) and serve (Step 4) at the same time?",False
+Can we pour (Step 1) and serve (Step 4) at the same time?",No
 "Goal: Caribbean Pork Shoulder Roast
 
 Steps:
@@ -989,7 +989,7 @@ Step 6: Scrape the bottom and sides of the roasting pan with a wooden spoon to l
 Step 7: Carve the roast into thick slices and place them on a platter. Add the juices from carving into the sauce and stir well. Drizzle the sauce over the pork.
 
 Question:
-Can we place (Step 4) and carve (Step 7) at the same time?",False
+Can we place (Step 4) and carve (Step 7) at the same time?",No
 "Goal: Easy Roasted Cabbage
 
 Steps:
@@ -998,7 +998,7 @@ Step 2: Brush each cabbage piece on both sides with olive oil; season with salt 
 Step 3: Bake in the preheated oven until tender, 40 to 55 minutes.
 
 Question:
-Can we preheat (Step 1) and bake (Step 3) at the same time?",False
+Can we preheat (Step 1) and bake (Step 3) at the same time?",No
 "Goal: Southwest Sloppy Joe Pizza
 
 Steps:
@@ -1009,7 +1009,7 @@ Step 4: Spread beef mixture over partially baked crust. Sprinkle with cheese.
 Step 5: Bake 8 to 16 minutes longer or until cheese is melted and crust is golden brown. Let stand 5 minutes before cutting.
 
 Question:
-Can we cook (Step 2) and spread (Step 4) at the same time?",False
+Can we cook (Step 2) and spread (Step 4) at the same time?",No
 "Goal: Arrowhead Mills® Chocolaty Cake
 
 Steps:
@@ -1018,7 +1018,7 @@ Step 2: In large bowl, mix sugar, flour, baking soda, salt and cocoa. Add water,
 Step 3: Pour mixture into pan (9 x 13) and bake for 40 minutes, or until toothpick inserted into middle of cake comes out clean.
 
 Question:
-Can we mix (Step 2) and pour (Step 3) at the same time?",False
+Can we mix (Step 2) and pour (Step 3) at the same time?",No
 "Goal: Butternut Squash with Onions and Pecans
 
 Steps:
@@ -1030,4 +1030,4 @@ Step 5: Melt butter in a heavy large skillet over low heat. Add onion and sauté
 Step 6: Stir in 1/2 of the pecans and 1/2 of the parsley. Transfer mixture to a bowl. Sprinkle with remaining pecans and parsley, then serve.
 
 Question:
-Can we peel (Step 4) and stir (Step 6) at the same time?",False
+Can we peel (Step 4) and stir (Step 6) at the same time?",No

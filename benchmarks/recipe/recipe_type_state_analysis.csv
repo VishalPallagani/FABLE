@@ -94,7 +94,7 @@ Step 5: Bake cheesecake in the preheated oven for 1 hour and 5 minutes; then tur
 Step 6: To serve, cut the cheesecake into wedges and garnish each slice with whipped cream and caramel sauce.
 
 Question:
-If we skip Step 5, is it still valid to cut the cheesecake in Step 6?",False
+If we skip Step 5, is it still valid to cut the cheesecake in Step 6?",No
 "Goal: Caramel Spiced Bread
 
 Steps:
@@ -218,7 +218,7 @@ Step 4: Pour batter into 9x13 inch pan. Bake at 350 degrees F (175 degrees C) fo
 Step 5: To make the frosting: In a saucepan, combine brown sugar, coconut, 6 tablespoons butter and 4 tablespoons milk. Heat and stir until butter is melted and mixture is smooth. Pour over cake as soon as it comes out of the oven. Put cake in the oven under the broiler and bake 3 to 4 minutes, or until icing is light brown.
 
 Question:
-If we skip Step 1, is it still valid to use the flour in Step 2?",False
+If we skip Step 1, is it still valid to use the flour in Step 2?",No
 "Goal: Lepp Cookies II
 
 Steps:
@@ -316,7 +316,7 @@ Step 3: Prepare the crumb topping by combining the flour, brown sugar, oats, and
 Step 4: Bake in preheated oven for 20 minutes. Reduce heat to 325 degrees F (165 degrees C), and bake until a toothpick inserted in center of the loaf comes out clean, 10 to 15 minutes longer. Cool in pan 10 minutes before turning out onto a wire rack.
 
 Question:
-If we skip Step 2, is it still valid to use the batter in Step 3?",False
+If we skip Step 2, is it still valid to use the batter in Step 3?",No
 "Goal: Sister Schubert's® Berry Cream Cheese Coffee Cake
 
 Steps:
@@ -701,7 +701,7 @@ Step 5: For the icing: In the heatproof bowl of an electric mixer, briefly whisk
 Step 6: Transfer cake to a platter and spread icing all over it, swirling icing in a decorative pattern.
 
 Question:
-If we skip Step 1, is it still valid to use the cake in Step 4?",False
+If we skip Step 1, is it still valid to use the cake in Step 4?",No
 "Goal: Chocolate Scotcheroos
 
 Steps:
@@ -848,7 +848,7 @@ Step 5: Heat oil in a wok or large skillet over medium-high heat. Cook and stir 
 Step 6: Cook and stir-fry chicken in the same wok until very crispy and dark golden brown. Serve with sauce.
 
 Question:
-If we skip Step 1, is it still valid to use the chicken in Step 3?",False
+If we skip Step 1, is it still valid to use the chicken in Step 3?",No
 "Goal: Devil's Food Cake II
 
 Steps:
@@ -936,7 +936,7 @@ Step 3: Bake in the preheated oven, stirring occasionally, until potatoes are cr
 Step 4: Transfer potatoes to a plate and top with Mexican cheese blend, black beans, diced tomatoes, black olives, green onions, and green chiles.
 
 Question:
-If we skip Step 2, is it still valid to transfer the potatoes in Step 4?",False
+If we skip Step 2, is it still valid to transfer the potatoes in Step 4?",No
 "Goal: Flourless Banana Chocolate Chip Muffins
 
 Steps:
@@ -946,7 +946,7 @@ Step 3: Pour batter into the prepared muffin cups, filling them 3/4 full.
 Step 4: Bake in the preheated oven until light golden brown, about 22 minutes. Cool for 10 to 15 minutes before eating.
 
 Question:
-If we skip Step 1, is it still valid to use the oven in Step 4?",False
+If we skip Step 1, is it still valid to use the oven in Step 4?",No
 "Goal: Chile Cheese Triangle Toasts
 
 Steps:
@@ -955,7 +955,7 @@ Step 2: Mix mayonnaise, Mexican cheese blend, butter, jalapeno peppers, and hot 
 Step 3: Bake in the preheated oven until toasts are lightly browned, about 5 minutes.
 
 Question:
-If we skip Step 1, is it still valid to use the oven in Step 3?",False
+If we skip Step 1, is it still valid to use the oven in Step 3?",No
 "Goal: Herbed Pumpkin Gravy
 
 Steps:
@@ -964,7 +964,7 @@ Step 2: Stir 2 cups hot water into the cooked oats. Strain water to use as 'oat 
 Step 3: Stir pumpkin puree, sugar, herbes de Provence, salt, black pepper, and garlic powder into the oat broth with a whisk until smooth; add olive oil and stir to combine. Thin the gravy with more hot water, if desired. Place the saucepan over medium heat, bring the gravy to a simmer, and cook until hot, about 10 minutes.
 
 Question:
-If we skip Step 1, is it still valid to place the saucepan in Step 3?",False
+If we skip Step 1, is it still valid to place the saucepan in Step 3?",No
 "Goal: Lemon Mushroom Herb Chicken
 
 Steps:
@@ -973,7 +973,7 @@ Step 2: Melt butter in a large skillet over medium heat, and cook chicken until 
 Step 3: Cover skillet, and simmer 20 minutes, or until chicken is no longer pink and juices run clear. Garnish with parsley, capers, and lemon zest.
 
 Question:
-If we skip Step 1, is it still valid to use the chicken in Step 3?",False
+If we skip Step 1, is it still valid to use the chicken in Step 3?",No
 "Goal: Pudding Poke Cake
 
 Steps:
@@ -988,7 +988,7 @@ Step 8: Pour 1/2 of the pudding mixture immediately over warm cake and into hole
 Step 9: Let remaining pudding thicken slightly at room temperature, then spoon over the top and spread to cover. Chill in the refrigerator for at least 1 hour before serving. Store leftovers in the refrigerator.
 
 Question:
-If we skip Step 2, is it still valid to use the oven in Step 5?",False
+If we skip Step 2, is it still valid to use the oven in Step 5?",No
 "Goal: Alissa's Vegetarian Lentil Meatloaf
 
 Steps:
@@ -998,7 +998,7 @@ Step 3: In the bowl of a food processor, combine the onion, carrot, bell pepper 
 Step 4: Bake for 45 minutes in the preheated oven, until heated through and browned on the top. Cool slightly before slicing and serving.
 
 Question:
-If we skip Step 1, is it still valid to put the lentils in Step 3?",False
+If we skip Step 1, is it still valid to put the lentils in Step 3?",No
 "Goal: Pickled Carrot And Mango Sticks
 
 Steps:
@@ -1007,7 +1007,7 @@ Step 2: Slice round mango cheeks from pit (save trimmings to eat later). Cut int
 Step 3: Combine minced garlic, salt, vinegar, water, and sugar in a non-aluminum saucepan; bring just to a boil. Remove from heat and pour hot liquid over carrots and mango sticks. Cool to room temperature. Transfer to jars with tight lids and refrigerate 1 hour (or longer) before serving.
 
 Question:
-If we skip Step 1, is it still valid to use the carrots in Step 3?",False
+If we skip Step 1, is it still valid to use the carrots in Step 3?",No
 "Goal: Tofu Vegetable Pot Pie
 
 Steps:
@@ -1018,4 +1018,4 @@ Step 4: Pour filling into prepared pie crust. Top with second pie crust, crimpin
 Step 5: Bake pie in the preheated oven until crust is golden brown and filling is bubbling, 30 to 35 minutes. Let cool for 10 to 15 minutes before serving.
 
 Question:
-If we skip Step 1, is it still valid to use the oven in Step 5?",False
+If we skip Step 1, is it still valid to use the oven in Step 5?",No
