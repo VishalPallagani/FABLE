@@ -63,7 +63,7 @@ min_steps = df.apply(min_steps_in_route, axis=1).min()
 max_steps = df.apply(max_steps_in_route, axis=1).max()
 
 summary = f"""
-# 📊 Dataset Summary
+# Dataset Summary
 
 - **Total Routes:** {len(df)}
 - **Average Steps per Route:** {avg_steps:.2f}
