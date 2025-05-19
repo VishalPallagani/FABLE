@@ -1,10 +1,10 @@
 
-# 📊 Dataset Summary
+# Dataset Summary
 
 - **Total Routes:** 500
-- **Average Steps per Route:** 17.91
+- **Average Steps per Route:** 17.26
 - **Min Steps in a Route:** 4
-- **Max Steps in a Route:** 48
+- **Max Steps in a Route:** 56
 
 # Other Notes
 
